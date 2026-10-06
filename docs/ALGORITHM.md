@@ -2,7 +2,7 @@
 
 ## Problem definition
 
-Detect local reused wording, not whole-document topic similarity. Each result is an evidence-bearing pair of original text spans. We distinguish normalized exact matches, near matches with word edits, and semantic suggestions (a separately reviewed offline extension).
+Detect local reused wording, not whole-document topic similarity. Each result is an evidence-bearing pair of original text spans. We distinguish normalized exact matches, near matches with word edits, and semantic suggestions (a separately reviewed local-model extension).
 
 Example:
 
@@ -76,7 +76,7 @@ All document pairs are considered: D(D−1)/2 pairs. The bundled three documents
 
 A sentence embedding can retrieve differently worded similar ideas. It can also rank two same-topic passages highly without reused wording. A chunk score does not determine a localized span. This implementation keeps lexical matches and semantic suggestions in separate tables and screens. Strong semantic-only matches require their own review type rather than a mandatory lexical gate that rejects the very paraphrases embeddings were meant to find.
 
-This app fulfills exact and near textual matching without downloading a model. The optional semantic pipeline searches verse windows across all documents and imports a reproducible offline cache; see SEMANTIC.md. Neither path establishes historical dependence.
+Exact and near textual matching does not require a model. During normal first-time startup, the application also downloads the pinned open-source embedding model and computes semantic suggestions locally on the CPU. Subsequent launches reuse a validated runtime cache; see SEMANTIC.md. Neither path establishes historical dependence.
 
 ## Persistence contract
 

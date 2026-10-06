@@ -175,5 +175,11 @@
       "assessment": "plausible-shared-passage"
     }
   ],
-  "caveat": "Seven plausible shared passages and two topic-only suggestions in nine samples do not estimate corpus precision."
+  "caveat": "Seven plausible shared passages and two topic-only suggestions in nine samples do not estimate corpus precision.",
+  "scope": "Historical spot audit before the 2026-10-06 navigation cleanup. IDs and coordinates refer to the corpus hashes recorded here, not the current release.",
+  "corpus_hashes": {
+    "matthew": "55f23a77ef2c8c593aeccd8a316f32b47eefdba19ae3c0a41774b6affa75e96c",
+    "mark": "ffdff049ac3ad33d4909af2652dfc8b42cd486c51ebc3df8fb202ef0c50ee3eb",
+    "luke": "89c5649fbb23766ab8eadcacf317c2d85f3ae87414ad234838d161f880f164f4"
+  }
 }

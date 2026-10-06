@@ -71,7 +71,7 @@ def main():
         for m in new:
             if tuple(m[k] for k in ['start_a','end_a','start_b','end_b']) not in old_ranges:
                 a,b=pair;added.append(dict(document_a=a,document_b=b,**m,text_a=docs[a]['text'][m['start_a']:m['end_a']],text_b=docs[b]['text'][m['start_b']:m['end_b']]))
-    report=dict(algorithm=VERSION,variants=results,exact_range_retention=dict(retained=retained,replaced_or_suppressed=lost),
+    report=dict(algorithm=VERSION,corpus_hashes={k:d['sha256'] for k,d in docs.items()},variants=results,exact_range_retention=dict(retained=retained,replaced_or_suppressed=lost),
         contiguous_seedless_challenge_count=sum(not c.get('has_contiguous_seed',True) for c in cases if c['label']),
         additional_or_changed_results=added,caveats=['Deterministic artificial edits are development stress tests, not estimates of corpus precision.',
         'Known passages were previously used for threshold tuning; coverage is not held-out recall.',

@@ -3,296 +3,8 @@
     "id": "0-insertion",
     "kind": "insertion",
     "label": true,
-    "a": "into a pit a disciple is not above his teacher but everyone when he is fully trained will be like his teacher why do you see the speck of chaff that is in your brother's eye but don't consider the beam that is in your own eye or",
-    "b": "into a additional pit a additional disciple is additional not above additional his teacher additional but everyone additional when he additional is fully additional trained will additional be like additional his teacher additional why do additional you see additional the speck additional of chaff additional that is additional in your additional brother's eye additional but don't additional consider the additional beam that additional is in additional your own additional eye or",
-    "expected_a": [
-      0,
-      228
-    ],
-    "expected_b": [
-      0,
-      481
-    ],
-    "has_contiguous_seed": false
-  },
-  {
-    "id": "0-deletion",
-    "kind": "deletion",
-    "label": true,
-    "a": "into a pit a disciple is not above his teacher but everyone when he is fully trained will be like his teacher why do you see the speck of chaff that is in your brother's eye but don't consider the beam that is in your own eye or",
-    "b": "into a a disciple not above teacher but when he fully trained be like teacher why you see speck of that is your brother's but don't the beam is in own eye",
-    "expected_a": [
-      0,
-      228
-    ],
-    "expected_b": [
-      0,
-      154
-    ],
-    "has_contiguous_seed": false
-  },
-  {
-    "id": "0-substitution",
-    "kind": "substitution",
-    "label": true,
-    "a": "into a pit a disciple is not above his teacher but everyone when he is fully trained will be like his teacher why do you see the speck of chaff that is in your brother's eye but don't consider the beam that is in your own eye or",
-    "b": "into a changed2 a disciple changed5 not above changed8 teacher but changed11 when he changed14 fully trained changed17 be like changed20 teacher why changed23 you see changed26 speck of changed29 that is changed32 your brother's changed35 but don't changed38 the beam changed41 is in changed44 own eye changed47",
-    "expected_a": [
-      0,
-      228
-    ],
-    "expected_b": [
-      0,
-      311
-    ],
-    "has_contiguous_seed": false
-  },
-  {
-    "id": "1-insertion",
-    "kind": "insertion",
-    "label": true,
-    "a": "also come into this place of torment but abraham said to him they have moses and the prophets let them listen to them he said no father abraham but if one goes to them from the dead they will repent he said to him if they don't listen",
-    "b": "also come additional into this additional place of additional torment but additional abraham said additional to him additional they have additional moses and additional the prophets additional let them additional listen to additional them he additional said no additional father abraham additional but if additional one goes additional to them additional from the additional dead they additional will repent additional he said additional to him additional if they additional don't listen",
-    "expected_a": [
-      0,
-      234
-    ],
-    "expected_b": [
-      0,
-      487
-    ],
-    "has_contiguous_seed": false
-  },
-  {
-    "id": "1-deletion",
-    "kind": "deletion",
-    "label": true,
-    "a": "also come into this place of torment but abraham said to him they have moses and the prophets let them listen to them he said no father abraham but if one goes to them from the dead they will repent he said to him if they don't listen",
-    "b": "also come this place torment but said to they have and the let them to them said no abraham but one goes them from dead they repent he to him they don't",
-    "expected_a": [
-      0,
-      234
-    ],
-    "expected_b": [
-      0,
-      152
-    ],
-    "has_contiguous_seed": true
-  },
-  {
-    "id": "1-substitution",
-    "kind": "substitution",
-    "label": true,
-    "a": "also come into this place of torment but abraham said to him they have moses and the prophets let them listen to them he said no father abraham but if one goes to them from the dead they will repent he said to him if they don't listen",
-    "b": "also come changed2 this place changed5 torment but changed8 said to changed11 they have changed14 and the changed17 let them changed20 to them changed23 said no changed26 abraham but changed29 one goes changed32 them from changed35 dead they changed38 repent he changed41 to him changed44 they don't changed47",
-    "expected_a": [
-      0,
-      234
-    ],
-    "expected_b": [
-      0,
-      309
-    ],
-    "has_contiguous_seed": false
-  },
-  {
-    "id": "2-insertion",
-    "kind": "insertion",
-    "label": true,
-    "a": "them the children of this age marry and are given in marriage but those who are considered worthy to attain to that age and the resurrection from the dead neither marry nor are given in marriage for they can't die any more for they are like the angels",
-    "b": "them the additional children of additional this age additional marry and additional are given additional in marriage additional but those additional who are additional considered worthy additional to attain additional to that additional age and additional the resurrection additional from the additional dead neither additional marry nor additional are given additional in marriage additional for they additional can't die additional any more additional for they additional are like additional the angels",
-    "expected_a": [
-      0,
-      251
-    ],
-    "expected_b": [
-      0,
-      504
-    ],
-    "has_contiguous_seed": false
-  },
-  {
-    "id": "2-deletion",
-    "kind": "deletion",
-    "label": true,
-    "a": "them the children of this age marry and are given in marriage but those who are considered worthy to attain to that age and the resurrection from the dead neither marry nor are given in marriage for they can't die any more for they are like the angels",
-    "b": "them the of this marry and given in but those are considered to attain that age the resurrection the dead marry nor given in for they die any for they like the",
-    "expected_a": [
-      0,
-      251
-    ],
-    "expected_b": [
-      0,
-      159
-    ],
-    "has_contiguous_seed": false
-  },
-  {
-    "id": "2-substitution",
-    "kind": "substitution",
-    "label": true,
-    "a": "them the children of this age marry and are given in marriage but those who are considered worthy to attain to that age and the resurrection from the dead neither marry nor are given in marriage for they can't die any more for they are like the angels",
-    "b": "them the changed2 of this changed5 marry and changed8 given in changed11 but those changed14 are considered changed17 to attain changed20 that age changed23 the resurrection changed26 the dead changed29 marry nor changed32 given in changed35 for they changed38 die any changed41 for they changed44 like the changed47",
-    "expected_a": [
-      0,
-      251
-    ],
-    "expected_b": [
-      0,
-      316
-    ],
-    "has_contiguous_seed": false
-  },
-  {
-    "id": "3-insertion",
-    "kind": "insertion",
-    "label": true,
-    "a": "saw a certain poor widow casting in two small brass coins he said truly i tell you this poor widow put in more than all of them for all these put in gifts for god from their abundance but she out of her poverty put in all that",
-    "b": "saw a additional certain poor additional widow casting additional in two additional small brass additional coins he additional said truly additional i tell additional you this additional poor widow additional put in additional more than additional all of additional them for additional all these additional put in additional gifts for additional god from additional their abundance additional but she additional out of additional her poverty additional put in additional all that",
-    "expected_a": [
-      0,
-      226
-    ],
-    "expected_b": [
-      0,
-      479
-    ],
-    "has_contiguous_seed": false
-  },
-  {
-    "id": "3-deletion",
-    "kind": "deletion",
-    "label": true,
-    "a": "saw a certain poor widow casting in two small brass coins he said truly i tell you this poor widow put in more than all of them for all these put in gifts for god from their abundance but she out of her poverty put in all that",
-    "b": "saw a poor widow in two brass coins said truly tell you poor widow in more all of for all put in for god their abundance she out her poverty in all",
-    "expected_a": [
-      0,
-      226
-    ],
-    "expected_b": [
-      0,
-      147
-    ],
-    "has_contiguous_seed": false
-  },
-  {
-    "id": "3-substitution",
-    "kind": "substitution",
-    "label": true,
-    "a": "saw a certain poor widow casting in two small brass coins he said truly i tell you this poor widow put in more than all of them for all these put in gifts for god from their abundance but she out of her poverty put in all that",
-    "b": "saw a changed2 poor widow changed5 in two changed8 brass coins changed11 said truly changed14 tell you changed17 poor widow changed20 in more changed23 all of changed26 for all changed29 put in changed32 for god changed35 their abundance changed38 she out changed41 her poverty changed44 in all changed47",
-    "expected_a": [
-      0,
-      226
-    ],
-    "expected_b": [
-      0,
-      304
-    ],
-    "has_contiguous_seed": false
-  },
-  {
-    "id": "4-insertion",
-    "kind": "insertion",
-    "label": true,
-    "a": "you no prophet is acceptable in his hometown but truly i tell you there were many widows in israel in the days of elijah when the sky was shut up three years and six months when a great famine came over all the land elijah was sent to",
-    "b": "you no additional prophet is additional acceptable in additional his hometown additional but truly additional i tell additional you there additional were many additional widows in additional israel in additional the days additional of elijah additional when the additional sky was additional shut up additional three years additional and six additional months when additional a great additional famine came additional over all additional the land additional elijah was additional sent to",
-    "expected_a": [
-      0,
-      234
-    ],
-    "expected_b": [
-      0,
-      487
-    ],
-    "has_contiguous_seed": false
-  },
-  {
-    "id": "4-deletion",
-    "kind": "deletion",
-    "label": true,
-    "a": "you no prophet is acceptable in his hometown but truly i tell you there were many widows in israel in the days of elijah when the sky was shut up three years and six months when a great famine came over all the land elijah was sent to",
-    "b": "you no is acceptable his hometown truly i you there many widows israel in days of when the was shut three years six months a great came over the land was sent",
-    "expected_a": [
-      0,
-      234
-    ],
-    "expected_b": [
-      0,
-      158
-    ],
-    "has_contiguous_seed": false
-  },
-  {
-    "id": "4-substitution",
-    "kind": "substitution",
-    "label": true,
-    "a": "you no prophet is acceptable in his hometown but truly i tell you there were many widows in israel in the days of elijah when the sky was shut up three years and six months when a great famine came over all the land elijah was sent to",
-    "b": "you no changed2 is acceptable changed5 his hometown changed8 truly i changed11 you there changed14 many widows changed17 israel in changed20 days of changed23 when the changed26 was shut changed29 three years changed32 six months changed35 a great changed38 came over changed41 the land changed44 was sent changed47",
-    "expected_a": [
-      0,
-      234
-    ],
-    "expected_b": [
-      0,
-      315
-    ],
-    "has_contiguous_seed": false
-  },
-  {
-    "id": "5-insertion",
-    "kind": "insertion",
-    "label": true,
-    "a": "a man in jerusalem whose name was simeon this man was righteous and devout looking for the consolation of israel and the holy spirit was on him it had been revealed to him by the holy spirit that he should not see death before he had seen the",
-    "b": "a man additional in jerusalem additional whose name additional was simeon additional this man additional was righteous additional and devout additional looking for additional the consolation additional of israel additional and the additional holy spirit additional was on additional him it additional had been additional revealed to additional him by additional the holy additional spirit that additional he should additional not see additional death before additional he had additional seen the",
-    "expected_a": [
-      0,
-      242
-    ],
-    "expected_b": [
-      0,
-      495
-    ],
-    "has_contiguous_seed": false
-  },
-  {
-    "id": "5-deletion",
-    "kind": "deletion",
-    "label": true,
-    "a": "a man in jerusalem whose name was simeon this man was righteous and devout looking for the consolation of israel and the holy spirit was on him it had been revealed to him by the holy spirit that he should not see death before he had seen the",
-    "b": "a man jerusalem whose was simeon man was and devout for the of israel the holy was on it had revealed to by the spirit that should not death before had seen",
-    "expected_a": [
-      0,
-      242
-    ],
-    "expected_b": [
-      0,
-      156
-    ],
-    "has_contiguous_seed": false
-  },
-  {
-    "id": "5-substitution",
-    "kind": "substitution",
-    "label": true,
-    "a": "a man in jerusalem whose name was simeon this man was righteous and devout looking for the consolation of israel and the holy spirit was on him it had been revealed to him by the holy spirit that he should not see death before he had seen the",
-    "b": "a man changed2 jerusalem whose changed5 was simeon changed8 man was changed11 and devout changed14 for the changed17 of israel changed20 the holy changed23 was on changed26 it had changed29 revealed to changed32 by the changed35 spirit that changed38 should not changed41 death before changed44 had seen changed47",
-    "expected_a": [
-      0,
-      242
-    ],
-    "expected_b": [
-      0,
-      313
-    ],
-    "has_contiguous_seed": false
-  },
-  {
-    "id": "6-insertion",
-    "kind": "insertion",
-    "label": true,
-    "a": "you who are poor for god's kingdom is yours blessed are you who hunger now for you will be filled blessed are you who weep now for you will laugh blessed are you when men hate you and when they exclude and mock you and throw out your",
-    "b": "you who additional are poor additional for god's additional kingdom is additional yours blessed additional are you additional who hunger additional now for additional you will additional be filled additional blessed are additional you who additional weep now additional for you additional will laugh additional blessed are additional you when additional men hate additional you and additional when they additional exclude and additional mock you additional and throw additional out your",
+    "a": "but everyone when he is fully trained will be like his teacher why do you see the speck of chaff that is in your brother's eye but don't consider the beam that is in your own eye or how can you tell your brother brother let me remove",
+    "b": "but everyone additional when he additional is fully additional trained will additional be like additional his teacher additional why do additional you see additional the speck additional of chaff additional that is additional in your additional brother's eye additional but don't additional consider the additional beam that additional is in additional your own additional eye or additional how can additional you tell additional your brother additional brother let additional me remove",
     "expected_a": [
       0,
       233
@@ -304,14 +16,206 @@
     "has_contiguous_seed": false
   },
   {
-    "id": "6-deletion",
+    "id": "0-deletion",
     "kind": "deletion",
     "label": true,
-    "a": "you who are poor for god's kingdom is yours blessed are you who hunger now for you will be filled blessed are you who weep now for you will laugh blessed are you when men hate you and when they exclude and mock you and throw out your",
-    "b": "you who poor for kingdom is blessed are who hunger for you be filled are you weep now you will blessed are when men you and they exclude mock you throw out",
+    "a": "but everyone when he is fully trained will be like his teacher why do you see the speck of chaff that is in your brother's eye but don't consider the beam that is in your own eye or how can you tell your brother brother let me remove",
+    "b": "but everyone he is trained will like his why do see the of chaff is in brother's eye don't consider beam that in your eye or can you your brother let me",
     "expected_a": [
       0,
       233
+    ],
+    "expected_b": [
+      0,
+      152
+    ],
+    "has_contiguous_seed": true
+  },
+  {
+    "id": "0-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "but everyone when he is fully trained will be like his teacher why do you see the speck of chaff that is in your brother's eye but don't consider the beam that is in your own eye or how can you tell your brother brother let me remove",
+    "b": "but everyone changed2 he is changed5 trained will changed8 like his changed11 why do changed14 see the changed17 of chaff changed20 is in changed23 brother's eye changed26 don't consider changed29 beam that changed32 in your changed35 eye or changed38 can you changed41 your brother changed44 let me changed47",
+    "expected_a": [
+      0,
+      233
+    ],
+    "expected_b": [
+      0,
+      309
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "1-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "one goes to them from the dead they will repent he said to him if they don't listen to moses and the prophets neither will they be persuaded if one rises from the dead he said to the disciples it is impossible that no occasions of stumbling should",
+    "b": "one goes additional to them additional from the additional dead they additional will repent additional he said additional to him additional if they additional don't listen additional to moses additional and the additional prophets neither additional will they additional be persuaded additional if one additional rises from additional the dead additional he said additional to the additional disciples it additional is impossible additional that no additional occasions of additional stumbling should",
+    "expected_a": [
+      0,
+      247
+    ],
+    "expected_b": [
+      0,
+      500
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "1-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "one goes to them from the dead they will repent he said to him if they don't listen to moses and the prophets neither will they be persuaded if one rises from the dead he said to the disciples it is impossible that no occasions of stumbling should",
+    "b": "one goes them from dead they repent he to him they don't to moses the prophets will they persuaded if rises from dead he to the it is that no of stumbling",
+    "expected_a": [
+      0,
+      247
+    ],
+    "expected_b": [
+      0,
+      154
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "1-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "one goes to them from the dead they will repent he said to him if they don't listen to moses and the prophets neither will they be persuaded if one rises from the dead he said to the disciples it is impossible that no occasions of stumbling should",
+    "b": "one goes changed2 them from changed5 dead they changed8 repent he changed11 to him changed14 they don't changed17 to moses changed20 the prophets changed23 will they changed26 persuaded if changed29 rises from changed32 dead he changed35 to the changed38 it is changed41 that no changed44 of stumbling changed47",
+    "expected_a": [
+      0,
+      247
+    ],
+    "expected_b": [
+      0,
+      311
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "2-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "can't die any more for they are like the angels and are children of god being children of the resurrection but that the dead are raised even moses showed at the bush when he called the lord the god of abraham the god of isaac and the god",
+    "b": "can't die additional any more additional for they additional are like additional the angels additional and are additional children of additional god being additional children of additional the resurrection additional but that additional the dead additional are raised additional even moses additional showed at additional the bush additional when he additional called the additional lord the additional god of additional abraham the additional god of additional isaac and additional the god",
+    "expected_a": [
+      0,
+      237
+    ],
+    "expected_b": [
+      0,
+      490
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "2-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "can't die any more for they are like the angels and are children of god being children of the resurrection but that the dead are raised even moses showed at the bush when he called the lord the god of abraham the god of isaac and the god",
+    "b": "can't die more for are like angels and children of being children the resurrection that the are raised moses showed the bush he called lord the of abraham god of and the",
+    "expected_a": [
+      0,
+      237
+    ],
+    "expected_b": [
+      0,
+      169
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "2-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "can't die any more for they are like the angels and are children of god being children of the resurrection but that the dead are raised even moses showed at the bush when he called the lord the god of abraham the god of isaac and the god",
+    "b": "can't die changed2 more for changed5 are like changed8 angels and changed11 children of changed14 being children changed17 the resurrection changed20 that the changed23 are raised changed26 moses showed changed29 the bush changed32 he called changed35 lord the changed38 of abraham changed41 god of changed44 and the changed47",
+    "expected_a": [
+      0,
+      237
+    ],
+    "expected_b": [
+      0,
+      326
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "3-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "out of her poverty put in all that she had to live on as some were talking about the temple and how it was decorated with beautiful stones and gifts he said as for these things which you see the days will come in which there will not",
+    "b": "out of additional her poverty additional put in additional all that additional she had additional to live additional on as additional some were additional talking about additional the temple additional and how additional it was additional decorated with additional beautiful stones additional and gifts additional he said additional as for additional these things additional which you additional see the additional days will additional come in additional which there additional will not",
+    "expected_a": [
+      0,
+      233
+    ],
+    "expected_b": [
+      0,
+      486
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "3-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "out of her poverty put in all that she had to live on as some were talking about the temple and how it was decorated with beautiful stones and gifts he said as for these things which you see the days will come in which there will not",
+    "b": "out of poverty put all that had to on as were talking the temple how it decorated with stones and he said for these which you the days come in there will",
+    "expected_a": [
+      0,
+      233
+    ],
+    "expected_b": [
+      0,
+      153
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "3-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "out of her poverty put in all that she had to live on as some were talking about the temple and how it was decorated with beautiful stones and gifts he said as for these things which you see the days will come in which there will not",
+    "b": "out of changed2 poverty put changed5 all that changed8 had to changed11 on as changed14 were talking changed17 the temple changed20 how it changed23 decorated with changed26 stones and changed29 he said changed32 for these changed35 which you changed38 the days changed41 come in changed44 there will changed47",
+    "expected_a": [
+      0,
+      233
+    ],
+    "expected_b": [
+      0,
+      310
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "4-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "his hometown but truly i tell you there were many widows in israel in the days of elijah when the sky was shut up three years and six months when a great famine came over all the land elijah was sent to none of them except to zarephath",
+    "b": "his hometown additional but truly additional i tell additional you there additional were many additional widows in additional israel in additional the days additional of elijah additional when the additional sky was additional shut up additional three years additional and six additional months when additional a great additional famine came additional over all additional the land additional elijah was additional sent to additional none of additional them except additional to zarephath",
+    "expected_a": [
+      0,
+      235
+    ],
+    "expected_b": [
+      0,
+      488
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "4-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "his hometown but truly i tell you there were many widows in israel in the days of elijah when the sky was shut up three years and six months when a great famine came over all the land elijah was sent to none of them except to zarephath",
+    "b": "his hometown truly i you there many widows israel in days of when the was shut three years six months a great came over the land was sent none of except to",
+    "expected_a": [
+      0,
+      235
     ],
     "expected_b": [
       0,
@@ -320,14 +224,14 @@
     "has_contiguous_seed": false
   },
   {
-    "id": "6-substitution",
+    "id": "4-substitution",
     "kind": "substitution",
     "label": true,
-    "a": "you who are poor for god's kingdom is yours blessed are you who hunger now for you will be filled blessed are you who weep now for you will laugh blessed are you when men hate you and when they exclude and mock you and throw out your",
-    "b": "you who changed2 poor for changed5 kingdom is changed8 blessed are changed11 who hunger changed14 for you changed17 be filled changed20 are you changed23 weep now changed26 you will changed29 blessed are changed32 when men changed35 you and changed38 they exclude changed41 mock you changed44 throw out changed47",
+    "a": "his hometown but truly i tell you there were many widows in israel in the days of elijah when the sky was shut up three years and six months when a great famine came over all the land elijah was sent to none of them except to zarephath",
+    "b": "his hometown changed2 truly i changed5 you there changed8 many widows changed11 israel in changed14 days of changed17 when the changed20 was shut changed23 three years changed26 six months changed29 a great changed32 came over changed35 the land changed38 was sent changed41 none of changed44 except to changed47",
     "expected_a": [
       0,
-      233
+      235
     ],
     "expected_b": [
       0,
@@ -336,11 +240,107 @@
     "has_contiguous_seed": false
   },
   {
+    "id": "5-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "in jerusalem whose name was simeon this man was righteous and devout looking for the consolation of israel and the holy spirit was on him it had been revealed to him by the holy spirit that he should not see death before he had seen the lord's christ",
+    "b": "in jerusalem additional whose name additional was simeon additional this man additional was righteous additional and devout additional looking for additional the consolation additional of israel additional and the additional holy spirit additional was on additional him it additional had been additional revealed to additional him by additional the holy additional spirit that additional he should additional not see additional death before additional he had additional seen the additional lord's christ",
+    "expected_a": [
+      0,
+      250
+    ],
+    "expected_b": [
+      0,
+      503
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "5-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "in jerusalem whose name was simeon this man was righteous and devout looking for the consolation of israel and the holy spirit was on him it had been revealed to him by the holy spirit that he should not see death before he had seen the lord's christ",
+    "b": "in jerusalem name was this man righteous and looking for consolation of and the spirit was him it been revealed him by holy spirit he should see death he had the lord's",
+    "expected_a": [
+      0,
+      250
+    ],
+    "expected_b": [
+      0,
+      168
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "5-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "in jerusalem whose name was simeon this man was righteous and devout looking for the consolation of israel and the holy spirit was on him it had been revealed to him by the holy spirit that he should not see death before he had seen the lord's christ",
+    "b": "in jerusalem changed2 name was changed5 this man changed8 righteous and changed11 looking for changed14 consolation of changed17 and the changed20 spirit was changed23 him it changed26 been revealed changed29 him by changed32 holy spirit changed35 he should changed38 see death changed41 he had changed44 the lord's changed47",
+    "expected_a": [
+      0,
+      250
+    ],
+    "expected_b": [
+      0,
+      325
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "6-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "are you who hunger now for you will be filled blessed are you who weep now for you will laugh blessed are you when men hate you and when they exclude and mock you and throw out your name as evil for the son of man's sake rejoice",
+    "b": "are you additional who hunger additional now for additional you will additional be filled additional blessed are additional you who additional weep now additional for you additional will laugh additional blessed are additional you when additional men hate additional you and additional when they additional exclude and additional mock you additional and throw additional out your additional name as additional evil for additional the son additional of man's additional sake rejoice",
+    "expected_a": [
+      0,
+      228
+    ],
+    "expected_b": [
+      0,
+      481
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "6-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "are you who hunger now for you will be filled blessed are you who weep now for you will laugh blessed are you when men hate you and when they exclude and mock you and throw out your name as evil for the son of man's sake rejoice",
+    "b": "are you hunger now you will filled blessed you who now for will laugh are you men hate and when exclude and you and out your as evil the son man's sake",
+    "expected_a": [
+      0,
+      228
+    ],
+    "expected_b": [
+      0,
+      151
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "6-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "are you who hunger now for you will be filled blessed are you who weep now for you will laugh blessed are you when men hate you and when they exclude and mock you and throw out your name as evil for the son of man's sake rejoice",
+    "b": "are you changed2 hunger now changed5 you will changed8 filled blessed changed11 you who changed14 now for changed17 will laugh changed20 are you changed23 men hate changed26 and when changed29 exclude and changed32 you and changed35 out your changed38 as evil changed41 the son changed44 man's sake changed47",
+    "expected_a": [
+      0,
+      228
+    ],
+    "expected_b": [
+      0,
+      308
+    ],
+    "has_contiguous_seed": false
+  },
+  {
     "id": "7-insertion",
     "kind": "insertion",
     "label": true,
-    "a": "whom he is betrayed they began to question among themselves which of them it was who would do this thing a dispute also arose among them which of them was considered to be greatest he said to them the kings of the nations lord it over them and",
-    "b": "whom he additional is betrayed additional they began additional to question additional among themselves additional which of additional them it additional was who additional would do additional this thing additional a dispute additional also arose additional among them additional which of additional them was additional considered to additional be greatest additional he said additional to them additional the kings additional of the additional nations lord additional it over additional them and",
+    "a": "nations lord it over them and those who have authority over them are called benefactors but not so with you rather the one who is greater among you let him become as the younger and one who is governing as one who serves for who is greater one",
+    "b": "nations lord additional it over additional them and additional those who additional have authority additional over them additional are called additional benefactors but additional not so additional with you additional rather the additional one who additional is greater additional among you additional let him additional become as additional the younger additional and one additional who is additional governing as additional one who additional serves for additional who is additional greater one",
     "expected_a": [
       0,
       243
@@ -355,15 +355,15 @@
     "id": "7-deletion",
     "kind": "deletion",
     "label": true,
-    "a": "whom he is betrayed they began to question among themselves which of them it was who would do this thing a dispute also arose among them which of them was considered to be greatest he said to them the kings of the nations lord it over them and",
-    "b": "whom he betrayed they to question themselves which them it who would this thing dispute also among them of them considered to greatest he to them kings of nations lord over them",
+    "a": "nations lord it over them and those who have authority over them are called benefactors but not so with you rather the one who is greater among you let him become as the younger and one who is governing as one who serves for who is greater one",
+    "b": "nations lord over them those who authority over are called but not with you the one is greater you let become as younger and who is as one serves for is greater",
     "expected_a": [
       0,
       243
     ],
     "expected_b": [
       0,
-      177
+      160
     ],
     "has_contiguous_seed": false
   },
@@ -371,15 +371,15 @@
     "id": "7-substitution",
     "kind": "substitution",
     "label": true,
-    "a": "whom he is betrayed they began to question among themselves which of them it was who would do this thing a dispute also arose among them which of them was considered to be greatest he said to them the kings of the nations lord it over them and",
-    "b": "whom he changed2 betrayed they changed5 to question changed8 themselves which changed11 them it changed14 who would changed17 this thing changed20 dispute also changed23 among them changed26 of them changed29 considered to changed32 greatest he changed35 to them changed38 kings of changed41 nations lord changed44 over them changed47",
+    "a": "nations lord it over them and those who have authority over them are called benefactors but not so with you rather the one who is greater among you let him become as the younger and one who is governing as one who serves for who is greater one",
+    "b": "nations lord changed2 over them changed5 those who changed8 authority over changed11 are called changed14 but not changed17 with you changed20 the one changed23 is greater changed26 you let changed29 become as changed32 younger and changed35 who is changed38 as one changed41 serves for changed44 is greater changed47",
     "expected_a": [
       0,
       243
     ],
     "expected_b": [
       0,
-      334
+      317
     ],
     "has_contiguous_seed": false
   },
@@ -387,15 +387,15 @@
     "id": "8-insertion",
     "kind": "insertion",
     "label": true,
-    "a": "herod being tetrarch of galilee and his brother philip tetrarch of the region of ituraea and trachonitis and lysanias tetrarch of abilene during the high priesthood of annas and caiaphas the word of god came to john the son of zacharias in the wilderness he came into all",
-    "b": "herod being additional tetrarch of additional galilee and additional his brother additional philip tetrarch additional of the additional region of additional ituraea and additional trachonitis and additional lysanias tetrarch additional of abilene additional during the additional high priesthood additional of annas additional and caiaphas additional the word additional of god additional came to additional john the additional son of additional zacharias in additional the wilderness additional he came additional into all",
+    "a": "galilee and his brother philip tetrarch of the region of ituraea and trachonitis and lysanias tetrarch of abilene during the high priesthood of annas and caiaphas the word of god came to john the son of zacharias in the wilderness he came into all the region around the",
+    "b": "galilee and additional his brother additional philip tetrarch additional of the additional region of additional ituraea and additional trachonitis and additional lysanias tetrarch additional of abilene additional during the additional high priesthood additional of annas additional and caiaphas additional the word additional of god additional came to additional john the additional son of additional zacharias in additional the wilderness additional he came additional into all additional the region additional around the",
     "expected_a": [
       0,
-      271
+      269
     ],
     "expected_b": [
       0,
-      524
+      522
     ],
     "has_contiguous_seed": false
   },
@@ -403,15 +403,15 @@
     "id": "8-deletion",
     "kind": "deletion",
     "label": true,
-    "a": "herod being tetrarch of galilee and his brother philip tetrarch of the region of ituraea and trachonitis and lysanias tetrarch of abilene during the high priesthood of annas and caiaphas the word of god came to john the son of zacharias in the wilderness he came into all",
-    "b": "herod being of galilee his brother tetrarch of region of and trachonitis lysanias tetrarch abilene during high priesthood annas and the word god came john the of zacharias the wilderness came into",
+    "a": "galilee and his brother philip tetrarch of the region of ituraea and trachonitis and lysanias tetrarch of abilene during the high priesthood of annas and caiaphas the word of god came to john the son of zacharias in the wilderness he came into all the region around the",
+    "b": "galilee and brother philip of the of ituraea trachonitis and tetrarch of during the priesthood of and caiaphas word of came to the son zacharias in wilderness he into all region around",
     "expected_a": [
       0,
-      271
+      269
     ],
     "expected_b": [
       0,
-      196
+      184
     ],
     "has_contiguous_seed": false
   },
@@ -419,15 +419,15 @@
     "id": "8-substitution",
     "kind": "substitution",
     "label": true,
-    "a": "herod being tetrarch of galilee and his brother philip tetrarch of the region of ituraea and trachonitis and lysanias tetrarch of abilene during the high priesthood of annas and caiaphas the word of god came to john the son of zacharias in the wilderness he came into all",
-    "b": "herod being changed2 of galilee changed5 his brother changed8 tetrarch of changed11 region of changed14 and trachonitis changed17 lysanias tetrarch changed20 abilene during changed23 high priesthood changed26 annas and changed29 the word changed32 god came changed35 john the changed38 of zacharias changed41 the wilderness changed44 came into changed47",
+    "a": "galilee and his brother philip tetrarch of the region of ituraea and trachonitis and lysanias tetrarch of abilene during the high priesthood of annas and caiaphas the word of god came to john the son of zacharias in the wilderness he came into all the region around the",
+    "b": "galilee and changed2 brother philip changed5 of the changed8 of ituraea changed11 trachonitis and changed14 tetrarch of changed17 during the changed20 priesthood of changed23 and caiaphas changed26 word of changed29 came to changed32 the son changed35 zacharias in changed38 wilderness he changed41 into all changed44 region around changed47",
     "expected_a": [
       0,
-      271
+      269
     ],
     "expected_b": [
       0,
-      353
+      341
     ],
     "has_contiguous_seed": false
   },
@@ -435,15 +435,15 @@
     "id": "9-insertion",
     "kind": "insertion",
     "label": true,
-    "a": "out of the man and entered into the pigs and the herd rushed down the steep bank into the lake and were drowned when those who fed them saw what had happened they fled and told it in the city and in the country people went out to",
-    "b": "out of additional the man additional and entered additional into the additional pigs and additional the herd additional rushed down additional the steep additional bank into additional the lake additional and were additional drowned when additional those who additional fed them additional saw what additional had happened additional they fled additional and told additional it in additional the city additional and in additional the country additional people went additional out to",
+    "a": "the steep bank into the lake and were drowned when those who fed them saw what had happened they fled and told it in the city and in the country people went out to see what had happened they came to jesus and found the man from whom",
+    "b": "the steep additional bank into additional the lake additional and were additional drowned when additional those who additional fed them additional saw what additional had happened additional they fled additional and told additional it in additional the city additional and in additional the country additional people went additional out to additional see what additional had happened additional they came additional to jesus additional and found additional the man additional from whom",
     "expected_a": [
       0,
-      229
+      232
     ],
     "expected_b": [
       0,
-      482
+      485
     ],
     "has_contiguous_seed": false
   },
@@ -451,15 +451,15 @@
     "id": "9-deletion",
     "kind": "deletion",
     "label": true,
-    "a": "out of the man and entered into the pigs and the herd rushed down the steep bank into the lake and were drowned when those who fed them saw what had happened they fled and told it in the city and in the country people went out to",
-    "b": "out of man and into the and the rushed down steep bank the lake were drowned those who them saw had happened fled and it in city and the country went out",
+    "a": "the steep bank into the lake and were drowned when those who fed them saw what had happened they fled and told it in the city and in the country people went out to see what had happened they came to jesus and found the man from whom",
+    "b": "the steep into the and were when those fed them what had they fled told it the city in the people went to see had happened came to and found man from",
     "expected_a": [
       0,
-      229
+      232
     ],
     "expected_b": [
       0,
-      153
+      149
     ],
     "has_contiguous_seed": false
   },
@@ -467,15 +467,15 @@
     "id": "9-substitution",
     "kind": "substitution",
     "label": true,
-    "a": "out of the man and entered into the pigs and the herd rushed down the steep bank into the lake and were drowned when those who fed them saw what had happened they fled and told it in the city and in the country people went out to",
-    "b": "out of changed2 man and changed5 into the changed8 and the changed11 rushed down changed14 steep bank changed17 the lake changed20 were drowned changed23 those who changed26 them saw changed29 had happened changed32 fled and changed35 it in changed38 city and changed41 the country changed44 went out changed47",
+    "a": "the steep bank into the lake and were drowned when those who fed them saw what had happened they fled and told it in the city and in the country people went out to see what had happened they came to jesus and found the man from whom",
+    "b": "the steep changed2 into the changed5 and were changed8 when those changed11 fed them changed14 what had changed17 they fled changed20 told it changed23 the city changed26 in the changed29 people went changed32 to see changed35 had happened changed38 came to changed41 and found changed44 man from changed47",
     "expected_a": [
       0,
-      229
+      232
     ],
     "expected_b": [
       0,
-      310
+      306
     ],
     "has_contiguous_seed": false
   },
@@ -483,15 +483,15 @@
     "id": "10-insertion",
     "kind": "insertion",
     "label": true,
-    "a": "of a broiled fish and some honeycomb he took them and ate in front of them he said to them this is what i told you while i was still with you that all things which are written in the law of moses the prophets and the psalms",
-    "b": "of a additional broiled fish additional and some additional honeycomb he additional took them additional and ate additional in front additional of them additional he said additional to them additional this is additional what i additional told you additional while i additional was still additional with you additional that all additional things which additional are written additional in the additional law of additional moses the additional prophets and additional the psalms",
+    "a": "the psalms concerning me must be fulfilled then he opened their minds that they might understand the scriptures he said to them thus it is written and thus it was necessary for the christ to suffer and to rise from the dead the third day and that repentance",
+    "b": "the psalms additional concerning me additional must be additional fulfilled then additional he opened additional their minds additional that they additional might understand additional the scriptures additional he said additional to them additional thus it additional is written additional and thus additional it was additional necessary for additional the christ additional to suffer additional and to additional rise from additional the dead additional the third additional day and additional that repentance",
     "expected_a": [
       0,
-      223
+      257
     ],
     "expected_b": [
       0,
-      476
+      510
     ],
     "has_contiguous_seed": false
   },
@@ -499,15 +499,15 @@
     "id": "10-deletion",
     "kind": "deletion",
     "label": true,
-    "a": "of a broiled fish and some honeycomb he took them and ate in front of them he said to them this is what i told you while i was still with you that all things which are written in the law of moses the prophets and the psalms",
-    "b": "of a fish and honeycomb he them and in front them he to them is what told you i was with you all things are written the law moses the and the",
+    "a": "the psalms concerning me must be fulfilled then he opened their minds that they might understand the scriptures he said to them thus it is written and thus it was necessary for the christ to suffer and to rise from the dead the third day and that repentance",
+    "b": "the psalms me must fulfilled then opened their that they understand the he said them thus is written thus it necessary for christ to and to from the the third and that",
     "expected_a": [
       0,
-      223
+      257
     ],
     "expected_b": [
       0,
-      141
+      167
     ],
     "has_contiguous_seed": false
   },
@@ -515,15 +515,15 @@
     "id": "10-substitution",
     "kind": "substitution",
     "label": true,
-    "a": "of a broiled fish and some honeycomb he took them and ate in front of them he said to them this is what i told you while i was still with you that all things which are written in the law of moses the prophets and the psalms",
-    "b": "of a changed2 fish and changed5 honeycomb he changed8 them and changed11 in front changed14 them he changed17 to them changed20 is what changed23 told you changed26 i was changed29 with you changed32 all things changed35 are written changed38 the law changed41 moses the changed44 and the changed47",
+    "a": "the psalms concerning me must be fulfilled then he opened their minds that they might understand the scriptures he said to them thus it is written and thus it was necessary for the christ to suffer and to rise from the dead the third day and that repentance",
+    "b": "the psalms changed2 me must changed5 fulfilled then changed8 opened their changed11 that they changed14 understand the changed17 he said changed20 them thus changed23 is written changed26 thus it changed29 necessary for changed32 christ to changed35 and to changed38 from the changed41 the third changed44 and that changed47",
     "expected_a": [
       0,
-      223
+      257
     ],
     "expected_b": [
       0,
-      298
+      324
     ],
     "has_contiguous_seed": false
   },
@@ -531,15 +531,15 @@
     "id": "11-insertion",
     "kind": "insertion",
     "label": true,
-    "a": "to bethlehem now and see this thing that has happened which the lord has made known to us they came with haste and found both mary and joseph and the baby was lying in the feeding trough when they saw it they publicized widely the saying which was",
-    "b": "to bethlehem additional now and additional see this additional thing that additional has happened additional which the additional lord has additional made known additional to us additional they came additional with haste additional and found additional both mary additional and joseph additional and the additional baby was additional lying in additional the feeding additional trough when additional they saw additional it they additional publicized widely additional the saying additional which was",
+    "a": "now and see this thing that has happened which the lord has made known to us they came with haste and found both mary and joseph and the baby was lying in the feeding trough when they saw it they publicized widely the saying which was spoken to",
+    "b": "now and additional see this additional thing that additional has happened additional which the additional lord has additional made known additional to us additional they came additional with haste additional and found additional both mary additional and joseph additional and the additional baby was additional lying in additional the feeding additional trough when additional they saw additional it they additional publicized widely additional the saying additional which was additional spoken to",
     "expected_a": [
       0,
-      247
+      244
     ],
     "expected_b": [
       0,
-      500
+      497
     ],
     "has_contiguous_seed": false
   },
@@ -547,15 +547,15 @@
     "id": "11-deletion",
     "kind": "deletion",
     "label": true,
-    "a": "to bethlehem now and see this thing that has happened which the lord has made known to us they came with haste and found both mary and joseph and the baby was lying in the feeding trough when they saw it they publicized widely the saying which was",
-    "b": "to bethlehem and see thing that happened which lord has known to they came haste and both mary joseph and baby was in the trough when saw it publicized widely saying which",
+    "a": "now and see this thing that has happened which the lord has made known to us they came with haste and found both mary and joseph and the baby was lying in the feeding trough when they saw it they publicized widely the saying which was spoken to",
+    "b": "now and this thing has happened the lord made known us they with haste found both and joseph the baby lying in feeding trough they saw they publicized the saying was spoken",
     "expected_a": [
       0,
-      247
+      244
     ],
     "expected_b": [
       0,
-      171
+      172
     ],
     "has_contiguous_seed": false
   },
@@ -563,15 +563,15 @@
     "id": "11-substitution",
     "kind": "substitution",
     "label": true,
-    "a": "to bethlehem now and see this thing that has happened which the lord has made known to us they came with haste and found both mary and joseph and the baby was lying in the feeding trough when they saw it they publicized widely the saying which was",
-    "b": "to bethlehem changed2 and see changed5 thing that changed8 happened which changed11 lord has changed14 known to changed17 they came changed20 haste and changed23 both mary changed26 joseph and changed29 baby was changed32 in the changed35 trough when changed38 saw it changed41 publicized widely changed44 saying which changed47",
+    "a": "now and see this thing that has happened which the lord has made known to us they came with haste and found both mary and joseph and the baby was lying in the feeding trough when they saw it they publicized widely the saying which was spoken to",
+    "b": "now and changed2 this thing changed5 has happened changed8 the lord changed11 made known changed14 us they changed17 with haste changed20 found both changed23 and joseph changed26 the baby changed29 lying in changed32 feeding trough changed35 they saw changed38 they publicized changed41 the saying changed44 was spoken changed47",
     "expected_a": [
       0,
-      247
+      244
     ],
     "expected_b": [
       0,
-      328
+      329
     ],
     "has_contiguous_seed": false
   },

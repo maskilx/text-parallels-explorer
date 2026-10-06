@@ -1,5 +1,6 @@
 """Rebuild the bundled corpus from eBible's public-domain HTML archive."""
 import hashlib, io, json, re, zipfile
+from datetime import datetime, timezone
 from pathlib import Path
 import requests
 from bs4 import BeautifulSoup, NavigableString, Tag
@@ -11,7 +12,7 @@ def extract_verses(soup):
     main_text=soup.select_one('div.main')
     if main_text is None: raise ValueError('Missing main text')
     output=[];current=None;chunks=[]
-    ignored={'verse','chapterlabel','s','s1','s2','s3','mt','mt1','mt2','ms','r','d','toc','copyright','footnote','notemark','xref'}
+    ignored={'verse','chapterlabel','s','s1','s2','s3','mt','mt1','mt2','ms','r','d','toc','tnav','copyright','footnote','notemark','xref'}
     def flush():
         text=re.sub(r'\s+',' ',' '.join(chunks)).strip()
         if current is not None and text:output.append((current,text))
@@ -45,7 +46,7 @@ def main():
         manifest.append(dict(id=title.lower(),title=title,edition='World English Bible Classic',file=dest.name,
             refs=f'{title.lower()}.refs.json',source_url=f'https://ebible.org/eng-web/{code}01.htm',
             rights_url='https://ebible.org/eng-web/copyright.htm',license='Public domain',
-            retrieved='2026-10-05',sha256=hashlib.sha256(text.encode()).hexdigest(),verses=len(refs)))
+            retrieved=datetime.now(timezone.utc).date().isoformat(),sha256=hashlib.sha256(text.encode()).hexdigest(),verses=len(refs)))
         print(title,len(text),len(refs))
     (ROOT/'corpus'/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 if __name__=='__main__': main()

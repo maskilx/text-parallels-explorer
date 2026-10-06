@@ -31,7 +31,7 @@ Both models still confuse subject/object reversals; contradictions also receive 
 
 At each model's lower calibration threshold and mutual top-three retrieval, 17 of 18 previously selected known corpus passages were located. This is a coverage diagnostic using coarse windows and a previously used development list, not independent recall. It is separate from the exported operational cache, which uses 0.65 and mutual top-one. Raw candidates are unannotated; their count is not a quality metric.
 
-A deterministic spot check of three candidates in each of three score bands found seven plausible shared passages and two unconvincing topic-only suggestions (both in the 0.65–0.75 band). This was AI-assisted author inspection, not blinded expert annotation or a corpus precision estimate; see `semantic-candidate-audit.json`.
+A historical spot check on the corpus before its navigation cleanup, of three candidates in each of three score bands found seven plausible shared passages and two unconvincing topic-only suggestions (both in the 0.65–0.75 band). This was AI-assisted author inspection, not blinded expert annotation or a corpus precision estimate; see `semantic-candidate-audit.json`.
 
 All scores, model revisions, timings, pair counts, examples, threshold sensitivity, and caveats are in `semantic-retrieval-results.json`. The older `embedding-results.json` is retained as the initial experiment.
 

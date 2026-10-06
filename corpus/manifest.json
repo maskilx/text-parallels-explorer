@@ -8,8 +8,8 @@
     "source_url": "https://ebible.org/eng-web/MAT01.htm",
     "rights_url": "https://ebible.org/eng-web/copyright.htm",
     "license": "Public domain",
-    "retrieved": "2026-10-05",
-    "sha256": "55f23a77ef2c8c593aeccd8a316f32b47eefdba19ae3c0a41774b6affa75e96c",
+    "retrieved": "2026-10-06",
+    "sha256": "45968238f91911ef69c75c12620adc15477ce348bc7007efd7aeb999ed781f1d",
     "verses": 1071
   },
   {
@@ -21,8 +21,8 @@
     "source_url": "https://ebible.org/eng-web/MRK01.htm",
     "rights_url": "https://ebible.org/eng-web/copyright.htm",
     "license": "Public domain",
-    "retrieved": "2026-10-05",
-    "sha256": "ffdff049ac3ad33d4909af2652dfc8b42cd486c51ebc3df8fb202ef0c50ee3eb",
+    "retrieved": "2026-10-06",
+    "sha256": "c6052abb33f110201402ab4cb299c2b70030dd35140910f63cc897355ed1b0a7",
     "verses": 678
   },
   {
@@ -34,8 +34,8 @@
     "source_url": "https://ebible.org/eng-web/LUK01.htm",
     "rights_url": "https://ebible.org/eng-web/copyright.htm",
     "license": "Public domain",
-    "retrieved": "2026-10-05",
-    "sha256": "89c5649fbb23766ab8eadcacf317c2d85f3ae87414ad234838d161f880f164f4",
+    "retrieved": "2026-10-06",
+    "sha256": "ad80eb254bf4e3eea55930c91d02b1743f3c741c105f420d24415cd1bb8aedbf",
     "verses": 1150
   }
 ]

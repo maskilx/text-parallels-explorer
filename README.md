@@ -64,7 +64,7 @@ React and TypeScript provide the interface; FastAPI serves the API and static bu
 | `parallels` | Canonical document pairs, both passage ranges, scores, types, and evidence |
 | `reviews` | Persistent status and note for each lexical parallel |
 | `analysis_runs` | Algorithm version, parameters, timing, and per-pair outcomes |
-| `semantic_suggestions` | Offline candidates, provenance, and independent reviews |
+| `semantic_suggestions` | Local-model candidates, provenance, and independent reviews |
 
 Content hashes and passage ranges determine stable identities. Unique constraints and upserts prevent duplicate ranges. Analysis publishes atomically; a failure leaves prior results available. Unchanged ranges retain their reviews, and inactive results retain review history. Changed corpus checksums require a fresh database.
 

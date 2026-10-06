@@ -1,30 +1,35 @@
 {
-  "tests": 84,
-  "passed": 84,
+  "tests": 85,
+  "passed": 85,
   "failed": 0,
   "environments": [
-    "macOS ARM64 / Python 3.14",
-    "Linux ARM64 / Python 3.12 Docker"
+    "macOS ARM64 / Python 3.14"
   ],
   "warning": "Starlette httpx test-adapter deprecation",
   "docker_restart_persistence": "passed",
   "one_command_launcher": "passed",
   "original_review_restored_after_smoke_test": true,
   "verified": "2026-10-06",
-  "semantic_cache_source_ranges": "all 829 verified",
+  "semantic_cache_source_ranges": "all 833 verified",
   "semantic_duplicate_ranges": 0,
   "semantic_docker_restart_persistence": "passed",
   "algorithm": "lexical-1.1.0",
-  "lexical_cache_source_ranges": "all 267 verified",
-  "original_upgrade_ranges_and_reviews_preserved": 260,
+  "lexical_cache_source_ranges": "all 265 verified",
+  "original_upgrade_ranges_and_reviews_preserved": 257,
   "skip_seed_challenge_positive_detections": 36,
   "skip_seed_challenge_positive_total": 36,
   "automatic_model_first_run": "passed",
   "runtime_model": "sentence-transformers/paraphrase-MiniLM-L6-v2",
   "cpu_only": true,
   "windows_encoded": 5694,
-  "semantic_results": 829,
-  "clean_workspace_seconds": 82.35,
+  "semantic_results": 833,
+  "clean_workspace_seconds": 84.19,
   "warm_cache_preparation_seconds": 0.02,
-  "all_1096_reviews_preserved": true
+  "corpus_hashes": {
+    "matthew": "45968238f91911ef69c75c12620adc15477ce348bc7007efd7aeb999ed781f1d",
+    "mark": "c6052abb33f110201402ab4cb299c2b70030dd35140910f63cc897355ed1b0a7",
+    "luke": "ad80eb254bf4e3eea55930c91d02b1743f3c741c105f420d24415cd1bb8aedbf"
+  },
+  "corpus_navigation_regression": "passed",
+  "historical_review_preservation": "All 1,096 identities and reviews were preserved across the prior release container replacement; the cleaned corpus requires a fresh database."
 }

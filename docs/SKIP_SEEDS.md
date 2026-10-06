@@ -27,13 +27,13 @@ Same corpus, machine, thresholds, and deterministic fixtures; only skip retrieva
 |---|---:|---:|
 | Dense-edit positives localized (36 fixtures) | 1/36 | 36/36 |
 | Reversed-order controls incorrectly detected | 0/12 | 0/12 |
-| Earlier synthetic positives localized | 180/192 | 180/192 |
+| Earlier synthetic positives localized | 181/192 | 181/192 |
 | Earlier synthetic negative detections | 0/26 | 0/26 |
 | Known development passages covered | 18/18 | 18/18 |
-| Corpus results | 260 | 267 |
-| Exact / near | 59 / 201 | 59 / 208 |
+| Corpus results | 257 | 265 |
+| Exact / near | 58 / 199 | 58 / 207 |
 | Corpus analysis time, local CPU | ~2.2 s | ~5.6 s |
-| Earlier result ranges preserved | — | 260/260 |
+| Earlier result ranges preserved | — | 257/257 |
 
 Of the 36 densely edited positive fixtures, 35 have no shared contiguous trigram. One deletion fixture happens to share a repeated triple. A positive counts as localized when the smaller boundary IoU across the two sources is at least 0.6. All result offsets and exact word sequences were verified; duplicate ranges were zero.
 

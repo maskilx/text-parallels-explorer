@@ -23,7 +23,7 @@
         "tn": 12,
         "precision": 1.0,
         "recall": 0.027777777777777776,
-        "mean_boundary_iou": 0.025284900284900283,
+        "mean_boundary_iou": 0.019432522651406773,
         "by_type": {
           "insertion": {
             "detected": 0,
@@ -40,9 +40,9 @@
         },
         "misses": [
           "0-insertion",
-          "0-deletion",
           "0-substitution",
           "1-insertion",
+          "1-deletion",
           "1-substitution",
           "2-insertion",
           "2-deletion",
@@ -84,7 +84,7 @@
         "tn": 26,
         "precision": 1.0,
         "recall": 0.9375,
-        "mean_boundary_iou": 0.8494044751530238,
+        "mean_boundary_iou": 0.8526926890359797,
         "by_type": {
           "exact": {
             "detected": 24,
@@ -144,58 +144,58 @@
         "duration_seconds": 0.048
       },
       "corpus": {
-        "total": 260,
-        "exact": 59,
-        "near": 201,
-        "duration_seconds": 2.216,
+        "total": 257,
+        "exact": 58,
+        "near": 199,
+        "duration_seconds": 2.268,
         "pairs": [
           {
             "document_a": "luke",
             "document_b": "mark",
-            "tokens_a": 24474,
-            "tokens_b": 14308,
-            "seeds": 16108,
-            "contiguous_seeds": 16108,
+            "tokens_a": 24426,
+            "tokens_b": 14276,
+            "seeds": 16121,
+            "contiguous_seeds": 16121,
             "skip_seeds": 0,
             "skip_candidate_windows": 0,
-            "candidate_windows": 11925,
+            "candidate_windows": 11931,
             "skipped_frequent_seeds": 2,
             "skipped_frequent_skip_seeds": 0,
             "raw_matches": 100,
             "matches": 65,
-            "duration_seconds": 0.624
+            "duration_seconds": 0.637
           },
           {
             "document_a": "luke",
             "document_b": "matthew",
-            "tokens_a": 24474,
-            "tokens_b": 22894,
-            "seeds": 23887,
-            "contiguous_seeds": 23887,
+            "tokens_a": 24426,
+            "tokens_b": 22838,
+            "seeds": 23894,
+            "contiguous_seeds": 23894,
             "skip_seeds": 0,
             "skip_candidate_windows": 0,
-            "candidate_windows": 17274,
+            "candidate_windows": 17294,
             "skipped_frequent_seeds": 2,
             "skipped_frequent_skip_seeds": 0,
-            "raw_matches": 197,
-            "matches": 95,
-            "duration_seconds": 0.89
+            "raw_matches": 198,
+            "matches": 94,
+            "duration_seconds": 0.923
           },
           {
             "document_a": "mark",
             "document_b": "matthew",
-            "tokens_a": 14308,
-            "tokens_b": 22894,
-            "seeds": 20599,
-            "contiguous_seeds": 20599,
+            "tokens_a": 14276,
+            "tokens_b": 22838,
+            "seeds": 20604,
+            "contiguous_seeds": 20604,
             "skip_seeds": 0,
             "skip_candidate_windows": 0,
-            "candidate_windows": 12681,
+            "candidate_windows": 12658,
             "skipped_frequent_seeds": 0,
             "skipped_frequent_skip_seeds": 0,
-            "raw_matches": 213,
-            "matches": 100,
-            "duration_seconds": 0.691
+            "raw_matches": 208,
+            "matches": 98,
+            "duration_seconds": 0.696
           }
         ],
         "gold": [
@@ -252,7 +252,7 @@
           {
             "name": "Divided kingdom",
             "detected": true,
-            "coverage": 0.7819548872180451
+            "coverage": 0.9699248120300752
           },
           {
             "name": "Nineveh",
@@ -317,7 +317,7 @@
         "tn": 12,
         "precision": 1.0,
         "recall": 1.0,
-        "mean_boundary_iou": 0.9812499056383674,
+        "mean_boundary_iou": 0.9728043919131056,
         "by_type": {
           "insertion": {
             "detected": 12,
@@ -333,16 +333,16 @@
           }
         },
         "misses": [],
-        "duration_seconds": 0.017
+        "duration_seconds": 0.018
       },
       "original_synthetic": {
-        "tp": 180,
+        "tp": 181,
         "fp": 0,
-        "fn": 12,
+        "fn": 11,
         "tn": 26,
         "precision": 1.0,
-        "recall": 0.9375,
-        "mean_boundary_iou": 0.8494044751530238,
+        "recall": 0.9427083333333334,
+        "mean_boundary_iou": 0.8590461195787223,
         "by_type": {
           "exact": {
             "detected": 24,
@@ -381,7 +381,7 @@
             "total": 12
           },
           "noise-40%": {
-            "detected": 0,
+            "detected": 1,
             "total": 12
           }
         },
@@ -396,64 +396,63 @@
           "noise-0.4-7",
           "noise-0.4-8",
           "noise-0.4-9",
-          "noise-0.4-10",
           "noise-0.4-11"
         ],
-        "duration_seconds": 0.117
+        "duration_seconds": 0.126
       },
       "corpus": {
-        "total": 267,
-        "exact": 59,
-        "near": 208,
-        "duration_seconds": 5.601,
+        "total": 265,
+        "exact": 58,
+        "near": 207,
+        "duration_seconds": 5.532,
         "pairs": [
           {
             "document_a": "luke",
             "document_b": "mark",
-            "tokens_a": 24474,
-            "tokens_b": 14308,
-            "seeds": 40463,
-            "contiguous_seeds": 16108,
-            "skip_seeds": 24355,
-            "skip_candidate_windows": 15174,
-            "candidate_windows": 27099,
+            "tokens_a": 24426,
+            "tokens_b": 14276,
+            "seeds": 40560,
+            "contiguous_seeds": 16121,
+            "skip_seeds": 24439,
+            "skip_candidate_windows": 15221,
+            "candidate_windows": 27152,
             "skipped_frequent_seeds": 2,
             "skipped_frequent_skip_seeds": 5,
             "raw_matches": 121,
             "matches": 67,
-            "duration_seconds": 1.532
+            "duration_seconds": 1.565
           },
           {
             "document_a": "luke",
             "document_b": "matthew",
-            "tokens_a": 24474,
-            "tokens_b": 22894,
-            "seeds": 61204,
-            "contiguous_seeds": 23887,
-            "skip_seeds": 37317,
-            "skip_candidate_windows": 22917,
-            "candidate_windows": 40191,
+            "tokens_a": 24426,
+            "tokens_b": 22838,
+            "seeds": 61355,
+            "contiguous_seeds": 23894,
+            "skip_seeds": 37461,
+            "skip_candidate_windows": 22991,
+            "candidate_windows": 40285,
             "skipped_frequent_seeds": 2,
             "skipped_frequent_skip_seeds": 7,
             "raw_matches": 247,
-            "matches": 95,
-            "duration_seconds": 2.382
+            "matches": 94,
+            "duration_seconds": 2.363
           },
           {
             "document_a": "mark",
             "document_b": "matthew",
-            "tokens_a": 14308,
-            "tokens_b": 22894,
-            "seeds": 48345,
-            "contiguous_seeds": 20599,
-            "skip_seeds": 27746,
-            "skip_candidate_windows": 13658,
-            "candidate_windows": 26339,
+            "tokens_a": 14276,
+            "tokens_b": 22838,
+            "seeds": 48418,
+            "contiguous_seeds": 20604,
+            "skip_seeds": 27814,
+            "skip_candidate_windows": 13728,
+            "candidate_windows": 26386,
             "skipped_frequent_seeds": 0,
             "skipped_frequent_skip_seeds": 2,
-            "raw_matches": 282,
-            "matches": 105,
-            "duration_seconds": 1.676
+            "raw_matches": 287,
+            "matches": 104,
+            "duration_seconds": 1.592
           }
         ],
         "gold": [
@@ -510,7 +509,7 @@
           {
             "name": "Divided kingdom",
             "detected": true,
-            "coverage": 0.7819548872180451
+            "coverage": 0.9699248120300752
           },
           {
             "name": "Nineveh",
@@ -555,7 +554,7 @@
     }
   },
   "exact_range_retention": {
-    "retained": 260,
+    "retained": 257,
     "replaced_or_suppressed": 0
   },
   "contiguous_seedless_challenge_count": 35,
@@ -563,10 +562,29 @@
     {
       "document_a": "luke",
       "document_b": "mark",
-      "start_a": 29299,
-      "end_a": 29449,
-      "start_b": 9953,
-      "end_b": 10076,
+      "start_a": 27194,
+      "end_a": 27386,
+      "start_b": 7236,
+      "end_b": 7431,
+      "words_a": 41,
+      "words_b": 41,
+      "score": 0.634146,
+      "edit_distance": 15,
+      "kind": "near",
+      "raw_exact": false,
+      "method": "skip-seed-local-alignment",
+      "alignment_score": 42.0,
+      "seed_words": 3,
+      "text_a": "on an old garment, or else he will tear the new, and also the piece from the new will not match the old.\nNo one puts new wine into old wineskins, or else the new wine will burst the skins, and",
+      "text_b": "on an old garment, or else the patch shrinks and the new tears away from the old, and a worse hole is made.\nNo one puts new wine into old wineskins; or else the new wine will burst the skins, and"
+    },
+    {
+      "document_a": "luke",
+      "document_b": "mark",
+      "start_a": 29244,
+      "end_a": 29394,
+      "start_b": 9931,
+      "end_b": 10054,
       "words_a": 25,
       "words_b": 18,
       "score": 0.64,
@@ -580,31 +598,12 @@
       "text_b": "Philip; Bartholomew; Matthew; Thomas; James, the son of Alphaeus; Thaddaeus; Simon the Zealot;\nand Judas Iscariot, who also"
     },
     {
-      "document_a": "luke",
-      "document_b": "mark",
-      "start_a": 49497,
-      "end_a": 49621,
-      "start_b": 35462,
-      "end_b": 35641,
-      "words_a": 28,
-      "words_b": 36,
-      "score": 0.666667,
-      "edit_distance": 12,
-      "kind": "near",
-      "raw_exact": false,
-      "method": "skip-seed-local-alignment",
-      "alignment_score": 33.6,
-      "seed_words": 3,
-      "text_a": "For whoever will be ashamed of me and of my words, of him will the Son of Man be ashamed when he comes in his glory, and the",
-      "text_b": "For whoever will be ashamed of me and of my words in this adulterous and sinful generation, the Son of Man also will be ashamed of him when he comes in his Father\u2019s glory with the"
-    },
-    {
       "document_a": "mark",
       "document_b": "matthew",
-      "start_a": 7763,
-      "end_a": 7894,
-      "start_b": 39953,
-      "end_b": 40066,
+      "start_a": 7752,
+      "end_a": 7883,
+      "start_b": 39797,
+      "end_b": 39910,
       "words_a": 28,
       "words_b": 23,
       "score": 0.785714,
@@ -620,10 +619,29 @@
     {
       "document_a": "mark",
       "document_b": "matthew",
-      "start_a": 48377,
-      "end_a": 48482,
-      "start_b": 79590,
-      "end_b": 79728,
+      "start_a": 8143,
+      "end_a": 8240,
+      "start_b": 40348,
+      "end_b": 40465,
+      "words_a": 20,
+      "words_b": 23,
+      "score": 0.652174,
+      "edit_distance": 8,
+      "kind": "near",
+      "raw_exact": false,
+      "method": "skip-seed-local-alignment",
+      "alignment_score": 21.8,
+      "seed_words": 3,
+      "text_a": "the Son of Man is lord even of the Sabbath.\u201d\nHe entered again into the synagogue, and there was a",
+      "text_b": "the Son of Man is Lord of the Sabbath.\u201d\nHe departed from there and went into their synagogue.\nAnd behold, there was a"
+    },
+    {
+      "document_a": "mark",
+      "document_b": "matthew",
+      "start_a": 48266,
+      "end_a": 48371,
+      "start_b": 79299,
+      "end_b": 79437,
       "words_a": 21,
       "words_b": 28,
       "score": 0.678571,
@@ -639,10 +657,10 @@
     {
       "document_a": "mark",
       "document_b": "matthew",
-      "start_a": 60830,
-      "end_a": 60914,
-      "start_b": 104075,
-      "end_b": 104157,
+      "start_a": 60683,
+      "end_a": 60767,
+      "start_b": 103709,
+      "end_b": 103791,
       "words_a": 16,
       "words_b": 16,
       "score": 0.75,
@@ -658,10 +676,10 @@
     {
       "document_a": "mark",
       "document_b": "matthew",
-      "start_a": 64067,
-      "end_a": 64300,
-      "start_b": 107065,
-      "end_b": 107263,
+      "start_a": 63920,
+      "end_a": 64153,
+      "start_b": 106699,
+      "end_b": 106897,
       "words_a": 47,
       "words_b": 40,
       "score": 0.702128,
@@ -677,10 +695,10 @@
     {
       "document_a": "mark",
       "document_b": "matthew",
-      "start_a": 70651,
-      "end_a": 70813,
-      "start_b": 115428,
-      "end_b": 115574,
+      "start_a": 70492,
+      "end_a": 70654,
+      "start_b": 115047,
+      "end_b": 115193,
       "words_a": 30,
       "words_b": 30,
       "score": 0.7,
@@ -699,5 +717,10 @@
     "Known passages were previously used for threshold tuning; coverage is not held-out recall.",
     "Longer new matches may suppress older shorter ranges; range retention is not passage recall.",
     "Skip anchors improve retrieval only. They do not bypass minimum lengths, lexical similarity, frequency guards, or local alignment limitations."
-  ]
+  ],
+  "corpus_hashes": {
+    "matthew": "45968238f91911ef69c75c12620adc15477ce348bc7007efd7aeb999ed781f1d",
+    "mark": "c6052abb33f110201402ab4cb299c2b70030dd35140910f63cc897355ed1b0a7",
+    "luke": "ad80eb254bf4e3eea55930c91d02b1743f3c741c105f420d24415cd1bb8aedbf"
+  }
 }
