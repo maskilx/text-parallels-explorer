@@ -42,3 +42,9 @@
   .head-actions { flex-wrap: wrap; }
   .info-panel { overflow-wrap: anywhere; }
 }
+@media (min-width: 721px) and (max-width: 1250px) {
+  .search-field { flex-basis: 100%; }
+  .passage-grid { grid-template-columns: minmax(0, 1fr); }
+  .passage + .passage { border-left: 0; border-top: 1px solid var(--line); }
+  .passage-text { max-height: 420px; }
+}

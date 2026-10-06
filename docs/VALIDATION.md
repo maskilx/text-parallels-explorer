@@ -6,7 +6,7 @@ Current release: `lexical-1.1.0`, verified on 2026-10-06. These are engineering 
 
 - Production React/TypeScript build and Docker Compose build/start: passed.
 - Backend suite: 66 tests passed locally on macOS / Python 3.14. The same algorithm release was also verified on Linux ARM64 / Python 3.12. A Starlette/httpx adapter deprecation warning does not affect the passing results.
-- Browser suite: 7 Chrome scenarios passed against the Docker image in approximately 14 seconds.
+- Browser suite: 7 Chrome scenarios passed against the Docker image in approximately 13 seconds.
 - Responsive coverage: all four workspace views checked at widths 320, 390, 768, 1024, 1440, 1920, 2560, and 3440 pixels. No page-level horizontal overflow; the main workspace fills the available width. Passage columns are side by side on large screens and stacked on compact screens. Researcher review controls remain reachable.
 - Browser runtime error inspection: none reported.
 - Rerun verification: result count and saved reviews preserved, without duplicate results.

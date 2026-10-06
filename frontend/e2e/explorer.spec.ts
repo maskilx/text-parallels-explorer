@@ -117,7 +117,7 @@ test('workspace adapts from compact phones to ultrawide monitors across every vi
     const passages=await page.locator('.passage').all();
     const first=(await passages[0].boundingBox())!,second=(await passages[1].boundingBox())!;
     if(width>=1440)expect(second.x).toBeGreaterThan(first.x+first.width-2);
-    if(width<=720)expect(second.y).toBeGreaterThan(first.y);
+    if(width<=1250)expect(second.y).toBeGreaterThan(first.y);
     await page.getByRole('heading',{name:'Researcher review',exact:true}).scrollIntoViewIfNeeded();
     await expect(page.getByRole('heading',{name:'Researcher review',exact:true})).toBeVisible();
    }
