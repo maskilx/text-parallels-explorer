@@ -1,6 +1,6 @@
 {
-  "tests": 66,
-  "passed": 66,
+  "tests": 84,
+  "passed": 84,
   "failed": 0,
   "environments": [
     "macOS ARM64 / Python 3.14",
@@ -18,5 +18,13 @@
   "lexical_cache_source_ranges": "all 267 verified",
   "original_upgrade_ranges_and_reviews_preserved": 260,
   "skip_seed_challenge_positive_detections": 36,
-  "skip_seed_challenge_positive_total": 36
+  "skip_seed_challenge_positive_total": 36,
+  "automatic_model_first_run": "passed",
+  "runtime_model": "sentence-transformers/paraphrase-MiniLM-L6-v2",
+  "cpu_only": true,
+  "windows_encoded": 5694,
+  "semantic_results": 829,
+  "clean_workspace_seconds": 82.35,
+  "warm_cache_preparation_seconds": 0.02,
+  "all_1096_reviews_preserved": true
 }

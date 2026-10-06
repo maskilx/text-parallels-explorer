@@ -5,8 +5,8 @@ Current release: `lexical-1.1.0`, verified on 2026-10-06. These are engineering 
 ## System verification
 
 - Production React/TypeScript build and Docker Compose build/start: passed.
-- Backend suite: 66 tests passed locally on macOS / Python 3.14. The same algorithm release was also verified on Linux ARM64 / Python 3.12. A Starlette/httpx adapter deprecation warning does not affect the passing results.
-- Browser suite: 7 Chrome scenarios passed against the Docker image in approximately 13 seconds.
+- Backend suite: 84 tests passed locally on macOS / Python 3.14. The same final suite is verified in the Linux ARM64 / Python 3.12 CPU-model image. A Starlette/httpx adapter deprecation warning does not affect the passing results.
+- Browser suite: 8 Chrome scenarios passed against the Docker image in approximately 17 seconds.
 - Responsive coverage: all four workspace views checked at widths 320, 390, 768, 1024, 1440, 1920, 2560, and 3440 pixels. No page-level horizontal overflow; the main workspace fills the available width. Passage columns are side by side on large screens and stacked on compact screens. Researcher review controls remain reachable.
 - Browser runtime error inspection: none reported.
 - Rerun verification: result count and saved reviews preserved, without duplicate results.
@@ -42,10 +42,20 @@ Similarity thresholds and fixtures were explored during development. Neither the
 
 The exported cache contains 829 suggestions from the pinned `paraphrase-MiniLM-L6-v2` model. At cosine 0.65, it detects 3/6 small challenge paraphrases, versus 1/6 for the earlier baseline. Neither model produces false positives among six ordinary negative controls, but difficult role reversals and negations remain problematic. These samples are too small for a general quality claim.
 
-The model runs offline during artifact generation. The application validates corpus checksums and imports suggestions with independent reviews; lexical analysis does not run inference. See [semantic method and evaluation](SEMANTIC.md).
+The model now runs automatically on a runtime cache miss. The first actual Docker calculation encoded 5,694 windows and produced 829 suggestions in about 81 seconds on the local CPU. The application validates cached results and imports suggestions with independent reviews. Warm startup reused the generated cache without loading the model; the measured preparation step took about 0.02 seconds, excluding server process startup. See [semantic method and evaluation](SEMANTIC.md).
 
 ## Reproduction and artifacts
 
 The README contains backend and browser commands. `scripts/evaluate.py` generates the current lexical report; `scripts/evaluate_skip_seeds.py` performs the controlled skip comparison. Machine-readable reports and deterministic fixtures are included in this directory. `evaluation.json` describes the current release; `skip-seed-evaluation.json` records the controlled before/after study; embedding reports record separate experiments.
 
-GitHub Actions runs backend tests, the frontend production build, and all browser scenarios against a fresh SQLite workspace on Linux.
+GitHub Actions runs backend tests, the frontend production build, and all browser scenarios against a fresh SQLite workspace on Linux, including real first-time model inference and cache reuse.
+
+## Automatic model preparation checks
+
+A completely fresh Docker container, without a database, model files, or generated suggestions, completed lexical analysis and model preparation in approximately 82 seconds locally. It produced 267 lexical candidates and 829 semantic suggestions. The initial calculation for an existing lexical workspace took approximately 81 seconds. These timings exclude building dependencies. CPU-only PyTorch `2.14.1+cpu` was verified with CUDA unavailable.
+
+Additional unit tests verify first-run generation, cache hits that never load a model, invalidation of stale model/pipeline revisions and changed lexical/reference inputs, corrupted cache recovery, actual batch completion counters, token-limit rejection, concurrent preparation rejection, failure/retry readiness states, atomic-file failure recovery, and review preservation. Nonfinite scores and duplicate semantic identities are rejected before publication.
+
+A browser scenario exercises the indeterminate download state, determinate encoding progress, compact layout, failure/retry, and automatic transition into the workspace. Real first-run preparation was also visually inspected. The existing rerun scenario asserts that the progress bar appears.
+
+All 1,096 existing lexical/semantic result identities, review statuses, and notes were compared before and after the final container replacement and remained unchanged. Latest completed lexical configuration is checked during startup, so changes to lexical settings trigger analysis rather than relying on an older completed run.

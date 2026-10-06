@@ -28,7 +28,7 @@ The examples demonstrate both useful matches and the limits of the retrieval met
 
 ## Semantic extension
 
-Explain: verse windows → 384-dimensional vectors → cosine → mutual best neighbor above 0.65 → human review. No model training or vector database. The required algorithm still runs live; the optional semantic screen imports reproducible local results for the fixed corpus. Compare the model study honestly: at 0.65, 3/6 versus 1/6 challenge paraphrases, with 0/6 ordinary negative false positives for both; role reversals still fail. Small author-written development diagnostics do not prove general accuracy. See SEMANTIC.md.
+Explain: verse windows → 384-dimensional vectors → cosine → mutual best neighbor above 0.65 → human review. No model training or vector database. First-time startup runs both lexical detection and the local model. Subsequent launches validate and reuse saved suggestions. The progress screen reports stages and actual encoded-window counts. Compare the model study honestly: at 0.65, 3/6 versus 1/6 challenge paraphrases, with 0/6 ordinary negative false positives for both; role reversals still fail. Small author-written development diagnostics do not prove general accuracy. See SEMANTIC.md.
 
 
 ## Skip anchors

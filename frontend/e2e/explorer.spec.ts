@@ -26,7 +26,7 @@ test('review survives reload and analysis without duplicate results',async({page
  await page.getByLabel('Review note').fill('E2E: checked against the source.');await page.getByRole('button',{name:'Accept',exact:true}).click();
  await expect(page.getByRole('status')).toContainText('Review saved');
  await page.reload();await expect(page.getByLabel('Review note')).toHaveValue('E2E: checked against the source.');await expect(page.locator('.comparison-heading')).toContainText('Accepted');
- await page.getByRole('button',{name:'Run analysis',exact:true}).click();await expect(page.getByRole('status')).toContainText('Analysis complete',{timeout:30000});
+ await page.getByRole('button',{name:'Run analysis',exact:true}).click();await expect(page.getByRole('progressbar',{name:'Preparation progress'})).toBeVisible();await expect(page.getByRole('status')).toContainText('Analysis complete',{timeout:30000});
  const after=(await (await request.get('/api/stats')).json()).counts.total;expect(after).toBe(before);
  const d=await (await request.get('/api/parallels/'+id)).json();expect(d.status).toBe('accepted');expect(d.note).toBe('E2E: checked against the source.');
  await page.getByLabel('Review status',{exact:true}).selectOption('accepted');await expect(page.locator('.result-card').first()).toContainText('accepted');
@@ -125,4 +125,30 @@ test('workspace adapts from compact phones to ultrawide monitors across every vi
  }
  await page.setViewportSize({width:3440,height:1440});await page.getByRole('button',{name:/^Parallels/}).click();
  await page.evaluate(()=>window.scrollTo(0,0));await page.screenshot({path:'test-results/ultrawide.png',fullPage:true});
+});
+
+test('preparation shows real progress states, handles retry, and opens the workspace',async({page})=>{
+ let state={status:'preparing',phase:'model',message:'Loading the local model',percent:null as number|null,error:null as string|null};
+ await page.route('**/api/startup',route=>route.fulfill({contentType:'application/json',body:JSON.stringify(state)}));
+ await page.route('**/api/startup/retry',route=>{
+  state={status:'preparing',phase:'encoding',message:'Encoding passages: 64 of 128',percent:60,error:null};
+  return route.fulfill({status:202,contentType:'application/json',body:'{"status":"preparing"}'});
+ });
+ await page.goto('/');await expect(page.getByRole('heading',{name:'Preparing your workspace'})).toBeVisible();
+ const progress=page.getByRole('progressbar',{name:'Preparation progress'});
+ await expect(progress).not.toHaveAttribute('aria-valuenow');
+ state={status:'preparing',phase:'encoding',message:'Encoding passages: 64 of 128',percent:60,error:null};
+ await expect(progress).toHaveAttribute('aria-valuenow','60');
+ await expect(page.getByRole('status')).toContainText('64 of 128');
+ await page.setViewportSize({width:390,height:844});
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBeTruthy();
+ await page.screenshot({path:'test-results/preparation-mobile.png',fullPage:true});
+ await page.setViewportSize({width:1440,height:1000});await page.screenshot({path:'../docs/preparation.png',fullPage:true});
+ state={status:'failed',phase:'failed',message:'Preparation failed',percent:null,error:'Check the internet connection, then retry.'};
+ await expect(page.getByRole('alert')).toContainText('internet connection');
+ await page.getByRole('button',{name:'Retry preparation'}).click();
+ await expect(progress).toHaveAttribute('aria-valuenow','60');
+ state={status:'ready',phase:'ready',message:'Ready',percent:100,error:null};
+ await expect(page.getByRole('heading',{name:'Textual parallels'})).toBeVisible();await expect(page.locator('.passage')).toHaveCount(2);
+ await expect(page.getByRole('heading',{name:'Preparing your workspace'})).toHaveCount(0);
 });

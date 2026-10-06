@@ -1,4 +1,4 @@
-# Optional isolated experiment; not installed in the application runtime.
+# Local CPU embedding runtime and reproducible model experiments.
 sentence-transformers==6.1.0
 transformers==5.18.0
 torch==2.14.1

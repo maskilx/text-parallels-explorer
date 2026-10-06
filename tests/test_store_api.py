@@ -138,3 +138,15 @@ def test_new_algorithm_version_requires_analysis_but_preserves_reviews(store):
     with store.connect() as c:
         assert c.execute('SELECT algorithm_version FROM analysis_runs ORDER BY id DESC LIMIT 1').fetchone()[0]==VERSION
         assert tuple(c.execute('SELECT status,note FROM reviews WHERE parallel_id=?',(first,)).fetchone())==('accepted','Preserve across upgrade')
+
+
+def test_latest_completed_configuration_controls_cache_validity(store):
+    from dataclasses import replace
+    from app.engine import Config
+    assert store.has_results()
+    changed=replace(Config(), min_similarity=.8)
+    store.analyze(changed)
+    assert not store.has_results()
+    assert store.has_results(changed)
+    store.analyze()
+    assert store.has_results()

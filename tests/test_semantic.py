@@ -88,3 +88,17 @@ def test_bundled_cache_all_ranges_unique_and_exact_source_substrings(tmp_path):
             for side in ('a','b'):assert docs[m['document_'+side]][m['start_'+side]:m['end_'+side]]==m['text_'+side]
             ranges.append(tuple(m[k] for k in ['document_a','document_b','start_a','end_a','start_b','end_b']))
         assert len(ranges)==len(set(ranges))
+
+
+@pytest.mark.parametrize('score',[float('nan'),float('inf'),-1.,1.1])
+def test_invalid_semantic_scores_cannot_publish(store,tmp_path,score):
+    path=tmp_path/'semantic.json';data,item=cache(store,path);semantic.initialize(store,path)
+    data['items'][0]['score']=score;path.write_text(json.dumps(data))
+    with pytest.raises(ValueError,match='score'):semantic.initialize(store,path)
+    with store.connect() as c:assert c.execute('SELECT count(*) FROM semantic_suggestions WHERE active=1').fetchone()[0]==1
+
+
+def test_duplicate_semantic_identities_cannot_publish(store,tmp_path):
+    path=tmp_path/'semantic.json';data,item=cache(store,path)
+    data['items'].append(dict(item));path.write_text(json.dumps(data))
+    with pytest.raises(ValueError,match='Duplicate'):semantic.initialize(store,path)

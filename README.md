@@ -12,9 +12,9 @@ With Docker and Docker Compose installed, run:
 docker compose up --build
 ```
 
-Open **http://localhost:8000**. The first launch imports the bundled texts and analyzes every document pair. SQLite data and reviews persist in a named Docker volume. Stop with `docker compose down`; retaining the volume retains your work.
+Open **http://localhost:8000**. The first launch imports the bundled texts, analyzes every document pair, downloads the pinned open-source model, and computes semantic suggestions locally on the CPU. A preparation screen shows live progress and opens the workspace when it is ready. SQLite data, model weights, and generated suggestions persist in a named Docker volume. Stop with `docker compose down`; retaining the volume retains your work.
 
-No API key, paid service, corpus download, or model download is needed at runtime. The first build downloads dependencies and base images. The application binds to localhost and runs as a single-user workspace, without authentication.
+No API key or paid service is needed. The first build downloads dependencies and base images; the first launch needs internet to download public model weights. Subsequent launches reuse validated results and model files. First-time model preparation can take a few minutes, depending on CPU and connection speed. The application binds to localhost and runs as a single-user workspace, without authentication.
 
 For Docker engines without the Compose plugin, `./run-docker.sh` downloads a checksum-verified official Compose binary into the ignored `.tools/` directory. Alternatively, with Python 3.12+ and Node.js 22+, run `./run-local.sh`.
 
@@ -50,7 +50,7 @@ The indexed-candidate/local-alignment approach follows established text-reuse me
 
 A separate view uses the open-source `paraphrase-MiniLM-L6-v2` model to encode one or two adjacent verses as 384-dimensional vectors. Mutual strongest matches above cosine 0.65 become suggestions, excluding substantial overlap with lexical results.
 
-These suggestions are computed locally ahead of time and loaded from a bundled artifact validated against corpus checksums. **Run analysis** reruns lexical detection; it does not execute the model. Semantic suggestions have their own persistent reviews. Cosine is a ranking score, not a confidence percentage, and highlighted windows are candidate regions rather than aligned identical words.
+The model runs automatically during first-time workspace preparation. Generated results are cached with the model revision, pipeline settings, corpus/reference hashes, and lexical result ranges. Later launches reuse a valid cache without loading the model. **Run analysis** reruns lexical detection and checks that cache; missing, invalid, or outdated results are recomputed automatically. Semantic suggestions have their own persistent reviews. Cosine is a ranking score, not a confidence percentage, and highlighted windows are candidate regions rather than aligned identical words.
 
 See [model evaluation and regeneration](docs/SEMANTIC.md).
 
@@ -68,7 +68,7 @@ React and TypeScript provide the interface; FastAPI serves the API and static bu
 
 Content hashes and passage ranges determine stable identities. Unique constraints and upserts prevent duplicate ranges. Analysis publishes atomically; a failure leaves prior results available. Unchanged ranges retain their reviews, and inactive results retain review history. Changed corpus checksums require a fresh database.
 
-Interactive API documentation: **http://localhost:8000/docs**.
+Interactive API documentation: **http://localhost:8000/docs**. Preparation state is available at `/api/startup`; `/api/ready` returns 503 until preparation is complete. Failed preparation can be retried from the interface.
 
 ## Verification
 

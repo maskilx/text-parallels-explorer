@@ -48,3 +48,20 @@
   .passage + .passage { border-left: 0; border-top: 1px solid var(--line); }
   .passage-text { max-height: 420px; }
 }
+.startup-screen { min-height: 100vh; min-height: 100dvh; display: grid; place-items: center; padding: 24px; }
+.startup-card { width: min(100%, 640px); padding: clamp(24px, 4vw, 48px); background: white; border: 1px solid var(--line); border-radius: 12px; }
+.startup-brand { display: flex; align-items: center; gap: 12px; color: var(--green); font-weight: 650; margin-bottom: 40px; }
+.startup-description { color: var(--muted); line-height: 1.8; margin-top: 16px; }
+.startup-footnote { color: var(--muted); font-size: 12px; line-height: 1.8; margin-top: 24px; }
+.preparation-progress { padding: 20px; margin-bottom: 20px; background: #edf4ef; border: 1px solid #d8e5dc; border-radius: 8px; }
+.startup-card .preparation-progress { margin-top: 28px; margin-bottom: 0; }
+.preparation-caption { display: flex; align-items: center; justify-content: space-between; gap: 16px; font-size: 13px; line-height: 1.6; }
+.preparation-caption p { overflow-wrap: anywhere; }
+.preparation-caption span { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.preparation-track { height: 8px; background: #d6e3da; overflow: hidden; border-radius: 10px; margin-top: 14px; }
+.preparation-track > div { height: 100%; background: var(--green); border-radius: inherit; transition: width .25s ease; }
+.preparation-track.indeterminate > div { width: 35%; animation: preparation-slide 1.5s ease-in-out infinite alternate; }
+.startup-error { margin-top: 24px; color: #8b4c44; line-height: 1.7; }
+.startup-error button { margin-top: 16px; }
+@keyframes preparation-slide { from { transform: translateX(-100%); } to { transform: translateX(285%); } }
+@media (prefers-reduced-motion: reduce) { .preparation-track > div { transition: none; } .preparation-track.indeterminate > div { animation: none; margin-inline: auto; } }

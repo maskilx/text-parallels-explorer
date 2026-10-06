@@ -35,20 +35,34 @@ A deterministic spot check of three candidates in each of three score bands foun
 
 All scores, model revisions, timings, pair counts, examples, threshold sensitivity, and caveats are in `semantic-retrieval-results.json`. The older `embedding-results.json` is retained as the initial experiment.
 
-## Runtime and regeneration
+## One-command runtime
 
-The app imports `app/assets/semantic.json` into a separate SQLite `semantic_suggestions` table. This is an explicitly precomputed artifact for the fixed bundled corpus, not an online model inference feature. Import verifies corpus hashes, original-source substrings, and stable range identities. Upsert preserves reviews; invalid offsets cannot publish a partial import. Corpus hash mismatches deactivate stale suggestions.
+`docker compose up --build` prepares both the lexical detector and the embedding model. The server opens immediately after validating the corpus; preparation runs in a background thread so the browser can display progress.
 
-This keeps the required one-command startup fast and independent of model downloads. The existing **Run analysis** button reruns the lexical detector. To regenerate the semantic cache locally:
+1. Analyze all document pairs if a current lexical run is missing.
+2. Check `data/semantic-cache.json` against the pinned model revision, pipeline version/settings, corpus hashes, reference hashes, and active lexical range identities.
+3. On a cache miss, load the CPU model (downloading public weights on first use), validate token lengths, and encode windows in batches of 64. Progress reports actual completed windows.
+4. Retrieve mutual top-one matches above 0.65, suppress overlaps and lexical coverage, validate source ranges, and save the complete artifact with an atomic rename.
+5. Import suggestions transactionally into SQLite while preserving existing reviews, then mark the workspace ready.
+
+The same Docker volume retains the database, generated artifact, and Hugging Face model cache. A warm launch does not load the model when the artifact is valid. **Run analysis** refreshes lexical results and checks/rebuilds semantic results as necessary. A model or pipeline revision, reference change, changed lexical ranges, or corrupt artifact invalidates reuse. A changed corpus requires a fresh database to preserve the meaning of existing review coordinates.
+
+During model download/loading the bar is indeterminate: the application cannot honestly report a complete download percentage. During encoding it advances by completed batches; other phases report their measured completion. Percentages allocate progress across phases and are not an estimate of remaining wall-clock time. Readiness is reached only after validated results are published.
+
+Failures are visible, logged, and retryable; earlier database reviews are preserved. Missing internet on first use cannot silently fall back to a precomputed artifact. The repository's `app/assets/semantic.json` is retained as a historical evaluation/test fixture and is not the normal runtime cache.
+
+The first launch requires internet, disk space for CPU dependencies/model files, and additional preparation time. There is no paid API or remote inference. The default container uses CPU-only PyTorch; no GPU is required.
+
+`GET /api/startup` exposes progress. `GET /api/ready` returns 200 only after completion and 503 otherwise. `POST /api/startup/retry` retries failed preparation. `/api/health` is a liveness check so the server can remain available to show progress or a failure.
+
+## Reproducing the historical model comparison
+
+The model-comparison script remains a separate development experiment, using the same shared windowing/retrieval functions as the runtime:
 
 ```sh
 python3 -m venv .embeddings-venv
 .embeddings-venv/bin/pip install -r requirements.txt -r requirements-embeddings.txt
 .embeddings-venv/bin/python scripts/semantic_retrieval.py --export
-docker compose up --build
 ```
 
-The first regeneration downloads public model weights; subsequent runs can use the Hugging Face cache. Known model revisions are pinned in the script. No credentials or paid API are needed. The generated artifact stores model provenance and document checksums, and is included in the repository and Docker image. Live lexical analysis and this reproducible offline extension are separate processing paths.
-
-
-After the lexical-1.1.0 skip-anchor upgrade, the cache was regenerated against the updated detector. Model and cosine settings remain unchanged; `lexical_version` records which detector excluded already-covered candidates. The earlier nine-example spot audit remains a historical sample of the prior cache.
+This records evaluation results and can refresh the historical bundled fixture; it is not required to start the application. Model revisions are pinned. The earlier nine-example spot audit remains a historical sample, not a current accuracy estimate.

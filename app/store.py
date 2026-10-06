@@ -77,10 +77,12 @@ class Store:
                 c.execute('INSERT INTO documents VALUES(?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO NOTHING',
                           (d['id'],d['title'],d['edition'],d['source_url'],d['license'],text,d['sha256'],refs,len(tokenize(text))))
 
-    def has_results(self):
-        with self.connect() as c: return bool(c.execute("SELECT 1 FROM analysis_runs WHERE status='completed' AND algorithm_version=? LIMIT 1",(VERSION,)).fetchone())
+    def has_results(self, config=Config()):
+        with self.connect() as c:
+            run=c.execute("SELECT algorithm_version,config FROM analysis_runs WHERE status='completed' ORDER BY id DESC LIMIT 1").fetchone()
+        return bool(run and run['algorithm_version']==VERSION and json.loads(run['config'])==config.__dict__)
 
-    def analyze(self,config=Config(),claimed=False):
+    def analyze(self,config=Config(),claimed=False,on_progress=None):
         if not claimed and not self.lock.acquire(blocking=False): raise RuntimeError('An analysis is already running')
         started=time.perf_counter(); run_id=None
         self.progress={'running':True,'completed_pairs':0,'total_pairs':0}
@@ -99,6 +101,7 @@ class Store:
                     output.append(dict(id=fingerprint(identity),document_a=a['id'],document_b=b['id'],run_id=run_id,**m))
                 stats['duration_seconds']=round(time.perf_counter()-tick,3)
                 pair_stats.append(stats); self.progress['completed_pairs']+=1
+                if on_progress: on_progress(self.progress['completed_pairs'],len(pairs))
             with self.connect() as c:
                 # One transaction publishes the complete new result set. Reviews are untouched.
                 c.execute('UPDATE parallels SET active=0')

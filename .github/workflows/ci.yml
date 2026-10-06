@@ -7,7 +7,7 @@ permissions:
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -20,7 +20,9 @@ jobs:
           cache: npm
           cache-dependency-path: frontend/package-lock.json
       - name: Install backend dependencies
-        run: pip install -r requirements-dev.txt
+        run: |
+          pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements-dev.txt -r requirements-embeddings.txt
       - name: Verify backend
         run: python -m pytest -q
       - name: Build frontend
@@ -31,14 +33,21 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: Start workspace
         env:
-          DATABASE_PATH: /tmp/explorer-ci.sqlite
+          DATABASE_PATH: /tmp/explorer-ci/workspace.sqlite
+          HF_HOME: /tmp/explorer-ci/models
+          TOKENIZERS_PARALLELISM: "false"
         run: |
           uvicorn app.main:app --host 127.0.0.1 --port 8000 > /tmp/explorer-ci.log 2>&1 &
+          echo $! > /tmp/explorer-ci.pid
           python - <<'PY'
           import time, urllib.request
-          for attempt in range(60):
+          for attempt in range(600):
               try:
-                  urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=2)
+                  response = urllib.request.urlopen('http://127.0.0.1:8000/api/ready', timeout=2)
+                  import json
+                  state = json.load(response)
+                  assert state['cache_hit'] is False, state
+                  print('First run:', state)
                   break
               except OSError:
                   time.sleep(1)
@@ -48,10 +57,34 @@ jobs:
       - name: Verify browser workflows and responsive layouts
         working-directory: frontend
         run: npm run test:e2e
+      - name: Verify model cache reuse after restart
+        env:
+          DATABASE_PATH: /tmp/explorer-ci/workspace.sqlite
+          HF_HOME: /tmp/explorer-ci/models
+          TOKENIZERS_PARALLELISM: "false"
+        run: |
+          kill "$(cat /tmp/explorer-ci.pid)"
+          sleep 2
+          uvicorn app.main:app --host 127.0.0.1 --port 8000 >> /tmp/explorer-ci.log 2>&1 &
+          python - <<'PY'
+          import json, time, urllib.request
+          for attempt in range(60):
+              try:
+                  state = json.load(urllib.request.urlopen('http://127.0.0.1:8000/api/ready', timeout=2))
+                  assert state['cache_hit'] is True, state
+                  print('Warm restart:', state)
+                  break
+              except OSError:
+                  time.sleep(1)
+          else:
+              raise SystemExit('Warm workspace did not become ready')
+          PY
       - name: Upload failure diagnostics
         if: failure()
         uses: actions/upload-artifact@v4
         with:
           name: browser-diagnostics
-          path: frontend/test-results/
+          path: |
+            frontend/test-results/
+            /tmp/explorer-ci.log
           retention-days: 7

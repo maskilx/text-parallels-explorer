@@ -1,28 +1,55 @@
 from contextlib import asynccontextmanager
-import csv, io, json, logging, threading
+import csv, io, json, logging, threading, os
 from pathlib import Path
 from typing import Literal
 from fastapi import FastAPI, HTTPException, Query
-from fastapi.responses import FileResponse, Response
+from fastapi.responses import FileResponse, Response, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 from .store import Store, now, ROOT
 from .engine import Config, VERSION, diff_blocks
 from . import semantic
+from .preparation import Preparation
 
 store=Store()
+preparation=None
 
 @asynccontextmanager
 async def lifespan(app):
+    global preparation
     store.initialize()
-    semantic.initialize(store)
-    if not store.has_results(): store.analyze()
+    semantic.initialize_schema(store)
+    if os.environ.get('SEMANTIC_MODE') == 'fixture':
+        # Explicit isolated-test mode; normal startup always prepares with the model.
+        semantic.initialize(store)
+        if not store.has_results(): store.analyze()
+        preparation=None
+    else:
+        preparation=Preparation(store)
+        preparation.start()
     yield
 
 app=FastAPI(title='Text Parallels Explorer',version='1.0.0',lifespan=lifespan)
 
 @app.get('/api/health')
-def health(): return {'status':'ok','algorithm':VERSION}
+def health(): return {'status':'ok','algorithm':VERSION,'workspace':startup()['status']}
+
+@app.get('/api/startup')
+def startup():
+    return preparation.snapshot() if preparation else dict(status='ready',phase='ready',percent=100,message='Workspace ready',cache_hit=True,error=None)
+
+@app.get('/api/ready')
+def ready():
+    state=startup()
+    return JSONResponse(state,status_code=200 if state['status']=='ready' else 503)
+
+@app.post('/api/startup/retry',status_code=202)
+def retry_startup():
+    if not preparation or preparation.snapshot()['status']!='failed':
+        raise HTTPException(409,'Preparation is not awaiting a retry')
+    if not preparation.start(): raise HTTPException(409,'Preparation is already running')
+    return {'status':'preparing'}
+
 
 @app.get('/api/documents')
 def documents():
@@ -36,7 +63,9 @@ def stats():
         run=c.execute('SELECT * FROM analysis_runs ORDER BY id DESC LIMIT 1').fetchone()
         if run:
             run=dict(run); run['config']=json.loads(run['config']); run['pairs']=json.loads(run['pairs'] or '[]')
-        return {'counts':{k:v or 0 for k,v in counts.items()},'run':run,'progress':store.progress,'algorithm':VERSION}
+        progress=dict(store.progress)
+        if preparation and preparation.snapshot()['status']=='preparing': progress['running']=True
+        return {'counts':{k:v or 0 for k,v in counts.items()},'run':run,'progress':progress,'preparation':startup(),'algorithm':VERSION}
 
 def query_results(document='',pair='',kind='',status='',min_score=0.,min_words=0,q='',sort='score',limit=50,offset=0):
     where=['p.active=1']; args=[]
@@ -124,6 +153,10 @@ def semantic_review(suggestion_id:str,body:Review):
 
 @app.post('/api/analysis',status_code=202)
 def analyze():
+    if preparation:
+        if store.lock.locked() or preparation.snapshot()['status']=='preparing' or not preparation.start(force_lexical=True):
+            raise HTTPException(409,'An analysis is already running')
+        return {'status':'running'}
     if not store.lock.acquire(blocking=False): raise HTTPException(409,'An analysis is already running')
     store.progress={'running':True,'completed_pairs':0,'total_pairs':3}
     def work():
