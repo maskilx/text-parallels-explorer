@@ -1,0 +1,3064 @@
+[
+  {
+    "id": "0-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. turn back to my house from which I came out.’\nWhen he returns, he finds it swept and put in order.\nThen he goes and takes seven other spirits more evil than himself, and they enter in and dwell there. The last state of that man becomes worse\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. turn back to my house from which I came out.’\nWhen he returns, he finds it swept and put in order.\nThen he goes and takes seven other spirits more evil than himself, and they enter in and dwell there. The last state of that man becomes worse\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      268
+    ],
+    "expected_b": [
+      26,
+      267
+    ]
+  },
+  {
+    "id": "0-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. turn back to my house from which I came out.’\nWhen he returns, he finds it swept and put in order.\nThen he goes and takes seven other spirits more evil than himself, and they enter in and dwell there. The last state of that man becomes worse\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. TURN , BACK , TO , MY , HOUSE , FROM , WHICH , I , CAME , OUT , WHEN , HE , RETURNS , HE , FINDS , IT , SWEPT , AND , PUT , IN , ORDER , THEN , HE , GOES , AND , TAKES , SEVEN , OTHER , SPIRITS , MORE , EVIL , THAN , HIMSELF , AND , THEY , ENTER , IN , AND , DWELL , THERE , THE , LAST , STATE , OF , THAT , MAN , BECOMES , WORSE\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      268
+    ],
+    "expected_b": [
+      26,
+      355
+    ]
+  },
+  {
+    "id": "0-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. turn back to my house from which I came out.’\nWhen he returns, he finds it swept and put in order.\nThen he goes and takes seven other spirits more evil than himself, and they enter in and dwell there. The last state of that man becomes worse\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. turn back to my house from which i came out changed10 he returns he finds it swept and put in order then changed22 goes and takes seven other spirits more evil than himself and changed34 enter in and dwell there the last state of that man becomes worse\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      268
+    ],
+    "expected_b": [
+      26,
+      278
+    ]
+  },
+  {
+    "id": "0-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. turn back to my house from which I came out.’\nWhen he returns, he finds it swept and put in order.\nThen he goes and takes seven other spirits more evil than himself, and they enter in and dwell there. The last state of that man becomes worse\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. turn back to my house from which i came out when he returns he finds it swept and unexpected additional words put in order then he goes and takes seven other spirits more evil than himself and they enter in and dwell there the last state of that man becomes worse\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      268
+    ],
+    "expected_b": [
+      26,
+      289
+    ]
+  },
+  {
+    "id": "0-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. turn back to my house from which I came out.’\nWhen he returns, he finds it swept and put in order.\nThen he goes and takes seven other spirits more evil than himself, and they enter in and dwell there. The last state of that man becomes worse\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. turn back to my house from which i came out when he returns he finds it swept and then he goes and takes seven other spirits more evil than himself and they enter in and dwell there the last state of that man becomes worse\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      268
+    ],
+    "expected_b": [
+      26,
+      248
+    ]
+  },
+  {
+    "id": "0-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. turn back to my house from which I came out.’\nWhen he returns, he finds it swept and put in order.\nThen he goes and takes seven other spirits more evil than himself, and they enter in and dwell there. The last state of that man becomes worse\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. turn back to my house from which i came out altered he returns he finds it swept and order then he goes modified takes seven other spirits more evil than added himself and they enter in and dwell there the last state of that man becomes worse\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      268
+    ],
+    "expected_b": [
+      26,
+      268
+    ]
+  },
+  {
+    "id": "1-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. it said, “Then who can be saved?”\nBut he said, “The things which are impossible with men are possible with God.”\nPeter said, “Look, we have left everything and followed you.”\nHe said to them, “Most certainly I tell you, there is no one who has left house\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. it said, “Then who can be saved?”\nBut he said, “The things which are impossible with men are possible with God.”\nPeter said, “Look, we have left everything and followed you.”\nHe said to them, “Most certainly I tell you, there is no one who has left house\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      281
+    ],
+    "expected_b": [
+      26,
+      280
+    ]
+  },
+  {
+    "id": "1-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. it said, “Then who can be saved?”\nBut he said, “The things which are impossible with men are possible with God.”\nPeter said, “Look, we have left everything and followed you.”\nHe said to them, “Most certainly I tell you, there is no one who has left house\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. IT , SAID , THEN , WHO , CAN , BE , SAVED , BUT , HE , SAID , THE , THINGS , WHICH , ARE , IMPOSSIBLE , WITH , MEN , ARE , POSSIBLE , WITH , GOD , PETER , SAID , LOOK , WE , HAVE , LEFT , EVERYTHING , AND , FOLLOWED , YOU , HE , SAID , TO , THEM , MOST , CERTAINLY , I , TELL , YOU , THERE , IS , NO , ONE , WHO , HAS , LEFT , HOUSE\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      281
+    ],
+    "expected_b": [
+      26,
+      358
+    ]
+  },
+  {
+    "id": "1-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. it said, “Then who can be saved?”\nBut he said, “The things which are impossible with men are possible with God.”\nPeter said, “Look, we have left everything and followed you.”\nHe said to them, “Most certainly I tell you, there is no one who has left house\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. it said then who can be saved but he said changed10 things which are impossible with men are possible with god peter changed22 look we have left everything and followed you he said to changed34 most certainly i tell you there is no one who has left house\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      281
+    ],
+    "expected_b": [
+      26,
+      280
+    ]
+  },
+  {
+    "id": "1-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. it said, “Then who can be saved?”\nBut he said, “The things which are impossible with men are possible with God.”\nPeter said, “Look, we have left everything and followed you.”\nHe said to them, “Most certainly I tell you, there is no one who has left house\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. it said then who can be saved but he said the things which are impossible with men are unexpected additional words possible with god peter said look we have left everything and followed you he said to them most certainly i tell you there is no one who has left house\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      281
+    ],
+    "expected_b": [
+      26,
+      292
+    ]
+  },
+  {
+    "id": "1-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. it said, “Then who can be saved?”\nBut he said, “The things which are impossible with men are possible with God.”\nPeter said, “Look, we have left everything and followed you.”\nHe said to them, “Most certainly I tell you, there is no one who has left house\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. it said then who can be saved but he said the things which are impossible with men are peter said look we have left everything and followed you he said to them most certainly i tell you there is no one who has left house\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      281
+    ],
+    "expected_b": [
+      26,
+      246
+    ]
+  },
+  {
+    "id": "1-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. it said, “Then who can be saved?”\nBut he said, “The things which are impossible with men are possible with God.”\nPeter said, “Look, we have left everything and followed you.”\nHe said to them, “Most certainly I tell you, there is no one who has left house\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. it said then who can be saved but he said altered things which are impossible with men are god peter said look modified have left everything and followed you he added said to them most certainly i tell you there is no one who has left house\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      281
+    ],
+    "expected_b": [
+      26,
+      266
+    ]
+  },
+  {
+    "id": "2-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. whom he also named Peter; Andrew, his brother; James; John; Philip; Bartholomew;\nMatthew; Thomas; James the son of Alphaeus; Simon who was called the Zealot;\nJudas the son of James; and Judas Iscariot, who also became a traitor.\nHe came down with them and stood on a level\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. whom he also named Peter; Andrew, his brother; James; John; Philip; Bartholomew;\nMatthew; Thomas; James the son of Alphaeus; Simon who was called the Zealot;\nJudas the son of James; and Judas Iscariot, who also became a traitor.\nHe came down with them and stood on a level\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      299
+    ],
+    "expected_b": [
+      26,
+      298
+    ]
+  },
+  {
+    "id": "2-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. whom he also named Peter; Andrew, his brother; James; John; Philip; Bartholomew;\nMatthew; Thomas; James the son of Alphaeus; Simon who was called the Zealot;\nJudas the son of James; and Judas Iscariot, who also became a traitor.\nHe came down with them and stood on a level\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. WHOM , HE , ALSO , NAMED , PETER , ANDREW , HIS , BROTHER , JAMES , JOHN , PHILIP , BARTHOLOMEW , MATTHEW , THOMAS , JAMES , THE , SON , OF , ALPHAEUS , SIMON , WHO , WAS , CALLED , THE , ZEALOT , JUDAS , THE , SON , OF , JAMES , AND , JUDAS , ISCARIOT , WHO , ALSO , BECAME , A , TRAITOR , HE , CAME , DOWN , WITH , THEM , AND , STOOD , ON , A , LEVEL\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      299
+    ],
+    "expected_b": [
+      26,
+      378
+    ]
+  },
+  {
+    "id": "2-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. whom he also named Peter; Andrew, his brother; James; John; Philip; Bartholomew;\nMatthew; Thomas; James the son of Alphaeus; Simon who was called the Zealot;\nJudas the son of James; and Judas Iscariot, who also became a traitor.\nHe came down with them and stood on a level\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. whom he also named peter andrew his brother james john changed10 bartholomew matthew thomas james the son of alphaeus simon who was changed22 the zealot judas the son of james and judas iscariot who changed34 became a traitor he came down with them and stood on a level\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      299
+    ],
+    "expected_b": [
+      26,
+      295
+    ]
+  },
+  {
+    "id": "2-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. whom he also named Peter; Andrew, his brother; James; John; Philip; Bartholomew;\nMatthew; Thomas; James the son of Alphaeus; Simon who was called the Zealot;\nJudas the son of James; and Judas Iscariot, who also became a traitor.\nHe came down with them and stood on a level\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. whom he also named peter andrew his brother james john philip bartholomew matthew thomas james the son of unexpected additional words alphaeus simon who was called the zealot judas the son of james and judas iscariot who also became a traitor he came down with them and stood on a level\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      299
+    ],
+    "expected_b": [
+      26,
+      312
+    ]
+  },
+  {
+    "id": "2-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. whom he also named Peter; Andrew, his brother; James; John; Philip; Bartholomew;\nMatthew; Thomas; James the son of Alphaeus; Simon who was called the Zealot;\nJudas the son of James; and Judas Iscariot, who also became a traitor.\nHe came down with them and stood on a level\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. whom he also named peter andrew his brother james john philip bartholomew matthew thomas james the son of was called the zealot judas the son of james and judas iscariot who also became a traitor he came down with them and stood on a level\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      299
+    ],
+    "expected_b": [
+      26,
+      265
+    ]
+  },
+  {
+    "id": "2-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. whom he also named Peter; Andrew, his brother; James; John; Philip; Bartholomew;\nMatthew; Thomas; James the son of Alphaeus; Simon who was called the Zealot;\nJudas the son of James; and Judas Iscariot, who also became a traitor.\nHe came down with them and stood on a level\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. whom he also named peter andrew his brother james john altered bartholomew matthew thomas james the son of who was called the modified judas the son of james and judas added iscariot who also became a traitor he came down with them and stood on a level\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      299
+    ],
+    "expected_b": [
+      26,
+      278
+    ]
+  },
+  {
+    "id": "3-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. in you one stone on another, because you didn’t know the time of your visitation.”\nHe entered into the temple and began to drive out those who bought and sold in it,\nsaying to them, “It is written, ‘My house is a house of prayer,’ but you have\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. in you one stone on another, because you didn’t know the time of your visitation.”\nHe entered into the temple and began to drive out those who bought and sold in it,\nsaying to them, “It is written, ‘My house is a house of prayer,’ but you have\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      270
+    ],
+    "expected_b": [
+      26,
+      269
+    ]
+  },
+  {
+    "id": "3-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. in you one stone on another, because you didn’t know the time of your visitation.”\nHe entered into the temple and began to drive out those who bought and sold in it,\nsaying to them, “It is written, ‘My house is a house of prayer,’ but you have\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. IN , YOU , ONE , STONE , ON , ANOTHER , BECAUSE , YOU , DIDN'T , KNOW , THE , TIME , OF , YOUR , VISITATION , HE , ENTERED , INTO , THE , TEMPLE , AND , BEGAN , TO , DRIVE , OUT , THOSE , WHO , BOUGHT , AND , SOLD , IN , IT , SAYING , TO , THEM , IT , IS , WRITTEN , MY , HOUSE , IS , A , HOUSE , OF , PRAYER , BUT , YOU , HAVE\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      270
+    ],
+    "expected_b": [
+      26,
+      353
+    ]
+  },
+  {
+    "id": "3-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. in you one stone on another, because you didn’t know the time of your visitation.”\nHe entered into the temple and began to drive out those who bought and sold in it,\nsaying to them, “It is written, ‘My house is a house of prayer,’ but you have\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. in you one stone on another because you didn't know changed10 time of your visitation he entered into the temple and began changed22 drive out those who bought and sold in it saying to changed34 it is written my house is a house of prayer but you have\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      270
+    ],
+    "expected_b": [
+      26,
+      277
+    ]
+  },
+  {
+    "id": "3-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. in you one stone on another, because you didn’t know the time of your visitation.”\nHe entered into the temple and began to drive out those who bought and sold in it,\nsaying to them, “It is written, ‘My house is a house of prayer,’ but you have\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. in you one stone on another because you didn't know the time of your visitation he entered into unexpected additional words the temple and began to drive out those who bought and sold in it saying to them it is written my house is a house of prayer but you have\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      270
+    ],
+    "expected_b": [
+      26,
+      287
+    ]
+  },
+  {
+    "id": "3-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. in you one stone on another, because you didn’t know the time of your visitation.”\nHe entered into the temple and began to drive out those who bought and sold in it,\nsaying to them, “It is written, ‘My house is a house of prayer,’ but you have\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. in you one stone on another because you didn't know the time of your visitation he entered into began to drive out those who bought and sold in it saying to them it is written my house is a house of prayer but you have\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      270
+    ],
+    "expected_b": [
+      26,
+      244
+    ]
+  },
+  {
+    "id": "3-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. in you one stone on another, because you didn’t know the time of your visitation.”\nHe entered into the temple and began to drive out those who bought and sold in it,\nsaying to them, “It is written, ‘My house is a house of prayer,’ but you have\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. in you one stone on another because you didn't know altered time of your visitation he entered into and began to drive modified those who bought and sold in it added saying to them it is written my house is a house of prayer but you have\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      270
+    ],
+    "expected_b": [
+      26,
+      263
+    ]
+  },
+  {
+    "id": "4-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. while all were marveling at all the things which Jesus did, he said to his disciples,\n“Let these words sink into your ears, for the Son of Man will be delivered up into the hands of men.”\nBut they didn’t understand this saying. It was concealed from them\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. while all were marveling at all the things which Jesus did, he said to his disciples,\n“Let these words sink into your ears, for the Son of Man will be delivered up into the hands of men.”\nBut they didn’t understand this saying. It was concealed from them\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      281
+    ],
+    "expected_b": [
+      26,
+      280
+    ]
+  },
+  {
+    "id": "4-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. while all were marveling at all the things which Jesus did, he said to his disciples,\n“Let these words sink into your ears, for the Son of Man will be delivered up into the hands of men.”\nBut they didn’t understand this saying. It was concealed from them\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. WHILE , ALL , WERE , MARVELING , AT , ALL , THE , THINGS , WHICH , JESUS , DID , HE , SAID , TO , HIS , DISCIPLES , LET , THESE , WORDS , SINK , INTO , YOUR , EARS , FOR , THE , SON , OF , MAN , WILL , BE , DELIVERED , UP , INTO , THE , HANDS , OF , MEN , BUT , THEY , DIDN'T , UNDERSTAND , THIS , SAYING , IT , WAS , CONCEALED , FROM , THEM\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      281
+    ],
+    "expected_b": [
+      26,
+      367
+    ]
+  },
+  {
+    "id": "4-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. while all were marveling at all the things which Jesus did, he said to his disciples,\n“Let these words sink into your ears, for the Son of Man will be delivered up into the hands of men.”\nBut they didn’t understand this saying. It was concealed from them\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. while all were marveling at all the things which jesus changed10 he said to his disciples let these words sink into your changed22 for the son of man will be delivered up into the changed34 of men but they didn't understand this saying it was concealed from them\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      281
+    ],
+    "expected_b": [
+      26,
+      288
+    ]
+  },
+  {
+    "id": "4-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. while all were marveling at all the things which Jesus did, he said to his disciples,\n“Let these words sink into your ears, for the Son of Man will be delivered up into the hands of men.”\nBut they didn’t understand this saying. It was concealed from them\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. while all were marveling at all the things which jesus did he said to his disciples let these unexpected additional words words sink into your ears for the son of man will be delivered up into the hands of men but they didn't understand this saying it was concealed from them\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      281
+    ],
+    "expected_b": [
+      26,
+      301
+    ]
+  },
+  {
+    "id": "4-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. while all were marveling at all the things which Jesus did, he said to his disciples,\n“Let these words sink into your ears, for the Son of Man will be delivered up into the hands of men.”\nBut they didn’t understand this saying. It was concealed from them\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. while all were marveling at all the things which jesus did he said to his disciples let these your ears for the son of man will be delivered up into the hands of men but they didn't understand this saying it was concealed from them\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      281
+    ],
+    "expected_b": [
+      26,
+      257
+    ]
+  },
+  {
+    "id": "4-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. while all were marveling at all the things which Jesus did, he said to his disciples,\n“Let these words sink into your ears, for the Son of Man will be delivered up into the hands of men.”\nBut they didn’t understand this saying. It was concealed from them\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. while all were marveling at all the things which jesus altered he said to his disciples let these into your ears for modified son of man will be delivered up added into the hands of men but they didn't understand this saying it was concealed from them\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      281
+    ],
+    "expected_b": [
+      26,
+      277
+    ]
+  },
+  {
+    "id": "5-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. do you think seemed to be a neighbor to him who fell among the robbers?”\nHe said, “He who showed mercy on him.” Then Jesus said to him, “Go and do likewise.”\nAs they went on their way, he entered into a certain village, and a certain woman\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. do you think seemed to be a neighbor to him who fell among the robbers?”\nHe said, “He who showed mercy on him.” Then Jesus said to him, “Go and do likewise.”\nAs they went on their way, he entered into a certain village, and a certain woman\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      266
+    ],
+    "expected_b": [
+      26,
+      265
+    ]
+  },
+  {
+    "id": "5-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. do you think seemed to be a neighbor to him who fell among the robbers?”\nHe said, “He who showed mercy on him.” Then Jesus said to him, “Go and do likewise.”\nAs they went on their way, he entered into a certain village, and a certain woman\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. DO , YOU , THINK , SEEMED , TO , BE , A , NEIGHBOR , TO , HIM , WHO , FELL , AMONG , THE , ROBBERS , HE , SAID , HE , WHO , SHOWED , MERCY , ON , HIM , THEN , JESUS , SAID , TO , HIM , GO , AND , DO , LIKEWISE , AS , THEY , WENT , ON , THEIR , WAY , HE , ENTERED , INTO , A , CERTAIN , VILLAGE , AND , A , CERTAIN , WOMAN\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      266
+    ],
+    "expected_b": [
+      26,
+      347
+    ]
+  },
+  {
+    "id": "5-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. do you think seemed to be a neighbor to him who fell among the robbers?”\nHe said, “He who showed mercy on him.” Then Jesus said to him, “Go and do likewise.”\nAs they went on their way, he entered into a certain village, and a certain woman\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. do you think seemed to be a neighbor to him changed10 fell among the robbers he said he who showed mercy on changed22 then jesus said to him go and do likewise as they changed34 on their way he entered into a certain village and a certain woman\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      266
+    ],
+    "expected_b": [
+      26,
+      270
+    ]
+  },
+  {
+    "id": "5-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. do you think seemed to be a neighbor to him who fell among the robbers?”\nHe said, “He who showed mercy on him.” Then Jesus said to him, “Go and do likewise.”\nAs they went on their way, he entered into a certain village, and a certain woman\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. do you think seemed to be a neighbor to him who fell among the robbers he said he unexpected additional words who showed mercy on him then jesus said to him go and do likewise as they went on their way he entered into a certain village and a certain woman\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      266
+    ],
+    "expected_b": [
+      26,
+      281
+    ]
+  },
+  {
+    "id": "5-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. do you think seemed to be a neighbor to him who fell among the robbers?”\nHe said, “He who showed mercy on him.” Then Jesus said to him, “Go and do likewise.”\nAs they went on their way, he entered into a certain village, and a certain woman\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. do you think seemed to be a neighbor to him who fell among the robbers he said he on him then jesus said to him go and do likewise as they went on their way he entered into a certain village and a certain woman\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      266
+    ],
+    "expected_b": [
+      26,
+      236
+    ]
+  },
+  {
+    "id": "5-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. do you think seemed to be a neighbor to him who fell among the robbers?”\nHe said, “He who showed mercy on him.” Then Jesus said to him, “Go and do likewise.”\nAs they went on their way, he entered into a certain village, and a certain woman\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. do you think seemed to be a neighbor to him altered fell among the robbers he said he mercy on him then modified said to him go and do likewise added as they went on their way he entered into a certain village and a certain woman\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      266
+    ],
+    "expected_b": [
+      26,
+      255
+    ]
+  },
+  {
+    "id": "6-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. who was a member of the council, a good and righteous man\n(he had not consented to their counsel and deed), from Arimathaea, a city of the Jews, who was also waiting for God’s Kingdom.\nThis man went to Pilate, and asked for Jesus’ body.\nHe took it\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. who was a member of the council, a good and righteous man\n(he had not consented to their counsel and deed), from Arimathaea, a city of the Jews, who was also waiting for God’s Kingdom.\nThis man went to Pilate, and asked for Jesus’ body.\nHe took it\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      274
+    ],
+    "expected_b": [
+      26,
+      273
+    ]
+  },
+  {
+    "id": "6-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. who was a member of the council, a good and righteous man\n(he had not consented to their counsel and deed), from Arimathaea, a city of the Jews, who was also waiting for God’s Kingdom.\nThis man went to Pilate, and asked for Jesus’ body.\nHe took it\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. WHO , WAS , A , MEMBER , OF , THE , COUNCIL , A , GOOD , AND , RIGHTEOUS , MAN , HE , HAD , NOT , CONSENTED , TO , THEIR , COUNSEL , AND , DEED , FROM , ARIMATHAEA , A , CITY , OF , THE , JEWS , WHO , WAS , ALSO , WAITING , FOR , GOD'S , KINGDOM , THIS , MAN , WENT , TO , PILATE , AND , ASKED , FOR , JESUS , BODY , HE , TOOK , IT\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      274
+    ],
+    "expected_b": [
+      26,
+      357
+    ]
+  },
+  {
+    "id": "6-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. who was a member of the council, a good and righteous man\n(he had not consented to their counsel and deed), from Arimathaea, a city of the Jews, who was also waiting for God’s Kingdom.\nThis man went to Pilate, and asked for Jesus’ body.\nHe took it\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. who was a member of the council a good and changed10 man he had not consented to their counsel and deed from changed22 a city of the jews who was also waiting for god's changed34 this man went to pilate and asked for jesus body he took it\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      274
+    ],
+    "expected_b": [
+      26,
+      264
+    ]
+  },
+  {
+    "id": "6-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. who was a member of the council, a good and righteous man\n(he had not consented to their counsel and deed), from Arimathaea, a city of the Jews, who was also waiting for God’s Kingdom.\nThis man went to Pilate, and asked for Jesus’ body.\nHe took it\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. who was a member of the council a good and righteous man he had not consented to their unexpected additional words counsel and deed from arimathaea a city of the jews who was also waiting for god's kingdom this man went to pilate and asked for jesus body he took it\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      274
+    ],
+    "expected_b": [
+      26,
+      291
+    ]
+  },
+  {
+    "id": "6-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. who was a member of the council, a good and righteous man\n(he had not consented to their counsel and deed), from Arimathaea, a city of the Jews, who was also waiting for God’s Kingdom.\nThis man went to Pilate, and asked for Jesus’ body.\nHe took it\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. who was a member of the council a good and righteous man he had not consented to their from arimathaea a city of the jews who was also waiting for god's kingdom this man went to pilate and asked for jesus body he took it\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      274
+    ],
+    "expected_b": [
+      26,
+      246
+    ]
+  },
+  {
+    "id": "6-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. who was a member of the council, a good and righteous man\n(he had not consented to their counsel and deed), from Arimathaea, a city of the Jews, who was also waiting for God’s Kingdom.\nThis man went to Pilate, and asked for Jesus’ body.\nHe took it\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. who was a member of the council a good and altered man he had not consented to their deed from arimathaea a modified of the jews who was also waiting added for god's kingdom this man went to pilate and asked for jesus body he took it\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      274
+    ],
+    "expected_b": [
+      26,
+      259
+    ]
+  },
+  {
+    "id": "7-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. be baptized, and they said to him, “Teacher, what must we do?”\nHe said to them, “Collect no more than that which is appointed to you.”\nSoldiers also asked him, saying, “What about us? What must we do?” He said to them, “Extort from no one by violence\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. be baptized, and they said to him, “Teacher, what must we do?”\nHe said to them, “Collect no more than that which is appointed to you.”\nSoldiers also asked him, saying, “What about us? What must we do?” He said to them, “Extort from no one by violence\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      277
+    ],
+    "expected_b": [
+      26,
+      276
+    ]
+  },
+  {
+    "id": "7-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. be baptized, and they said to him, “Teacher, what must we do?”\nHe said to them, “Collect no more than that which is appointed to you.”\nSoldiers also asked him, saying, “What about us? What must we do?” He said to them, “Extort from no one by violence\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. BE , BAPTIZED , AND , THEY , SAID , TO , HIM , TEACHER , WHAT , MUST , WE , DO , HE , SAID , TO , THEM , COLLECT , NO , MORE , THAN , THAT , WHICH , IS , APPOINTED , TO , YOU , SOLDIERS , ALSO , ASKED , HIM , SAYING , WHAT , ABOUT , US , WHAT , MUST , WE , DO , HE , SAID , TO , THEM , EXTORT , FROM , NO , ONE , BY , VIOLENCE\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      277
+    ],
+    "expected_b": [
+      26,
+      352
+    ]
+  },
+  {
+    "id": "7-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. be baptized, and they said to him, “Teacher, what must we do?”\nHe said to them, “Collect no more than that which is appointed to you.”\nSoldiers also asked him, saying, “What about us? What must we do?” He said to them, “Extort from no one by violence\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. be baptized and they said to him teacher what must changed10 do he said to them collect no more than that which changed22 appointed to you soldiers also asked him saying what about us changed34 must we do he said to them extort from no one by violence\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      277
+    ],
+    "expected_b": [
+      26,
+      277
+    ]
+  },
+  {
+    "id": "7-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. be baptized, and they said to him, “Teacher, what must we do?”\nHe said to them, “Collect no more than that which is appointed to you.”\nSoldiers also asked him, saying, “What about us? What must we do?” He said to them, “Extort from no one by violence\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. be baptized and they said to him teacher what must we do he said to them collect no unexpected additional words more than that which is appointed to you soldiers also asked him saying what about us what must we do he said to them extort from no one by violence\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      277
+    ],
+    "expected_b": [
+      26,
+      286
+    ]
+  },
+  {
+    "id": "7-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. be baptized, and they said to him, “Teacher, what must we do?”\nHe said to them, “Collect no more than that which is appointed to you.”\nSoldiers also asked him, saying, “What about us? What must we do?” He said to them, “Extort from no one by violence\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. be baptized and they said to him teacher what must we do he said to them collect no which is appointed to you soldiers also asked him saying what about us what must we do he said to them extort from no one by violence\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      277
+    ],
+    "expected_b": [
+      26,
+      243
+    ]
+  },
+  {
+    "id": "7-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. be baptized, and they said to him, “Teacher, what must we do?”\nHe said to them, “Collect no more than that which is appointed to you.”\nSoldiers also asked him, saying, “What about us? What must we do?” He said to them, “Extort from no one by violence\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. be baptized and they said to him teacher what must altered do he said to them collect no that which is appointed modified you soldiers also asked him saying what added about us what must we do he said to them extort from no one by violence\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      277
+    ],
+    "expected_b": [
+      26,
+      265
+    ]
+  },
+  {
+    "id": "8-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. your fathers killed them.\nSo you testify and consent to the works of your fathers. For they killed them, and you build their tombs.\nTherefore also the wisdom of God said, ‘I will send to them prophets and apostles; and some of them they will kill and persecute\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. your fathers killed them.\nSo you testify and consent to the works of your fathers. For they killed them, and you build their tombs.\nTherefore also the wisdom of God said, ‘I will send to them prophets and apostles; and some of them they will kill and persecute\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      287
+    ],
+    "expected_b": [
+      26,
+      286
+    ]
+  },
+  {
+    "id": "8-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. your fathers killed them.\nSo you testify and consent to the works of your fathers. For they killed them, and you build their tombs.\nTherefore also the wisdom of God said, ‘I will send to them prophets and apostles; and some of them they will kill and persecute\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. YOUR , FATHERS , KILLED , THEM , SO , YOU , TESTIFY , AND , CONSENT , TO , THE , WORKS , OF , YOUR , FATHERS , FOR , THEY , KILLED , THEM , AND , YOU , BUILD , THEIR , TOMBS , THEREFORE , ALSO , THE , WISDOM , OF , GOD , SAID , I , WILL , SEND , TO , THEM , PROPHETS , AND , APOSTLES , AND , SOME , OF , THEM , THEY , WILL , KILL , AND , PERSECUTE\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      287
+    ],
+    "expected_b": [
+      26,
+      373
+    ]
+  },
+  {
+    "id": "8-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. your fathers killed them.\nSo you testify and consent to the works of your fathers. For they killed them, and you build their tombs.\nTherefore also the wisdom of God said, ‘I will send to them prophets and apostles; and some of them they will kill and persecute\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. your fathers killed them so you testify and consent to changed10 works of your fathers for they killed them and you build changed22 tombs therefore also the wisdom of god said i will send changed34 them prophets and apostles and some of them they will kill and persecute\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      287
+    ],
+    "expected_b": [
+      26,
+      296
+    ]
+  },
+  {
+    "id": "8-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. your fathers killed them.\nSo you testify and consent to the works of your fathers. For they killed them, and you build their tombs.\nTherefore also the wisdom of God said, ‘I will send to them prophets and apostles; and some of them they will kill and persecute\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. your fathers killed them so you testify and consent to the works of your fathers for they killed unexpected additional words them and you build their tombs therefore also the wisdom of god said i will send to them prophets and apostles and some of them they will kill and persecute\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      287
+    ],
+    "expected_b": [
+      26,
+      307
+    ]
+  },
+  {
+    "id": "8-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. your fathers killed them.\nSo you testify and consent to the works of your fathers. For they killed them, and you build their tombs.\nTherefore also the wisdom of God said, ‘I will send to them prophets and apostles; and some of them they will kill and persecute\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. your fathers killed them so you testify and consent to the works of your fathers for they killed build their tombs therefore also the wisdom of god said i will send to them prophets and apostles and some of them they will kill and persecute\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      287
+    ],
+    "expected_b": [
+      26,
+      266
+    ]
+  },
+  {
+    "id": "8-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. your fathers killed them.\nSo you testify and consent to the works of your fathers. For they killed them, and you build their tombs.\nTherefore also the wisdom of God said, ‘I will send to them prophets and apostles; and some of them they will kill and persecute\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. your fathers killed them so you testify and consent to altered works of your fathers for they killed you build their tombs modified also the wisdom of god said i added will send to them prophets and apostles and some of them they will kill and persecute\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      287
+    ],
+    "expected_b": [
+      26,
+      279
+    ]
+  },
+  {
+    "id": "9-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. father,\nto grant to us that we, being delivered out of the hand of our enemies, should serve him without fear,\nin holiness and righteousness before him all the days of our life.\nAnd you, child, will be called a prophet of the Most High; for you will\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. father,\nto grant to us that we, being delivered out of the hand of our enemies, should serve him without fear,\nin holiness and righteousness before him all the days of our life.\nAnd you, child, will be called a prophet of the Most High; for you will\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      276
+    ],
+    "expected_b": [
+      26,
+      275
+    ]
+  },
+  {
+    "id": "9-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. father,\nto grant to us that we, being delivered out of the hand of our enemies, should serve him without fear,\nin holiness and righteousness before him all the days of our life.\nAnd you, child, will be called a prophet of the Most High; for you will\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. FATHER , TO , GRANT , TO , US , THAT , WE , BEING , DELIVERED , OUT , OF , THE , HAND , OF , OUR , ENEMIES , SHOULD , SERVE , HIM , WITHOUT , FEAR , IN , HOLINESS , AND , RIGHTEOUSNESS , BEFORE , HIM , ALL , THE , DAYS , OF , OUR , LIFE , AND , YOU , CHILD , WILL , BE , CALLED , A , PROPHET , OF , THE , MOST , HIGH , FOR , YOU , WILL\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      276
+    ],
+    "expected_b": [
+      26,
+      361
+    ]
+  },
+  {
+    "id": "9-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. father,\nto grant to us that we, being delivered out of the hand of our enemies, should serve him without fear,\nin holiness and righteousness before him all the days of our life.\nAnd you, child, will be called a prophet of the Most High; for you will\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. father to grant to us that we being delivered out changed10 the hand of our enemies should serve him without fear in changed22 and righteousness before him all the days of our life and changed34 child will be called a prophet of the most high for you will\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      276
+    ],
+    "expected_b": [
+      26,
+      281
+    ]
+  },
+  {
+    "id": "9-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. father,\nto grant to us that we, being delivered out of the hand of our enemies, should serve him without fear,\nin holiness and righteousness before him all the days of our life.\nAnd you, child, will be called a prophet of the Most High; for you will\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. father to grant to us that we being delivered out of the hand of our enemies should serve unexpected additional words him without fear in holiness and righteousness before him all the days of our life and you child will be called a prophet of the most high for you will\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      276
+    ],
+    "expected_b": [
+      26,
+      295
+    ]
+  },
+  {
+    "id": "9-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. father,\nto grant to us that we, being delivered out of the hand of our enemies, should serve him without fear,\nin holiness and righteousness before him all the days of our life.\nAnd you, child, will be called a prophet of the Most High; for you will\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. father to grant to us that we being delivered out of the hand of our enemies should serve in holiness and righteousness before him all the days of our life and you child will be called a prophet of the most high for you will\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      276
+    ],
+    "expected_b": [
+      26,
+      250
+    ]
+  },
+  {
+    "id": "9-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. father,\nto grant to us that we, being delivered out of the hand of our enemies, should serve him without fear,\nin holiness and righteousness before him all the days of our life.\nAnd you, child, will be called a prophet of the Most High; for you will\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. father to grant to us that we being delivered out altered the hand of our enemies should serve fear in holiness and modified before him all the days of our added life and you child will be called a prophet of the most high for you will\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      276
+    ],
+    "expected_b": [
+      26,
+      261
+    ]
+  },
+  {
+    "id": "10-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. strength with his arm. He has scattered the proud in the imagination of their hearts.\nHe has put down princes from their thrones, and has exalted the lowly.\nHe has filled the hungry with good things. He has sent the rich away empty.\nHe has given help to\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. strength with his arm. He has scattered the proud in the imagination of their hearts.\nHe has put down princes from their thrones, and has exalted the lowly.\nHe has filled the hungry with good things. He has sent the rich away empty.\nHe has given help to\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      280
+    ],
+    "expected_b": [
+      26,
+      279
+    ]
+  },
+  {
+    "id": "10-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. strength with his arm. He has scattered the proud in the imagination of their hearts.\nHe has put down princes from their thrones, and has exalted the lowly.\nHe has filled the hungry with good things. He has sent the rich away empty.\nHe has given help to\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. STRENGTH , WITH , HIS , ARM , HE , HAS , SCATTERED , THE , PROUD , IN , THE , IMAGINATION , OF , THEIR , HEARTS , HE , HAS , PUT , DOWN , PRINCES , FROM , THEIR , THRONES , AND , HAS , EXALTED , THE , LOWLY , HE , HAS , FILLED , THE , HUNGRY , WITH , GOOD , THINGS , HE , HAS , SENT , THE , RICH , AWAY , EMPTY , HE , HAS , GIVEN , HELP , TO\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      280
+    ],
+    "expected_b": [
+      26,
+      367
+    ]
+  },
+  {
+    "id": "10-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. strength with his arm. He has scattered the proud in the imagination of their hearts.\nHe has put down princes from their thrones, and has exalted the lowly.\nHe has filled the hungry with good things. He has sent the rich away empty.\nHe has given help to\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. strength with his arm he has scattered the proud in changed10 imagination of their hearts he has put down princes from their changed22 and has exalted the lowly he has filled the hungry with changed34 things he has sent the rich away empty he has given help to\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      280
+    ],
+    "expected_b": [
+      26,
+      286
+    ]
+  },
+  {
+    "id": "10-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. strength with his arm. He has scattered the proud in the imagination of their hearts.\nHe has put down princes from their thrones, and has exalted the lowly.\nHe has filled the hungry with good things. He has sent the rich away empty.\nHe has given help to\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. strength with his arm he has scattered the proud in the imagination of their hearts he has put unexpected additional words down princes from their thrones and has exalted the lowly he has filled the hungry with good things he has sent the rich away empty he has given help to\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      280
+    ],
+    "expected_b": [
+      26,
+      301
+    ]
+  },
+  {
+    "id": "10-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. strength with his arm. He has scattered the proud in the imagination of their hearts.\nHe has put down princes from their thrones, and has exalted the lowly.\nHe has filled the hungry with good things. He has sent the rich away empty.\nHe has given help to\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. strength with his arm he has scattered the proud in the imagination of their hearts he has put their thrones and has exalted the lowly he has filled the hungry with good things he has sent the rich away empty he has given help to\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      280
+    ],
+    "expected_b": [
+      26,
+      255
+    ]
+  },
+  {
+    "id": "10-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. strength with his arm. He has scattered the proud in the imagination of their hearts.\nHe has put down princes from their thrones, and has exalted the lowly.\nHe has filled the hungry with good things. He has sent the rich away empty.\nHe has given help to\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. strength with his arm he has scattered the proud in altered imagination of their hearts he has put from their thrones and modified exalted the lowly he has filled the added hungry with good things he has sent the rich away empty he has given help to\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      280
+    ],
+    "expected_b": [
+      26,
+      275
+    ]
+  },
+  {
+    "id": "11-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. heard that, they said, “May that never be!”\nBut he looked at them and said, “Then what is this that is written, ‘The stone which the builders rejected was made the chief cornerstone’?\nEveryone who falls on that stone will be broken to pieces, but it will crush\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. heard that, they said, “May that never be!”\nBut he looked at them and said, “Then what is this that is written, ‘The stone which the builders rejected was made the chief cornerstone’?\nEveryone who falls on that stone will be broken to pieces, but it will crush\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      287
+    ],
+    "expected_b": [
+      26,
+      286
+    ]
+  },
+  {
+    "id": "11-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. heard that, they said, “May that never be!”\nBut he looked at them and said, “Then what is this that is written, ‘The stone which the builders rejected was made the chief cornerstone’?\nEveryone who falls on that stone will be broken to pieces, but it will crush\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. HEARD , THAT , THEY , SAID , MAY , THAT , NEVER , BE , BUT , HE , LOOKED , AT , THEM , AND , SAID , THEN , WHAT , IS , THIS , THAT , IS , WRITTEN , THE , STONE , WHICH , THE , BUILDERS , REJECTED , WAS , MADE , THE , CHIEF , CORNERSTONE , EVERYONE , WHO , FALLS , ON , THAT , STONE , WILL , BE , BROKEN , TO , PIECES , BUT , IT , WILL , CRUSH\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      287
+    ],
+    "expected_b": [
+      26,
+      368
+    ]
+  },
+  {
+    "id": "11-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. heard that, they said, “May that never be!”\nBut he looked at them and said, “Then what is this that is written, ‘The stone which the builders rejected was made the chief cornerstone’?\nEveryone who falls on that stone will be broken to pieces, but it will crush\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. heard that they said may that never be but he changed10 at them and said then what is this that is written changed22 stone which the builders rejected was made the chief cornerstone everyone changed34 falls on that stone will be broken to pieces but it will crush\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      287
+    ],
+    "expected_b": [
+      26,
+      289
+    ]
+  },
+  {
+    "id": "11-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. heard that, they said, “May that never be!”\nBut he looked at them and said, “Then what is this that is written, ‘The stone which the builders rejected was made the chief cornerstone’?\nEveryone who falls on that stone will be broken to pieces, but it will crush\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. heard that they said may that never be but he looked at them and said then what is unexpected additional words this that is written the stone which the builders rejected was made the chief cornerstone everyone who falls on that stone will be broken to pieces but it will crush\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      287
+    ],
+    "expected_b": [
+      26,
+      302
+    ]
+  },
+  {
+    "id": "11-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. heard that, they said, “May that never be!”\nBut he looked at them and said, “Then what is this that is written, ‘The stone which the builders rejected was made the chief cornerstone’?\nEveryone who falls on that stone will be broken to pieces, but it will crush\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. heard that they said may that never be but he looked at them and said then what is written the stone which the builders rejected was made the chief cornerstone everyone who falls on that stone will be broken to pieces but it will crush\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      287
+    ],
+    "expected_b": [
+      26,
+      261
+    ]
+  },
+  {
+    "id": "11-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. heard that, they said, “May that never be!”\nBut he looked at them and said, “Then what is this that is written, ‘The stone which the builders rejected was made the chief cornerstone’?\nEveryone who falls on that stone will be broken to pieces, but it will crush\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. heard that they said may that never be but he altered at them and said then what is is written the stone modified the builders rejected was made the chief added cornerstone everyone who falls on that stone will be broken to pieces but it will crush\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      287
+    ],
+    "expected_b": [
+      26,
+      274
+    ]
+  },
+  {
+    "id": "12-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. the sixth month, the angel Gabriel was sent from God to a city of Galilee named Nazareth,\nto a virgin pledged to be married to a man whose name was Joseph, of David’s house. The virgin’s name was Mary.\nHaving come in, the angel said to her, “Rejoice\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. the sixth month, the angel Gabriel was sent from God to a city of Galilee named Nazareth,\nto a virgin pledged to be married to a man whose name was Joseph, of David’s house. The virgin’s name was Mary.\nHaving come in, the angel said to her, “Rejoice\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      276
+    ],
+    "expected_b": [
+      26,
+      275
+    ]
+  },
+  {
+    "id": "12-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. the sixth month, the angel Gabriel was sent from God to a city of Galilee named Nazareth,\nto a virgin pledged to be married to a man whose name was Joseph, of David’s house. The virgin’s name was Mary.\nHaving come in, the angel said to her, “Rejoice\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. THE , SIXTH , MONTH , THE , ANGEL , GABRIEL , WAS , SENT , FROM , GOD , TO , A , CITY , OF , GALILEE , NAMED , NAZARETH , TO , A , VIRGIN , PLEDGED , TO , BE , MARRIED , TO , A , MAN , WHOSE , NAME , WAS , JOSEPH , OF , DAVID'S , HOUSE , THE , VIRGIN'S , NAME , WAS , MARY , HAVING , COME , IN , THE , ANGEL , SAID , TO , HER , REJOICE\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      276
+    ],
+    "expected_b": [
+      26,
+      361
+    ]
+  },
+  {
+    "id": "12-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. the sixth month, the angel Gabriel was sent from God to a city of Galilee named Nazareth,\nto a virgin pledged to be married to a man whose name was Joseph, of David’s house. The virgin’s name was Mary.\nHaving come in, the angel said to her, “Rejoice\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. the sixth month the angel gabriel was sent from god changed10 a city of galilee named nazareth to a virgin pledged to changed22 married to a man whose name was joseph of david's house changed34 virgin's name was mary having come in the angel said to her rejoice\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      276
+    ],
+    "expected_b": [
+      26,
+      287
+    ]
+  },
+  {
+    "id": "12-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. the sixth month, the angel Gabriel was sent from God to a city of Galilee named Nazareth,\nto a virgin pledged to be married to a man whose name was Joseph, of David’s house. The virgin’s name was Mary.\nHaving come in, the angel said to her, “Rejoice\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. the sixth month the angel gabriel was sent from god to a city of galilee named nazareth to unexpected additional words a virgin pledged to be married to a man whose name was joseph of david's house the virgin's name was mary having come in the angel said to her rejoice\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      276
+    ],
+    "expected_b": [
+      26,
+      295
+    ]
+  },
+  {
+    "id": "12-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. the sixth month, the angel Gabriel was sent from God to a city of Galilee named Nazareth,\nto a virgin pledged to be married to a man whose name was Joseph, of David’s house. The virgin’s name was Mary.\nHaving come in, the angel said to her, “Rejoice\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. the sixth month the angel gabriel was sent from god to a city of galilee named nazareth to to be married to a man whose name was joseph of david's house the virgin's name was mary having come in the angel said to her rejoice\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      276
+    ],
+    "expected_b": [
+      26,
+      250
+    ]
+  },
+  {
+    "id": "12-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. the sixth month, the angel Gabriel was sent from God to a city of Galilee named Nazareth,\nto a virgin pledged to be married to a man whose name was Joseph, of David’s house. The virgin’s name was Mary.\nHaving come in, the angel said to her, “Rejoice\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. the sixth month the angel gabriel was sent from god altered a city of galilee named nazareth to pledged to be married modified a man whose name was joseph of added david's house the virgin's name was mary having come in the angel said to her rejoice\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      276
+    ],
+    "expected_b": [
+      26,
+      275
+    ]
+  },
+  {
+    "id": "13-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. the other on the left.\nJesus said, “Father, forgive them, for they don’t know what they are doing.” Dividing his garments among them, they cast lots.\nThe people stood watching. The rulers with them also scoffed at him, saying, “He saved others. Let him save himself, if this\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. the other on the left.\nJesus said, “Father, forgive them, for they don’t know what they are doing.” Dividing his garments among them, they cast lots.\nThe people stood watching. The rulers with them also scoffed at him, saying, “He saved others. Let him save himself, if this\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      301
+    ],
+    "expected_b": [
+      26,
+      300
+    ]
+  },
+  {
+    "id": "13-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. the other on the left.\nJesus said, “Father, forgive them, for they don’t know what they are doing.” Dividing his garments among them, they cast lots.\nThe people stood watching. The rulers with them also scoffed at him, saying, “He saved others. Let him save himself, if this\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. THE , OTHER , ON , THE , LEFT , JESUS , SAID , FATHER , FORGIVE , THEM , FOR , THEY , DON'T , KNOW , WHAT , THEY , ARE , DOING , DIVIDING , HIS , GARMENTS , AMONG , THEM , THEY , CAST , LOTS , THE , PEOPLE , STOOD , WATCHING , THE , RULERS , WITH , THEM , ALSO , SCOFFED , AT , HIM , SAYING , HE , SAVED , OTHERS , LET , HIM , SAVE , HIMSELF , IF , THIS\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      301
+    ],
+    "expected_b": [
+      26,
+      379
+    ]
+  },
+  {
+    "id": "13-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. the other on the left.\nJesus said, “Father, forgive them, for they don’t know what they are doing.” Dividing his garments among them, they cast lots.\nThe people stood watching. The rulers with them also scoffed at him, saying, “He saved others. Let him save himself, if this\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. the other on the left jesus said father forgive them changed10 they don't know what they are doing dividing his garments among changed22 they cast lots the people stood watching the rulers with them changed34 scoffed at him saying he saved others let him save himself if this\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      301
+    ],
+    "expected_b": [
+      26,
+      301
+    ]
+  },
+  {
+    "id": "13-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. the other on the left.\nJesus said, “Father, forgive them, for they don’t know what they are doing.” Dividing his garments among them, they cast lots.\nThe people stood watching. The rulers with them also scoffed at him, saying, “He saved others. Let him save himself, if this\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. the other on the left jesus said father forgive them for they don't know what they are doing unexpected additional words dividing his garments among them they cast lots the people stood watching the rulers with them also scoffed at him saying he saved others let him save himself if this\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      301
+    ],
+    "expected_b": [
+      26,
+      313
+    ]
+  },
+  {
+    "id": "13-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. the other on the left.\nJesus said, “Father, forgive them, for they don’t know what they are doing.” Dividing his garments among them, they cast lots.\nThe people stood watching. The rulers with them also scoffed at him, saying, “He saved others. Let him save himself, if this\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. the other on the left jesus said father forgive them for they don't know what they are doing among them they cast lots the people stood watching the rulers with them also scoffed at him saying he saved others let him save himself if this\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      301
+    ],
+    "expected_b": [
+      26,
+      263
+    ]
+  },
+  {
+    "id": "13-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. the other on the left.\nJesus said, “Father, forgive them, for they don’t know what they are doing.” Dividing his garments among them, they cast lots.\nThe people stood watching. The rulers with them also scoffed at him, saying, “He saved others. Let him save himself, if this\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. the other on the left jesus said father forgive them altered they don't know what they are doing garments among them they modified lots the people stood watching the rulers added with them also scoffed at him saying he saved others let him save himself if this\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      301
+    ],
+    "expected_b": [
+      26,
+      286
+    ]
+  },
+  {
+    "id": "14-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. myself worthy to come to you; but say the word, and my servant will be healed.\nFor I also am a man placed under authority, having under myself soldiers. I tell this one, ‘Go!’ and he goes; and to another, ‘Come!’ and he comes; and to my servant\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. myself worthy to come to you; but say the word, and my servant will be healed.\nFor I also am a man placed under authority, having under myself soldiers. I tell this one, ‘Go!’ and he goes; and to another, ‘Come!’ and he comes; and to my servant\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      271
+    ],
+    "expected_b": [
+      26,
+      270
+    ]
+  },
+  {
+    "id": "14-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. myself worthy to come to you; but say the word, and my servant will be healed.\nFor I also am a man placed under authority, having under myself soldiers. I tell this one, ‘Go!’ and he goes; and to another, ‘Come!’ and he comes; and to my servant\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. MYSELF , WORTHY , TO , COME , TO , YOU , BUT , SAY , THE , WORD , AND , MY , SERVANT , WILL , BE , HEALED , FOR , I , ALSO , AM , A , MAN , PLACED , UNDER , AUTHORITY , HAVING , UNDER , MYSELF , SOLDIERS , I , TELL , THIS , ONE , GO , AND , HE , GOES , AND , TO , ANOTHER , COME , AND , HE , COMES , AND , TO , MY , SERVANT\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      271
+    ],
+    "expected_b": [
+      26,
+      349
+    ]
+  },
+  {
+    "id": "14-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. myself worthy to come to you; but say the word, and my servant will be healed.\nFor I also am a man placed under authority, having under myself soldiers. I tell this one, ‘Go!’ and he goes; and to another, ‘Come!’ and he comes; and to my servant\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. myself worthy to come to you but say the word changed10 my servant will be healed for i also am a man changed22 under authority having under myself soldiers i tell this one go changed34 he goes and to another come and he comes and to my servant\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      271
+    ],
+    "expected_b": [
+      26,
+      270
+    ]
+  },
+  {
+    "id": "14-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. myself worthy to come to you; but say the word, and my servant will be healed.\nFor I also am a man placed under authority, having under myself soldiers. I tell this one, ‘Go!’ and he goes; and to another, ‘Come!’ and he comes; and to my servant\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. myself worthy to come to you but say the word and my servant will be healed for i unexpected additional words also am a man placed under authority having under myself soldiers i tell this one go and he goes and to another come and he comes and to my servant\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      271
+    ],
+    "expected_b": [
+      26,
+      283
+    ]
+  },
+  {
+    "id": "14-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. myself worthy to come to you; but say the word, and my servant will be healed.\nFor I also am a man placed under authority, having under myself soldiers. I tell this one, ‘Go!’ and he goes; and to another, ‘Come!’ and he comes; and to my servant\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. myself worthy to come to you but say the word and my servant will be healed for i man placed under authority having under myself soldiers i tell this one go and he goes and to another come and he comes and to my servant\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      271
+    ],
+    "expected_b": [
+      26,
+      245
+    ]
+  },
+  {
+    "id": "14-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. myself worthy to come to you; but say the word, and my servant will be healed.\nFor I also am a man placed under authority, having under myself soldiers. I tell this one, ‘Go!’ and he goes; and to another, ‘Come!’ and he comes; and to my servant\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. myself worthy to come to you but say the word altered my servant will be healed for i a man placed under modified having under myself soldiers i tell this added one go and he goes and to another come and he comes and to my servant\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      271
+    ],
+    "expected_b": [
+      26,
+      256
+    ]
+  },
+  {
+    "id": "15-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. aren’t able to do even the least things, why are you anxious about the rest?\nConsider the lilies, how they grow. They don’t toil, neither do they spin; yet I tell you, even Solomon in all his glory was not arrayed like one of these.\nBut if this\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. aren’t able to do even the least things, why are you anxious about the rest?\nConsider the lilies, how they grow. They don’t toil, neither do they spin; yet I tell you, even Solomon in all his glory was not arrayed like one of these.\nBut if this\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      271
+    ],
+    "expected_b": [
+      26,
+      270
+    ]
+  },
+  {
+    "id": "15-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. aren’t able to do even the least things, why are you anxious about the rest?\nConsider the lilies, how they grow. They don’t toil, neither do they spin; yet I tell you, even Solomon in all his glory was not arrayed like one of these.\nBut if this\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. AREN'T , ABLE , TO , DO , EVEN , THE , LEAST , THINGS , WHY , ARE , YOU , ANXIOUS , ABOUT , THE , REST , CONSIDER , THE , LILIES , HOW , THEY , GROW , THEY , DON'T , TOIL , NEITHER , DO , THEY , SPIN , YET , I , TELL , YOU , EVEN , SOLOMON , IN , ALL , HIS , GLORY , WAS , NOT , ARRAYED , LIKE , ONE , OF , THESE , BUT , IF , THIS\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      271
+    ],
+    "expected_b": [
+      26,
+      356
+    ]
+  },
+  {
+    "id": "15-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. aren’t able to do even the least things, why are you anxious about the rest?\nConsider the lilies, how they grow. They don’t toil, neither do they spin; yet I tell you, even Solomon in all his glory was not arrayed like one of these.\nBut if this\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. aren't able to do even the least things why are changed10 anxious about the rest consider the lilies how they grow they changed22 toil neither do they spin yet i tell you even solomon changed34 all his glory was not arrayed like one of these but if this\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      271
+    ],
+    "expected_b": [
+      26,
+      279
+    ]
+  },
+  {
+    "id": "15-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. aren’t able to do even the least things, why are you anxious about the rest?\nConsider the lilies, how they grow. They don’t toil, neither do they spin; yet I tell you, even Solomon in all his glory was not arrayed like one of these.\nBut if this\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. aren't able to do even the least things why are you anxious about the rest consider the lilies unexpected additional words how they grow they don't toil neither do they spin yet i tell you even solomon in all his glory was not arrayed like one of these but if this\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      271
+    ],
+    "expected_b": [
+      26,
+      290
+    ]
+  },
+  {
+    "id": "15-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. aren’t able to do even the least things, why are you anxious about the rest?\nConsider the lilies, how they grow. They don’t toil, neither do they spin; yet I tell you, even Solomon in all his glory was not arrayed like one of these.\nBut if this\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. aren't able to do even the least things why are you anxious about the rest consider the lilies they don't toil neither do they spin yet i tell you even solomon in all his glory was not arrayed like one of these but if this\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      271
+    ],
+    "expected_b": [
+      26,
+      248
+    ]
+  },
+  {
+    "id": "15-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. aren’t able to do even the least things, why are you anxious about the rest?\nConsider the lilies, how they grow. They don’t toil, neither do they spin; yet I tell you, even Solomon in all his glory was not arrayed like one of these.\nBut if this\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. aren't able to do even the least things why are altered anxious about the rest consider the lilies grow they don't toil modified do they spin yet i tell you added even solomon in all his glory was not arrayed like one of these but if this\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      271
+    ],
+    "expected_b": [
+      26,
+      264
+    ]
+  },
+  {
+    "id": "16-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. Jonah is here.\n“No one, when he has lit a lamp, puts it in a cellar or under a basket, but on a stand, that those who come in may see the light.\nThe lamp of the body is the eye. Therefore when your eye is good, your\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. Jonah is here.\n“No one, when he has lit a lamp, puts it in a cellar or under a basket, but on a stand, that those who come in may see the light.\nThe lamp of the body is the eye. Therefore when your eye is good, your\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      242
+    ],
+    "expected_b": [
+      26,
+      241
+    ]
+  },
+  {
+    "id": "16-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. Jonah is here.\n“No one, when he has lit a lamp, puts it in a cellar or under a basket, but on a stand, that those who come in may see the light.\nThe lamp of the body is the eye. Therefore when your eye is good, your\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. JONAH , IS , HERE , NO , ONE , WHEN , HE , HAS , LIT , A , LAMP , PUTS , IT , IN , A , CELLAR , OR , UNDER , A , BASKET , BUT , ON , A , STAND , THAT , THOSE , WHO , COME , IN , MAY , SEE , THE , LIGHT , THE , LAMP , OF , THE , BODY , IS , THE , EYE , THEREFORE , WHEN , YOUR , EYE , IS , GOOD , YOUR\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      242
+    ],
+    "expected_b": [
+      26,
+      326
+    ]
+  },
+  {
+    "id": "16-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. Jonah is here.\n“No one, when he has lit a lamp, puts it in a cellar or under a basket, but on a stand, that those who come in may see the light.\nThe lamp of the body is the eye. Therefore when your eye is good, your\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. jonah is here no one when he has lit a changed10 puts it in a cellar or under a basket but on changed22 stand that those who come in may see the light the changed34 of the body is the eye therefore when your eye is good your\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      242
+    ],
+    "expected_b": [
+      26,
+      250
+    ]
+  },
+  {
+    "id": "16-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. Jonah is here.\n“No one, when he has lit a lamp, puts it in a cellar or under a basket, but on a stand, that those who come in may see the light.\nThe lamp of the body is the eye. Therefore when your eye is good, your\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. jonah is here no one when he has lit a lamp puts it in a cellar or under unexpected additional words a basket but on a stand that those who come in may see the light the lamp of the body is the eye therefore when your eye is good your\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      242
+    ],
+    "expected_b": [
+      26,
+      260
+    ]
+  },
+  {
+    "id": "16-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. Jonah is here.\n“No one, when he has lit a lamp, puts it in a cellar or under a basket, but on a stand, that those who come in may see the light.\nThe lamp of the body is the eye. Therefore when your eye is good, your\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. jonah is here no one when he has lit a lamp puts it in a cellar or under on a stand that those who come in may see the light the lamp of the body is the eye therefore when your eye is good your\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      242
+    ],
+    "expected_b": [
+      26,
+      219
+    ]
+  },
+  {
+    "id": "16-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. Jonah is here.\n“No one, when he has lit a lamp, puts it in a cellar or under a basket, but on a stand, that those who come in may see the light.\nThe lamp of the body is the eye. Therefore when your eye is good, your\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. jonah is here no one when he has lit a altered puts it in a cellar or under but on a stand modified those who come in may see the added light the lamp of the body is the eye therefore when your eye is good your\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      242
+    ],
+    "expected_b": [
+      26,
+      236
+    ]
+  },
+  {
+    "id": "17-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. He will be great and will be called the Son of the Most High. The Lord God will give him the throne of his father David,\nand he will reign over the house of Jacob forever. There will be no end to his Kingdom.”\nMary said to the\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. He will be great and will be called the Son of the Most High. The Lord God will give him the throne of his father David,\nand he will reign over the house of Jacob forever. There will be no end to his Kingdom.”\nMary said to the\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      253
+    ],
+    "expected_b": [
+      26,
+      252
+    ]
+  },
+  {
+    "id": "17-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. He will be great and will be called the Son of the Most High. The Lord God will give him the throne of his father David,\nand he will reign over the house of Jacob forever. There will be no end to his Kingdom.”\nMary said to the\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. HE , WILL , BE , GREAT , AND , WILL , BE , CALLED , THE , SON , OF , THE , MOST , HIGH , THE , LORD , GOD , WILL , GIVE , HIM , THE , THRONE , OF , HIS , FATHER , DAVID , AND , HE , WILL , REIGN , OVER , THE , HOUSE , OF , JACOB , FOREVER , THERE , WILL , BE , NO , END , TO , HIS , KINGDOM , MARY , SAID , TO , THE\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      253
+    ],
+    "expected_b": [
+      26,
+      341
+    ]
+  },
+  {
+    "id": "17-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. He will be great and will be called the Son of the Most High. The Lord God will give him the throne of his father David,\nand he will reign over the house of Jacob forever. There will be no end to his Kingdom.”\nMary said to the\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. he will be great and will be called the son changed10 the most high the lord god will give him the throne changed22 his father david and he will reign over the house of changed34 forever there will be no end to his kingdom mary said to the\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      253
+    ],
+    "expected_b": [
+      26,
+      265
+    ]
+  },
+  {
+    "id": "17-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. He will be great and will be called the Son of the Most High. The Lord God will give him the throne of his father David,\nand he will reign over the house of Jacob forever. There will be no end to his Kingdom.”\nMary said to the\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. he will be great and will be called the son of the most high the lord god will unexpected additional words give him the throne of his father david and he will reign over the house of jacob forever there will be no end to his kingdom mary said to the\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      253
+    ],
+    "expected_b": [
+      26,
+      275
+    ]
+  },
+  {
+    "id": "17-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. He will be great and will be called the Son of the Most High. The Lord God will give him the throne of his father David,\nand he will reign over the house of Jacob forever. There will be no end to his Kingdom.”\nMary said to the\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. he will be great and will be called the son of the most high the lord god will throne of his father david and he will reign over the house of jacob forever there will be no end to his kingdom mary said to the\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      253
+    ],
+    "expected_b": [
+      26,
+      234
+    ]
+  },
+  {
+    "id": "17-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. He will be great and will be called the Son of the Most High. The Lord God will give him the throne of his father David,\nand he will reign over the house of Jacob forever. There will be no end to his Kingdom.”\nMary said to the\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. he will be great and will be called the son altered the most high the lord god will the throne of his modified david and he will reign over the added house of jacob forever there will be no end to his kingdom mary said to the\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      253
+    ],
+    "expected_b": [
+      26,
+      251
+    ]
+  },
+  {
+    "id": "18-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. and hill will be brought low. The crooked will become straight, and the rough ways smooth.\nAll flesh will see God’s salvation.’ ”\nHe said therefore to the multitudes who went out to be baptized by him, “You offspring of vipers, who warned you to flee from the wrath\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. and hill will be brought low. The crooked will become straight, and the rough ways smooth.\nAll flesh will see God’s salvation.’ ”\nHe said therefore to the multitudes who went out to be baptized by him, “You offspring of vipers, who warned you to flee from the wrath\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      292
+    ],
+    "expected_b": [
+      26,
+      291
+    ]
+  },
+  {
+    "id": "18-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. and hill will be brought low. The crooked will become straight, and the rough ways smooth.\nAll flesh will see God’s salvation.’ ”\nHe said therefore to the multitudes who went out to be baptized by him, “You offspring of vipers, who warned you to flee from the wrath\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. AND , HILL , WILL , BE , BROUGHT , LOW , THE , CROOKED , WILL , BECOME , STRAIGHT , AND , THE , ROUGH , WAYS , SMOOTH , ALL , FLESH , WILL , SEE , GOD'S , SALVATION , HE , SAID , THEREFORE , TO , THE , MULTITUDES , WHO , WENT , OUT , TO , BE , BAPTIZED , BY , HIM , YOU , OFFSPRING , OF , VIPERS , WHO , WARNED , YOU , TO , FLEE , FROM , THE , WRATH\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      292
+    ],
+    "expected_b": [
+      26,
+      375
+    ]
+  },
+  {
+    "id": "18-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. and hill will be brought low. The crooked will become straight, and the rough ways smooth.\nAll flesh will see God’s salvation.’ ”\nHe said therefore to the multitudes who went out to be baptized by him, “You offspring of vipers, who warned you to flee from the wrath\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. and hill will be brought low the crooked will become changed10 and the rough ways smooth all flesh will see god's salvation changed22 said therefore to the multitudes who went out to be baptized changed34 him you offspring of vipers who warned you to flee from the wrath\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      292
+    ],
+    "expected_b": [
+      26,
+      296
+    ]
+  },
+  {
+    "id": "18-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. and hill will be brought low. The crooked will become straight, and the rough ways smooth.\nAll flesh will see God’s salvation.’ ”\nHe said therefore to the multitudes who went out to be baptized by him, “You offspring of vipers, who warned you to flee from the wrath\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. and hill will be brought low the crooked will become straight and the rough ways smooth all flesh unexpected additional words will see god's salvation he said therefore to the multitudes who went out to be baptized by him you offspring of vipers who warned you to flee from the wrath\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      292
+    ],
+    "expected_b": [
+      26,
+      309
+    ]
+  },
+  {
+    "id": "18-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. and hill will be brought low. The crooked will become straight, and the rough ways smooth.\nAll flesh will see God’s salvation.’ ”\nHe said therefore to the multitudes who went out to be baptized by him, “You offspring of vipers, who warned you to flee from the wrath\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. and hill will be brought low the crooked will become straight and the rough ways smooth all flesh salvation he said therefore to the multitudes who went out to be baptized by him you offspring of vipers who warned you to flee from the wrath\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      292
+    ],
+    "expected_b": [
+      26,
+      266
+    ]
+  },
+  {
+    "id": "18-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. and hill will be brought low. The crooked will become straight, and the rough ways smooth.\nAll flesh will see God’s salvation.’ ”\nHe said therefore to the multitudes who went out to be baptized by him, “You offspring of vipers, who warned you to flee from the wrath\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. and hill will be brought low the crooked will become altered and the rough ways smooth all flesh god's salvation he said modified to the multitudes who went out to added be baptized by him you offspring of vipers who warned you to flee from the wrath\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      292
+    ],
+    "expected_b": [
+      26,
+      276
+    ]
+  },
+  {
+    "id": "19-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. soul is required of you. The things which you have prepared—whose will they be?’\nSo is he who lays up treasure for himself, and is not rich toward God.”\nHe said to his disciples, “Therefore I tell you, don’t be anxious for your life, what you will\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. soul is required of you. The things which you have prepared—whose will they be?’\nSo is he who lays up treasure for himself, and is not rich toward God.”\nHe said to his disciples, “Therefore I tell you, don’t be anxious for your life, what you will\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      274
+    ],
+    "expected_b": [
+      26,
+      273
+    ]
+  },
+  {
+    "id": "19-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. soul is required of you. The things which you have prepared—whose will they be?’\nSo is he who lays up treasure for himself, and is not rich toward God.”\nHe said to his disciples, “Therefore I tell you, don’t be anxious for your life, what you will\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. SOUL , IS , REQUIRED , OF , YOU , THE , THINGS , WHICH , YOU , HAVE , PREPARED , WHOSE , WILL , THEY , BE , SO , IS , HE , WHO , LAYS , UP , TREASURE , FOR , HIMSELF , AND , IS , NOT , RICH , TOWARD , GOD , HE , SAID , TO , HIS , DISCIPLES , THEREFORE , I , TELL , YOU , DON'T , BE , ANXIOUS , FOR , YOUR , LIFE , WHAT , YOU , WILL\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      274
+    ],
+    "expected_b": [
+      26,
+      357
+    ]
+  },
+  {
+    "id": "19-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. soul is required of you. The things which you have prepared—whose will they be?’\nSo is he who lays up treasure for himself, and is not rich toward God.”\nHe said to his disciples, “Therefore I tell you, don’t be anxious for your life, what you will\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. soul is required of you the things which you have changed10 whose will they be so is he who lays up treasure changed22 himself and is not rich toward god he said to his changed34 therefore i tell you don't be anxious for your life what you will\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      274
+    ],
+    "expected_b": [
+      26,
+      270
+    ]
+  },
+  {
+    "id": "19-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. soul is required of you. The things which you have prepared—whose will they be?’\nSo is he who lays up treasure for himself, and is not rich toward God.”\nHe said to his disciples, “Therefore I tell you, don’t be anxious for your life, what you will\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. soul is required of you the things which you have prepared whose will they be so is he unexpected additional words who lays up treasure for himself and is not rich toward god he said to his disciples therefore i tell you don't be anxious for your life what you will\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      274
+    ],
+    "expected_b": [
+      26,
+      291
+    ]
+  },
+  {
+    "id": "19-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. soul is required of you. The things which you have prepared—whose will they be?’\nSo is he who lays up treasure for himself, and is not rich toward God.”\nHe said to his disciples, “Therefore I tell you, don’t be anxious for your life, what you will\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. soul is required of you the things which you have prepared whose will they be so is he treasure for himself and is not rich toward god he said to his disciples therefore i tell you don't be anxious for your life what you will\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      274
+    ],
+    "expected_b": [
+      26,
+      251
+    ]
+  },
+  {
+    "id": "19-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. soul is required of you. The things which you have prepared—whose will they be?’\nSo is he who lays up treasure for himself, and is not rich toward God.”\nHe said to his disciples, “Therefore I tell you, don’t be anxious for your life, what you will\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. soul is required of you the things which you have altered whose will they be so is he up treasure for himself modified is not rich toward god he said added to his disciples therefore i tell you don't be anxious for your life what you will\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      274
+    ],
+    "expected_b": [
+      26,
+      264
+    ]
+  },
+  {
+    "id": "20-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. dresser, ‘Behold, these three years I have come looking for fruit on this fig tree, and found none. Cut it down! Why does it waste the soil?’\nHe answered, ‘Lord, leave it alone this year also, until I dig around it and fertilize it.\nIf it bears fruit\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. dresser, ‘Behold, these three years I have come looking for fruit on this fig tree, and found none. Cut it down! Why does it waste the soil?’\nHe answered, ‘Lord, leave it alone this year also, until I dig around it and fertilize it.\nIf it bears fruit\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      277
+    ],
+    "expected_b": [
+      26,
+      276
+    ]
+  },
+  {
+    "id": "20-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. dresser, ‘Behold, these three years I have come looking for fruit on this fig tree, and found none. Cut it down! Why does it waste the soil?’\nHe answered, ‘Lord, leave it alone this year also, until I dig around it and fertilize it.\nIf it bears fruit\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. DRESSER , BEHOLD , THESE , THREE , YEARS , I , HAVE , COME , LOOKING , FOR , FRUIT , ON , THIS , FIG , TREE , AND , FOUND , NONE , CUT , IT , DOWN , WHY , DOES , IT , WASTE , THE , SOIL , HE , ANSWERED , LORD , LEAVE , IT , ALONE , THIS , YEAR , ALSO , UNTIL , I , DIG , AROUND , IT , AND , FERTILIZE , IT , IF , IT , BEARS , FRUIT\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      277
+    ],
+    "expected_b": [
+      26,
+      357
+    ]
+  },
+  {
+    "id": "20-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. dresser, ‘Behold, these three years I have come looking for fruit on this fig tree, and found none. Cut it down! Why does it waste the soil?’\nHe answered, ‘Lord, leave it alone this year also, until I dig around it and fertilize it.\nIf it bears fruit\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. dresser behold these three years i have come looking for changed10 on this fig tree and found none cut it down why changed22 it waste the soil he answered lord leave it alone this changed34 also until i dig around it and fertilize it if it bears fruit\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      277
+    ],
+    "expected_b": [
+      26,
+      277
+    ]
+  },
+  {
+    "id": "20-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. dresser, ‘Behold, these three years I have come looking for fruit on this fig tree, and found none. Cut it down! Why does it waste the soil?’\nHe answered, ‘Lord, leave it alone this year also, until I dig around it and fertilize it.\nIf it bears fruit\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. dresser behold these three years i have come looking for fruit on this fig tree and found none unexpected additional words cut it down why does it waste the soil he answered lord leave it alone this year also until i dig around it and fertilize it if it bears fruit\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      277
+    ],
+    "expected_b": [
+      26,
+      291
+    ]
+  },
+  {
+    "id": "20-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. dresser, ‘Behold, these three years I have come looking for fruit on this fig tree, and found none. Cut it down! Why does it waste the soil?’\nHe answered, ‘Lord, leave it alone this year also, until I dig around it and fertilize it.\nIf it bears fruit\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. dresser behold these three years i have come looking for fruit on this fig tree and found none why does it waste the soil he answered lord leave it alone this year also until i dig around it and fertilize it if it bears fruit\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      277
+    ],
+    "expected_b": [
+      26,
+      251
+    ]
+  },
+  {
+    "id": "20-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. dresser, ‘Behold, these three years I have come looking for fruit on this fig tree, and found none. Cut it down! Why does it waste the soil?’\nHe answered, ‘Lord, leave it alone this year also, until I dig around it and fertilize it.\nIf it bears fruit\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. dresser behold these three years i have come looking for altered on this fig tree and found none down why does it modified the soil he answered lord leave it added alone this year also until i dig around it and fertilize it if it bears fruit\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      277
+    ],
+    "expected_b": [
+      26,
+      267
+    ]
+  },
+  {
+    "id": "21-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. are within, and behold, all things will be clean to you.\nBut woe to you Pharisees! For you tithe mint and rue and every herb, but you bypass justice and God’s love. You ought to have done these, and not to have left the other undone.\nWoe to\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. are within, and behold, all things will be clean to you.\nBut woe to you Pharisees! For you tithe mint and rue and every herb, but you bypass justice and God’s love. You ought to have done these, and not to have left the other undone.\nWoe to\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      267
+    ],
+    "expected_b": [
+      26,
+      266
+    ]
+  },
+  {
+    "id": "21-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. are within, and behold, all things will be clean to you.\nBut woe to you Pharisees! For you tithe mint and rue and every herb, but you bypass justice and God’s love. You ought to have done these, and not to have left the other undone.\nWoe to\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. ARE , WITHIN , AND , BEHOLD , ALL , THINGS , WILL , BE , CLEAN , TO , YOU , BUT , WOE , TO , YOU , PHARISEES , FOR , YOU , TITHE , MINT , AND , RUE , AND , EVERY , HERB , BUT , YOU , BYPASS , JUSTICE , AND , GOD'S , LOVE , YOU , OUGHT , TO , HAVE , DONE , THESE , AND , NOT , TO , HAVE , LEFT , THE , OTHER , UNDONE , WOE , TO\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      267
+    ],
+    "expected_b": [
+      26,
+      352
+    ]
+  },
+  {
+    "id": "21-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. are within, and behold, all things will be clean to you.\nBut woe to you Pharisees! For you tithe mint and rue and every herb, but you bypass justice and God’s love. You ought to have done these, and not to have left the other undone.\nWoe to\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. are within and behold all things will be clean to changed10 but woe to you pharisees for you tithe mint and rue changed22 every herb but you bypass justice and god's love you ought changed34 have done these and not to have left the other undone woe to\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      267
+    ],
+    "expected_b": [
+      26,
+      277
+    ]
+  },
+  {
+    "id": "21-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. are within, and behold, all things will be clean to you.\nBut woe to you Pharisees! For you tithe mint and rue and every herb, but you bypass justice and God’s love. You ought to have done these, and not to have left the other undone.\nWoe to\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. are within and behold all things will be clean to you but woe to you pharisees for you unexpected additional words tithe mint and rue and every herb but you bypass justice and god's love you ought to have done these and not to have left the other undone woe to\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      267
+    ],
+    "expected_b": [
+      26,
+      286
+    ]
+  },
+  {
+    "id": "21-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. are within, and behold, all things will be clean to you.\nBut woe to you Pharisees! For you tithe mint and rue and every herb, but you bypass justice and God’s love. You ought to have done these, and not to have left the other undone.\nWoe to\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. are within and behold all things will be clean to you but woe to you pharisees for you rue and every herb but you bypass justice and god's love you ought to have done these and not to have left the other undone woe to\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      267
+    ],
+    "expected_b": [
+      26,
+      243
+    ]
+  },
+  {
+    "id": "21-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. are within, and behold, all things will be clean to you.\nBut woe to you Pharisees! For you tithe mint and rue and every herb, but you bypass justice and God’s love. You ought to have done these, and not to have left the other undone.\nWoe to\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. are within and behold all things will be clean to altered but woe to you pharisees for you and rue and every modified but you bypass justice and god's love added you ought to have done these and not to have left the other undone woe to\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      267
+    ],
+    "expected_b": [
+      26,
+      261
+    ]
+  },
+  {
+    "id": "22-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. Jesus was, and couldn’t because of the crowd, because he was short.\nHe ran on ahead and climbed up into a sycamore tree to see him, for he was going to pass that way.\nWhen Jesus came to the place, he looked up and saw him, and said\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. Jesus was, and couldn’t because of the crowd, because he was short.\nHe ran on ahead and climbed up into a sycamore tree to see him, for he was going to pass that way.\nWhen Jesus came to the place, he looked up and saw him, and said\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      258
+    ],
+    "expected_b": [
+      26,
+      257
+    ]
+  },
+  {
+    "id": "22-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. Jesus was, and couldn’t because of the crowd, because he was short.\nHe ran on ahead and climbed up into a sycamore tree to see him, for he was going to pass that way.\nWhen Jesus came to the place, he looked up and saw him, and said\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. JESUS , WAS , AND , COULDN'T , BECAUSE , OF , THE , CROWD , BECAUSE , HE , WAS , SHORT , HE , RAN , ON , AHEAD , AND , CLIMBED , UP , INTO , A , SYCAMORE , TREE , TO , SEE , HIM , FOR , HE , WAS , GOING , TO , PASS , THAT , WAY , WHEN , JESUS , CAME , TO , THE , PLACE , HE , LOOKED , UP , AND , SAW , HIM , AND , SAID\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      258
+    ],
+    "expected_b": [
+      26,
+      344
+    ]
+  },
+  {
+    "id": "22-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. Jesus was, and couldn’t because of the crowd, because he was short.\nHe ran on ahead and climbed up into a sycamore tree to see him, for he was going to pass that way.\nWhen Jesus came to the place, he looked up and saw him, and said\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. jesus was and couldn't because of the crowd because he changed10 short he ran on ahead and climbed up into a sycamore changed22 to see him for he was going to pass that way changed34 jesus came to the place he looked up and saw him and said\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      258
+    ],
+    "expected_b": [
+      26,
+      266
+    ]
+  },
+  {
+    "id": "22-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. Jesus was, and couldn’t because of the crowd, because he was short.\nHe ran on ahead and climbed up into a sycamore tree to see him, for he was going to pass that way.\nWhen Jesus came to the place, he looked up and saw him, and said\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. jesus was and couldn't because of the crowd because he was short he ran on ahead and climbed unexpected additional words up into a sycamore tree to see him for he was going to pass that way when jesus came to the place he looked up and saw him and said\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      258
+    ],
+    "expected_b": [
+      26,
+      278
+    ]
+  },
+  {
+    "id": "22-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. Jesus was, and couldn’t because of the crowd, because he was short.\nHe ran on ahead and climbed up into a sycamore tree to see him, for he was going to pass that way.\nWhen Jesus came to the place, he looked up and saw him, and said\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. jesus was and couldn't because of the crowd because he was short he ran on ahead and climbed sycamore tree to see him for he was going to pass that way when jesus came to the place he looked up and saw him and said\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      258
+    ],
+    "expected_b": [
+      26,
+      240
+    ]
+  },
+  {
+    "id": "22-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. Jesus was, and couldn’t because of the crowd, because he was short.\nHe ran on ahead and climbed up into a sycamore tree to see him, for he was going to pass that way.\nWhen Jesus came to the place, he looked up and saw him, and said\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. jesus was and couldn't because of the crowd because he altered short he ran on ahead and climbed a sycamore tree to modified him for he was going to pass added that way when jesus came to the place he looked up and saw him and said\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      258
+    ],
+    "expected_b": [
+      26,
+      257
+    ]
+  },
+  {
+    "id": "23-exact",
+    "kind": "exact",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. things which have happened there in these days?”\nHe said to them, “What things?” They said to him, “The things concerning Jesus the Nazarene, who was a prophet mighty in deed and word before God and all the people;\nand how the chief priests and our rulers delivered\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. things which have happened there in these days?”\nHe said to them, “What things?” They said to him, “The things concerning Jesus the Nazarene, who was a prophet mighty in deed and word before God and all the people;\nand how the chief priests and our rulers delivered\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      292
+    ],
+    "expected_b": [
+      26,
+      291
+    ]
+  },
+  {
+    "id": "23-case-punctuation",
+    "kind": "case-punctuation",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. things which have happened there in these days?”\nHe said to them, “What things?” They said to him, “The things concerning Jesus the Nazarene, who was a prophet mighty in deed and word before God and all the people;\nand how the chief priests and our rulers delivered\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. THINGS , WHICH , HAVE , HAPPENED , THERE , IN , THESE , DAYS , HE , SAID , TO , THEM , WHAT , THINGS , THEY , SAID , TO , HIM , THE , THINGS , CONCERNING , JESUS , THE , NAZARENE , WHO , WAS , A , PROPHET , MIGHTY , IN , DEED , AND , WORD , BEFORE , GOD , AND , ALL , THE , PEOPLE , AND , HOW , THE , CHIEF , PRIESTS , AND , OUR , RULERS , DELIVERED\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      292
+    ],
+    "expected_b": [
+      26,
+      375
+    ]
+  },
+  {
+    "id": "23-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. things which have happened there in these days?”\nHe said to them, “What things?” They said to him, “The things concerning Jesus the Nazarene, who was a prophet mighty in deed and word before God and all the people;\nand how the chief priests and our rulers delivered\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. things which have happened there in these days he said changed10 them what things they said to him the things concerning jesus changed22 nazarene who was a prophet mighty in deed and word before changed34 and all the people and how the chief priests and our rulers delivered\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      292
+    ],
+    "expected_b": [
+      26,
+      300
+    ]
+  },
+  {
+    "id": "23-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. things which have happened there in these days?”\nHe said to them, “What things?” They said to him, “The things concerning Jesus the Nazarene, who was a prophet mighty in deed and word before God and all the people;\nand how the chief priests and our rulers delivered\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. things which have happened there in these days he said to them what things they said to him unexpected additional words the things concerning jesus the nazarene who was a prophet mighty in deed and word before god and all the people and how the chief priests and our rulers delivered\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      292
+    ],
+    "expected_b": [
+      26,
+      309
+    ]
+  },
+  {
+    "id": "23-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. things which have happened there in these days?”\nHe said to them, “What things?” They said to him, “The things concerning Jesus the Nazarene, who was a prophet mighty in deed and word before God and all the people;\nand how the chief priests and our rulers delivered\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. things which have happened there in these days he said to them what things they said to him jesus the nazarene who was a prophet mighty in deed and word before god and all the people and how the chief priests and our rulers delivered\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      292
+    ],
+    "expected_b": [
+      26,
+      259
+    ]
+  },
+  {
+    "id": "23-mixed",
+    "kind": "mixed",
+    "label": true,
+    "a": "🌿 Unrelated preface alpha. things which have happened there in these days?”\nHe said to them, “What things?” They said to him, “The things concerning Jesus the Nazarene, who was a prophet mighty in deed and word before God and all the people;\nand how the chief priests and our rulers delivered\nDistinct suffix omega.",
+    "b": "🌞 Different preface beta. things which have happened there in these days he said altered them what things they said to him concerning jesus the nazarene modified was a prophet mighty in deed and added word before god and all the people and how the chief priests and our rulers delivered\nAlternative suffix delta.",
+    "expected_a": [
+      27,
+      292
+    ],
+    "expected_b": [
+      26,
+      286
+    ]
+  },
+  {
+    "id": "negative-0",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha0word0 alpha0word1 alpha0word2 alpha0word3 alpha0word4 alpha0word5 alpha0word6 alpha0word7 alpha0word8 alpha0word9 alpha0word10 alpha0word11 alpha0word12 alpha0word13 alpha0word14 alpha0word15 alpha0word16 alpha0word17 alpha0word18 alpha0word19 alpha0word20 alpha0word21 alpha0word22 alpha0word23 alpha0word24 alpha0word25 alpha0word26 alpha0word27 alpha0word28 alpha0word29 alpha0word30 alpha0word31 alpha0word32 alpha0word33 alpha0word34 alpha0word35 alpha0word36 alpha0word37 alpha0word38 alpha0word39 alpha0word40 alpha0word41 alpha0word42 alpha0word43 alpha0word44 alpha0word45 alpha0word46 alpha0word47",
+    "b": "beta0word0 beta0word1 beta0word2 beta0word3 beta0word4 beta0word5 beta0word6 beta0word7 beta0word8 beta0word9 beta0word10 beta0word11 beta0word12 beta0word13 beta0word14 beta0word15 beta0word16 beta0word17 beta0word18 beta0word19 beta0word20 beta0word21 beta0word22 beta0word23 beta0word24 beta0word25 beta0word26 beta0word27 beta0word28 beta0word29 beta0word30 beta0word31 beta0word32 beta0word33 beta0word34 beta0word35 beta0word36 beta0word37 beta0word38 beta0word39 beta0word40 beta0word41 beta0word42 beta0word43 beta0word44 beta0word45 beta0word46 beta0word47"
+  },
+  {
+    "id": "negative-1",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha1word0 alpha1word1 alpha1word2 alpha1word3 alpha1word4 alpha1word5 alpha1word6 alpha1word7 alpha1word8 alpha1word9 alpha1word10 alpha1word11 alpha1word12 alpha1word13 alpha1word14 alpha1word15 alpha1word16 alpha1word17 alpha1word18 alpha1word19 alpha1word20 alpha1word21 alpha1word22 alpha1word23 alpha1word24 alpha1word25 alpha1word26 alpha1word27 alpha1word28 alpha1word29 alpha1word30 alpha1word31 alpha1word32 alpha1word33 alpha1word34 alpha1word35 alpha1word36 alpha1word37 alpha1word38 alpha1word39 alpha1word40 alpha1word41 alpha1word42 alpha1word43 alpha1word44 alpha1word45 alpha1word46 alpha1word47",
+    "b": "beta1word0 beta1word1 beta1word2 beta1word3 beta1word4 beta1word5 beta1word6 beta1word7 beta1word8 beta1word9 beta1word10 beta1word11 beta1word12 beta1word13 beta1word14 beta1word15 beta1word16 beta1word17 beta1word18 beta1word19 beta1word20 beta1word21 beta1word22 beta1word23 beta1word24 beta1word25 beta1word26 beta1word27 beta1word28 beta1word29 beta1word30 beta1word31 beta1word32 beta1word33 beta1word34 beta1word35 beta1word36 beta1word37 beta1word38 beta1word39 beta1word40 beta1word41 beta1word42 beta1word43 beta1word44 beta1word45 beta1word46 beta1word47"
+  },
+  {
+    "id": "negative-2",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha2word0 alpha2word1 alpha2word2 alpha2word3 alpha2word4 alpha2word5 alpha2word6 alpha2word7 alpha2word8 alpha2word9 alpha2word10 alpha2word11 alpha2word12 alpha2word13 alpha2word14 alpha2word15 alpha2word16 alpha2word17 alpha2word18 alpha2word19 alpha2word20 alpha2word21 alpha2word22 alpha2word23 alpha2word24 alpha2word25 alpha2word26 alpha2word27 alpha2word28 alpha2word29 alpha2word30 alpha2word31 alpha2word32 alpha2word33 alpha2word34 alpha2word35 alpha2word36 alpha2word37 alpha2word38 alpha2word39 alpha2word40 alpha2word41 alpha2word42 alpha2word43 alpha2word44 alpha2word45 alpha2word46 alpha2word47",
+    "b": "beta2word0 beta2word1 beta2word2 beta2word3 beta2word4 beta2word5 beta2word6 beta2word7 beta2word8 beta2word9 beta2word10 beta2word11 beta2word12 beta2word13 beta2word14 beta2word15 beta2word16 beta2word17 beta2word18 beta2word19 beta2word20 beta2word21 beta2word22 beta2word23 beta2word24 beta2word25 beta2word26 beta2word27 beta2word28 beta2word29 beta2word30 beta2word31 beta2word32 beta2word33 beta2word34 beta2word35 beta2word36 beta2word37 beta2word38 beta2word39 beta2word40 beta2word41 beta2word42 beta2word43 beta2word44 beta2word45 beta2word46 beta2word47"
+  },
+  {
+    "id": "negative-3",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha3word0 alpha3word1 alpha3word2 alpha3word3 alpha3word4 alpha3word5 alpha3word6 alpha3word7 alpha3word8 alpha3word9 alpha3word10 alpha3word11 alpha3word12 alpha3word13 alpha3word14 alpha3word15 alpha3word16 alpha3word17 alpha3word18 alpha3word19 alpha3word20 alpha3word21 alpha3word22 alpha3word23 alpha3word24 alpha3word25 alpha3word26 alpha3word27 alpha3word28 alpha3word29 alpha3word30 alpha3word31 alpha3word32 alpha3word33 alpha3word34 alpha3word35 alpha3word36 alpha3word37 alpha3word38 alpha3word39 alpha3word40 alpha3word41 alpha3word42 alpha3word43 alpha3word44 alpha3word45 alpha3word46 alpha3word47",
+    "b": "beta3word0 beta3word1 beta3word2 beta3word3 beta3word4 beta3word5 beta3word6 beta3word7 beta3word8 beta3word9 beta3word10 beta3word11 beta3word12 beta3word13 beta3word14 beta3word15 beta3word16 beta3word17 beta3word18 beta3word19 beta3word20 beta3word21 beta3word22 beta3word23 beta3word24 beta3word25 beta3word26 beta3word27 beta3word28 beta3word29 beta3word30 beta3word31 beta3word32 beta3word33 beta3word34 beta3word35 beta3word36 beta3word37 beta3word38 beta3word39 beta3word40 beta3word41 beta3word42 beta3word43 beta3word44 beta3word45 beta3word46 beta3word47"
+  },
+  {
+    "id": "negative-4",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha4word0 alpha4word1 alpha4word2 alpha4word3 alpha4word4 alpha4word5 alpha4word6 alpha4word7 alpha4word8 alpha4word9 alpha4word10 alpha4word11 alpha4word12 alpha4word13 alpha4word14 alpha4word15 alpha4word16 alpha4word17 alpha4word18 alpha4word19 alpha4word20 alpha4word21 alpha4word22 alpha4word23 alpha4word24 alpha4word25 alpha4word26 alpha4word27 alpha4word28 alpha4word29 alpha4word30 alpha4word31 alpha4word32 alpha4word33 alpha4word34 alpha4word35 alpha4word36 alpha4word37 alpha4word38 alpha4word39 alpha4word40 alpha4word41 alpha4word42 alpha4word43 alpha4word44 alpha4word45 alpha4word46 alpha4word47",
+    "b": "beta4word0 beta4word1 beta4word2 beta4word3 beta4word4 beta4word5 beta4word6 beta4word7 beta4word8 beta4word9 beta4word10 beta4word11 beta4word12 beta4word13 beta4word14 beta4word15 beta4word16 beta4word17 beta4word18 beta4word19 beta4word20 beta4word21 beta4word22 beta4word23 beta4word24 beta4word25 beta4word26 beta4word27 beta4word28 beta4word29 beta4word30 beta4word31 beta4word32 beta4word33 beta4word34 beta4word35 beta4word36 beta4word37 beta4word38 beta4word39 beta4word40 beta4word41 beta4word42 beta4word43 beta4word44 beta4word45 beta4word46 beta4word47"
+  },
+  {
+    "id": "negative-5",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha5word0 alpha5word1 alpha5word2 alpha5word3 alpha5word4 alpha5word5 alpha5word6 alpha5word7 alpha5word8 alpha5word9 alpha5word10 alpha5word11 alpha5word12 alpha5word13 alpha5word14 alpha5word15 alpha5word16 alpha5word17 alpha5word18 alpha5word19 alpha5word20 alpha5word21 alpha5word22 alpha5word23 alpha5word24 alpha5word25 alpha5word26 alpha5word27 alpha5word28 alpha5word29 alpha5word30 alpha5word31 alpha5word32 alpha5word33 alpha5word34 alpha5word35 alpha5word36 alpha5word37 alpha5word38 alpha5word39 alpha5word40 alpha5word41 alpha5word42 alpha5word43 alpha5word44 alpha5word45 alpha5word46 alpha5word47",
+    "b": "beta5word0 beta5word1 beta5word2 beta5word3 beta5word4 beta5word5 beta5word6 beta5word7 beta5word8 beta5word9 beta5word10 beta5word11 beta5word12 beta5word13 beta5word14 beta5word15 beta5word16 beta5word17 beta5word18 beta5word19 beta5word20 beta5word21 beta5word22 beta5word23 beta5word24 beta5word25 beta5word26 beta5word27 beta5word28 beta5word29 beta5word30 beta5word31 beta5word32 beta5word33 beta5word34 beta5word35 beta5word36 beta5word37 beta5word38 beta5word39 beta5word40 beta5word41 beta5word42 beta5word43 beta5word44 beta5word45 beta5word46 beta5word47"
+  },
+  {
+    "id": "negative-6",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha6word0 alpha6word1 alpha6word2 alpha6word3 alpha6word4 alpha6word5 alpha6word6 alpha6word7 alpha6word8 alpha6word9 alpha6word10 alpha6word11 alpha6word12 alpha6word13 alpha6word14 alpha6word15 alpha6word16 alpha6word17 alpha6word18 alpha6word19 alpha6word20 alpha6word21 alpha6word22 alpha6word23 alpha6word24 alpha6word25 alpha6word26 alpha6word27 alpha6word28 alpha6word29 alpha6word30 alpha6word31 alpha6word32 alpha6word33 alpha6word34 alpha6word35 alpha6word36 alpha6word37 alpha6word38 alpha6word39 alpha6word40 alpha6word41 alpha6word42 alpha6word43 alpha6word44 alpha6word45 alpha6word46 alpha6word47",
+    "b": "beta6word0 beta6word1 beta6word2 beta6word3 beta6word4 beta6word5 beta6word6 beta6word7 beta6word8 beta6word9 beta6word10 beta6word11 beta6word12 beta6word13 beta6word14 beta6word15 beta6word16 beta6word17 beta6word18 beta6word19 beta6word20 beta6word21 beta6word22 beta6word23 beta6word24 beta6word25 beta6word26 beta6word27 beta6word28 beta6word29 beta6word30 beta6word31 beta6word32 beta6word33 beta6word34 beta6word35 beta6word36 beta6word37 beta6word38 beta6word39 beta6word40 beta6word41 beta6word42 beta6word43 beta6word44 beta6word45 beta6word46 beta6word47"
+  },
+  {
+    "id": "negative-7",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha7word0 alpha7word1 alpha7word2 alpha7word3 alpha7word4 alpha7word5 alpha7word6 alpha7word7 alpha7word8 alpha7word9 alpha7word10 alpha7word11 alpha7word12 alpha7word13 alpha7word14 alpha7word15 alpha7word16 alpha7word17 alpha7word18 alpha7word19 alpha7word20 alpha7word21 alpha7word22 alpha7word23 alpha7word24 alpha7word25 alpha7word26 alpha7word27 alpha7word28 alpha7word29 alpha7word30 alpha7word31 alpha7word32 alpha7word33 alpha7word34 alpha7word35 alpha7word36 alpha7word37 alpha7word38 alpha7word39 alpha7word40 alpha7word41 alpha7word42 alpha7word43 alpha7word44 alpha7word45 alpha7word46 alpha7word47",
+    "b": "beta7word0 beta7word1 beta7word2 beta7word3 beta7word4 beta7word5 beta7word6 beta7word7 beta7word8 beta7word9 beta7word10 beta7word11 beta7word12 beta7word13 beta7word14 beta7word15 beta7word16 beta7word17 beta7word18 beta7word19 beta7word20 beta7word21 beta7word22 beta7word23 beta7word24 beta7word25 beta7word26 beta7word27 beta7word28 beta7word29 beta7word30 beta7word31 beta7word32 beta7word33 beta7word34 beta7word35 beta7word36 beta7word37 beta7word38 beta7word39 beta7word40 beta7word41 beta7word42 beta7word43 beta7word44 beta7word45 beta7word46 beta7word47"
+  },
+  {
+    "id": "negative-8",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha8word0 alpha8word1 alpha8word2 alpha8word3 alpha8word4 alpha8word5 alpha8word6 alpha8word7 alpha8word8 alpha8word9 alpha8word10 alpha8word11 alpha8word12 alpha8word13 alpha8word14 alpha8word15 alpha8word16 alpha8word17 alpha8word18 alpha8word19 alpha8word20 alpha8word21 alpha8word22 alpha8word23 alpha8word24 alpha8word25 alpha8word26 alpha8word27 alpha8word28 alpha8word29 alpha8word30 alpha8word31 alpha8word32 alpha8word33 alpha8word34 alpha8word35 alpha8word36 alpha8word37 alpha8word38 alpha8word39 alpha8word40 alpha8word41 alpha8word42 alpha8word43 alpha8word44 alpha8word45 alpha8word46 alpha8word47",
+    "b": "beta8word0 beta8word1 beta8word2 beta8word3 beta8word4 beta8word5 beta8word6 beta8word7 beta8word8 beta8word9 beta8word10 beta8word11 beta8word12 beta8word13 beta8word14 beta8word15 beta8word16 beta8word17 beta8word18 beta8word19 beta8word20 beta8word21 beta8word22 beta8word23 beta8word24 beta8word25 beta8word26 beta8word27 beta8word28 beta8word29 beta8word30 beta8word31 beta8word32 beta8word33 beta8word34 beta8word35 beta8word36 beta8word37 beta8word38 beta8word39 beta8word40 beta8word41 beta8word42 beta8word43 beta8word44 beta8word45 beta8word46 beta8word47"
+  },
+  {
+    "id": "negative-9",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha9word0 alpha9word1 alpha9word2 alpha9word3 alpha9word4 alpha9word5 alpha9word6 alpha9word7 alpha9word8 alpha9word9 alpha9word10 alpha9word11 alpha9word12 alpha9word13 alpha9word14 alpha9word15 alpha9word16 alpha9word17 alpha9word18 alpha9word19 alpha9word20 alpha9word21 alpha9word22 alpha9word23 alpha9word24 alpha9word25 alpha9word26 alpha9word27 alpha9word28 alpha9word29 alpha9word30 alpha9word31 alpha9word32 alpha9word33 alpha9word34 alpha9word35 alpha9word36 alpha9word37 alpha9word38 alpha9word39 alpha9word40 alpha9word41 alpha9word42 alpha9word43 alpha9word44 alpha9word45 alpha9word46 alpha9word47",
+    "b": "beta9word0 beta9word1 beta9word2 beta9word3 beta9word4 beta9word5 beta9word6 beta9word7 beta9word8 beta9word9 beta9word10 beta9word11 beta9word12 beta9word13 beta9word14 beta9word15 beta9word16 beta9word17 beta9word18 beta9word19 beta9word20 beta9word21 beta9word22 beta9word23 beta9word24 beta9word25 beta9word26 beta9word27 beta9word28 beta9word29 beta9word30 beta9word31 beta9word32 beta9word33 beta9word34 beta9word35 beta9word36 beta9word37 beta9word38 beta9word39 beta9word40 beta9word41 beta9word42 beta9word43 beta9word44 beta9word45 beta9word46 beta9word47"
+  },
+  {
+    "id": "negative-10",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha10word0 alpha10word1 alpha10word2 alpha10word3 alpha10word4 alpha10word5 alpha10word6 alpha10word7 alpha10word8 alpha10word9 alpha10word10 alpha10word11 alpha10word12 alpha10word13 alpha10word14 alpha10word15 alpha10word16 alpha10word17 alpha10word18 alpha10word19 alpha10word20 alpha10word21 alpha10word22 alpha10word23 alpha10word24 alpha10word25 alpha10word26 alpha10word27 alpha10word28 alpha10word29 alpha10word30 alpha10word31 alpha10word32 alpha10word33 alpha10word34 alpha10word35 alpha10word36 alpha10word37 alpha10word38 alpha10word39 alpha10word40 alpha10word41 alpha10word42 alpha10word43 alpha10word44 alpha10word45 alpha10word46 alpha10word47",
+    "b": "beta10word0 beta10word1 beta10word2 beta10word3 beta10word4 beta10word5 beta10word6 beta10word7 beta10word8 beta10word9 beta10word10 beta10word11 beta10word12 beta10word13 beta10word14 beta10word15 beta10word16 beta10word17 beta10word18 beta10word19 beta10word20 beta10word21 beta10word22 beta10word23 beta10word24 beta10word25 beta10word26 beta10word27 beta10word28 beta10word29 beta10word30 beta10word31 beta10word32 beta10word33 beta10word34 beta10word35 beta10word36 beta10word37 beta10word38 beta10word39 beta10word40 beta10word41 beta10word42 beta10word43 beta10word44 beta10word45 beta10word46 beta10word47"
+  },
+  {
+    "id": "negative-11",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha11word0 alpha11word1 alpha11word2 alpha11word3 alpha11word4 alpha11word5 alpha11word6 alpha11word7 alpha11word8 alpha11word9 alpha11word10 alpha11word11 alpha11word12 alpha11word13 alpha11word14 alpha11word15 alpha11word16 alpha11word17 alpha11word18 alpha11word19 alpha11word20 alpha11word21 alpha11word22 alpha11word23 alpha11word24 alpha11word25 alpha11word26 alpha11word27 alpha11word28 alpha11word29 alpha11word30 alpha11word31 alpha11word32 alpha11word33 alpha11word34 alpha11word35 alpha11word36 alpha11word37 alpha11word38 alpha11word39 alpha11word40 alpha11word41 alpha11word42 alpha11word43 alpha11word44 alpha11word45 alpha11word46 alpha11word47",
+    "b": "beta11word0 beta11word1 beta11word2 beta11word3 beta11word4 beta11word5 beta11word6 beta11word7 beta11word8 beta11word9 beta11word10 beta11word11 beta11word12 beta11word13 beta11word14 beta11word15 beta11word16 beta11word17 beta11word18 beta11word19 beta11word20 beta11word21 beta11word22 beta11word23 beta11word24 beta11word25 beta11word26 beta11word27 beta11word28 beta11word29 beta11word30 beta11word31 beta11word32 beta11word33 beta11word34 beta11word35 beta11word36 beta11word37 beta11word38 beta11word39 beta11word40 beta11word41 beta11word42 beta11word43 beta11word44 beta11word45 beta11word46 beta11word47"
+  },
+  {
+    "id": "negative-12",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha12word0 alpha12word1 alpha12word2 alpha12word3 alpha12word4 alpha12word5 alpha12word6 alpha12word7 alpha12word8 alpha12word9 alpha12word10 alpha12word11 alpha12word12 alpha12word13 alpha12word14 alpha12word15 alpha12word16 alpha12word17 alpha12word18 alpha12word19 alpha12word20 alpha12word21 alpha12word22 alpha12word23 alpha12word24 alpha12word25 alpha12word26 alpha12word27 alpha12word28 alpha12word29 alpha12word30 alpha12word31 alpha12word32 alpha12word33 alpha12word34 alpha12word35 alpha12word36 alpha12word37 alpha12word38 alpha12word39 alpha12word40 alpha12word41 alpha12word42 alpha12word43 alpha12word44 alpha12word45 alpha12word46 alpha12word47",
+    "b": "beta12word0 beta12word1 beta12word2 beta12word3 beta12word4 beta12word5 beta12word6 beta12word7 beta12word8 beta12word9 beta12word10 beta12word11 beta12word12 beta12word13 beta12word14 beta12word15 beta12word16 beta12word17 beta12word18 beta12word19 beta12word20 beta12word21 beta12word22 beta12word23 beta12word24 beta12word25 beta12word26 beta12word27 beta12word28 beta12word29 beta12word30 beta12word31 beta12word32 beta12word33 beta12word34 beta12word35 beta12word36 beta12word37 beta12word38 beta12word39 beta12word40 beta12word41 beta12word42 beta12word43 beta12word44 beta12word45 beta12word46 beta12word47"
+  },
+  {
+    "id": "negative-13",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha13word0 alpha13word1 alpha13word2 alpha13word3 alpha13word4 alpha13word5 alpha13word6 alpha13word7 alpha13word8 alpha13word9 alpha13word10 alpha13word11 alpha13word12 alpha13word13 alpha13word14 alpha13word15 alpha13word16 alpha13word17 alpha13word18 alpha13word19 alpha13word20 alpha13word21 alpha13word22 alpha13word23 alpha13word24 alpha13word25 alpha13word26 alpha13word27 alpha13word28 alpha13word29 alpha13word30 alpha13word31 alpha13word32 alpha13word33 alpha13word34 alpha13word35 alpha13word36 alpha13word37 alpha13word38 alpha13word39 alpha13word40 alpha13word41 alpha13word42 alpha13word43 alpha13word44 alpha13word45 alpha13word46 alpha13word47",
+    "b": "beta13word0 beta13word1 beta13word2 beta13word3 beta13word4 beta13word5 beta13word6 beta13word7 beta13word8 beta13word9 beta13word10 beta13word11 beta13word12 beta13word13 beta13word14 beta13word15 beta13word16 beta13word17 beta13word18 beta13word19 beta13word20 beta13word21 beta13word22 beta13word23 beta13word24 beta13word25 beta13word26 beta13word27 beta13word28 beta13word29 beta13word30 beta13word31 beta13word32 beta13word33 beta13word34 beta13word35 beta13word36 beta13word37 beta13word38 beta13word39 beta13word40 beta13word41 beta13word42 beta13word43 beta13word44 beta13word45 beta13word46 beta13word47"
+  },
+  {
+    "id": "negative-14",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha14word0 alpha14word1 alpha14word2 alpha14word3 alpha14word4 alpha14word5 alpha14word6 alpha14word7 alpha14word8 alpha14word9 alpha14word10 alpha14word11 alpha14word12 alpha14word13 alpha14word14 alpha14word15 alpha14word16 alpha14word17 alpha14word18 alpha14word19 alpha14word20 alpha14word21 alpha14word22 alpha14word23 alpha14word24 alpha14word25 alpha14word26 alpha14word27 alpha14word28 alpha14word29 alpha14word30 alpha14word31 alpha14word32 alpha14word33 alpha14word34 alpha14word35 alpha14word36 alpha14word37 alpha14word38 alpha14word39 alpha14word40 alpha14word41 alpha14word42 alpha14word43 alpha14word44 alpha14word45 alpha14word46 alpha14word47",
+    "b": "beta14word0 beta14word1 beta14word2 beta14word3 beta14word4 beta14word5 beta14word6 beta14word7 beta14word8 beta14word9 beta14word10 beta14word11 beta14word12 beta14word13 beta14word14 beta14word15 beta14word16 beta14word17 beta14word18 beta14word19 beta14word20 beta14word21 beta14word22 beta14word23 beta14word24 beta14word25 beta14word26 beta14word27 beta14word28 beta14word29 beta14word30 beta14word31 beta14word32 beta14word33 beta14word34 beta14word35 beta14word36 beta14word37 beta14word38 beta14word39 beta14word40 beta14word41 beta14word42 beta14word43 beta14word44 beta14word45 beta14word46 beta14word47"
+  },
+  {
+    "id": "negative-15",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha15word0 alpha15word1 alpha15word2 alpha15word3 alpha15word4 alpha15word5 alpha15word6 alpha15word7 alpha15word8 alpha15word9 alpha15word10 alpha15word11 alpha15word12 alpha15word13 alpha15word14 alpha15word15 alpha15word16 alpha15word17 alpha15word18 alpha15word19 alpha15word20 alpha15word21 alpha15word22 alpha15word23 alpha15word24 alpha15word25 alpha15word26 alpha15word27 alpha15word28 alpha15word29 alpha15word30 alpha15word31 alpha15word32 alpha15word33 alpha15word34 alpha15word35 alpha15word36 alpha15word37 alpha15word38 alpha15word39 alpha15word40 alpha15word41 alpha15word42 alpha15word43 alpha15word44 alpha15word45 alpha15word46 alpha15word47",
+    "b": "beta15word0 beta15word1 beta15word2 beta15word3 beta15word4 beta15word5 beta15word6 beta15word7 beta15word8 beta15word9 beta15word10 beta15word11 beta15word12 beta15word13 beta15word14 beta15word15 beta15word16 beta15word17 beta15word18 beta15word19 beta15word20 beta15word21 beta15word22 beta15word23 beta15word24 beta15word25 beta15word26 beta15word27 beta15word28 beta15word29 beta15word30 beta15word31 beta15word32 beta15word33 beta15word34 beta15word35 beta15word36 beta15word37 beta15word38 beta15word39 beta15word40 beta15word41 beta15word42 beta15word43 beta15word44 beta15word45 beta15word46 beta15word47"
+  },
+  {
+    "id": "negative-16",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha16word0 alpha16word1 alpha16word2 alpha16word3 alpha16word4 alpha16word5 alpha16word6 alpha16word7 alpha16word8 alpha16word9 alpha16word10 alpha16word11 alpha16word12 alpha16word13 alpha16word14 alpha16word15 alpha16word16 alpha16word17 alpha16word18 alpha16word19 alpha16word20 alpha16word21 alpha16word22 alpha16word23 alpha16word24 alpha16word25 alpha16word26 alpha16word27 alpha16word28 alpha16word29 alpha16word30 alpha16word31 alpha16word32 alpha16word33 alpha16word34 alpha16word35 alpha16word36 alpha16word37 alpha16word38 alpha16word39 alpha16word40 alpha16word41 alpha16word42 alpha16word43 alpha16word44 alpha16word45 alpha16word46 alpha16word47",
+    "b": "beta16word0 beta16word1 beta16word2 beta16word3 beta16word4 beta16word5 beta16word6 beta16word7 beta16word8 beta16word9 beta16word10 beta16word11 beta16word12 beta16word13 beta16word14 beta16word15 beta16word16 beta16word17 beta16word18 beta16word19 beta16word20 beta16word21 beta16word22 beta16word23 beta16word24 beta16word25 beta16word26 beta16word27 beta16word28 beta16word29 beta16word30 beta16word31 beta16word32 beta16word33 beta16word34 beta16word35 beta16word36 beta16word37 beta16word38 beta16word39 beta16word40 beta16word41 beta16word42 beta16word43 beta16word44 beta16word45 beta16word46 beta16word47"
+  },
+  {
+    "id": "negative-17",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha17word0 alpha17word1 alpha17word2 alpha17word3 alpha17word4 alpha17word5 alpha17word6 alpha17word7 alpha17word8 alpha17word9 alpha17word10 alpha17word11 alpha17word12 alpha17word13 alpha17word14 alpha17word15 alpha17word16 alpha17word17 alpha17word18 alpha17word19 alpha17word20 alpha17word21 alpha17word22 alpha17word23 alpha17word24 alpha17word25 alpha17word26 alpha17word27 alpha17word28 alpha17word29 alpha17word30 alpha17word31 alpha17word32 alpha17word33 alpha17word34 alpha17word35 alpha17word36 alpha17word37 alpha17word38 alpha17word39 alpha17word40 alpha17word41 alpha17word42 alpha17word43 alpha17word44 alpha17word45 alpha17word46 alpha17word47",
+    "b": "beta17word0 beta17word1 beta17word2 beta17word3 beta17word4 beta17word5 beta17word6 beta17word7 beta17word8 beta17word9 beta17word10 beta17word11 beta17word12 beta17word13 beta17word14 beta17word15 beta17word16 beta17word17 beta17word18 beta17word19 beta17word20 beta17word21 beta17word22 beta17word23 beta17word24 beta17word25 beta17word26 beta17word27 beta17word28 beta17word29 beta17word30 beta17word31 beta17word32 beta17word33 beta17word34 beta17word35 beta17word36 beta17word37 beta17word38 beta17word39 beta17word40 beta17word41 beta17word42 beta17word43 beta17word44 beta17word45 beta17word46 beta17word47"
+  },
+  {
+    "id": "negative-18",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha18word0 alpha18word1 alpha18word2 alpha18word3 alpha18word4 alpha18word5 alpha18word6 alpha18word7 alpha18word8 alpha18word9 alpha18word10 alpha18word11 alpha18word12 alpha18word13 alpha18word14 alpha18word15 alpha18word16 alpha18word17 alpha18word18 alpha18word19 alpha18word20 alpha18word21 alpha18word22 alpha18word23 alpha18word24 alpha18word25 alpha18word26 alpha18word27 alpha18word28 alpha18word29 alpha18word30 alpha18word31 alpha18word32 alpha18word33 alpha18word34 alpha18word35 alpha18word36 alpha18word37 alpha18word38 alpha18word39 alpha18word40 alpha18word41 alpha18word42 alpha18word43 alpha18word44 alpha18word45 alpha18word46 alpha18word47",
+    "b": "beta18word0 beta18word1 beta18word2 beta18word3 beta18word4 beta18word5 beta18word6 beta18word7 beta18word8 beta18word9 beta18word10 beta18word11 beta18word12 beta18word13 beta18word14 beta18word15 beta18word16 beta18word17 beta18word18 beta18word19 beta18word20 beta18word21 beta18word22 beta18word23 beta18word24 beta18word25 beta18word26 beta18word27 beta18word28 beta18word29 beta18word30 beta18word31 beta18word32 beta18word33 beta18word34 beta18word35 beta18word36 beta18word37 beta18word38 beta18word39 beta18word40 beta18word41 beta18word42 beta18word43 beta18word44 beta18word45 beta18word46 beta18word47"
+  },
+  {
+    "id": "negative-19",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha19word0 alpha19word1 alpha19word2 alpha19word3 alpha19word4 alpha19word5 alpha19word6 alpha19word7 alpha19word8 alpha19word9 alpha19word10 alpha19word11 alpha19word12 alpha19word13 alpha19word14 alpha19word15 alpha19word16 alpha19word17 alpha19word18 alpha19word19 alpha19word20 alpha19word21 alpha19word22 alpha19word23 alpha19word24 alpha19word25 alpha19word26 alpha19word27 alpha19word28 alpha19word29 alpha19word30 alpha19word31 alpha19word32 alpha19word33 alpha19word34 alpha19word35 alpha19word36 alpha19word37 alpha19word38 alpha19word39 alpha19word40 alpha19word41 alpha19word42 alpha19word43 alpha19word44 alpha19word45 alpha19word46 alpha19word47",
+    "b": "beta19word0 beta19word1 beta19word2 beta19word3 beta19word4 beta19word5 beta19word6 beta19word7 beta19word8 beta19word9 beta19word10 beta19word11 beta19word12 beta19word13 beta19word14 beta19word15 beta19word16 beta19word17 beta19word18 beta19word19 beta19word20 beta19word21 beta19word22 beta19word23 beta19word24 beta19word25 beta19word26 beta19word27 beta19word28 beta19word29 beta19word30 beta19word31 beta19word32 beta19word33 beta19word34 beta19word35 beta19word36 beta19word37 beta19word38 beta19word39 beta19word40 beta19word41 beta19word42 beta19word43 beta19word44 beta19word45 beta19word46 beta19word47"
+  },
+  {
+    "id": "negative-20",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha20word0 alpha20word1 alpha20word2 alpha20word3 alpha20word4 alpha20word5 alpha20word6 alpha20word7 alpha20word8 alpha20word9 alpha20word10 alpha20word11 alpha20word12 alpha20word13 alpha20word14 alpha20word15 alpha20word16 alpha20word17 alpha20word18 alpha20word19 alpha20word20 alpha20word21 alpha20word22 alpha20word23 alpha20word24 alpha20word25 alpha20word26 alpha20word27 alpha20word28 alpha20word29 alpha20word30 alpha20word31 alpha20word32 alpha20word33 alpha20word34 alpha20word35 alpha20word36 alpha20word37 alpha20word38 alpha20word39 alpha20word40 alpha20word41 alpha20word42 alpha20word43 alpha20word44 alpha20word45 alpha20word46 alpha20word47",
+    "b": "beta20word0 beta20word1 beta20word2 beta20word3 beta20word4 beta20word5 beta20word6 beta20word7 beta20word8 beta20word9 beta20word10 beta20word11 beta20word12 beta20word13 beta20word14 beta20word15 beta20word16 beta20word17 beta20word18 beta20word19 beta20word20 beta20word21 beta20word22 beta20word23 beta20word24 beta20word25 beta20word26 beta20word27 beta20word28 beta20word29 beta20word30 beta20word31 beta20word32 beta20word33 beta20word34 beta20word35 beta20word36 beta20word37 beta20word38 beta20word39 beta20word40 beta20word41 beta20word42 beta20word43 beta20word44 beta20word45 beta20word46 beta20word47"
+  },
+  {
+    "id": "negative-21",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha21word0 alpha21word1 alpha21word2 alpha21word3 alpha21word4 alpha21word5 alpha21word6 alpha21word7 alpha21word8 alpha21word9 alpha21word10 alpha21word11 alpha21word12 alpha21word13 alpha21word14 alpha21word15 alpha21word16 alpha21word17 alpha21word18 alpha21word19 alpha21word20 alpha21word21 alpha21word22 alpha21word23 alpha21word24 alpha21word25 alpha21word26 alpha21word27 alpha21word28 alpha21word29 alpha21word30 alpha21word31 alpha21word32 alpha21word33 alpha21word34 alpha21word35 alpha21word36 alpha21word37 alpha21word38 alpha21word39 alpha21word40 alpha21word41 alpha21word42 alpha21word43 alpha21word44 alpha21word45 alpha21word46 alpha21word47",
+    "b": "beta21word0 beta21word1 beta21word2 beta21word3 beta21word4 beta21word5 beta21word6 beta21word7 beta21word8 beta21word9 beta21word10 beta21word11 beta21word12 beta21word13 beta21word14 beta21word15 beta21word16 beta21word17 beta21word18 beta21word19 beta21word20 beta21word21 beta21word22 beta21word23 beta21word24 beta21word25 beta21word26 beta21word27 beta21word28 beta21word29 beta21word30 beta21word31 beta21word32 beta21word33 beta21word34 beta21word35 beta21word36 beta21word37 beta21word38 beta21word39 beta21word40 beta21word41 beta21word42 beta21word43 beta21word44 beta21word45 beta21word46 beta21word47"
+  },
+  {
+    "id": "negative-22",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha22word0 alpha22word1 alpha22word2 alpha22word3 alpha22word4 alpha22word5 alpha22word6 alpha22word7 alpha22word8 alpha22word9 alpha22word10 alpha22word11 alpha22word12 alpha22word13 alpha22word14 alpha22word15 alpha22word16 alpha22word17 alpha22word18 alpha22word19 alpha22word20 alpha22word21 alpha22word22 alpha22word23 alpha22word24 alpha22word25 alpha22word26 alpha22word27 alpha22word28 alpha22word29 alpha22word30 alpha22word31 alpha22word32 alpha22word33 alpha22word34 alpha22word35 alpha22word36 alpha22word37 alpha22word38 alpha22word39 alpha22word40 alpha22word41 alpha22word42 alpha22word43 alpha22word44 alpha22word45 alpha22word46 alpha22word47",
+    "b": "beta22word0 beta22word1 beta22word2 beta22word3 beta22word4 beta22word5 beta22word6 beta22word7 beta22word8 beta22word9 beta22word10 beta22word11 beta22word12 beta22word13 beta22word14 beta22word15 beta22word16 beta22word17 beta22word18 beta22word19 beta22word20 beta22word21 beta22word22 beta22word23 beta22word24 beta22word25 beta22word26 beta22word27 beta22word28 beta22word29 beta22word30 beta22word31 beta22word32 beta22word33 beta22word34 beta22word35 beta22word36 beta22word37 beta22word38 beta22word39 beta22word40 beta22word41 beta22word42 beta22word43 beta22word44 beta22word45 beta22word46 beta22word47"
+  },
+  {
+    "id": "negative-23",
+    "kind": "disjoint-vocabulary",
+    "label": false,
+    "a": "alpha23word0 alpha23word1 alpha23word2 alpha23word3 alpha23word4 alpha23word5 alpha23word6 alpha23word7 alpha23word8 alpha23word9 alpha23word10 alpha23word11 alpha23word12 alpha23word13 alpha23word14 alpha23word15 alpha23word16 alpha23word17 alpha23word18 alpha23word19 alpha23word20 alpha23word21 alpha23word22 alpha23word23 alpha23word24 alpha23word25 alpha23word26 alpha23word27 alpha23word28 alpha23word29 alpha23word30 alpha23word31 alpha23word32 alpha23word33 alpha23word34 alpha23word35 alpha23word36 alpha23word37 alpha23word38 alpha23word39 alpha23word40 alpha23word41 alpha23word42 alpha23word43 alpha23word44 alpha23word45 alpha23word46 alpha23word47",
+    "b": "beta23word0 beta23word1 beta23word2 beta23word3 beta23word4 beta23word5 beta23word6 beta23word7 beta23word8 beta23word9 beta23word10 beta23word11 beta23word12 beta23word13 beta23word14 beta23word15 beta23word16 beta23word17 beta23word18 beta23word19 beta23word20 beta23word21 beta23word22 beta23word23 beta23word24 beta23word25 beta23word26 beta23word27 beta23word28 beta23word29 beta23word30 beta23word31 beta23word32 beta23word33 beta23word34 beta23word35 beta23word36 beta23word37 beta23word38 beta23word39 beta23word40 beta23word41 beta23word42 beta23word43 beta23word44 beta23word45 beta23word46 beta23word47"
+  },
+  {
+    "id": "topic-0",
+    "kind": "same-topic-different-wording",
+    "label": false,
+    "a": "The captain guided the small ship through the narrow harbor while the tired crew prepared for a long journey across the sea.",
+    "b": "A sailor repaired a damaged boat near the coast as other workers waited for the next fishing expedition to begin in the morning."
+  },
+  {
+    "id": "topic-1",
+    "kind": "same-topic-different-wording",
+    "label": false,
+    "a": "The king entered the large city before sunrise and ordered his soldiers to guard the northern gate throughout the entire night.",
+    "b": "A monarch arrived in town at dawn, instructing troops to protect its north entrance until morning."
+  },
+  {
+    "id": "noise-0.1-0",
+    "kind": "noise-10%",
+    "label": true,
+    "a": "into prison for insurrection and murder, for whom they asked, but he delivered Jesus up to their will.\nWhen they led him away, they grabbed one Simon of Cyrene, coming from the country, and laid the cross on him to carry it after Jesus.\nA great multitude of the people followed him, including women who also mourned and lamented him",
+    "b": "into prison for insurrection and murder for whom they asked but he delivered jesus up to their will when they novel20 novel21 away they grabbed one simon novel27 cyrene coming from the country and laid the cross on him novel39 carry it after jesus a great multitude of the people followed him including women novel54 novel55 mourned and lamented him",
+    "expected_a": [
+      0,
+      332
+    ],
+    "expected_b": [
+      0,
+      349
+    ]
+  },
+  {
+    "id": "noise-0.1-1",
+    "kind": "noise-10%",
+    "label": true,
+    "a": "prepare the Passover for us, that we may eat.”\nThey said to him, “Where do you want us to prepare?”\nHe said to them, “Behold, when you have entered into the city, a man carrying a pitcher of water will meet you. Follow him into the house which he enters.\nTell the master of the house, ‘The Teacher says to",
+    "b": "prepare the passover for novel4 that novel6 may novel8 they said to him where do you want us to prepare he said to them behold when you have entered into the city a man carrying a pitcher of water novel39 meet you follow him into the house which he novel49 tell the master of the novel55 the teacher says to",
+    "expected_a": [
+      0,
+      305
+    ],
+    "expected_b": [
+      0,
+      307
+    ]
+  },
+  {
+    "id": "noise-0.1-2",
+    "kind": "noise-10%",
+    "label": true,
+    "a": "they will be your judges.\nBut if I by God’s finger cast out demons, then God’s Kingdom has come to you.\n“When the strong man, fully armed, guards his own dwelling, his goods are safe.\nBut when someone stronger attacks him and overcomes him, he takes from him his whole armor in which he trusted, and divides his plunder.\n“He",
+    "b": "they will be your novel4 but if novel7 by novel9 finger novel11 out demons then god's kingdom has novel18 to you when the strong man fully armed guards novel28 own dwelling his goods are safe but when someone stronger attacks him and overcomes him he takes from him his whole armor in which he trusted and divides his plunder he",
+    "expected_a": [
+      0,
+      324
+    ],
+    "expected_b": [
+      0,
+      328
+    ]
+  },
+  {
+    "id": "noise-0.1-3",
+    "kind": "noise-10%",
+    "label": true,
+    "a": "the shepherds said to one another, “Let’s go to Bethlehem, now, and see this thing that has happened, which the Lord has made known to us.”\nThey came with haste and found both Mary and Joseph, and the baby was lying in the feeding trough.\nWhen they saw it, they publicized widely the saying which was spoken to them about",
+    "b": "the shepherds said to one another let's go to bethlehem now and see this thing that has novel17 which the novel20 novel21 made novel23 to us they came with haste and found both mary novel34 joseph and the baby was lying in the feeding trough novel45 they saw it they publicized widely the saying which was spoken to them about",
+    "expected_a": [
+      0,
+      321
+    ],
+    "expected_b": [
+      0,
+      326
+    ]
+  },
+  {
+    "id": "noise-0.1-4",
+    "kind": "noise-10%",
+    "label": true,
+    "a": "he withdrew himself into the desert and prayed.\nOn one of those days, he was teaching; and there were Pharisees and teachers of the law sitting by who had come out of every village of Galilee, Judea, and Jerusalem. The power of the Lord was with him to heal them.\nBehold, men brought a paralyzed man on a cot, and",
+    "b": "he withdrew himself into novel4 novel5 and prayed on one of those days he was teaching and there were pharisees and teachers of the law sitting by who had come out of every village of novel35 judea and jerusalem the power of the lord was novel45 him to heal novel49 behold novel51 brought a paralyzed man on a cot and",
+    "expected_a": [
+      0,
+      313
+    ],
+    "expected_b": [
+      0,
+      317
+    ]
+  },
+  {
+    "id": "noise-0.1-5",
+    "kind": "noise-10%",
+    "label": true,
+    "a": "He said to them, “Foolish people, and slow of heart to believe in all that the prophets have spoken!\nDidn’t the Christ have to suffer these things and to enter into his glory?”\nBeginning from Moses and from all the prophets, he explained to them in all the Scriptures the things concerning himself.\nThey came near to the village where",
+    "b": "he said to them foolish people and novel7 of heart to believe in novel13 that the prophets have spoken novel19 the novel21 have to suffer these things and to enter into novel31 glory beginning from moses and from all the prophets he explained novel43 them in all the scriptures the things concerning himself they came near to the village where",
+    "expected_a": [
+      0,
+      334
+    ],
+    "expected_b": [
+      0,
+      343
+    ]
+  },
+  {
+    "id": "noise-0.1-6",
+    "kind": "noise-10%",
+    "label": true,
+    "a": "brought this man to me as one that perverts the people, and behold, having examined him before you, I found no basis for a charge against this man concerning those things of which you accuse him.\nNeither has Herod, for I sent you to him, and see, nothing worthy of death has been done by him.\nI will therefore chastise",
+    "b": "brought this man to me as one that novel8 the people and behold having examined him novel16 you i found no basis for a charge against this man novel28 those things of which you accuse him neither has herod for i sent you to him and novel46 nothing worthy of death has novel52 done by him novel56 will therefore chastise",
+    "expected_a": [
+      0,
+      318
+    ],
+    "expected_b": [
+      0,
+      319
+    ]
+  },
+  {
+    "id": "noise-0.1-7",
+    "kind": "noise-10%",
+    "label": true,
+    "a": "her poverty, put in all that she had to live on.”\nAs some were talking about the temple and how it was decorated with beautiful stones and gifts, he said,\n“As for these things which you see, the days will come in which there will not be left here one stone on another that will not be thrown down.”\nThey",
+    "b": "her poverty put in all that she had to live on as some were novel14 about the temple and how novel20 was decorated with beautiful stones and gifts he said as for novel32 things which you novel36 the days will come in which novel43 will not be left here novel49 stone on another that will not be thrown down they",
+    "expected_a": [
+      0,
+      303
+    ],
+    "expected_b": [
+      0,
+      311
+    ]
+  },
+  {
+    "id": "noise-0.1-8",
+    "kind": "noise-10%",
+    "label": true,
+    "a": "Now they were Mary Magdalene, Joanna, and Mary the mother of James. The other women with them told these things to the apostles.\nThese words seemed to them to be nonsense, and they didn’t believe them.\nBut Peter got up and ran to the tomb. Stooping and looking in, he saw the strips of linen lying by themselves, and he",
+    "b": "now they were mary magdalene joanna and mary the mother of james the other women with them told these things to the apostles these words novel25 to them novel28 be nonsense and they didn't novel34 them but peter novel38 novel39 and ran to the tomb stooping and looking in he saw novel51 strips of linen lying by themselves and he",
+    "expected_a": [
+      0,
+      319
+    ],
+    "expected_b": [
+      0,
+      329
+    ]
+  },
+  {
+    "id": "noise-0.1-9",
+    "kind": "noise-10%",
+    "label": true,
+    "a": "eat or what you will drink; neither be anxious.\nFor the nations of the world seek after all of these things, but your Father knows that you need these things.\nBut seek God’s Kingdom, and all these things will be added to you.\n“Don’t be afraid, little flock, for it is your Father’s good pleasure to give you the Kingdom",
+    "b": "eat or what you novel4 drink neither be anxious novel9 the nations of the world seek after all of these things but novel22 father knows that you need these things but seek god's kingdom novel34 novel35 these things will be added to you don't be afraid novel46 flock for it is your father's good pleasure to give you the kingdom",
+    "expected_a": [
+      0,
+      319
+    ],
+    "expected_b": [
+      0,
+      327
+    ]
+  },
+  {
+    "id": "noise-0.1-10",
+    "kind": "noise-10%",
+    "label": true,
+    "a": "is he who finds no occasion for stumbling in me.”\nWhen John’s messengers had departed, he began to tell the multitudes about John, “What did you go out into the wilderness to see? A reed shaken by the wind?\nBut what did you go out to see? A man clothed in soft clothing? Behold, those who are gorgeously dressed and",
+    "b": "is he who finds novel4 occasion for stumbling in me when john's messengers had departed he began to tell the multitudes about john novel23 did you go out into the wilderness to see a reed shaken by the novel38 but novel40 did you go out to see a man clothed in soft novel52 behold those who novel56 gorgeously dressed and",
+    "expected_a": [
+      0,
+      315
+    ],
+    "expected_b": [
+      0,
+      321
+    ]
+  },
+  {
+    "id": "noise-0.1-11",
+    "kind": "noise-10%",
+    "label": true,
+    "a": "he called his disciples, and from them he chose twelve, whom he also named apostles:\nSimon, whom he also named Peter; Andrew, his brother; James; John; Philip; Bartholomew;\nMatthew; Thomas; James the son of Alphaeus; Simon who was called the Zealot;\nJudas the son of James; and Judas Iscariot, who also became a traitor.\nHe came down with them and",
+    "b": "he called his disciples novel4 from them he chose twelve whom he also named apostles simon whom novel17 also named peter andrew novel22 brother james john philip bartholomew matthew thomas james the son novel33 alphaeus simon who was called the zealot judas the son of james novel46 judas iscariot who also became novel52 traitor he came down with them and",
+    "expected_a": [
+      0,
+      347
+    ],
+    "expected_b": [
+      0,
+      356
+    ]
+  },
+  {
+    "id": "noise-0.2-0",
+    "kind": "noise-20%",
+    "label": true,
+    "a": "its own fruit. For people don’t gather figs from thorns, nor do they gather grapes from a bramble bush.\nThe good man out of the good treasure of his heart brings out that which is good, and the evil man out of the evil treasure of his heart brings out that which is evil, for out of the abundance of",
+    "b": "its own fruit novel3 people don't gather figs from thorns nor do novel12 gather grapes from a bramble bush the good novel21 out of novel24 good treasure of his heart brings novel31 that which novel34 good novel36 novel37 novel38 man out of the evil treasure novel45 his heart brings out novel50 which is evil for novel55 of the abundance of",
+    "expected_a": [
+      0,
+      299
+    ],
+    "expected_b": [
+      0,
+      340
+    ]
+  },
+  {
+    "id": "noise-0.2-1",
+    "kind": "noise-20%",
+    "label": true,
+    "a": "Father in heaven, may your name be kept holy. May your Kingdom come. May your will be done on earth, as it is in heaven.\nGive us day by day our daily bread.\nForgive us our sins, for we ourselves also forgive everyone who is indebted to us. Bring us not into temptation, but deliver us from the evil one",
+    "b": "father in heaven may your name novel6 novel7 novel8 may your kingdom come may your will be done on earth as it novel22 novel23 heaven novel25 us day novel28 day our daily bread forgive us novel35 novel36 for we novel39 also forgive everyone who novel44 indebted to us bring us not into temptation novel53 deliver us from the evil one",
+    "expected_a": [
+      0,
+      302
+    ],
+    "expected_b": [
+      0,
+      333
+    ]
+  },
+  {
+    "id": "noise-0.2-2",
+    "kind": "noise-20%",
+    "label": true,
+    "a": "has found it, he carries it on his shoulders, rejoicing.\nWhen he comes home, he calls together his friends and his neighbors, saying to them, ‘Rejoice with me, for I have found my sheep which was lost!’\nI tell you that even so there will be more joy in heaven over one sinner who repents, than over ninety-nine righteous",
+    "b": "has found it he carries it on his shoulders novel9 when he novel12 home novel14 calls together novel17 friends and novel20 neighbors saying to them rejoice with novel27 for i have found novel32 sheep which novel35 novel36 i tell novel39 that even so there will be more joy in heaven over novel51 sinner novel53 repents than over ninety nine righteous",
+    "expected_a": [
+      0,
+      320
+    ],
+    "expected_b": [
+      0,
+      350
+    ]
+  },
+  {
+    "id": "noise-0.2-3",
+    "kind": "noise-20%",
+    "label": true,
+    "a": "As he was praying alone, the disciples were near him, and he asked them, “Who do the multitudes say that I am?”\nThey answered, “ ‘John the Baptizer,’ but others say, ‘Elijah,’ and others, that one of the old prophets has risen again.”\nHe said to them, “But who do you say that I am?” Peter answered, “The Christ of God",
+    "b": "as he was novel3 alone the disciples were near him and novel11 asked novel13 who do novel16 multitudes novel18 novel19 i am novel22 answered john the baptizer novel27 others say novel30 and others that novel34 of novel36 old prophets has risen novel41 he said to them but who do you say that i am peter answered the christ of god",
+    "expected_a": [
+      0,
+      318
+    ],
+    "expected_b": [
+      0,
+      329
+    ]
+  },
+  {
+    "id": "noise-0.2-4",
+    "kind": "noise-20%",
+    "label": true,
+    "a": "everyone who asks you, and don’t ask him who takes away your goods to give them back again.\n“As you would like people to do to you, do exactly so to them.\n“If you love those who love you, what credit is that to you? For even sinners love those who love them.\nIf you do good to those who",
+    "b": "everyone who asks you and novel5 novel6 him novel8 takes away your goods to novel14 them back again as you novel20 like people to do to you do exactly novel29 to them novel32 novel33 love those who love novel38 what credit is that to novel44 for even sinners novel48 those who love novel52 if you do good to those who",
+    "expected_a": [
+      0,
+      286
+    ],
+    "expected_b": [
+      0,
+      317
+    ]
+  },
+  {
+    "id": "noise-0.2-5",
+    "kind": "noise-20%",
+    "label": true,
+    "a": "from Galilee, out of the city of Nazareth, into Judea, to David’s city, which is called Bethlehem, because he was of the house and family of David,\nto enroll himself with Mary, who was pledged to be married to him as wife, being pregnant.\nWhile they were there, the day had come for her to give birth.\nShe gave birth",
+    "b": "from galilee out novel3 novel4 city of novel7 into judea to david's city which is called bethlehem because he was of novel21 house and novel24 novel25 david to enroll himself with mary who novel33 pledged novel35 novel36 married to him as wife being pregnant while they were there novel48 novel49 had come for her to novel55 birth she gave birth",
+    "expected_a": [
+      0,
+      316
+    ],
+    "expected_b": [
+      0,
+      345
+    ]
+  },
+  {
+    "id": "noise-0.2-6",
+    "kind": "noise-20%",
+    "label": true,
+    "a": "not see it.\nThey will tell you, ‘Look, here!’ or ‘Look, there!’ Don’t go away or follow after them,\nfor as the lightning, when it flashes out of one part under the sky, shines to another part under the sky, so will the Son of Man be in his day.\nBut first, he must suffer many things and be rejected",
+    "b": "not see it they will tell you look novel8 novel9 novel10 there don't go away or follow after them for as the lightning when it novel25 novel26 of one part under the sky novel33 to novel35 part under the sky novel40 will the son of man be in novel48 day but first novel52 novel53 suffer many novel56 and be rejected",
+    "expected_a": [
+      0,
+      298
+    ],
+    "expected_b": [
+      0,
+      314
+    ]
+  },
+  {
+    "id": "noise-0.2-7",
+    "kind": "noise-20%",
+    "label": true,
+    "a": "filled with rage, and talked with one another about what they might do to Jesus.\nIn these days, he went out to the mountain to pray, and he continued all night in prayer to God.\nWhen it was day, he called his disciples, and from them he chose twelve, whom he also named apostles:\nSimon, whom he also named Peter",
+    "b": "filled with rage and talked with one another about what they might do to jesus in these days novel18 went novel20 to the mountain to pray and he continued novel29 novel30 in prayer novel33 god when novel36 was day novel39 called his novel42 and from them he novel47 novel48 whom he novel51 named novel53 simon whom he also named peter",
+    "expected_a": [
+      0,
+      311
+    ],
+    "expected_b": [
+      0,
+      334
+    ]
+  },
+  {
+    "id": "noise-0.2-8",
+    "kind": "noise-20%",
+    "label": true,
+    "a": "my feet with ointment.\nTherefore I tell you, her sins, which are many, are forgiven, for she loved much. But one to whom little is forgiven, loves little.”\nHe said to her, “Your sins are forgiven.”\nThose who sat at the table with him began to say to themselves, “Who is this who even forgives sins?”\nHe said to the",
+    "b": "my feet with novel3 novel4 i novel6 you her sins which are many novel13 forgiven for she loved much but one to whom little is forgiven novel26 little he novel29 to her your novel33 are novel35 those who sat at the table with him began novel45 say novel47 themselves who is novel51 who even forgives sins novel56 said to the",
+    "expected_a": [
+      0,
+      314
+    ],
+    "expected_b": [
+      0,
+      323
+    ]
+  },
+  {
+    "id": "noise-0.2-9",
+    "kind": "noise-20%",
+    "label": true,
+    "a": "them, and gave them to the disciples to set before the multitude.\nThey ate and were all filled. They gathered up twelve baskets of broken pieces that were left over.\nAs he was praying alone, the disciples were near him, and he asked them, “Who do the multitudes say that I am?”\nThey answered, “ ‘John the Baptizer,’ but others say",
+    "b": "them and gave novel3 to the disciples to novel8 before the multitude novel12 ate novel14 novel15 all filled they gathered up twelve novel22 of broken novel25 that were left novel29 as he was praying alone the disciples were novel38 him and he asked novel43 who do the multitudes say that i am they novel53 novel54 the baptizer but others say",
+    "expected_a": [
+      0,
+      330
+    ],
+    "expected_b": [
+      0,
+      341
+    ]
+  },
+  {
+    "id": "noise-0.2-10",
+    "kind": "noise-20%",
+    "label": true,
+    "a": "world should be enrolled.\nThis was the first enrollment made when Quirinius was governor of Syria.\nAll went to enroll themselves, everyone to his own city.\nJoseph also went up from Galilee, out of the city of Nazareth, into Judea, to David’s city, which is called Bethlehem, because he was of the house and family of David,\nto enroll himself",
+    "b": "world should be enrolled this was the first enrollment made when novel11 was novel13 of syria all went to enroll novel20 everyone to his novel24 city joseph also went up from galilee out novel33 the city of nazareth into novel39 to novel41 city novel43 novel44 called novel46 novel47 he was of the house and family novel55 david to enroll himself",
+    "expected_a": [
+      0,
+      341
+    ],
+    "expected_b": [
+      0,
+      346
+    ]
+  },
+  {
+    "id": "noise-0.2-11",
+    "kind": "noise-20%",
+    "label": true,
+    "a": "For the days will come on you when your enemies will throw up a barricade against you, surround you, hem you in on every side,\nand will dash you and your children within you to the ground. They will not leave in you one stone on another, because you didn’t know the time of your visitation.”\nHe entered into the",
+    "b": "for the days will come on you when novel8 enemies will throw up a barricade against you surround you hem novel20 in on novel23 side and will dash you novel29 your novel31 within novel33 to the novel36 novel37 will novel39 leave in you novel43 stone on novel46 because you didn't know the time of your novel55 he entered into the",
+    "expected_a": [
+      0,
+      311
+    ],
+    "expected_b": [
+      0,
+      328
+    ]
+  },
+  {
+    "id": "noise-0.3-0",
+    "kind": "noise-30%",
+    "label": true,
+    "a": "him to the Lord\n(as it is written in the law of the Lord, “Every male who opens the womb shall be called holy to the Lord”),\nand to offer a sacrifice according to that which is said in the law of the Lord, “A pair of turtledoves, or two young pigeons.”\nBehold, there was a man in Jerusalem whose",
+    "b": "him to the lord as it novel6 written in novel9 law of novel12 lord every novel15 novel16 opens the novel19 novel20 novel21 called novel23 to the lord and novel28 offer novel30 sacrifice according to that which is novel37 in the novel40 of novel42 lord a pair of novel47 novel48 two young novel51 novel52 there was a man in jerusalem whose",
+    "expected_a": [
+      0,
+      295
+    ],
+    "expected_b": [
+      0,
+      338
+    ]
+  },
+  {
+    "id": "noise-0.3-1",
+    "kind": "noise-30%",
+    "label": true,
+    "a": "Their eyes were opened and they recognized him; then he vanished out of their sight.\nThey said to one another, “Weren’t our hearts burning within us while he spoke to us along the way, and while he opened the Scriptures to us?”\nThey rose up that very hour, returned to Jerusalem, and found the eleven gathered together, and those who",
+    "b": "their eyes were novel3 and they novel6 him novel8 novel9 novel10 out of their sight they novel16 novel17 novel18 another weren't our novel22 novel23 novel24 novel25 while he spoke to us novel31 the way and novel35 he novel37 the scriptures novel40 us they rose up that very novel47 returned novel49 jerusalem and found the eleven gathered together and those who",
+    "expected_a": [
+      0,
+      333
+    ],
+    "expected_b": [
+      0,
+      361
+    ]
+  },
+  {
+    "id": "noise-0.3-2",
+    "kind": "noise-30%",
+    "label": true,
+    "a": "this flame.’\n“But Abraham said, ‘Son, remember that you, in your lifetime, received your good things, and Lazarus, in the same way, bad things. But here he is now comforted and you are in anguish.\nBesides all this, between us and you there is a great gulf fixed, that those who want to pass from here to you are not",
+    "b": "this flame but novel3 said son remember that you in your lifetime novel12 novel13 good things novel16 lazarus in the novel20 novel21 bad things novel24 here he is now comforted and you are novel33 anguish besides novel36 novel37 between novel39 novel40 you there novel43 a great gulf fixed novel48 novel49 who want to pass novel54 novel55 novel56 you are not",
+    "expected_a": [
+      0,
+      315
+    ],
+    "expected_b": [
+      0,
+      358
+    ]
+  },
+  {
+    "id": "noise-0.3-3",
+    "kind": "noise-30%",
+    "label": true,
+    "a": "When he saw Jesus, he cried out and fell down before him, and with a loud voice said, “What do I have to do with you, Jesus, you Son of the Most High God? I beg you, don’t torment me!”\nFor Jesus was commanding the unclean spirit to come out of the man. For the unclean spirit had often seized",
+    "b": "when he saw jesus he cried novel6 and fell novel9 before him novel12 with a loud voice said novel18 do novel20 have to do with novel25 jesus novel27 son of the novel31 novel32 god novel34 beg you novel37 torment novel39 novel40 jesus novel42 commanding the novel45 novel46 to come out of the man for the novel55 novel56 had often seized",
+    "expected_a": [
+      0,
+      292
+    ],
+    "expected_b": [
+      0,
+      336
+    ]
+  },
+  {
+    "id": "noise-0.3-4",
+    "kind": "noise-30%",
+    "label": true,
+    "a": "Man has no place to lay his head.”\nHe said to another, “Follow me!” But he said, “Lord, allow me first to go and bury my father.”\nBut Jesus said to him, “Leave the dead to bury their own dead, but you go and announce God’s Kingdom.”\nAnother also said, “I want to follow you, Lord, but first allow me",
+    "b": "man has no place novel4 lay his head he novel9 novel10 novel11 novel12 me but he novel16 lord allow me novel20 to go and novel24 novel25 father but jesus said to him leave the dead novel35 bury their novel38 novel39 but you go novel43 announce novel45 kingdom novel47 also novel49 i novel51 novel52 follow you lord but first allow me",
+    "expected_a": [
+      0,
+      299
+    ],
+    "expected_b": [
+      0,
+      333
+    ]
+  },
+  {
+    "id": "noise-0.3-5",
+    "kind": "noise-30%",
+    "label": true,
+    "a": "is he who comes in the name of the Lord!’ ” Luke < 13 >\nWhen he went into the house of one of the rulers of the Pharisees on a Sabbath to eat bread, they were watching him.\nBehold, a certain man who had dropsy was in front of him.\nJesus, answering, spoke to the lawyers and Pharisees, saying, “Is it lawful",
+    "b": "is he who comes in novel5 name of novel8 novel9 luke 13 when he went into novel16 novel17 of one of novel21 rulers of the novel25 novel26 a novel28 to eat novel31 novel32 were watching him novel36 novel37 novel38 man who had dropsy was in front of novel47 jesus answering novel50 to the novel53 and novel55 saying is it lawful",
+    "expected_a": [
+      0,
+      306
+    ],
+    "expected_b": [
+      0,
+      326
+    ]
+  },
+  {
+    "id": "noise-0.3-6",
+    "kind": "noise-30%",
+    "label": true,
+    "a": "out!”\nNews about him went out into every place of the surrounding region.\nHe rose up from the synagogue and entered into Simon’s house. Simon’s mother-in-law was afflicted with a great fever, and they begged him to help her.\nHe stood over her and rebuked the fever, and it left her. Immediately she rose up and served them",
+    "b": "out news about novel3 went out into novel7 place of the surrounding region he rose novel15 novel16 novel17 synagogue and novel20 novel21 simon's house novel24 novel25 in law was afflicted with a great novel33 and novel35 begged him novel38 help novel40 novel41 stood over her and rebuked the novel48 and it novel51 novel52 novel53 she rose up and served them",
+    "expected_a": [
+      0,
+      322
+    ],
+    "expected_b": [
+      0,
+      358
+    ]
+  },
+  {
+    "id": "noise-0.3-7",
+    "kind": "noise-30%",
+    "label": true,
+    "a": "by him,\nand he who invited both of you would come and tell you, ‘Make room for this person.’ Then you would begin, with shame, to take the lowest place.\nBut when you are invited, go and sit in the lowest place, so that when he who invited you comes, he may tell you, ‘Friend, move up higher.’ Then you",
+    "b": "by him and novel3 novel4 novel5 both of you would come and novel12 you make room novel16 this person novel19 you would begin with shame to novel26 novel27 lowest place but when you are novel34 go novel36 sit novel38 the novel40 place so novel43 when he who invited novel48 comes he novel51 novel52 novel53 friend novel55 up higher then you",
+    "expected_a": [
+      0,
+      301
+    ],
+    "expected_b": [
+      0,
+      339
+    ]
+  },
+  {
+    "id": "noise-0.3-8",
+    "kind": "noise-30%",
+    "label": true,
+    "a": "by the wind?\nBut what did you go out to see? A man clothed in soft clothing? Behold, those who are gorgeously dressed and live delicately are in kings’ courts.\nBut what did you go out to see? A prophet? Yes, I tell you, and much more than a prophet.\nThis is he of whom it is written, ‘Behold, I",
+    "b": "by the wind novel3 novel4 did you go out to see a man novel13 novel14 soft clothing behold those who are novel21 dressed novel23 live delicately novel26 in kings novel29 but what novel32 you go out to see novel38 novel39 yes novel41 novel42 you and much novel46 novel47 a prophet novel50 is he novel53 novel54 it is written behold i",
+    "expected_a": [
+      0,
+      294
+    ],
+    "expected_b": [
+      0,
+      332
+    ]
+  },
+  {
+    "id": "noise-0.3-9",
+    "kind": "noise-30%",
+    "label": true,
+    "a": "came neither eating bread nor drinking wine, and you say, ‘He has a demon.’\nThe Son of Man has come eating and drinking, and you say, ‘Behold, a glutton and a drunkard, a friend of tax collectors and sinners!’\nWisdom is justified by all her children.”\nOne of the Pharisees invited him to eat with him. He entered into the",
+    "b": "came neither eating novel3 nor drinking wine and you say novel10 novel11 a demon the son of man has come novel20 novel21 drinking and you say behold novel27 novel28 and a novel31 a novel33 of novel35 collectors novel37 sinners novel39 is justified novel42 all her novel45 novel46 of novel48 novel49 invited him to eat novel54 him he entered into the",
+    "expected_a": [
+      0,
+      321
+    ],
+    "expected_b": [
+      0,
+      349
+    ]
+  },
+  {
+    "id": "noise-0.3-10",
+    "kind": "noise-30%",
+    "label": true,
+    "a": "until you say, ‘Blessed is he who comes in the name of the Lord!’ ” Luke < 13 >\nWhen he went into the house of one of the rulers of the Pharisees on a Sabbath to eat bread, they were watching him.\nBehold, a certain man who had dropsy was in front of him.\nJesus, answering, spoke to the lawyers and Pharisees",
+    "b": "until you say blessed novel4 he who comes novel8 the name of the novel13 novel14 13 novel16 he went novel19 the house of one novel24 the novel26 of the pharisees on a sabbath novel33 novel34 bread they were novel38 him novel40 novel41 certain man who had dropsy was novel48 front of him jesus novel53 novel54 novel55 novel56 lawyers and pharisees",
+    "expected_a": [
+      0,
+      307
+    ],
+    "expected_b": [
+      0,
+      346
+    ]
+  },
+  {
+    "id": "noise-0.3-11",
+    "kind": "noise-30%",
+    "label": true,
+    "a": "John the Baptizer has sent us to you, saying, ‘Are you he who comes, or should we look for another?’ ”\nIn that hour he cured many of diseases and plagues and evil spirits; and to many who were blind he gave sight.\nJesus answered them, “Go and tell John the things which you have seen and heard: that the blind",
+    "b": "john the baptizer has novel4 us to you novel8 are you novel11 novel12 comes novel14 should novel16 novel17 novel18 another novel20 that novel22 he cured many of novel27 and plagues and evil spirits and to many who novel37 blind he gave sight jesus novel43 them go and novel47 john the novel50 novel51 novel52 have novel54 and heard that the blind",
+    "expected_a": [
+      0,
+      309
+    ],
+    "expected_b": [
+      0,
+      346
+    ]
+  },
+  {
+    "id": "noise-0.4-0",
+    "kind": "noise-40%",
+    "label": true,
+    "a": "doesn’t renounce all that he has, he can’t be my disciple.\n“Salt is good, but if the salt becomes flat and tasteless, with what do you season it?\nIt is fit neither for the soil nor for the manure pile. It is thrown out. He who has ears to hear, let him hear.” Luke < 14 >\nNow all the tax collectors",
+    "b": "doesn't renounce all that he has he novel7 novel8 my disciple salt is good but novel15 novel16 salt novel18 flat and tasteless novel22 what novel24 novel25 novel26 novel27 novel28 is novel30 neither for novel33 soil novel35 novel36 the manure pile novel40 is novel42 out he novel45 novel46 novel47 novel48 hear let novel51 hear novel53 novel54 now all the tax collectors",
+    "expected_a": [
+      0,
+      298
+    ],
+    "expected_b": [
+      0,
+      370
+    ]
+  },
+  {
+    "id": "noise-0.4-1",
+    "kind": "noise-40%",
+    "label": true,
+    "a": "tell you, ‘Friend, move up higher.’ Then you will be honored in the presence of all who sit at the table with you.\nFor everyone who exalts himself will be humbled, and whoever humbles himself will be exalted.”\nHe also said to the one who had invited him, “When you make a dinner or a supper, don’t call your friends",
+    "b": "tell you friend novel3 novel4 higher then you novel8 be honored novel11 novel12 novel13 novel14 all who novel17 at novel19 novel20 with novel22 for novel24 who exalts novel27 will novel29 humbled and novel32 humbles novel34 will be exalted novel38 novel39 said to the novel43 novel44 novel45 invited him when you make novel51 novel52 or novel54 supper don't call your friends",
+    "expected_a": [
+      0,
+      315
+    ],
+    "expected_b": [
+      0,
+      375
+    ]
+  },
+  {
+    "id": "noise-0.4-2",
+    "kind": "noise-40%",
+    "label": true,
+    "a": "marveled that he delayed in the temple.\nWhen he came out, he could not speak to them. They perceived that he had seen a vision in the temple. He continued making signs to them, and remained mute.\nWhen the days of his service were fulfilled, he departed to his house.\nAfter these days Elizabeth his wife conceived, and she hid",
+    "b": "marveled that he novel3 novel4 the novel6 when novel8 came novel10 he novel12 novel13 speak novel15 novel16 they perceived that he had novel22 a novel24 in the novel27 novel28 continued novel30 signs novel32 them and remained novel36 when the days of novel41 novel42 novel43 fulfilled he departed novel47 his house after novel51 days novel53 his novel55 novel56 and she hid",
+    "expected_a": [
+      0,
+      325
+    ],
+    "expected_b": [
+      0,
+      373
+    ]
+  },
+  {
+    "id": "noise-0.4-3",
+    "kind": "noise-40%",
+    "label": true,
+    "a": "and you build their tombs.\nTherefore also the wisdom of God said, ‘I will send to them prophets and apostles; and some of them they will kill and persecute,\nthat the blood of all the prophets, which was shed from the foundation of the world, may be required of this generation,\nfrom the blood of Abel to the blood of",
+    "b": "and you build novel3 tombs therefore novel6 novel7 wisdom of god said i novel13 send to novel16 novel17 novel18 apostles novel20 novel21 of novel23 they will kill novel27 novel28 novel29 the novel31 novel32 all the prophets which was shed novel39 the novel41 of the novel44 may novel46 required novel48 novel49 novel50 from novel52 blood novel54 abel to the blood of",
+    "expected_a": [
+      0,
+      316
+    ],
+    "expected_b": [
+      0,
+      366
+    ]
+  },
+  {
+    "id": "noise-0.4-4",
+    "kind": "noise-40%",
+    "label": true,
+    "a": "it is truly me. Touch me and see, for a spirit doesn’t have flesh and bones, as you see that I have.”\nWhen he had said this, he showed them his hands and his feet.\nWhile they still didn’t believe for joy, and wondered, he said to them, “Do you have anything here to eat?”\nThey gave him a piece",
+    "b": "it is truly me touch me and novel7 for novel9 novel10 novel11 have novel13 and bones novel16 you see that novel20 have novel22 novel23 novel24 novel25 this he showed them his hands and his novel34 novel35 they still novel38 novel39 novel40 joy novel42 wondered he novel45 to novel47 do you novel50 novel51 here novel53 novel54 they novel56 him a piece",
+    "expected_a": [
+      0,
+      293
+    ],
+    "expected_b": [
+      0,
+      351
+    ]
+  },
+  {
+    "id": "noise-0.4-5",
+    "kind": "noise-40%",
+    "label": true,
+    "a": "and told a parable, because he was near Jerusalem, and they supposed that God’s Kingdom would be revealed immediately.\nHe said therefore, “A certain nobleman went into a far country to receive for himself a kingdom and to return.\nHe called ten servants of his and gave them ten mina coins, and told them, ‘Conduct business until I come.’\nBut",
+    "b": "and told a novel3 novel4 novel5 was near jerusalem and they supposed novel12 god's novel14 novel15 novel16 revealed immediately he novel20 novel21 a certain nobleman novel25 into novel27 far novel29 to novel31 for novel33 a novel35 and novel37 novel38 novel39 called ten servants of his novel45 gave them ten novel49 coins and novel52 novel53 novel54 novel55 until i come but",
+    "expected_a": [
+      0,
+      341
+    ],
+    "expected_b": [
+      0,
+      375
+    ]
+  },
+  {
+    "id": "noise-0.4-6",
+    "kind": "noise-40%",
+    "label": true,
+    "a": "you are under the same condemnation?\nAnd we indeed justly, for we receive the due reward for our deeds, but this man has done nothing wrong.”\nHe said to Jesus, “Lord, remember me when you come into your Kingdom.”\nJesus said to him, “Assuredly I tell you, today you will be with me in Paradise.”\nIt was now about the",
+    "b": "you are under novel3 novel4 condemnation novel6 novel7 indeed novel9 for novel11 novel12 novel13 due novel15 for novel17 novel18 but this man novel22 done nothing wrong novel26 novel27 novel28 jesus lord novel31 me when you come novel36 novel37 kingdom jesus novel40 to novel42 assuredly i tell novel46 today you will be with novel52 novel53 paradise it novel56 now about the",
+    "expected_a": [
+      0,
+      315
+    ],
+    "expected_b": [
+      0,
+      375
+    ]
+  },
+  {
+    "id": "noise-0.4-7",
+    "kind": "noise-40%",
+    "label": true,
+    "a": "said, “Woe to you lawyers also! For you load men with burdens that are difficult to carry, and you yourselves won’t even lift one finger to help carry those burdens.\nWoe to you! For you build the tombs of the prophets, and your fathers killed them.\nSo you testify and consent to the works of your fathers. For they killed",
+    "b": "said woe to you novel4 also novel6 novel7 load men novel10 burdens that are difficult novel15 novel16 novel17 you yourselves won't even novel22 one finger novel25 novel26 novel27 novel28 novel29 novel30 to you for you build the novel37 of novel39 novel40 novel41 your novel43 killed novel45 so you novel48 and consent novel51 the novel53 of your novel56 for they killed",
+    "expected_a": [
+      0,
+      321
+    ],
+    "expected_b": [
+      0,
+      369
+    ]
+  },
+  {
+    "id": "noise-0.4-8",
+    "kind": "noise-40%",
+    "label": true,
+    "a": "and others, that one of the old prophets has risen again.”\nHe said to them, “But who do you say that I am?” Peter answered, “The Christ of God.”\nBut he warned them and commanded them to tell this to no one,\nsaying, “The Son of Man must suffer many things, and be rejected by the elders, chief priests, and",
+    "b": "and others that novel3 of the old prophets has novel9 again he novel12 to them but novel16 do you say that i am novel23 novel24 novel25 novel26 novel27 god but he novel31 them novel33 commanded novel35 to tell this to novel40 novel41 novel42 the novel44 novel45 man novel47 suffer novel49 novel50 novel51 novel52 rejected by novel55 novel56 chief priests and",
+    "expected_a": [
+      0,
+      305
+    ],
+    "expected_b": [
+      0,
+      358
+    ]
+  },
+  {
+    "id": "noise-0.4-9",
+    "kind": "noise-40%",
+    "label": true,
+    "a": "falling and the rising of many in Israel, and for a sign which is spoken against.\nYes, a sword will pierce through your own soul, that the thoughts of many hearts may be revealed.”\nThere was one Anna, a prophetess, the daughter of Phanuel, of the tribe of Asher (she was of a great age, having lived with a husband",
+    "b": "falling and the novel3 of many novel6 israel novel8 novel9 a sign which novel13 spoken novel15 yes a novel18 novel19 novel20 novel21 novel22 novel23 soul novel25 the thoughts novel28 novel29 hearts may novel32 revealed there novel35 novel36 anna a novel39 the daughter of phanuel of the tribe novel47 novel48 she was novel51 a great novel54 having novel56 with a husband",
+    "expected_a": [
+      0,
+      314
+    ],
+    "expected_b": [
+      0,
+      370
+    ]
+  },
+  {
+    "id": "noise-0.4-10",
+    "kind": "noise-40%",
+    "label": true,
+    "a": "he explained to them in all the Scriptures the things concerning himself.\nThey came near to the village where they were going, and he acted like he would go further.\nThey urged him, saying, “Stay with us, for it is almost evening, and the day is almost over.” He went in to stay with them.\nWhen he had sat down",
+    "b": "he explained to novel3 novel4 novel5 the novel7 the novel9 concerning himself they novel13 near to novel16 village where they were novel21 novel22 he acted like novel26 novel27 go further they novel31 him novel33 stay with us novel37 it novel39 almost novel41 and the novel44 is novel46 over he novel49 novel50 novel51 novel52 with them novel55 novel56 had sat down",
+    "expected_a": [
+      0,
+      310
+    ],
+    "expected_b": [
+      0,
+      365
+    ]
+  },
+  {
+    "id": "noise-0.4-11",
+    "kind": "noise-40%",
+    "label": true,
+    "a": "do they say that the Christ is David’s son?\nDavid himself says in the book of Psalms, ‘The Lord said to my Lord, “Sit at my right hand,\nuntil I make your enemies the footstool of your feet.” ’\n“David therefore calls him Lord, so how is he his son?”\nIn the hearing of all the people, he said to his",
+    "b": "do they say novel3 novel4 christ is david's novel8 novel9 himself says in novel13 book of psalms the novel18 novel19 novel20 my novel22 sit at novel25 novel26 hand novel28 i novel30 your novel32 the footstool of your novel37 novel38 novel39 novel40 him novel42 novel43 novel44 is he his son in novel50 novel51 of all the novel55 he said to his",
+    "expected_a": [
+      0,
+      297
+    ],
+    "expected_b": [
+      0,
+      343
+    ]
+  }
+]

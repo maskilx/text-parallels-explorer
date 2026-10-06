@@ -1,0 +1,41 @@
+[
+  {
+    "id": "matthew",
+    "title": "Matthew",
+    "edition": "World English Bible Classic",
+    "file": "matthew.txt",
+    "refs": "matthew.refs.json",
+    "source_url": "https://ebible.org/eng-web/MAT01.htm",
+    "rights_url": "https://ebible.org/eng-web/copyright.htm",
+    "license": "Public domain",
+    "retrieved": "2026-10-05",
+    "sha256": "55f23a77ef2c8c593aeccd8a316f32b47eefdba19ae3c0a41774b6affa75e96c",
+    "verses": 1071
+  },
+  {
+    "id": "mark",
+    "title": "Mark",
+    "edition": "World English Bible Classic",
+    "file": "mark.txt",
+    "refs": "mark.refs.json",
+    "source_url": "https://ebible.org/eng-web/MRK01.htm",
+    "rights_url": "https://ebible.org/eng-web/copyright.htm",
+    "license": "Public domain",
+    "retrieved": "2026-10-05",
+    "sha256": "ffdff049ac3ad33d4909af2652dfc8b42cd486c51ebc3df8fb202ef0c50ee3eb",
+    "verses": 678
+  },
+  {
+    "id": "luke",
+    "title": "Luke",
+    "edition": "World English Bible Classic",
+    "file": "luke.txt",
+    "refs": "luke.refs.json",
+    "source_url": "https://ebible.org/eng-web/LUK01.htm",
+    "rights_url": "https://ebible.org/eng-web/copyright.htm",
+    "license": "Public domain",
+    "retrieved": "2026-10-05",
+    "sha256": "89c5649fbb23766ab8eadcacf317c2d85f3ae87414ad234838d161f880f164f4",
+    "verses": 1150
+  }
+]

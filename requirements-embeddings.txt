@@ -1,0 +1,4 @@
+# Optional isolated experiment; not installed in the application runtime.
+sentence-transformers==6.1.0
+transformers==5.18.0
+torch==2.14.1

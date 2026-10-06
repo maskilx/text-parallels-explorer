@@ -1,0 +1,1819 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "library_version": "6.1.0",
+  "device": "cpu",
+  "sanity_identical_score": 1.0,
+  "synthetic_with_context": {
+    "threshold": 0.8,
+    "tp": 29,
+    "fp": 24,
+    "fn": 163,
+    "tn": 2,
+    "precision": 0.5471698113207547,
+    "recall": 0.15104166666666666
+  },
+  "synthetic_with_gold_boundaries": {
+    "threshold": 0.8,
+    "tp": 123,
+    "fp": 24,
+    "fn": 69,
+    "tn": 2,
+    "precision": 0.8367346938775511,
+    "recall": 0.640625
+  },
+  "synthetic_rows": [
+    {
+      "id": "0-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.759131669998169,
+      "localized_score": 1.0
+    },
+    {
+      "id": "0-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.6671617031097412,
+      "localized_score": 0.8206496238708496
+    },
+    {
+      "id": "0-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.6718769669532776,
+      "localized_score": 0.7904266119003296
+    },
+    {
+      "id": "0-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.7389163374900818,
+      "localized_score": 0.9216843247413635
+    },
+    {
+      "id": "0-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.7316856384277344,
+      "localized_score": 0.9307382106781006
+    },
+    {
+      "id": "0-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.6471405029296875,
+      "localized_score": 0.8224097490310669
+    },
+    {
+      "id": "1-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.7699181437492371,
+      "localized_score": 1.0
+    },
+    {
+      "id": "1-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.6298073530197144,
+      "localized_score": 0.8043650388717651
+    },
+    {
+      "id": "1-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.6686840057373047,
+      "localized_score": 0.8166770339012146
+    },
+    {
+      "id": "1-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.754753828048706,
+      "localized_score": 0.9275224208831787
+    },
+    {
+      "id": "1-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.7262162566184998,
+      "localized_score": 0.9154709577560425
+    },
+    {
+      "id": "1-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.6681892275810242,
+      "localized_score": 0.8578777313232422
+    },
+    {
+      "id": "2-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.9230216145515442,
+      "localized_score": 1.0
+    },
+    {
+      "id": "2-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.8079792261123657,
+      "localized_score": 0.9088807106018066
+    },
+    {
+      "id": "2-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.8553234934806824,
+      "localized_score": 0.9206482172012329
+    },
+    {
+      "id": "2-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.9049088954925537,
+      "localized_score": 0.9648171663284302
+    },
+    {
+      "id": "2-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.8834679126739502,
+      "localized_score": 0.9513256549835205
+    },
+    {
+      "id": "2-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.8389714956283569,
+      "localized_score": 0.9115116596221924
+    },
+    {
+      "id": "3-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.787828803062439,
+      "localized_score": 1.0000001192092896
+    },
+    {
+      "id": "3-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.5752222537994385,
+      "localized_score": 0.7516652345657349
+    },
+    {
+      "id": "3-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.702959418296814,
+      "localized_score": 0.8335113525390625
+    },
+    {
+      "id": "3-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.7716758251190186,
+      "localized_score": 0.9151279926300049
+    },
+    {
+      "id": "3-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.713964581489563,
+      "localized_score": 0.8155206441879272
+    },
+    {
+      "id": "3-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.693743109703064,
+      "localized_score": 0.7860031723976135
+    },
+    {
+      "id": "4-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.7444484233856201,
+      "localized_score": 1.0
+    },
+    {
+      "id": "4-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.5474628210067749,
+      "localized_score": 0.7358473539352417
+    },
+    {
+      "id": "4-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.5716061592102051,
+      "localized_score": 0.7314390540122986
+    },
+    {
+      "id": "4-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.6919455528259277,
+      "localized_score": 0.9486650228500366
+    },
+    {
+      "id": "4-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.7006129026412964,
+      "localized_score": 0.9579672813415527
+    },
+    {
+      "id": "4-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.6616079807281494,
+      "localized_score": 0.8696168065071106
+    },
+    {
+      "id": "5-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.7950325012207031,
+      "localized_score": 1.0000001192092896
+    },
+    {
+      "id": "5-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.5851002931594849,
+      "localized_score": 0.7340192794799805
+    },
+    {
+      "id": "5-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.6747651100158691,
+      "localized_score": 0.8116681575775146
+    },
+    {
+      "id": "5-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.7822664976119995,
+      "localized_score": 0.9507243633270264
+    },
+    {
+      "id": "5-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.7505860924720764,
+      "localized_score": 0.9396487474441528
+    },
+    {
+      "id": "5-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.6240139007568359,
+      "localized_score": 0.7804130911827087
+    },
+    {
+      "id": "6-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.8075624108314514,
+      "localized_score": 1.0
+    },
+    {
+      "id": "6-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.6681421399116516,
+      "localized_score": 0.8052597045898438
+    },
+    {
+      "id": "6-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.6688215732574463,
+      "localized_score": 0.7940661907196045
+    },
+    {
+      "id": "6-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.799057126045227,
+      "localized_score": 0.9450043439865112
+    },
+    {
+      "id": "6-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.7841447591781616,
+      "localized_score": 0.9579732418060303
+    },
+    {
+      "id": "6-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.7492082118988037,
+      "localized_score": 0.8868932723999023
+    },
+    {
+      "id": "7-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.799530029296875,
+      "localized_score": 1.0
+    },
+    {
+      "id": "7-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.634588360786438,
+      "localized_score": 0.753389298915863
+    },
+    {
+      "id": "7-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.6616823673248291,
+      "localized_score": 0.8060504794120789
+    },
+    {
+      "id": "7-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.7650052309036255,
+      "localized_score": 0.9152292013168335
+    },
+    {
+      "id": "7-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.7668243646621704,
+      "localized_score": 0.9065309166908264
+    },
+    {
+      "id": "7-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.7060753107070923,
+      "localized_score": 0.854156494140625
+    },
+    {
+      "id": "8-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.794972836971283,
+      "localized_score": 1.0
+    },
+    {
+      "id": "8-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.6121196746826172,
+      "localized_score": 0.7793172597885132
+    },
+    {
+      "id": "8-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.7131661176681519,
+      "localized_score": 0.8380369544029236
+    },
+    {
+      "id": "8-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.796248733997345,
+      "localized_score": 0.9515506029129028
+    },
+    {
+      "id": "8-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.7749959826469421,
+      "localized_score": 0.9605100750923157
+    },
+    {
+      "id": "8-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.7547787427902222,
+      "localized_score": 0.8968231678009033
+    },
+    {
+      "id": "9-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.8320474624633789,
+      "localized_score": 0.9999998807907104
+    },
+    {
+      "id": "9-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.6727807521820068,
+      "localized_score": 0.8449041247367859
+    },
+    {
+      "id": "9-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.6689208149909973,
+      "localized_score": 0.7883415222167969
+    },
+    {
+      "id": "9-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.7869313955307007,
+      "localized_score": 0.9338443279266357
+    },
+    {
+      "id": "9-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.7797572612762451,
+      "localized_score": 0.9315894842147827
+    },
+    {
+      "id": "9-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.723482608795166,
+      "localized_score": 0.8477522134780884
+    },
+    {
+      "id": "10-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.7454917430877686,
+      "localized_score": 1.0000001192092896
+    },
+    {
+      "id": "10-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.6485223770141602,
+      "localized_score": 0.7836401462554932
+    },
+    {
+      "id": "10-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.63765549659729,
+      "localized_score": 0.8426480293273926
+    },
+    {
+      "id": "10-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.7526237964630127,
+      "localized_score": 0.9642798900604248
+    },
+    {
+      "id": "10-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.7171659469604492,
+      "localized_score": 0.9222159385681152
+    },
+    {
+      "id": "10-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.6987861394882202,
+      "localized_score": 0.9077198505401611
+    },
+    {
+      "id": "11-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.7782557010650635,
+      "localized_score": 0.9999999403953552
+    },
+    {
+      "id": "11-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.6158129572868347,
+      "localized_score": 0.7510793209075928
+    },
+    {
+      "id": "11-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.6823683381080627,
+      "localized_score": 0.8128491044044495
+    },
+    {
+      "id": "11-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.7851423025131226,
+      "localized_score": 0.9429891109466553
+    },
+    {
+      "id": "11-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.7742438316345215,
+      "localized_score": 0.9503908157348633
+    },
+    {
+      "id": "11-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.7220708131790161,
+      "localized_score": 0.8669770956039429
+    },
+    {
+      "id": "12-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.934675931930542,
+      "localized_score": 1.0000001192092896
+    },
+    {
+      "id": "12-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.7195947170257568,
+      "localized_score": 0.8104802966117859
+    },
+    {
+      "id": "12-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.877590537071228,
+      "localized_score": 0.9221811890602112
+    },
+    {
+      "id": "12-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.920464277267456,
+      "localized_score": 0.981280505657196
+    },
+    {
+      "id": "12-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.9159406423568726,
+      "localized_score": 0.9785950779914856
+    },
+    {
+      "id": "12-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.9018172025680542,
+      "localized_score": 0.9524271488189697
+    },
+    {
+      "id": "13-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.7976224422454834,
+      "localized_score": 1.0000001192092896
+    },
+    {
+      "id": "13-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.6114229559898376,
+      "localized_score": 0.7234658598899841
+    },
+    {
+      "id": "13-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.6850908398628235,
+      "localized_score": 0.8319384455680847
+    },
+    {
+      "id": "13-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.7647784948348999,
+      "localized_score": 0.9146566390991211
+    },
+    {
+      "id": "13-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.7304919362068176,
+      "localized_score": 0.8781408071517944
+    },
+    {
+      "id": "13-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.7349714040756226,
+      "localized_score": 0.8694955706596375
+    },
+    {
+      "id": "14-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.8373801708221436,
+      "localized_score": 0.9999998807907104
+    },
+    {
+      "id": "14-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.7076997756958008,
+      "localized_score": 0.8506250381469727
+    },
+    {
+      "id": "14-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.6771963834762573,
+      "localized_score": 0.8226958513259888
+    },
+    {
+      "id": "14-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.818361759185791,
+      "localized_score": 0.9534989595413208
+    },
+    {
+      "id": "14-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.7862656712532043,
+      "localized_score": 0.9566667079925537
+    },
+    {
+      "id": "14-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.7062913775444031,
+      "localized_score": 0.8632286787033081
+    },
+    {
+      "id": "15-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.7525973916053772,
+      "localized_score": 1.0
+    },
+    {
+      "id": "15-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.6012406349182129,
+      "localized_score": 0.8082746863365173
+    },
+    {
+      "id": "15-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.5932623744010925,
+      "localized_score": 0.7447395324707031
+    },
+    {
+      "id": "15-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.7388981580734253,
+      "localized_score": 0.9032456278800964
+    },
+    {
+      "id": "15-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.7311668992042542,
+      "localized_score": 0.9442899227142334
+    },
+    {
+      "id": "15-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.6638346910476685,
+      "localized_score": 0.8287192583084106
+    },
+    {
+      "id": "16-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.6935949921607971,
+      "localized_score": 1.0
+    },
+    {
+      "id": "16-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.6214558482170105,
+      "localized_score": 0.7933962345123291
+    },
+    {
+      "id": "16-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.5839250087738037,
+      "localized_score": 0.8077167272567749
+    },
+    {
+      "id": "16-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.725145697593689,
+      "localized_score": 0.9502744674682617
+    },
+    {
+      "id": "16-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.7051701545715332,
+      "localized_score": 0.9564491510391235
+    },
+    {
+      "id": "16-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.6538702249526978,
+      "localized_score": 0.8930280208587646
+    },
+    {
+      "id": "17-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.8470975756645203,
+      "localized_score": 1.0
+    },
+    {
+      "id": "17-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.6301833391189575,
+      "localized_score": 0.7713733315467834
+    },
+    {
+      "id": "17-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.7188922166824341,
+      "localized_score": 0.8293319940567017
+    },
+    {
+      "id": "17-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.8439361453056335,
+      "localized_score": 0.9699596762657166
+    },
+    {
+      "id": "17-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.8310548067092896,
+      "localized_score": 0.9782730937004089
+    },
+    {
+      "id": "17-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.7998003959655762,
+      "localized_score": 0.9438152313232422
+    },
+    {
+      "id": "18-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.902266263961792,
+      "localized_score": 1.0
+    },
+    {
+      "id": "18-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.7142429947853088,
+      "localized_score": 0.8120777606964111
+    },
+    {
+      "id": "18-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.7955659031867981,
+      "localized_score": 0.8869999647140503
+    },
+    {
+      "id": "18-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.8821824789047241,
+      "localized_score": 0.9587215781211853
+    },
+    {
+      "id": "18-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.8737128376960754,
+      "localized_score": 0.96937495470047
+    },
+    {
+      "id": "18-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.8578491806983948,
+      "localized_score": 0.9426532983779907
+    },
+    {
+      "id": "19-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.770158052444458,
+      "localized_score": 1.0000001192092896
+    },
+    {
+      "id": "19-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.611301064491272,
+      "localized_score": 0.8075864315032959
+    },
+    {
+      "id": "19-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.576319694519043,
+      "localized_score": 0.7527597546577454
+    },
+    {
+      "id": "19-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.7273904085159302,
+      "localized_score": 0.9404639005661011
+    },
+    {
+      "id": "19-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.7058636546134949,
+      "localized_score": 0.9394232034683228
+    },
+    {
+      "id": "19-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.6454968452453613,
+      "localized_score": 0.8706958293914795
+    },
+    {
+      "id": "20-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.8656150102615356,
+      "localized_score": 1.0
+    },
+    {
+      "id": "20-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.6570954322814941,
+      "localized_score": 0.7884068489074707
+    },
+    {
+      "id": "20-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.678939700126648,
+      "localized_score": 0.7292168736457825
+    },
+    {
+      "id": "20-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.8576853275299072,
+      "localized_score": 0.9302117824554443
+    },
+    {
+      "id": "20-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.8477964997291565,
+      "localized_score": 0.9129757881164551
+    },
+    {
+      "id": "20-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.7435524463653564,
+      "localized_score": 0.798363208770752
+    },
+    {
+      "id": "21-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.8005166053771973,
+      "localized_score": 1.0
+    },
+    {
+      "id": "21-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.6620875597000122,
+      "localized_score": 0.7921422719955444
+    },
+    {
+      "id": "21-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.666763186454773,
+      "localized_score": 0.822282075881958
+    },
+    {
+      "id": "21-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.799535870552063,
+      "localized_score": 0.9647956490516663
+    },
+    {
+      "id": "21-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.7267494201660156,
+      "localized_score": 0.9169016480445862
+    },
+    {
+      "id": "21-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.6166568398475647,
+      "localized_score": 0.7540982961654663
+    },
+    {
+      "id": "22-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.776985764503479,
+      "localized_score": 1.0000001192092896
+    },
+    {
+      "id": "22-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.6926649808883667,
+      "localized_score": 0.8210818767547607
+    },
+    {
+      "id": "22-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.6589730978012085,
+      "localized_score": 0.8169302940368652
+    },
+    {
+      "id": "22-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.7621555328369141,
+      "localized_score": 0.9663403630256653
+    },
+    {
+      "id": "22-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.7494451999664307,
+      "localized_score": 0.9681960344314575
+    },
+    {
+      "id": "22-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.7424051761627197,
+      "localized_score": 0.9281619191169739
+    },
+    {
+      "id": "23-exact",
+      "kind": "exact",
+      "label": true,
+      "score": 0.8237907886505127,
+      "localized_score": 1.0
+    },
+    {
+      "id": "23-case-punctuation",
+      "kind": "case-punctuation",
+      "label": true,
+      "score": 0.6314789056777954,
+      "localized_score": 0.8039698004722595
+    },
+    {
+      "id": "23-substitution",
+      "kind": "substitution",
+      "label": true,
+      "score": 0.671873152256012,
+      "localized_score": 0.8096445798873901
+    },
+    {
+      "id": "23-insertion",
+      "kind": "insertion",
+      "label": true,
+      "score": 0.7922820448875427,
+      "localized_score": 0.9417585134506226
+    },
+    {
+      "id": "23-deletion",
+      "kind": "deletion",
+      "label": true,
+      "score": 0.7414437532424927,
+      "localized_score": 0.9331146478652954
+    },
+    {
+      "id": "23-mixed",
+      "kind": "mixed",
+      "label": true,
+      "score": 0.7052823901176453,
+      "localized_score": 0.8596700429916382
+    },
+    {
+      "id": "negative-0",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.9293310642242432,
+      "localized_score": 0.9293310642242432
+    },
+    {
+      "id": "negative-1",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.8966772556304932,
+      "localized_score": 0.8966772556304932
+    },
+    {
+      "id": "negative-2",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.9059966802597046,
+      "localized_score": 0.9059966802597046
+    },
+    {
+      "id": "negative-3",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.905656099319458,
+      "localized_score": 0.905656099319458
+    },
+    {
+      "id": "negative-4",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.9004623889923096,
+      "localized_score": 0.9004624485969543
+    },
+    {
+      "id": "negative-5",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.9077022671699524,
+      "localized_score": 0.9077022671699524
+    },
+    {
+      "id": "negative-6",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.8903881907463074,
+      "localized_score": 0.8903881311416626
+    },
+    {
+      "id": "negative-7",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.9016249179840088,
+      "localized_score": 0.9016249179840088
+    },
+    {
+      "id": "negative-8",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.9088345170021057,
+      "localized_score": 0.9088345766067505
+    },
+    {
+      "id": "negative-9",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.9157330989837646,
+      "localized_score": 0.9157331585884094
+    },
+    {
+      "id": "negative-10",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.9071570634841919,
+      "localized_score": 0.9071570038795471
+    },
+    {
+      "id": "negative-11",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.9205054044723511,
+      "localized_score": 0.9205054044723511
+    },
+    {
+      "id": "negative-12",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.9130107164382935,
+      "localized_score": 0.9130107164382935
+    },
+    {
+      "id": "negative-13",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.8918919563293457,
+      "localized_score": 0.8918919563293457
+    },
+    {
+      "id": "negative-14",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.8968705534934998,
+      "localized_score": 0.8968706130981445
+    },
+    {
+      "id": "negative-15",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.8825668692588806,
+      "localized_score": 0.8825668096542358
+    },
+    {
+      "id": "negative-16",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.8915451765060425,
+      "localized_score": 0.8915451765060425
+    },
+    {
+      "id": "negative-17",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.8843593001365662,
+      "localized_score": 0.8843593001365662
+    },
+    {
+      "id": "negative-18",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.9010370373725891,
+      "localized_score": 0.9010369777679443
+    },
+    {
+      "id": "negative-19",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.89905846118927,
+      "localized_score": 0.89905846118927
+    },
+    {
+      "id": "negative-20",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.912459135055542,
+      "localized_score": 0.912459135055542
+    },
+    {
+      "id": "negative-21",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.9094723463058472,
+      "localized_score": 0.9094722270965576
+    },
+    {
+      "id": "negative-22",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.8943119645118713,
+      "localized_score": 0.8943119049072266
+    },
+    {
+      "id": "negative-23",
+      "kind": "disjoint-vocabulary",
+      "label": false,
+      "score": 0.9089663028717041,
+      "localized_score": 0.9089663028717041
+    },
+    {
+      "id": "topic-0",
+      "kind": "same-topic-different-wording",
+      "label": false,
+      "score": 0.5116177201271057,
+      "localized_score": 0.5116177201271057
+    },
+    {
+      "id": "topic-1",
+      "kind": "same-topic-different-wording",
+      "label": false,
+      "score": 0.7425981163978577,
+      "localized_score": 0.7425981163978577
+    },
+    {
+      "id": "noise-0.1-0",
+      "kind": "noise-10%",
+      "label": true,
+      "score": 0.7976812720298767,
+      "localized_score": 0.7976812720298767
+    },
+    {
+      "id": "noise-0.1-1",
+      "kind": "noise-10%",
+      "label": true,
+      "score": 0.7452208399772644,
+      "localized_score": 0.7452208399772644
+    },
+    {
+      "id": "noise-0.1-2",
+      "kind": "noise-10%",
+      "label": true,
+      "score": 0.5778274536132812,
+      "localized_score": 0.5778274536132812
+    },
+    {
+      "id": "noise-0.1-3",
+      "kind": "noise-10%",
+      "label": true,
+      "score": 0.7969611883163452,
+      "localized_score": 0.7969611883163452
+    },
+    {
+      "id": "noise-0.1-4",
+      "kind": "noise-10%",
+      "label": true,
+      "score": 0.7958154082298279,
+      "localized_score": 0.7958154678344727
+    },
+    {
+      "id": "noise-0.1-5",
+      "kind": "noise-10%",
+      "label": true,
+      "score": 0.7391542196273804,
+      "localized_score": 0.7391543388366699
+    },
+    {
+      "id": "noise-0.1-6",
+      "kind": "noise-10%",
+      "label": true,
+      "score": 0.6809710264205933,
+      "localized_score": 0.6809710264205933
+    },
+    {
+      "id": "noise-0.1-7",
+      "kind": "noise-10%",
+      "label": true,
+      "score": 0.743691086769104,
+      "localized_score": 0.743691086769104
+    },
+    {
+      "id": "noise-0.1-8",
+      "kind": "noise-10%",
+      "label": true,
+      "score": 0.8931006789207458,
+      "localized_score": 0.8931008577346802
+    },
+    {
+      "id": "noise-0.1-9",
+      "kind": "noise-10%",
+      "label": true,
+      "score": 0.751338005065918,
+      "localized_score": 0.7513380646705627
+    },
+    {
+      "id": "noise-0.1-10",
+      "kind": "noise-10%",
+      "label": true,
+      "score": 0.7824221849441528,
+      "localized_score": 0.7824222445487976
+    },
+    {
+      "id": "noise-0.1-11",
+      "kind": "noise-10%",
+      "label": true,
+      "score": 0.8731683492660522,
+      "localized_score": 0.8731683492660522
+    },
+    {
+      "id": "noise-0.2-0",
+      "kind": "noise-20%",
+      "label": true,
+      "score": 0.6398584842681885,
+      "localized_score": 0.6398584246635437
+    },
+    {
+      "id": "noise-0.2-1",
+      "kind": "noise-20%",
+      "label": true,
+      "score": 0.6881672143936157,
+      "localized_score": 0.6881672143936157
+    },
+    {
+      "id": "noise-0.2-2",
+      "kind": "noise-20%",
+      "label": true,
+      "score": 0.7173006534576416,
+      "localized_score": 0.7173006534576416
+    },
+    {
+      "id": "noise-0.2-3",
+      "kind": "noise-20%",
+      "label": true,
+      "score": 0.7506778836250305,
+      "localized_score": 0.7506778240203857
+    },
+    {
+      "id": "noise-0.2-4",
+      "kind": "noise-20%",
+      "label": true,
+      "score": 0.6164447665214539,
+      "localized_score": 0.6164448261260986
+    },
+    {
+      "id": "noise-0.2-5",
+      "kind": "noise-20%",
+      "label": true,
+      "score": 0.7517203092575073,
+      "localized_score": 0.7517203092575073
+    },
+    {
+      "id": "noise-0.2-6",
+      "kind": "noise-20%",
+      "label": true,
+      "score": 0.6257403492927551,
+      "localized_score": 0.6257403492927551
+    },
+    {
+      "id": "noise-0.2-7",
+      "kind": "noise-20%",
+      "label": true,
+      "score": 0.6657931208610535,
+      "localized_score": 0.6657931804656982
+    },
+    {
+      "id": "noise-0.2-8",
+      "kind": "noise-20%",
+      "label": true,
+      "score": 0.6658320426940918,
+      "localized_score": 0.6658320426940918
+    },
+    {
+      "id": "noise-0.2-9",
+      "kind": "noise-20%",
+      "label": true,
+      "score": 0.7047619819641113,
+      "localized_score": 0.7047619819641113
+    },
+    {
+      "id": "noise-0.2-10",
+      "kind": "noise-20%",
+      "label": true,
+      "score": 0.6824548244476318,
+      "localized_score": 0.6824548244476318
+    },
+    {
+      "id": "noise-0.2-11",
+      "kind": "noise-20%",
+      "label": true,
+      "score": 0.5709081888198853,
+      "localized_score": 0.5709081888198853
+    },
+    {
+      "id": "noise-0.3-0",
+      "kind": "noise-30%",
+      "label": true,
+      "score": 0.5277802348136902,
+      "localized_score": 0.5277802348136902
+    },
+    {
+      "id": "noise-0.3-1",
+      "kind": "noise-30%",
+      "label": true,
+      "score": 0.6976817846298218,
+      "localized_score": 0.6976817846298218
+    },
+    {
+      "id": "noise-0.3-2",
+      "kind": "noise-30%",
+      "label": true,
+      "score": 0.5288861393928528,
+      "localized_score": 0.5288861989974976
+    },
+    {
+      "id": "noise-0.3-3",
+      "kind": "noise-30%",
+      "label": true,
+      "score": 0.5255577564239502,
+      "localized_score": 0.5255577564239502
+    },
+    {
+      "id": "noise-0.3-4",
+      "kind": "noise-30%",
+      "label": true,
+      "score": 0.6284019947052002,
+      "localized_score": 0.6284019351005554
+    },
+    {
+      "id": "noise-0.3-5",
+      "kind": "noise-30%",
+      "label": true,
+      "score": 0.655317485332489,
+      "localized_score": 0.6553175449371338
+    },
+    {
+      "id": "noise-0.3-6",
+      "kind": "noise-30%",
+      "label": true,
+      "score": 0.5042077302932739,
+      "localized_score": 0.5042077302932739
+    },
+    {
+      "id": "noise-0.3-7",
+      "kind": "noise-30%",
+      "label": true,
+      "score": 0.5293927192687988,
+      "localized_score": 0.5293927192687988
+    },
+    {
+      "id": "noise-0.3-8",
+      "kind": "noise-30%",
+      "label": true,
+      "score": 0.5186733603477478,
+      "localized_score": 0.518673300743103
+    },
+    {
+      "id": "noise-0.3-9",
+      "kind": "noise-30%",
+      "label": true,
+      "score": 0.5565614104270935,
+      "localized_score": 0.5565614104270935
+    },
+    {
+      "id": "noise-0.3-10",
+      "kind": "noise-30%",
+      "label": true,
+      "score": 0.5855147838592529,
+      "localized_score": 0.5855147838592529
+    },
+    {
+      "id": "noise-0.3-11",
+      "kind": "noise-30%",
+      "label": true,
+      "score": 0.6523153781890869,
+      "localized_score": 0.6523153185844421
+    },
+    {
+      "id": "noise-0.4-0",
+      "kind": "noise-40%",
+      "label": true,
+      "score": 0.6822143793106079,
+      "localized_score": 0.6822144389152527
+    },
+    {
+      "id": "noise-0.4-1",
+      "kind": "noise-40%",
+      "label": true,
+      "score": 0.5306731462478638,
+      "localized_score": 0.5306732654571533
+    },
+    {
+      "id": "noise-0.4-2",
+      "kind": "noise-40%",
+      "label": true,
+      "score": 0.3684680461883545,
+      "localized_score": 0.3684680461883545
+    },
+    {
+      "id": "noise-0.4-3",
+      "kind": "noise-40%",
+      "label": true,
+      "score": 0.6273468732833862,
+      "localized_score": 0.6273468732833862
+    },
+    {
+      "id": "noise-0.4-4",
+      "kind": "noise-40%",
+      "label": true,
+      "score": 0.30145585536956787,
+      "localized_score": 0.3014557957649231
+    },
+    {
+      "id": "noise-0.4-5",
+      "kind": "noise-40%",
+      "label": true,
+      "score": 0.5635970234870911,
+      "localized_score": 0.5635970830917358
+    },
+    {
+      "id": "noise-0.4-6",
+      "kind": "noise-40%",
+      "label": true,
+      "score": 0.4376254677772522,
+      "localized_score": 0.4376254975795746
+    },
+    {
+      "id": "noise-0.4-7",
+      "kind": "noise-40%",
+      "label": true,
+      "score": 0.3038095533847809,
+      "localized_score": 0.3038095533847809
+    },
+    {
+      "id": "noise-0.4-8",
+      "kind": "noise-40%",
+      "label": true,
+      "score": 0.46563902497291565,
+      "localized_score": 0.4656389355659485
+    },
+    {
+      "id": "noise-0.4-9",
+      "kind": "noise-40%",
+      "label": true,
+      "score": 0.48555025458335876,
+      "localized_score": 0.4855502247810364
+    },
+    {
+      "id": "noise-0.4-10",
+      "kind": "noise-40%",
+      "label": true,
+      "score": 0.43850481510162354,
+      "localized_score": 0.43850481510162354
+    },
+    {
+      "id": "noise-0.4-11",
+      "kind": "noise-40%",
+      "label": true,
+      "score": 0.622589647769928,
+      "localized_score": 0.6225895881652832
+    }
+  ],
+  "natural_challenge": {
+    "rows": [
+      {
+        "kind": "paraphrase",
+        "a": "The king entered the large city before sunrise and ordered his soldiers to guard the northern gate throughout the entire night.",
+        "b": "A monarch arrived in town at dawn, instructing troops to protect its north entrance until morning.",
+        "label": true,
+        "embedding_score": 0.7425981163978577,
+        "lexical_detected": false
+      },
+      {
+        "kind": "paraphrase",
+        "a": "The doctor gave the sick child medicine and told his mother that he needed to rest at home until the fever had gone.",
+        "b": "A physician treated the ill boy and advised his parent to keep him indoors until his temperature returned to normal.",
+        "label": true,
+        "embedding_score": 0.7387614250183105,
+        "lexical_detected": false
+      },
+      {
+        "kind": "paraphrase",
+        "a": "A storm destroyed the old bridge across the river, leaving the village without a way to reach the market on the opposite bank.",
+        "b": "Severe weather wrecked the crossing over the water, cutting the settlement off from the shops on the far side.",
+        "label": true,
+        "embedding_score": 0.5656614303588867,
+        "lexical_detected": false
+      },
+      {
+        "kind": "paraphrase",
+        "a": "The teacher asked her students to finish their writing before the end of the day and leave their papers on the table.",
+        "b": "The instructor told the class to complete the assignment by evening and place their work on her desk.",
+        "label": true,
+        "embedding_score": 0.6157048940658569,
+        "lexical_detected": false
+      },
+      {
+        "kind": "same-topic",
+        "a": "The doctor gave the sick child medicine and told his mother that he needed to rest at home until the fever had gone.",
+        "b": "The doctor painted the clinic walls and ordered new chairs for the waiting room before the next patients arrived for their appointments.",
+        "label": false,
+        "embedding_score": 0.35027799010276794,
+        "lexical_detected": false
+      },
+      {
+        "kind": "same-topic",
+        "a": "The king entered the large city before sunrise and ordered his soldiers to guard the northern gate throughout the entire night.",
+        "b": "The king remained in his palace during the winter while merchants sold grain in the city market and children played near the southern wall.",
+        "label": false,
+        "embedding_score": 0.29517823457717896,
+        "lexical_detected": false
+      },
+      {
+        "kind": "same-topic",
+        "a": "A storm destroyed the old bridge across the river, leaving the village without a way to reach the market on the opposite bank.",
+        "b": "The village held a festival near the river, where visitors crossed a new bridge to buy vegetables and listen to the local musicians.",
+        "label": false,
+        "embedding_score": 0.42018598318099976,
+        "lexical_detected": false
+      },
+      {
+        "kind": "unrelated",
+        "a": "The teacher asked her students to finish their writing before the end of the day and leave their papers on the table.",
+        "b": "The fishing boat returned to the harbor with a large catch after spending three days at sea during a period of unusually calm weather.",
+        "label": false,
+        "embedding_score": 0.09284547716379166,
+        "lexical_detected": false
+      },
+      {
+        "kind": "known-lexical",
+        "a": "For this is he who was spoken of by Isaiah the prophet, saying, \u201cThe voice of one crying in the wilderness, make the way of the Lord ready! Make his paths straight!\u201d",
+        "b": "the voice of one crying in the wilderness, \u2018Make ready the way of the Lord! Make his paths straight!\u2019 \u201d",
+        "label": true,
+        "embedding_score": 0.7724528908729553,
+        "lexical_detected": true
+      },
+      {
+        "kind": "known-lexical",
+        "a": "\u201cI indeed baptize you in water for repentance, but he who comes after me is mightier than I, whose sandals I am not worthy to carry. He will baptize you in the Holy Spirit.",
+        "b": "John answered them all, \u201cI indeed baptize you with water, but he comes who is mightier than I, the strap of whose sandals I am not worthy to loosen. He will baptize you in the Holy Spirit and fire.",
+        "label": true,
+        "embedding_score": 0.8319886922836304,
+        "lexical_detected": true
+      },
+      {
+        "kind": "known-lexical",
+        "a": "But he answered, \u201cIt is written, \u2018Man shall not live by bread alone, but by every word that proceeds out of God\u2019s mouth.\u2019 \u201d",
+        "b": "Jesus answered him, saying, \u201cIt is written, \u2018Man shall not live by bread alone, but by every word of God.\u2019 \u201d",
+        "label": true,
+        "embedding_score": 0.8927648663520813,
+        "lexical_detected": true
+      },
+      {
+        "kind": "known-lexical",
+        "a": "Jesus said to him, \u201cAgain, it is written, \u2018You shall not test the Lord, your God.\u2019 \u201d",
+        "b": "Jesus answering, said to him, \u201cIt has been said, \u2018You shall not tempt the Lord your God.\u2019 \u201d",
+        "label": true,
+        "embedding_score": 0.7365487813949585,
+        "lexical_detected": false
+      },
+      {
+        "kind": "known-lexical",
+        "a": "\u201cNo one can serve two masters, for either he will hate the one and love the other, or else he will be devoted to one and despise the other. You can\u2019t serve both God and Mammon.",
+        "b": "No servant can serve two masters, for either he will hate the one and love the other; or else he will hold to one and despise the other. You aren\u2019t able to serve God and Mammon.\u201d",
+        "label": true,
+        "embedding_score": 0.8972364664077759,
+        "lexical_detected": true
+      },
+      {
+        "kind": "known-lexical",
+        "a": "\u201cAsk, and it will be given you. Seek, and you will find. Knock, and it will be opened for you.\nFor everyone who asks receives. He who seeks finds. To him who knocks it will be opened.",
+        "b": "\u201cI tell you, keep asking, and it will be given you. Keep seeking, and you will find. Keep knocking, and it will be opened to you.\nFor everyone who asks receives. He who seeks finds. To him who knocks it will be opened.",
+        "label": true,
+        "embedding_score": 0.9190375208854675,
+        "lexical_detected": true
+      },
+      {
+        "kind": "known-lexical",
+        "a": "Or who is there among you who, if his son asks him for bread, will give him a stone?\nOr if he asks for a fish, who will give him a serpent?\nIf you then, being evil, know how to give good gifts to your children, how much more will your Father who is in heaven give good things to those who ask him!",
+        "b": "\u201cWhich of you fathers, if your son asks for bread, will give him a stone? Or if he asks for a fish, he won\u2019t give him a snake instead of a fish, will he?\nOr if he asks for an egg, he won\u2019t give him a scorpion, will he?\nIf you then, being evil, know how to give good gifts to your children, how much more will your heavenly Father give the Holy Spirit to those who ask him?\u201d",
+        "label": true,
+        "embedding_score": 0.8666420578956604,
+        "lexical_detected": true
+      },
+      {
+        "kind": "known-lexical",
+        "a": "Behold, a leper came to him and worshiped him, saying, \u201cLord, if you want to, you can make me clean.\u201d\nJesus stretched out his hand and touched him, saying, \u201cI want to. Be made clean.\u201d Immediately his leprosy was cleansed.",
+        "b": "A leper came to him, begging him, kneeling down to him, and saying to him, \u201cIf you want to, you can make me clean.\u201d\nBeing moved with compassion, he stretched out his hand, and touched him, and said to him, \u201cI want to. Be made clean.\u201d\nWhen he had said this, immediately the leprosy departed from him and he was made clean.",
+        "label": true,
+        "embedding_score": 0.8152071833610535,
+        "lexical_detected": true
+      },
+      {
+        "kind": "known-lexical",
+        "a": "But that you may know that the Son of Man has authority on earth to forgive sins\u2014\u201d (then he said to the paralytic), \u201cGet up, and take up your mat, and go to your house.\u201d",
+        "b": "But that you may know that the Son of Man has authority on earth to forgive sins,\u201d he said to the paralyzed man, \u201cI tell you, arise, take up your cot, and go to your house.\u201d",
+        "label": true,
+        "embedding_score": 0.8694095611572266,
+        "lexical_detected": true
+      },
+      {
+        "kind": "known-lexical",
+        "a": "No one puts a piece of unshrunk cloth on an old garment; for the patch would tear away from the garment, and a worse hole is made.\nNeither do people put new wine into old wineskins, or else the skins would burst, and the wine be spilled, and the skins ruined. No, they put new wine into fresh wineskins, and both are preserved.\u201d",
+        "b": "No one sews a piece of unshrunk cloth on an old garment, or else the patch shrinks and the new tears away from the old, and a worse hole is made.\nNo one puts new wine into old wineskins; or else the new wine will burst the skins, and the wine pours out, and the skins will be destroyed; but they put new wine into fresh wineskins.\u201d",
+        "label": true,
+        "embedding_score": 0.9369404315948486,
+        "lexical_detected": true
+      },
+      {
+        "kind": "known-lexical",
+        "a": "Knowing their thoughts, Jesus said to them, \u201cEvery kingdom divided against itself is brought to desolation, and every city or house divided against itself will not stand.\nIf Satan casts out Satan, he is divided against himself. How then will his kingdom stand?",
+        "b": "But he, knowing their thoughts, said to them, \u201cEvery kingdom divided against itself is brought to desolation. A house divided against itself falls.\nIf Satan also is divided against himself, how will his kingdom stand? For you say that I cast out demons by Beelzebul.",
+        "label": true,
+        "embedding_score": 0.8876138925552368,
+        "lexical_detected": true
+      },
+      {
+        "kind": "known-lexical",
+        "a": "The men of Nineveh will stand up in the judgment with this generation and will condemn it, for they repented at the preaching of Jonah; and behold, someone greater than Jonah is here.",
+        "b": "The men of Nineveh will stand up in the judgment with this generation, and will condemn it, for they repented at the preaching of Jonah; and behold, one greater than Jonah is here.",
+        "label": true,
+        "embedding_score": 0.9937130212783813,
+        "lexical_detected": true
+      },
+      {
+        "kind": "known-lexical",
+        "a": "The Queen of the South will rise up in the judgment with this generation and will condemn it, for she came from the ends of the earth to hear the wisdom of Solomon; and behold, someone greater than Solomon is here.",
+        "b": "The Queen of the South will rise up in the judgment with the men of this generation and will condemn them, for she came from the ends of the earth to hear the wisdom of Solomon; and behold, one greater than Solomon is here.",
+        "label": true,
+        "embedding_score": 0.985835075378418,
+        "lexical_detected": true
+      },
+      {
+        "kind": "known-lexical",
+        "a": "He spoke to them many things in parables, saying, \u201cBehold, a farmer went out to sow.\nAs he sowed, some seeds fell by the roadside, and the birds came and devoured them.\nOthers fell on rocky ground, where they didn\u2019t have much soil, and immediately they sprang up, because they had no depth of earth.\nWhen the sun had risen, they were scorched. Because they had no root, they withered away.\nOthers fell among thorns. The thorns grew up and choked them.\nOthers fell on good soil and yielded fruit: some one hundred times as much, some sixty, and some thirty.",
+        "b": "\u201cListen! Behold, the farmer went out to sow.\nAs he sowed, some seed fell by the road, and the birds came and devoured it.\nOthers fell on the rocky ground, where it had little soil, and immediately it sprang up, because it had no depth of soil.\nWhen the sun had risen, it was scorched; and because it had no root, it withered away.\nOthers fell among the thorns, and the thorns grew up and choked it, and it yielded no fruit.\nOthers fell into the good ground and yielded fruit, growing up and increasing. Some produced thirty times, some sixty times, and some one hundred times as much.\u201d",
+        "label": true,
+        "embedding_score": 0.8886256217956543,
+        "lexical_detected": true
+      },
+      {
+        "kind": "known-lexical",
+        "a": "For what will it profit a man if he gains the whole world and forfeits his life? Or what will a man give in exchange for his life?",
+        "b": "For what does it profit a man to gain the whole world and forfeit his life?\nFor what will a man give in exchange for his life?",
+        "label": true,
+        "embedding_score": 0.9709062576293945,
+        "lexical_detected": true
+      },
+      {
+        "kind": "known-lexical",
+        "a": "Again I tell you, it is easier for a camel to go through a needle\u2019s eye than for a rich man to enter into God\u2019s Kingdom.\u201d",
+        "b": "It is easier for a camel to go through a needle\u2019s eye than for a rich man to enter into God\u2019s Kingdom.\u201d",
+        "label": true,
+        "embedding_score": 0.9926580190658569,
+        "lexical_detected": true
+      },
+      {
+        "kind": "known-lexical",
+        "a": "Heaven and earth will pass away, but my words will not pass away.",
+        "b": "Heaven and earth will pass away, but my words will by no means pass away.",
+        "label": true,
+        "embedding_score": 0.9736288785934448,
+        "lexical_detected": false
+      },
+      {
+        "kind": "known-lexical",
+        "a": "As they were eating, Jesus took bread, gave thanks for it, and broke it. He gave to the disciples and said, \u201cTake, eat; this is my body.\u201d\nHe took the cup, gave thanks, and gave to them, saying, \u201cAll of you drink it,\nfor this is my blood of the new covenant, which is poured out for many for the remission of sins.",
+        "b": "As they were eating, Jesus took bread, and when he had blessed it, he broke it and gave to them, and said, \u201cTake, eat. This is my body.\u201d\nHe took the cup, and when he had given thanks, he gave to them. They all drank of it.\nHe said to them, \u201cThis is my blood of the new covenant, which is poured out for many.",
+        "label": true,
+        "embedding_score": 0.9351037740707397,
+        "lexical_detected": true
+      }
+    ],
+    "threshold_sensitivity": [
+      {
+        "threshold": 0.5,
+        "tp": 22,
+        "fp": 0,
+        "fn": 0,
+        "tn": 4,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      {
+        "threshold": 0.6,
+        "tp": 21,
+        "fp": 0,
+        "fn": 1,
+        "tn": 4,
+        "precision": 1.0,
+        "recall": 0.9545454545454546
+      },
+      {
+        "threshold": 0.7,
+        "tp": 20,
+        "fp": 0,
+        "fn": 2,
+        "tn": 4,
+        "precision": 1.0,
+        "recall": 0.9090909090909091
+      },
+      {
+        "threshold": 0.8,
+        "tp": 16,
+        "fp": 0,
+        "fn": 6,
+        "tn": 4,
+        "precision": 1.0,
+        "recall": 0.7272727272727273
+      },
+      {
+        "threshold": 0.9,
+        "tp": 8,
+        "fp": 0,
+        "fn": 14,
+        "tn": 4,
+        "precision": 1.0,
+        "recall": 0.36363636363636365
+      }
+    ]
+  },
+  "caveats": [
+    "Synthetic disjoint-vocabulary controls use artificial alphanumeric tokens and are unsuitable for estimating semantic precision.",
+    "Gold-boundary inputs assume an oracle already localized the correct spans; they are not a retrieval result.",
+    "Context-window scores and lexical localization solve different tasks; these scores are not directly comparable.",
+    "The natural challenge contains only 26 author-selected pairs, not an independent benchmark. No corpus-wide semantic retrieval was evaluated.",
+    "No embedding threshold was calibrated on held-out data; the app does not use this model."
+  ]
+}

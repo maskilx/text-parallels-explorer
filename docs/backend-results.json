@@ -1,0 +1,22 @@
+{
+  "tests": 66,
+  "passed": 66,
+  "failed": 0,
+  "environments": [
+    "macOS ARM64 / Python 3.14",
+    "Linux ARM64 / Python 3.12 Docker"
+  ],
+  "warning": "Starlette httpx test-adapter deprecation",
+  "docker_restart_persistence": "passed",
+  "one_command_launcher": "passed",
+  "original_review_restored_after_smoke_test": true,
+  "verified": "2026-10-06",
+  "semantic_cache_source_ranges": "all 829 verified",
+  "semantic_duplicate_ranges": 0,
+  "semantic_docker_restart_persistence": "passed",
+  "algorithm": "lexical-1.1.0",
+  "lexical_cache_source_ranges": "all 267 verified",
+  "original_upgrade_ranges_and_reviews_preserved": 260,
+  "skip_seed_challenge_positive_detections": 36,
+  "skip_seed_challenge_positive_total": 36
+}

@@ -1,0 +1,2271 @@
+{
+  "models": [
+    {
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "license": "Apache-2.0",
+      "dimensions": 384,
+      "max_tokens": 256,
+      "threshold": 0.43,
+      "calibration": {
+        "threshold": 0.43,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "tn": 4,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "challenge": {
+        "threshold": 0.43,
+        "tp": 6,
+        "fp": 3,
+        "fn": 0,
+        "tn": 3,
+        "precision": 0.6666666666666666,
+        "recall": 1.0
+      },
+      "threshold_sensitivity": [
+        {
+          "threshold": 0.5,
+          "tp": 6,
+          "fp": 2,
+          "fn": 0,
+          "tn": 4,
+          "precision": 0.75,
+          "recall": 1.0
+        },
+        {
+          "threshold": 0.55,
+          "tp": 5,
+          "fp": 1,
+          "fn": 1,
+          "tn": 5,
+          "precision": 0.8333333333333334,
+          "recall": 0.8333333333333334
+        },
+        {
+          "threshold": 0.6,
+          "tp": 4,
+          "fp": 1,
+          "fn": 2,
+          "tn": 5,
+          "precision": 0.8,
+          "recall": 0.6666666666666666
+        },
+        {
+          "threshold": 0.65,
+          "tp": 1,
+          "fp": 0,
+          "fn": 5,
+          "tn": 6,
+          "precision": 1.0,
+          "recall": 0.16666666666666666
+        },
+        {
+          "threshold": 0.7,
+          "tp": 1,
+          "fp": 0,
+          "fn": 5,
+          "tn": 6,
+          "precision": 1.0,
+          "recall": 0.16666666666666666
+        },
+        {
+          "threshold": 0.8,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6,
+          "tn": 6,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      ],
+      "hard_negative_sensitivity": [
+        {
+          "threshold": 0.5,
+          "tp": 0,
+          "fp": 4,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        {
+          "threshold": 0.55,
+          "tp": 0,
+          "fp": 4,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        {
+          "threshold": 0.6,
+          "tp": 0,
+          "fp": 4,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        {
+          "threshold": 0.65,
+          "tp": 0,
+          "fp": 4,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        {
+          "threshold": 0.7,
+          "tp": 0,
+          "fp": 4,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        {
+          "threshold": 0.8,
+          "tp": 0,
+          "fp": 4,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      ],
+      "hard_negatives": {
+        "threshold": 0.43,
+        "tp": 0,
+        "fp": 4,
+        "fn": 0,
+        "tn": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "challenge_rows": [
+        {
+          "kind": "paraphrase",
+          "a": "The farmer sold his last cow to pay the rent.",
+          "b": "To cover the cost of his home, the agricultural worker traded away his only remaining cattle.",
+          "label": true,
+          "score": 0.6097129583358765,
+          "detected": true
+        },
+        {
+          "kind": "paraphrase",
+          "a": "Passengers waited at the station because the train was delayed.",
+          "b": "A late railway service left travelers standing on the platform.",
+          "label": true,
+          "score": 0.5342280864715576,
+          "detected": true
+        },
+        {
+          "kind": "paraphrase",
+          "a": "The librarian locked the doors after every visitor had left.",
+          "b": "Once the building was empty, the library worker secured its entrances.",
+          "label": true,
+          "score": 0.5854239463806152,
+          "detected": true
+        },
+        {
+          "kind": "paraphrase",
+          "a": "The fire forced the families to leave their homes.",
+          "b": "Residents had to evacuate their houses because of the blaze.",
+          "label": true,
+          "score": 0.6374260187149048,
+          "detected": true
+        },
+        {
+          "kind": "paraphrase",
+          "a": "The traveler could not buy food because he had lost his purse.",
+          "b": "Having misplaced his wallet, the visitor had no money for a meal.",
+          "label": true,
+          "score": 0.705470085144043,
+          "detected": true
+        },
+        {
+          "kind": "paraphrase",
+          "a": "The judge released the prisoner because there was no evidence.",
+          "b": "Without proof against the accused, the court ordered him to go free.",
+          "label": true,
+          "score": 0.6219315528869629,
+          "detected": true
+        },
+        {
+          "kind": "same-topic",
+          "a": "The farmer sold his last cow to pay the rent.",
+          "b": "The farmer bought a cow and built a larger barn.",
+          "label": false,
+          "score": 0.6406865119934082,
+          "detected": true
+        },
+        {
+          "kind": "same-topic",
+          "a": "Passengers waited at the station because the train was delayed.",
+          "b": "Passengers bought train tickets online for a journey next week.",
+          "label": false,
+          "score": 0.39229443669319153,
+          "detected": false
+        },
+        {
+          "kind": "same-topic",
+          "a": "The librarian locked the doors after every visitor had left.",
+          "b": "The librarian ordered new books for the children.",
+          "label": false,
+          "score": 0.45660674571990967,
+          "detected": true
+        },
+        {
+          "kind": "same-topic",
+          "a": "The fire forced the families to leave their homes.",
+          "b": "The families lit a fire to cook dinner at their campsite.",
+          "label": false,
+          "score": 0.5352895259857178,
+          "detected": true
+        },
+        {
+          "kind": "unrelated",
+          "a": "The judge released the prisoner because there was no evidence.",
+          "b": "A gardener planted roses beside a wooden fence.",
+          "label": false,
+          "score": -0.026883522048592567,
+          "detected": false
+        },
+        {
+          "kind": "unrelated",
+          "a": "The traveler could not buy food because he had lost his purse.",
+          "b": "The telescope revealed a distant galaxy.",
+          "label": false,
+          "score": 0.1266808658838272,
+          "detected": false
+        },
+        {
+          "kind": "contradiction",
+          "a": "The judge released the prisoner because there was no evidence.",
+          "b": "The judge did not release the prisoner despite the lack of evidence.",
+          "label": false,
+          "score": 0.9359035491943359,
+          "detected": true
+        },
+        {
+          "kind": "contradiction",
+          "a": "The fire forced the families to leave their homes.",
+          "b": "The families stayed in their homes despite the fire.",
+          "label": false,
+          "score": 0.8073518872261047,
+          "detected": true
+        },
+        {
+          "kind": "role-reversal",
+          "a": "The farmer sold a cow to the merchant.",
+          "b": "The merchant sold a cow to the farmer.",
+          "label": false,
+          "score": 0.9931194186210632,
+          "detected": true
+        },
+        {
+          "kind": "role-reversal",
+          "a": "The teacher praised the student.",
+          "b": "The student praised the teacher.",
+          "label": false,
+          "score": 0.9921034574508667,
+          "detected": true
+        }
+      ],
+      "windows": {
+        "matthew": 2102,
+        "mark": 1332,
+        "luke": 2260
+      },
+      "truncated_windows": {
+        "matthew": 0,
+        "mark": 0,
+        "luke": 0
+      },
+      "pairs": [
+        {
+          "a": "luke",
+          "b": "mark",
+          "total": 949,
+          "additional": 837,
+          "examples": [
+            {
+              "start_a": 104868,
+              "end_a": 104963,
+              "start_b": 53821,
+              "end_b": 53923,
+              "score": 0.9651232361793518,
+              "reference_a": "20:33",
+              "reference_b": "12:23",
+              "text_a": "Therefore in the resurrection whose wife of them will she be? For the seven had her as a wife.\u201d",
+              "text_b": "In the resurrection, when they rise, whose wife will she be of them? For the seven had her as a wife.\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 104369,
+              "end_a": 104629,
+              "start_b": 53302,
+              "end_b": 53580,
+              "score": 0.9639840126037598,
+              "reference_a": "20:27\u201320:28",
+              "reference_b": "12:18\u201312:19",
+              "text_a": "Some of the Sadducees came to him, those who deny that there is a resurrection.\nThey asked him, \u201cTeacher, Moses wrote to us that if a man\u2019s brother dies having a wife, and he is childless, his brother should take the wife and raise up children for his brother.",
+              "text_b": "Some Sadducees, who say that there is no resurrection, came to him. They asked him, saying,\n\u201cTeacher, Moses wrote to us, \u2018If a man\u2019s brother dies and leaves a wife behind him, and leaves no children, that his brother should take his wife and raise up offspring for his brother.\u2019",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 94125,
+              "end_a": 94276,
+              "start_b": 43248,
+              "end_b": 43416,
+              "score": 0.9550557136535645,
+              "reference_a": "18:20",
+              "reference_b": "10:19",
+              "text_a": "You know the commandments: \u2018Don\u2019t commit adultery,\u2019 \u2018Don\u2019t murder,\u2019 \u2018Don\u2019t steal,\u2019 \u2018Don\u2019t give false testimony,\u2019 \u2018Honor your father and your mother.\u2019 \u201d",
+              "text_b": "You know the commandments: \u2018Do not murder,\u2019 \u2018Do not commit adultery,\u2019 \u2018Do not steal,\u2019 \u2018Do not give false testimony,\u2019 \u2018Do not defraud,\u2019 \u2018Honor your father and mother.\u2019 \u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 121810,
+              "end_a": 121902,
+              "start_b": 71704,
+              "end_b": 71794,
+              "score": 0.9532255530357361,
+              "reference_a": "23:44",
+              "reference_b": "15:33",
+              "text_a": "It was now about the sixth hour, and darkness came over the whole land until the ninth hour.",
+              "text_b": "When the sixth hour had come, there was darkness over the whole land until the ninth hour.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 45756,
+              "end_a": 45975,
+              "start_b": 19573,
+              "end_b": 19814,
+              "score": 0.9425548911094666,
+              "reference_a": "8:48\u20138:49",
+              "reference_b": "5:34\u20135:35",
+              "text_a": "He said to her, \u201cDaughter, cheer up. Your faith has made you well. Go in peace.\u201d\nWhile he still spoke, one from the ruler of the synagogue\u2019s house came, saying to him, \u201cYour daughter is dead. Don\u2019t trouble the Teacher.\u201d",
+              "text_b": "He said to her, \u201cDaughter, your faith has made you well. Go in peace, and be cured of your disease.\u201d\nWhile he was still speaking, people came from the synagogue ruler\u2019s house, saying, \u201cYour daughter is dead. Why bother the Teacher any more?\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 102369,
+              "end_a": 102524,
+              "start_b": 51500,
+              "end_b": 51662,
+              "score": 0.9364809393882751,
+              "reference_a": "20:10",
+              "reference_b": "12:2\u201312:3",
+              "text_a": "At the proper season, he sent a servant to the farmers to collect his share of the fruit of the vineyard. But the farmers beat him and sent him away empty.",
+              "text_b": "When it was time, he sent a servant to the farmer to get from the farmer his share of the fruit of the vineyard.\nThey took him, beat him, and sent him away empty.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 22188,
+              "end_a": 22286,
+              "start_b": 3115,
+              "end_b": 3219,
+              "score": 0.9300978779792786,
+              "reference_a": "4:39",
+              "reference_b": "1:31",
+              "text_a": "He stood over her and rebuked the fever, and it left her. Immediately she rose up and served them.",
+              "text_b": "He came and took her by the hand and raised her up. The fever left her immediately, and she served them.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 26515,
+              "end_a": 26650,
+              "start_b": 6410,
+              "end_b": 6602,
+              "score": 0.9279825091362,
+              "reference_a": "5:30",
+              "reference_b": "2:16",
+              "text_a": "Their scribes and the Pharisees murmured against his disciples, saying, \u201cWhy do you eat and drink with the tax collectors and sinners?\u201d",
+              "text_b": "The scribes and the Pharisees, when they saw that he was eating with the sinners and tax collectors, said to his disciples, \u201cWhy is it that he eats and drinks with tax collectors and sinners?\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 111302,
+              "end_a": 111455,
+              "start_b": 62544,
+              "end_b": 62754,
+              "score": 0.9276016354560852,
+              "reference_a": "22:12\u201322:13",
+              "reference_b": "14:15\u201314:16",
+              "text_a": "He will show you a large, furnished upper room. Make preparations there.\u201d\nThey went, found things as Jesus had told them, and they prepared the Passover.",
+              "text_b": "He will himself show you a large upper room furnished and ready. Get ready for us there.\u201d\nHis disciples went out, and came into the city, and found things as he had said to them, and they prepared the Passover.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 28203,
+              "end_a": 28260,
+              "start_b": 8071,
+              "end_b": 8209,
+              "score": 0.9261435270309448,
+              "reference_a": "6:5",
+              "reference_b": "2:27\u20132:28",
+              "text_a": "He said to them, \u201cThe Son of Man is lord of the Sabbath.\u201d",
+              "text_b": "He said to them, \u201cThe Sabbath was made for man, not man for the Sabbath.\nTherefore the Son of Man is lord even of the Sabbath.\u201d Mark < 2 >",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 40025,
+              "end_a": 40171,
+              "start_b": 11849,
+              "end_b": 11970,
+              "score": 0.9248647689819336,
+              "reference_a": "8:5",
+              "reference_b": "4:3\u20134:4",
+              "text_a": "\u201cThe farmer went out to sow his seed. As he sowed, some fell along the road, and it was trampled under foot, and the birds of the sky devoured it.",
+              "text_b": "\u201cListen! Behold, the farmer went out to sow.\nAs he sowed, some seed fell by the road, and the birds came and devoured it.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 48546,
+              "end_a": 48645,
+              "start_b": 32322,
+              "end_b": 32412,
+              "score": 0.9232396483421326,
+              "reference_a": "9:17",
+              "reference_b": "8:8",
+              "text_a": "They ate and were all filled. They gathered up twelve baskets of broken pieces that were left over.",
+              "text_b": "They ate and were filled. They took up seven baskets of broken pieces that were left over.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 104630,
+              "end_a": 104761,
+              "start_b": 53581,
+              "end_b": 53742,
+              "score": 0.9219594597816467,
+              "reference_a": "20:29\u201320:30",
+              "reference_b": "12:20\u201312:21",
+              "text_a": "There were therefore seven brothers. The first took a wife, and died childless.\nThe second took her as wife, and he died childless.",
+              "text_b": "There were seven brothers. The first took a wife, and dying left no offspring.\nThe second took her, and died, leaving no children behind him. The third likewise;",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 104762,
+              "end_a": 104867,
+              "start_b": 53660,
+              "end_b": 53820,
+              "score": 0.921082079410553,
+              "reference_a": "20:31\u201320:32",
+              "reference_b": "12:21\u201312:22",
+              "text_a": "The third took her, and likewise the seven all left no children, and died.\nAfterward the woman also died.",
+              "text_b": "The second took her, and died, leaving no children behind him. The third likewise;\nand the seven took her and left no children. Last of all the woman also died.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 104710,
+              "end_a": 104836,
+              "start_b": 53660,
+              "end_b": 53820,
+              "score": 0.9175261855125427,
+              "reference_a": "20:30\u201320:31",
+              "reference_b": "12:21\u201312:22",
+              "text_a": "The second took her as wife, and he died childless.\nThe third took her, and likewise the seven all left no children, and died.",
+              "text_b": "The second took her, and died, leaving no children behind him. The third likewise;\nand the seven took her and left no children. Last of all the woman also died.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 119092,
+              "end_a": 119148,
+              "start_b": 69182,
+              "end_b": 69267,
+              "score": 0.9131680130958557,
+              "reference_a": "23:17",
+              "reference_b": "15:6",
+              "text_a": "Now he had to release one prisoner to them at the feast.",
+              "text_b": "Now at the feast he used to release to them one prisoner, whomever they asked of him.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 111805,
+              "end_a": 111906,
+              "start_b": 63574,
+              "end_b": 63701,
+              "score": 0.9117984175682068,
+              "reference_a": "22:18",
+              "reference_b": "14:25",
+              "text_a": "for I tell you, I will not drink at all again from the fruit of the vine, until God\u2019s Kingdom comes.\u201d",
+              "text_b": "Most certainly I tell you, I will no more drink of the fruit of the vine until that day when I drink it anew in God\u2019s Kingdom.\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 95548,
+              "end_a": 95618,
+              "start_b": 45287,
+              "end_b": 45384,
+              "score": 0.9042577147483826,
+              "reference_a": "18:33",
+              "reference_b": "10:34",
+              "text_a": "They will scourge and kill him. On the third day, he will rise again.\u201d",
+              "text_b": "They will mock him, spit on him, scourge him, and kill him. On the third day he will rise again.\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 115153,
+              "end_a": 115240,
+              "start_b": 65907,
+              "end_b": 66025,
+              "score": 0.9034667015075684,
+              "reference_a": "22:50",
+              "reference_b": "14:47",
+              "text_a": "A certain one of them struck the servant of the high priest, and cut off his right ear.",
+              "text_b": "But a certain one of those who stood by drew his sword and struck the servant of the high priest, and cut off his ear.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 101495,
+              "end_a": 101748,
+              "start_b": 50521,
+              "end_b": 50772,
+              "score": 0.9033124446868896,
+              "reference_a": "20:1\u201320:2",
+              "reference_b": "11:27\u201311:28",
+              "text_a": "On one of those days, as he was teaching the people in the temple and preaching the Good News, the priests and scribes came to him with the elders.\nThey asked him, \u201cTell us: by what authority do you do these things? Or who is giving you this authority?\u201d",
+              "text_b": "They came again to Jerusalem, and as he was walking in the temple, the chief priests, the scribes, and the elders came to him,\nand they began saying to him, \u201cBy what authority do you do these things? Or who gave you this authority to do these things?\u201d",
+              "covered_by_lexical": false
+            }
+          ]
+        },
+        {
+          "a": "luke",
+          "b": "matthew",
+          "total": 1277,
+          "additional": 1125,
+          "examples": [
+            {
+              "start_a": 69229,
+              "end_a": 69287,
+              "start_b": 18941,
+              "end_b": 18999,
+              "score": 0.99545818567276,
+              "reference_a": "12:34",
+              "reference_b": "6:21",
+              "text_a": "For where your treasure is, there will your heart be also.",
+              "text_b": "for where your treasure is, there your heart will be also.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 104868,
+              "end_a": 104963,
+              "start_b": 87161,
+              "end_b": 87251,
+              "score": 0.9724143743515015,
+              "reference_a": "20:33",
+              "reference_b": "22:28",
+              "text_a": "Therefore in the resurrection whose wife of them will she be? For the seven had her as a wife.\u201d",
+              "text_b": "In the resurrection therefore, whose wife will she be of the seven? For they all had her.\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 103941,
+              "end_a": 103993,
+              "start_b": 86217,
+              "end_b": 86300,
+              "score": 0.9627315998077393,
+              "reference_a": "20:22",
+              "reference_b": "22:17",
+              "text_a": "Is it lawful for us to pay taxes to Caesar, or not?\u201d",
+              "text_b": "Tell us therefore, what do you think? Is it lawful to pay taxes to Caesar, or not?\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 48546,
+              "end_a": 48645,
+              "start_b": 54396,
+              "end_b": 54515,
+              "score": 0.9547101259231567,
+              "reference_a": "9:17",
+              "reference_b": "14:20",
+              "text_a": "They ate and were all filled. They gathered up twelve baskets of broken pieces that were left over.",
+              "text_b": "They all ate and were filled. They took up twelve baskets full of that which remained left over from the broken pieces.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 27816,
+              "end_a": 28036,
+              "start_b": 39830,
+              "end_b": 40051,
+              "score": 0.9479424357414246,
+              "reference_a": "6:2\u20136:3",
+              "reference_b": "12:2\u201312:3",
+              "text_a": "But some of the Pharisees said to them, \u201cWhy do you do that which is not lawful to do on the Sabbath day?\u201d\nJesus, answering them, said, \u201cHaven\u2019t you read what David did when he was hungry, he and those who were with him,",
+              "text_b": "But the Pharisees, when they saw it, said to him, \u201cBehold, your disciples do what is not lawful to do on the Sabbath.\u201d\nBut he said to them, \u201cHaven\u2019t you read what David did when he was hungry, and those who were with him:",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 102971,
+              "end_a": 103216,
+              "start_b": 83492,
+              "end_b": 83642,
+              "score": 0.9448125958442688,
+              "reference_a": "20:15\u201320:16",
+              "reference_b": "21:39\u201321:40",
+              "text_a": "Then they threw him out of the vineyard and killed him. What therefore will the lord of the vineyard do to them?\nHe will come and destroy these farmers, and will give the vineyard to others.\u201d When they heard that, they said, \u201cMay that never be!\u201d",
+              "text_b": "So they took him and threw him out of the vineyard, then killed him.\nWhen therefore the lord of the vineyard comes, what will he do to those farmers?\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 101495,
+              "end_a": 101748,
+              "start_b": 81364,
+              "end_b": 81559,
+              "score": 0.9383406639099121,
+              "reference_a": "20:1\u201320:2",
+              "reference_b": "21:23",
+              "text_a": "On one of those days, as he was teaching the people in the temple and preaching the Good News, the priests and scribes came to him with the elders.\nThey asked him, \u201cTell us: by what authority do you do these things? Or who is giving you this authority?\u201d",
+              "text_b": "When he had come into the temple, the chief priests and the elders of the people came to him as he was teaching, and said, \u201cBy what authority do you do these things? Who gave you this authority?\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 48388,
+              "end_a": 48645,
+              "start_b": 59755,
+              "end_b": 59996,
+              "score": 0.9288964867591858,
+              "reference_a": "9:16\u20139:17",
+              "reference_b": "15:36\u201315:37",
+              "text_a": "He took the five loaves and the two fish, and looking up to the sky, he blessed them, broke them, and gave them to the disciples to set before the multitude.\nThey ate and were all filled. They gathered up twelve baskets of broken pieces that were left over.",
+              "text_b": "and he took the seven loaves and the fish. He gave thanks and broke them, and gave to the disciples, and the disciples to the multitudes.\nThey all ate and were filled. They took up seven baskets full of the broken pieces that were left over.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 50330,
+              "end_a": 50519,
+              "start_b": 63844,
+              "end_b": 64005,
+              "score": 0.926343560218811,
+              "reference_a": "9:33",
+              "reference_b": "17:4",
+              "text_a": "As they were parting from him, Peter said to Jesus, \u201cMaster, it is good for us to be here. Let\u2019s make three tents: one for you, one for Moses, and one for Elijah,\u201d not knowing what he said.",
+              "text_b": "Peter answered and said to Jesus, \u201cLord, it is good for us to be here. If you want, let\u2019s make three tents here: one for you, one for Moses, and one for Elijah.\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 122662,
+              "end_a": 122713,
+              "start_b": 117923,
+              "end_b": 118020,
+              "score": 0.9243393540382385,
+              "reference_a": "23:52",
+              "reference_b": "27:58",
+              "text_a": "This man went to Pilate, and asked for Jesus\u2019 body.",
+              "text_b": "This man went to Pilate and asked for Jesus\u2019 body. Then Pilate commanded the body to be given up.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 102824,
+              "end_a": 102970,
+              "start_b": 83361,
+              "end_b": 83491,
+              "score": 0.9210824370384216,
+              "reference_a": "20:14",
+              "reference_b": "21:38",
+              "text_a": "\u201cBut when the farmers saw him, they reasoned among themselves, saying, \u2018This is the heir. Come, let\u2019s kill him, that the inheritance may be ours.\u2019",
+              "text_b": "But the farmers, when they saw the son, said among themselves, \u2018This is the heir. Come, let\u2019s kill him and seize his inheritance.\u2019",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 68525,
+              "end_a": 68691,
+              "start_b": 20070,
+              "end_b": 20224,
+              "score": 0.9195321798324585,
+              "reference_a": "12:28",
+              "reference_b": "6:30",
+              "text_a": "But if this is how God clothes the grass in the field, which today exists and tomorrow is cast into the oven, how much more will he clothe you, O you of little faith?",
+              "text_b": "But if God so clothes the grass of the field, which today exists and tomorrow is thrown into the oven, won\u2019t he much more clothe you, you of little faith?",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 104449,
+              "end_a": 104709,
+              "start_b": 86803,
+              "end_b": 87063,
+              "score": 0.9190133810043335,
+              "reference_a": "20:28\u201320:29",
+              "reference_b": "22:24\u201322:25",
+              "text_a": "They asked him, \u201cTeacher, Moses wrote to us that if a man\u2019s brother dies having a wife, and he is childless, his brother should take the wife and raise up children for his brother.\nThere were therefore seven brothers. The first took a wife, and died childless.",
+              "text_b": "saying, \u201cTeacher, Moses said, \u2018If a man dies, having no children, his brother shall marry his wife and raise up offspring for his brother.\u2019\nNow there were with us seven brothers. The first married and died, and having no offspring left his wife to his brother.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 104369,
+              "end_a": 104629,
+              "start_b": 86706,
+              "end_b": 86942,
+              "score": 0.9175419211387634,
+              "reference_a": "20:27\u201320:28",
+              "reference_b": "22:23\u201322:24",
+              "text_a": "Some of the Sadducees came to him, those who deny that there is a resurrection.\nThey asked him, \u201cTeacher, Moses wrote to us that if a man\u2019s brother dies having a wife, and he is childless, his brother should take the wife and raise up children for his brother.",
+              "text_b": "On that day Sadducees (those who say that there is no resurrection) came to him. They asked him,\nsaying, \u201cTeacher, Moses said, \u2018If a man dies, having no children, his brother shall marry his wife and raise up offspring for his brother.\u2019",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 40270,
+              "end_a": 40339,
+              "start_b": 46066,
+              "end_b": 46127,
+              "score": 0.9149472713470459,
+              "reference_a": "8:7",
+              "reference_b": "13:7",
+              "text_a": "Some fell amid the thorns, and the thorns grew with it and choked it.",
+              "text_b": "Others fell among thorns. The thorns grew up and choked them.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 50018,
+              "end_a": 50083,
+              "start_b": 63784,
+              "end_b": 63843,
+              "score": 0.9146302938461304,
+              "reference_a": "9:30",
+              "reference_b": "17:3",
+              "text_a": "Behold, two men were talking with him, who were Moses and Elijah,",
+              "text_b": "Behold, Moses and Elijah appeared to them talking with him.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 101749,
+              "end_a": 101865,
+              "start_b": 81560,
+              "end_b": 81883,
+              "score": 0.9051474332809448,
+              "reference_a": "20:3\u201320:4",
+              "reference_b": "21:24\u201321:25",
+              "text_a": "He answered them, \u201cI also will ask you one question. Tell me:\nthe baptism of John, was it from heaven, or from men?\u201d",
+              "text_b": "Jesus answered them, \u201cI also will ask you one question, which if you tell me, I likewise will tell you by what authority I do these things.\nThe baptism of John, where was it from? From heaven or from men?\u201d They reasoned with themselves, saying, \u201cIf we say, \u2018From heaven,\u2019 he will ask us, \u2018Why then did you not believe him?\u2019",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 102824,
+              "end_a": 103083,
+              "start_b": 83492,
+              "end_b": 83642,
+              "score": 0.9047794938087463,
+              "reference_a": "20:14\u201320:15",
+              "reference_b": "21:39\u201321:40",
+              "text_a": "\u201cBut when the farmers saw him, they reasoned among themselves, saying, \u2018This is the heir. Come, let\u2019s kill him, that the inheritance may be ours.\u2019\nThen they threw him out of the vineyard and killed him. What therefore will the lord of the vineyard do to them?",
+              "text_b": "So they took him and threw him out of the vineyard, then killed him.\nWhen therefore the lord of the vineyard comes, what will he do to those farmers?\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 60790,
+              "end_a": 60908,
+              "start_b": 42316,
+              "end_b": 42405,
+              "score": 0.8997517228126526,
+              "reference_a": "11:18",
+              "reference_b": "12:26",
+              "text_a": "If Satan also is divided against himself, how will his kingdom stand? For you say that I cast out demons by Beelzebul.",
+              "text_b": "If Satan casts out Satan, he is divided against himself. How then will his kingdom stand?",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 27655,
+              "end_a": 27922,
+              "start_b": 39688,
+              "end_b": 39948,
+              "score": 0.8968794345855713,
+              "reference_a": "6:1\u20136:2",
+              "reference_b": "12:1\u201312:2",
+              "text_a": "Now on the second Sabbath after the first, he was going through the grain fields. His disciples plucked the heads of grain and ate, rubbing them in their hands.\nBut some of the Pharisees said to them, \u201cWhy do you do that which is not lawful to do on the Sabbath day?\u201d",
+              "text_b": "At that time, Jesus went on the Sabbath day through the grain fields. His disciples were hungry and began to pluck heads of grain and to eat.\nBut the Pharisees, when they saw it, said to him, \u201cBehold, your disciples do what is not lawful to do on the Sabbath.\u201d",
+              "covered_by_lexical": false
+            }
+          ]
+        },
+        {
+          "a": "mark",
+          "b": "matthew",
+          "total": 912,
+          "additional": 704,
+          "examples": [
+            {
+              "start_a": 41680,
+              "end_a": 41775,
+              "start_b": 71280,
+              "end_b": 71387,
+              "score": 0.9859977960586548,
+              "reference_a": "10:2",
+              "reference_b": "19:3",
+              "text_a": "Pharisees came to him testing him, and asked him, \u201cIs it lawful for a man to divorce his wife?\u201d",
+              "text_b": "Pharisees came to him, testing him and saying, \u201cIs it lawful for a man to divorce his wife for any reason?\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 61683,
+              "end_a": 61855,
+              "start_b": 104791,
+              "end_b": 104944,
+              "score": 0.9798547625541687,
+              "reference_a": "14:9",
+              "reference_b": "26:13",
+              "text_a": "Most certainly I tell you, wherever this Good News may be preached throughout the whole world, that which this woman has done will also be spoken of for a memorial of her.\u201d",
+              "text_b": "Most certainly I tell you, wherever this Good News is preached in the whole world, what this woman has done will also be spoken of as a memorial of her.\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 32322,
+              "end_a": 32412,
+              "start_b": 59893,
+              "end_b": 59996,
+              "score": 0.9769909977912903,
+              "reference_a": "8:8",
+              "reference_b": "15:37",
+              "text_a": "They ate and were filled. They took up seven baskets of broken pieces that were left over.",
+              "text_b": "They all ate and were filled. They took up seven baskets full of the broken pieces that were left over.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 65473,
+              "end_a": 65774,
+              "start_b": 108551,
+              "end_b": 108821,
+              "score": 0.9659972190856934,
+              "reference_a": "14:43\u201314:44",
+              "reference_b": "26:47\u201326:48",
+              "text_a": "Immediately, while he was still speaking, Judas, one of the twelve, came\u2014and with him a multitude with swords and clubs, from the chief priests, the scribes, and the elders.\nNow he who betrayed him had given them a sign, saying, \u201cWhomever I will kiss, that is he. Seize him, and lead him away safely.\u201d",
+              "text_b": "While he was still speaking, behold, Judas, one of the twelve, came, and with him a great multitude with swords and clubs, from the chief priests and elders of the people.\nNow he who betrayed him had given them a sign, saying, \u201cWhoever I kiss, he is the one. Seize him.\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 36177,
+              "end_a": 36309,
+              "start_b": 63844,
+              "end_b": 64005,
+              "score": 0.9642220735549927,
+              "reference_a": "9:5",
+              "reference_b": "17:4",
+              "text_a": "Peter answered Jesus, \u201cRabbi, it is good for us to be here. Let\u2019s make three tents: one for you, one for Moses, and one for Elijah.\u201d",
+              "text_b": "Peter answered and said to Jesus, \u201cLord, it is good for us to be here. If you want, let\u2019s make three tents here: one for you, one for Moses, and one for Elijah.\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 53394,
+              "end_a": 53659,
+              "start_b": 86803,
+              "end_b": 87063,
+              "score": 0.9544864892959595,
+              "reference_a": "12:19\u201312:20",
+              "reference_b": "22:24\u201322:25",
+              "text_a": "\u201cTeacher, Moses wrote to us, \u2018If a man\u2019s brother dies and leaves a wife behind him, and leaves no children, that his brother should take his wife and raise up offspring for his brother.\u2019\nThere were seven brothers. The first took a wife, and dying left no offspring.",
+              "text_b": "saying, \u201cTeacher, Moses said, \u2018If a man dies, having no children, his brother shall marry his wife and raise up offspring for his brother.\u2019\nNow there were with us seven brothers. The first married and died, and having no offspring left his wife to his brother.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 68450,
+              "end_a": 68728,
+              "start_b": 111665,
+              "end_b": 111921,
+              "score": 0.95389723777771,
+              "reference_a": "14:71\u201314:72",
+              "reference_b": "26:74\u201326:75",
+              "text_a": "But he began to curse and to swear, \u201cI don\u2019t know this man of whom you speak!\u201d\nThe rooster crowed the second time. Peter remembered the words that Jesus said to him, \u201cBefore the rooster crows twice, you will deny me three times.\u201d When he thought about that, he wept. Mark < 14 >",
+              "text_b": "Then he began to curse and to swear, \u201cI don\u2019t know the man!\u201d Immediately the rooster crowed.\nPeter remembered the word which Jesus had said to him, \u201cBefore the rooster crows, you will deny me three times.\u201d Then he went out and wept bitterly. Matthew < 26 >",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 60878,
+              "end_a": 60964,
+              "start_b": 104121,
+              "end_b": 104195,
+              "score": 0.9504249095916748,
+              "reference_a": "14:2",
+              "reference_b": "26:5",
+              "text_a": "For they said, \u201cNot during the feast, because there might be a riot among the people.\u201d",
+              "text_b": "But they said, \u201cNot during the feast, lest a riot occur among the people.\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 71097,
+              "end_a": 71177,
+              "start_b": 115872,
+              "end_b": 115962,
+              "score": 0.9497078657150269,
+              "reference_a": "15:27",
+              "reference_b": "27:38",
+              "text_a": "With him they crucified two robbers, one on his right hand, and one on his left.",
+              "text_b": "Then there were two robbers crucified with him, one on his right hand and one on the left.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 62084,
+              "end_a": 62253,
+              "start_b": 105200,
+              "end_b": 105348,
+              "score": 0.9436339735984802,
+              "reference_a": "14:12",
+              "reference_b": "26:17",
+              "text_a": "On the first day of unleavened bread, when they sacrificed the Passover, his disciples asked him, \u201cWhere do you want us to go and prepare that you may eat the Passover?\u201d",
+              "text_b": "Now on the first day of unleavened bread, the disciples came to Jesus, saying to him, \u201cWhere do you want us to prepare for you to eat the Passover?\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 52113,
+              "end_a": 52298,
+              "start_b": 83492,
+              "end_b": 83642,
+              "score": 0.9426961541175842,
+              "reference_a": "12:8\u201312:9",
+              "reference_b": "21:39\u201321:40",
+              "text_a": "They took him, killed him, and cast him out of the vineyard.\nWhat therefore will the lord of the vineyard do? He will come and destroy the farmers, and will give the vineyard to others.",
+              "text_b": "So they took him and threw him out of the vineyard, then killed him.\nWhen therefore the lord of the vineyard comes, what will he do to those farmers?\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 529,
+              "end_a": 631,
+              "start_b": 6492,
+              "end_b": 6618,
+              "score": 0.9409798383712769,
+              "reference_a": "1:6",
+              "reference_b": "3:4",
+              "text_a": "John was clothed with camel\u2019s hair and a leather belt around his waist. He ate locusts and wild honey.",
+              "text_b": "Now John himself wore clothing made of camel\u2019s hair with a leather belt around his waist. His food was locusts and wild honey.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 52608,
+              "end_a": 52915,
+              "start_b": 86015,
+              "end_b": 86300,
+              "score": 0.9394726753234863,
+              "reference_a": "12:13\u201312:14",
+              "reference_b": "22:16\u201322:17",
+              "text_a": "They sent some of the Pharisees and the Herodians to him, that they might trap him with words.\nWhen they had come, they asked him, \u201cTeacher, we know that you are honest, and don\u2019t defer to anyone; for you aren\u2019t partial to anyone, but truly teach the way of God. Is it lawful to pay taxes to Caesar, or not?",
+              "text_b": "They sent their disciples to him, along with the Herodians, saying, \u201cTeacher, we know that you are honest, and teach the way of God in truth, no matter whom you teach; for you aren\u2019t partial to anyone.\nTell us therefore, what do you think? Is it lawful to pay taxes to Caesar, or not?\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 3115,
+              "end_a": 3219,
+              "start_b": 25308,
+              "end_b": 25382,
+              "score": 0.9392381906509399,
+              "reference_a": "1:31",
+              "reference_b": "8:15",
+              "text_a": "He came and took her by the hand and raised her up. The fever left her immediately, and she served them.",
+              "text_b": "He touched her hand, and the fever left her. So she got up and served him.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 67548,
+              "end_a": 67727,
+              "start_b": 110795,
+              "end_b": 111005,
+              "score": 0.9387625455856323,
+              "reference_a": "14:63\u201314:64",
+              "reference_b": "26:65\u201326:66",
+              "text_a": "The high priest tore his clothes and said, \u201cWhat further need have we of witnesses?\nYou have heard the blasphemy! What do you think?\u201d They all condemned him to be worthy of death.",
+              "text_b": "Then the high priest tore his clothing, saying, \u201cHe has spoken blasphemy! Why do we need any more witnesses? Behold, now you have heard his blasphemy.\nWhat do you think?\u201d They answered, \u201cHe is worthy of death!\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 68985,
+              "end_a": 69122,
+              "start_b": 113214,
+              "end_b": 113371,
+              "score": 0.9382433891296387,
+              "reference_a": "15:3\u201315:4",
+              "reference_b": "27:12\u201327:13",
+              "text_a": "The chief priests accused him of many things.\nPilate again asked him, \u201cHave you no answer? See how many things they testify against you!\u201d",
+              "text_b": "When he was accused by the chief priests and elders, he answered nothing.\nThen Pilate said to him, \u201cDon\u2019t you hear how many things they testify against you?\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 36108,
+              "end_a": 36176,
+              "start_b": 63784,
+              "end_b": 63843,
+              "score": 0.9344813823699951,
+              "reference_a": "9:4",
+              "reference_b": "17:3",
+              "text_a": "Elijah and Moses appeared to them, and they were talking with Jesus.",
+              "text_b": "Behold, Moses and Elijah appeared to them talking with him.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 35819,
+              "end_a": 35998,
+              "start_b": 63552,
+              "end_b": 63679,
+              "score": 0.934148371219635,
+              "reference_a": "9:2",
+              "reference_b": "17:1",
+              "text_a": "After six days Jesus took with him Peter, James, and John, and brought them up onto a high mountain privately by themselves, and he was changed into another form in front of them.",
+              "text_b": "After six days, Jesus took with him Peter, James, and John his brother, and brought them up into a high mountain by themselves.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 25311,
+              "end_a": 25415,
+              "start_b": 54077,
+              "end_b": 54137,
+              "score": 0.9302648901939392,
+              "reference_a": "6:38",
+              "reference_b": "14:17",
+              "text_a": "He said to them, \u201cHow many loaves do you have? Go see.\u201d When they knew, they said, \u201cFive, and two fish.\u201d",
+              "text_b": "They told him, \u201cWe only have here five loaves and two fish.\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 52174,
+              "end_a": 52298,
+              "start_b": 83561,
+              "end_b": 83798,
+              "score": 0.9267929792404175,
+              "reference_a": "12:9",
+              "reference_b": "21:40\u201321:41",
+              "text_a": "What therefore will the lord of the vineyard do? He will come and destroy the farmers, and will give the vineyard to others.",
+              "text_b": "When therefore the lord of the vineyard comes, what will he do to those farmers?\u201d\nThey told him, \u201cHe will miserably destroy those miserable men, and will lease out the vineyard to other farmers who will give him the fruit in its season.\u201d",
+              "covered_by_lexical": false
+            }
+          ]
+        }
+      ],
+      "gold": [
+        {
+          "name": "Voice in the wilderness",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "Baptism with water",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "Bread alone",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "Do not test",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "Two masters",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "Ask seek knock",
+          "detected": true,
+          "coverage": 0.5136612021857924
+        },
+        {
+          "name": "Good gifts",
+          "detected": true,
+          "coverage": 0.4128686327077748
+        },
+        {
+          "name": "Cleansing a leper",
+          "detected": true,
+          "coverage": 0.5384615384615384
+        },
+        {
+          "name": "Authority to forgive",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "Cloth and wineskins",
+          "detected": true,
+          "coverage": 0.5589123867069486
+        },
+        {
+          "name": "Divided kingdom",
+          "detected": true,
+          "coverage": 0.5526315789473685
+        },
+        {
+          "name": "Nineveh",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "Queen of the south",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "The sower",
+          "detected": false,
+          "coverage": 0.35555555555555557
+        },
+        {
+          "name": "Gain the world",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "Camel and needle",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "Words will not pass",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "Bread and cup",
+          "detected": true,
+          "coverage": 0.5551948051948052
+        }
+      ],
+      "gold_detected": 17,
+      "duration_seconds": 12.06
+    },
+    {
+      "model": "sentence-transformers/paraphrase-MiniLM-L6-v2",
+      "revision": "c9a2bfebc254878aee8c3aca9e6844d5bbb102d1",
+      "license": "Apache-2.0",
+      "dimensions": 384,
+      "max_tokens": 128,
+      "threshold": 0.45,
+      "calibration": {
+        "threshold": 0.45,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "tn": 4,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "challenge": {
+        "threshold": 0.45,
+        "tp": 6,
+        "fp": 2,
+        "fn": 0,
+        "tn": 4,
+        "precision": 0.75,
+        "recall": 1.0
+      },
+      "threshold_sensitivity": [
+        {
+          "threshold": 0.5,
+          "tp": 6,
+          "fp": 2,
+          "fn": 0,
+          "tn": 4,
+          "precision": 0.75,
+          "recall": 1.0
+        },
+        {
+          "threshold": 0.55,
+          "tp": 5,
+          "fp": 2,
+          "fn": 1,
+          "tn": 4,
+          "precision": 0.7142857142857143,
+          "recall": 0.8333333333333334
+        },
+        {
+          "threshold": 0.6,
+          "tp": 4,
+          "fp": 1,
+          "fn": 2,
+          "tn": 5,
+          "precision": 0.8,
+          "recall": 0.6666666666666666
+        },
+        {
+          "threshold": 0.65,
+          "tp": 3,
+          "fp": 0,
+          "fn": 3,
+          "tn": 6,
+          "precision": 1.0,
+          "recall": 0.5
+        },
+        {
+          "threshold": 0.7,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6,
+          "tn": 6,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        {
+          "threshold": 0.8,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6,
+          "tn": 6,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      ],
+      "hard_negative_sensitivity": [
+        {
+          "threshold": 0.5,
+          "tp": 0,
+          "fp": 4,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        {
+          "threshold": 0.55,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0,
+          "tn": 1,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        {
+          "threshold": 0.6,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0,
+          "tn": 1,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        {
+          "threshold": 0.65,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0,
+          "tn": 1,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        {
+          "threshold": 0.7,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0,
+          "tn": 1,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        {
+          "threshold": 0.8,
+          "tp": 0,
+          "fp": 2,
+          "fn": 0,
+          "tn": 2,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      ],
+      "hard_negatives": {
+        "threshold": 0.45,
+        "tp": 0,
+        "fp": 4,
+        "fn": 0,
+        "tn": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "challenge_rows": [
+        {
+          "kind": "paraphrase",
+          "a": "The farmer sold his last cow to pay the rent.",
+          "b": "To cover the cost of his home, the agricultural worker traded away his only remaining cattle.",
+          "label": true,
+          "score": 0.6614981889724731,
+          "detected": true
+        },
+        {
+          "kind": "paraphrase",
+          "a": "Passengers waited at the station because the train was delayed.",
+          "b": "A late railway service left travelers standing on the platform.",
+          "label": true,
+          "score": 0.6804406642913818,
+          "detected": true
+        },
+        {
+          "kind": "paraphrase",
+          "a": "The librarian locked the doors after every visitor had left.",
+          "b": "Once the building was empty, the library worker secured its entrances.",
+          "label": true,
+          "score": 0.5830761194229126,
+          "detected": true
+        },
+        {
+          "kind": "paraphrase",
+          "a": "The fire forced the families to leave their homes.",
+          "b": "Residents had to evacuate their houses because of the blaze.",
+          "label": true,
+          "score": 0.6105265617370605,
+          "detected": true
+        },
+        {
+          "kind": "paraphrase",
+          "a": "The traveler could not buy food because he had lost his purse.",
+          "b": "Having misplaced his wallet, the visitor had no money for a meal.",
+          "label": true,
+          "score": 0.6799499988555908,
+          "detected": true
+        },
+        {
+          "kind": "paraphrase",
+          "a": "The judge released the prisoner because there was no evidence.",
+          "b": "Without proof against the accused, the court ordered him to go free.",
+          "label": true,
+          "score": 0.5445987582206726,
+          "detected": true
+        },
+        {
+          "kind": "same-topic",
+          "a": "The farmer sold his last cow to pay the rent.",
+          "b": "The farmer bought a cow and built a larger barn.",
+          "label": false,
+          "score": 0.6083688735961914,
+          "detected": true
+        },
+        {
+          "kind": "same-topic",
+          "a": "Passengers waited at the station because the train was delayed.",
+          "b": "Passengers bought train tickets online for a journey next week.",
+          "label": false,
+          "score": 0.5502762794494629,
+          "detected": true
+        },
+        {
+          "kind": "same-topic",
+          "a": "The librarian locked the doors after every visitor had left.",
+          "b": "The librarian ordered new books for the children.",
+          "label": false,
+          "score": 0.4499340057373047,
+          "detected": false
+        },
+        {
+          "kind": "same-topic",
+          "a": "The fire forced the families to leave their homes.",
+          "b": "The families lit a fire to cook dinner at their campsite.",
+          "label": false,
+          "score": 0.4172804355621338,
+          "detected": false
+        },
+        {
+          "kind": "unrelated",
+          "a": "The judge released the prisoner because there was no evidence.",
+          "b": "A gardener planted roses beside a wooden fence.",
+          "label": false,
+          "score": -0.10776415467262268,
+          "detected": false
+        },
+        {
+          "kind": "unrelated",
+          "a": "The traveler could not buy food because he had lost his purse.",
+          "b": "The telescope revealed a distant galaxy.",
+          "label": false,
+          "score": 0.04540187492966652,
+          "detected": false
+        },
+        {
+          "kind": "contradiction",
+          "a": "The judge released the prisoner because there was no evidence.",
+          "b": "The judge did not release the prisoner despite the lack of evidence.",
+          "label": false,
+          "score": 0.7791231870651245,
+          "detected": true
+        },
+        {
+          "kind": "contradiction",
+          "a": "The fire forced the families to leave their homes.",
+          "b": "The families stayed in their homes despite the fire.",
+          "label": false,
+          "score": 0.5107773542404175,
+          "detected": true
+        },
+        {
+          "kind": "role-reversal",
+          "a": "The farmer sold a cow to the merchant.",
+          "b": "The merchant sold a cow to the farmer.",
+          "label": false,
+          "score": 0.9949731230735779,
+          "detected": true
+        },
+        {
+          "kind": "role-reversal",
+          "a": "The teacher praised the student.",
+          "b": "The student praised the teacher.",
+          "label": false,
+          "score": 0.9915734529495239,
+          "detected": true
+        }
+      ],
+      "windows": {
+        "matthew": 2102,
+        "mark": 1332,
+        "luke": 2260
+      },
+      "truncated_windows": {
+        "matthew": 0,
+        "mark": 0,
+        "luke": 0
+      },
+      "pairs": [
+        {
+          "a": "luke",
+          "b": "mark",
+          "total": 967,
+          "additional": 857,
+          "examples": [
+            {
+              "start_a": 104868,
+              "end_a": 104963,
+              "start_b": 53821,
+              "end_b": 53923,
+              "score": 0.9577963948249817,
+              "reference_a": "20:33",
+              "reference_b": "12:23",
+              "text_a": "Therefore in the resurrection whose wife of them will she be? For the seven had her as a wife.\u201d",
+              "text_b": "In the resurrection, when they rise, whose wife will she be of them? For the seven had her as a wife.\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 121810,
+              "end_a": 121902,
+              "start_b": 71704,
+              "end_b": 71794,
+              "score": 0.9554003477096558,
+              "reference_a": "23:44",
+              "reference_b": "15:33",
+              "text_a": "It was now about the sixth hour, and darkness came over the whole land until the ninth hour.",
+              "text_b": "When the sixth hour had come, there was darkness over the whole land until the ninth hour.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 104369,
+              "end_a": 104629,
+              "start_b": 53302,
+              "end_b": 53580,
+              "score": 0.9461360573768616,
+              "reference_a": "20:27\u201320:28",
+              "reference_b": "12:18\u201312:19",
+              "text_a": "Some of the Sadducees came to him, those who deny that there is a resurrection.\nThey asked him, \u201cTeacher, Moses wrote to us that if a man\u2019s brother dies having a wife, and he is childless, his brother should take the wife and raise up children for his brother.",
+              "text_b": "Some Sadducees, who say that there is no resurrection, came to him. They asked him, saying,\n\u201cTeacher, Moses wrote to us, \u2018If a man\u2019s brother dies and leaves a wife behind him, and leaves no children, that his brother should take his wife and raise up offspring for his brother.\u2019",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 48546,
+              "end_a": 48645,
+              "start_b": 32322,
+              "end_b": 32412,
+              "score": 0.9445835947990417,
+              "reference_a": "9:17",
+              "reference_b": "8:8",
+              "text_a": "They ate and were all filled. They gathered up twelve baskets of broken pieces that were left over.",
+              "text_b": "They ate and were filled. They took up seven baskets of broken pieces that were left over.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 102369,
+              "end_a": 102524,
+              "start_b": 51500,
+              "end_b": 51662,
+              "score": 0.9398791193962097,
+              "reference_a": "20:10",
+              "reference_b": "12:2\u201312:3",
+              "text_a": "At the proper season, he sent a servant to the farmers to collect his share of the fruit of the vineyard. But the farmers beat him and sent him away empty.",
+              "text_b": "When it was time, he sent a servant to the farmer to get from the farmer his share of the fruit of the vineyard.\nThey took him, beat him, and sent him away empty.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 101811,
+              "end_a": 101865,
+              "start_b": 50891,
+              "end_b": 50955,
+              "score": 0.9391722083091736,
+              "reference_a": "20:4",
+              "reference_b": "11:30",
+              "text_a": "the baptism of John, was it from heaven, or from men?\u201d",
+              "text_b": "The baptism of John\u2014was it from heaven, or from men? Answer me.\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 94125,
+              "end_a": 94276,
+              "start_b": 43248,
+              "end_b": 43416,
+              "score": 0.9386371374130249,
+              "reference_a": "18:20",
+              "reference_b": "10:19",
+              "text_a": "You know the commandments: \u2018Don\u2019t commit adultery,\u2019 \u2018Don\u2019t murder,\u2019 \u2018Don\u2019t steal,\u2019 \u2018Don\u2019t give false testimony,\u2019 \u2018Honor your father and your mother.\u2019 \u201d",
+              "text_b": "You know the commandments: \u2018Do not murder,\u2019 \u2018Do not commit adultery,\u2019 \u2018Do not steal,\u2019 \u2018Do not give false testimony,\u2019 \u2018Do not defraud,\u2019 \u2018Honor your father and mother.\u2019 \u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 26515,
+              "end_a": 26650,
+              "start_b": 6410,
+              "end_b": 6602,
+              "score": 0.930871307849884,
+              "reference_a": "5:30",
+              "reference_b": "2:16",
+              "text_a": "Their scribes and the Pharisees murmured against his disciples, saying, \u201cWhy do you eat and drink with the tax collectors and sinners?\u201d",
+              "text_b": "The scribes and the Pharisees, when they saw that he was eating with the sinners and tax collectors, said to his disciples, \u201cWhy is it that he eats and drinks with tax collectors and sinners?\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 119092,
+              "end_a": 119148,
+              "start_b": 69182,
+              "end_b": 69267,
+              "score": 0.9227104187011719,
+              "reference_a": "23:17",
+              "reference_b": "15:6",
+              "text_a": "Now he had to release one prisoner to them at the feast.",
+              "text_b": "Now at the feast he used to release to them one prisoner, whomever they asked of him.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 104762,
+              "end_a": 104867,
+              "start_b": 53660,
+              "end_b": 53820,
+              "score": 0.9208324551582336,
+              "reference_a": "20:31\u201320:32",
+              "reference_b": "12:21\u201312:22",
+              "text_a": "The third took her, and likewise the seven all left no children, and died.\nAfterward the woman also died.",
+              "text_b": "The second took her, and died, leaving no children behind him. The third likewise;\nand the seven took her and left no children. Last of all the woman also died.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 40025,
+              "end_a": 40171,
+              "start_b": 11849,
+              "end_b": 11970,
+              "score": 0.9191088080406189,
+              "reference_a": "8:5",
+              "reference_b": "4:3\u20134:4",
+              "text_a": "\u201cThe farmer went out to sow his seed. As he sowed, some fell along the road, and it was trampled under foot, and the birds of the sky devoured it.",
+              "text_b": "\u201cListen! Behold, the farmer went out to sow.\nAs he sowed, some seed fell by the road, and the birds came and devoured it.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 27655,
+              "end_a": 27815,
+              "start_b": 7541,
+              "end_b": 7665,
+              "score": 0.9167720675468445,
+              "reference_a": "6:1",
+              "reference_b": "2:23",
+              "text_a": "Now on the second Sabbath after the first, he was going through the grain fields. His disciples plucked the heads of grain and ate, rubbing them in their hands.",
+              "text_b": "He was going on the Sabbath day through the grain fields; and his disciples began, as they went, to pluck the ears of grain.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 102525,
+              "end_a": 102695,
+              "start_b": 51613,
+              "end_b": 51795,
+              "score": 0.9147165417671204,
+              "reference_a": "20:11\u201320:12",
+              "reference_b": "12:3\u201312:4",
+              "text_a": "He sent yet another servant, and they also beat him and treated him shamefully, and sent him away empty.\nHe sent yet a third, and they also wounded him and threw him out.",
+              "text_b": "They took him, beat him, and sent him away empty.\nAgain, he sent another servant to them; and they threw stones at him, wounded him in the head, and sent him away shamefully treated.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 99427,
+              "end_a": 99540,
+              "start_b": 47469,
+              "end_b": 47582,
+              "score": 0.9144665598869324,
+              "reference_a": "19:29",
+              "reference_b": "11:1",
+              "text_a": "When he came near to Bethsphage and Bethany, at the mountain that is called Olivet, he sent two of his disciples,",
+              "text_b": "When they came near to Jerusalem, to Bethsphage and Bethany, at the Mount of Olives, he sent two of his disciples",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 104710,
+              "end_a": 104836,
+              "start_b": 53660,
+              "end_b": 53820,
+              "score": 0.9140203595161438,
+              "reference_a": "20:30\u201320:31",
+              "reference_b": "12:21\u201312:22",
+              "text_a": "The second took her as wife, and he died childless.\nThe third took her, and likewise the seven all left no children, and died.",
+              "text_b": "The second took her, and died, leaving no children behind him. The third likewise;\nand the seven took her and left no children. Last of all the woman also died.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 48546,
+              "end_a": 48645,
+              "start_b": 25740,
+              "end_b": 25841,
+              "score": 0.9082897901535034,
+              "reference_a": "9:17",
+              "reference_b": "6:42\u20136:43",
+              "text_a": "They ate and were all filled. They gathered up twelve baskets of broken pieces that were left over.",
+              "text_b": "They all ate and were filled.\nThey took up twelve baskets full of broken pieces and also of the fish.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 111302,
+              "end_a": 111375,
+              "start_b": 62544,
+              "end_b": 62633,
+              "score": 0.9058644771575928,
+              "reference_a": "22:12",
+              "reference_b": "14:15",
+              "text_a": "He will show you a large, furnished upper room. Make preparations there.\u201d",
+              "text_b": "He will himself show you a large upper room furnished and ready. Get ready for us there.\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 45837,
+              "end_a": 46068,
+              "start_b": 19674,
+              "end_b": 19940,
+              "score": 0.9005846977233887,
+              "reference_a": "8:49\u20138:50",
+              "reference_b": "5:35\u20135:36",
+              "text_a": "While he still spoke, one from the ruler of the synagogue\u2019s house came, saying to him, \u201cYour daughter is dead. Don\u2019t trouble the Teacher.\u201d\nBut Jesus hearing it, answered him, \u201cDon\u2019t be afraid. Only believe, and she will be healed.\u201d",
+              "text_b": "While he was still speaking, people came from the synagogue ruler\u2019s house, saying, \u201cYour daughter is dead. Why bother the Teacher any more?\u201d\nBut Jesus, when he heard the message spoken, immediately said to the ruler of the synagogue, \u201cDon\u2019t be afraid, only believe.\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 115153,
+              "end_a": 115240,
+              "start_b": 65907,
+              "end_b": 66025,
+              "score": 0.8990196585655212,
+              "reference_a": "22:50",
+              "reference_b": "14:47",
+              "text_a": "A certain one of them struck the servant of the high priest, and cut off his right ear.",
+              "text_b": "But a certain one of those who stood by drew his sword and struck the servant of the high priest, and cut off his ear.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 44809,
+              "end_a": 44941,
+              "start_b": 18326,
+              "end_b": 18427,
+              "score": 0.897453784942627,
+              "reference_a": "8:41",
+              "reference_b": "5:22",
+              "text_a": "Behold, a man named Jairus came. He was a ruler of the synagogue. He fell down at Jesus\u2019 feet and begged him to come into his house,",
+              "text_b": "Behold, one of the rulers of the synagogue, Jairus by name, came; and seeing him, he fell at his feet",
+              "covered_by_lexical": false
+            }
+          ]
+        },
+        {
+          "a": "luke",
+          "b": "matthew",
+          "total": 1270,
+          "additional": 1118,
+          "examples": [
+            {
+              "start_a": 69229,
+              "end_a": 69287,
+              "start_b": 18941,
+              "end_b": 18999,
+              "score": 0.9945088028907776,
+              "reference_a": "12:34",
+              "reference_b": "6:21",
+              "text_a": "For where your treasure is, there will your heart be also.",
+              "text_b": "for where your treasure is, there your heart will be also.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 104868,
+              "end_a": 104963,
+              "start_b": 87161,
+              "end_b": 87251,
+              "score": 0.9707422256469727,
+              "reference_a": "20:33",
+              "reference_b": "22:28",
+              "text_a": "Therefore in the resurrection whose wife of them will she be? For the seven had her as a wife.\u201d",
+              "text_b": "In the resurrection therefore, whose wife will she be of the seven? For they all had her.\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 48546,
+              "end_a": 48645,
+              "start_b": 59893,
+              "end_b": 59996,
+              "score": 0.9465488791465759,
+              "reference_a": "9:17",
+              "reference_b": "15:37",
+              "text_a": "They ate and were all filled. They gathered up twelve baskets of broken pieces that were left over.",
+              "text_b": "They all ate and were filled. They took up seven baskets full of the broken pieces that were left over.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 48546,
+              "end_a": 48645,
+              "start_b": 54396,
+              "end_b": 54515,
+              "score": 0.9458848834037781,
+              "reference_a": "9:17",
+              "reference_b": "14:20",
+              "text_a": "They ate and were all filled. They gathered up twelve baskets of broken pieces that were left over.",
+              "text_b": "They all ate and were filled. They took up twelve baskets full of that which remained left over from the broken pieces.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 102971,
+              "end_a": 103083,
+              "start_b": 83492,
+              "end_b": 83642,
+              "score": 0.9424676895141602,
+              "reference_a": "20:15",
+              "reference_b": "21:39\u201321:40",
+              "text_a": "Then they threw him out of the vineyard and killed him. What therefore will the lord of the vineyard do to them?",
+              "text_b": "So they took him and threw him out of the vineyard, then killed him.\nWhen therefore the lord of the vineyard comes, what will he do to those farmers?\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 122662,
+              "end_a": 122713,
+              "start_b": 117923,
+              "end_b": 118020,
+              "score": 0.9400705695152283,
+              "reference_a": "23:52",
+              "reference_b": "27:58",
+              "text_a": "This man went to Pilate, and asked for Jesus\u2019 body.",
+              "text_b": "This man went to Pilate and asked for Jesus\u2019 body. Then Pilate commanded the body to be given up.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 103941,
+              "end_a": 103993,
+              "start_b": 86217,
+              "end_b": 86300,
+              "score": 0.9313195943832397,
+              "reference_a": "20:22",
+              "reference_b": "22:17",
+              "text_a": "Is it lawful for us to pay taxes to Caesar, or not?\u201d",
+              "text_b": "Tell us therefore, what do you think? Is it lawful to pay taxes to Caesar, or not?\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 40270,
+              "end_a": 40339,
+              "start_b": 46066,
+              "end_b": 46127,
+              "score": 0.9300245046615601,
+              "reference_a": "8:7",
+              "reference_b": "13:7",
+              "text_a": "Some fell amid the thorns, and the thorns grew with it and choked it.",
+              "text_b": "Others fell among thorns. The thorns grew up and choked them.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 68525,
+              "end_a": 68691,
+              "start_b": 20070,
+              "end_b": 20224,
+              "score": 0.9291191101074219,
+              "reference_a": "12:28",
+              "reference_b": "6:30",
+              "text_a": "But if this is how God clothes the grass in the field, which today exists and tomorrow is cast into the oven, how much more will he clothe you, O you of little faith?",
+              "text_b": "But if God so clothes the grass of the field, which today exists and tomorrow is thrown into the oven, won\u2019t he much more clothe you, you of little faith?",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 50330,
+              "end_a": 50519,
+              "start_b": 63844,
+              "end_b": 64005,
+              "score": 0.9215845465660095,
+              "reference_a": "9:33",
+              "reference_b": "17:4",
+              "text_a": "As they were parting from him, Peter said to Jesus, \u201cMaster, it is good for us to be here. Let\u2019s make three tents: one for you, one for Moses, and one for Elijah,\u201d not knowing what he said.",
+              "text_b": "Peter answered and said to Jesus, \u201cLord, it is good for us to be here. If you want, let\u2019s make three tents here: one for you, one for Moses, and one for Elijah.\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 104449,
+              "end_a": 104709,
+              "start_b": 86803,
+              "end_b": 87063,
+              "score": 0.9215452075004578,
+              "reference_a": "20:28\u201320:29",
+              "reference_b": "22:24\u201322:25",
+              "text_a": "They asked him, \u201cTeacher, Moses wrote to us that if a man\u2019s brother dies having a wife, and he is childless, his brother should take the wife and raise up children for his brother.\nThere were therefore seven brothers. The first took a wife, and died childless.",
+              "text_b": "saying, \u201cTeacher, Moses said, \u2018If a man dies, having no children, his brother shall marry his wife and raise up offspring for his brother.\u2019\nNow there were with us seven brothers. The first married and died, and having no offspring left his wife to his brother.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 27816,
+              "end_a": 28036,
+              "start_b": 39830,
+              "end_b": 40051,
+              "score": 0.9207157492637634,
+              "reference_a": "6:2\u20136:3",
+              "reference_b": "12:2\u201312:3",
+              "text_a": "But some of the Pharisees said to them, \u201cWhy do you do that which is not lawful to do on the Sabbath day?\u201d\nJesus, answering them, said, \u201cHaven\u2019t you read what David did when he was hungry, he and those who were with him,",
+              "text_b": "But the Pharisees, when they saw it, said to him, \u201cBehold, your disciples do what is not lawful to do on the Sabbath.\u201d\nBut he said to them, \u201cHaven\u2019t you read what David did when he was hungry, and those who were with him:",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 97348,
+              "end_a": 97413,
+              "start_b": 68107,
+              "end_b": 68159,
+              "score": 0.920540988445282,
+              "reference_a": "19:10",
+              "reference_b": "18:11",
+              "text_a": "For the Son of Man came to seek and to save that which was lost.\u201d",
+              "text_b": "For the Son of Man came to save that which was lost.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 104369,
+              "end_a": 104629,
+              "start_b": 86706,
+              "end_b": 86942,
+              "score": 0.915463924407959,
+              "reference_a": "20:27\u201320:28",
+              "reference_b": "22:23\u201322:24",
+              "text_a": "Some of the Sadducees came to him, those who deny that there is a resurrection.\nThey asked him, \u201cTeacher, Moses wrote to us that if a man\u2019s brother dies having a wife, and he is childless, his brother should take the wife and raise up children for his brother.",
+              "text_b": "On that day Sadducees (those who say that there is no resurrection) came to him. They asked him,\nsaying, \u201cTeacher, Moses said, \u2018If a man dies, having no children, his brother shall marry his wife and raise up offspring for his brother.\u2019",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 50018,
+              "end_a": 50083,
+              "start_b": 63784,
+              "end_b": 63843,
+              "score": 0.9128849506378174,
+              "reference_a": "9:30",
+              "reference_b": "17:3",
+              "text_a": "Behold, two men were talking with him, who were Moses and Elijah,",
+              "text_b": "Behold, Moses and Elijah appeared to them talking with him.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 102824,
+              "end_a": 102970,
+              "start_b": 83361,
+              "end_b": 83491,
+              "score": 0.9061232209205627,
+              "reference_a": "20:14",
+              "reference_b": "21:38",
+              "text_a": "\u201cBut when the farmers saw him, they reasoned among themselves, saying, \u2018This is the heir. Come, let\u2019s kill him, that the inheritance may be ours.\u2019",
+              "text_b": "But the farmers, when they saw the son, said among themselves, \u2018This is the heir. Come, let\u2019s kill him and seize his inheritance.\u2019",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 27655,
+              "end_a": 27922,
+              "start_b": 39688,
+              "end_b": 39948,
+              "score": 0.9044449925422668,
+              "reference_a": "6:1\u20136:2",
+              "reference_b": "12:1\u201312:2",
+              "text_a": "Now on the second Sabbath after the first, he was going through the grain fields. His disciples plucked the heads of grain and ate, rubbing them in their hands.\nBut some of the Pharisees said to them, \u201cWhy do you do that which is not lawful to do on the Sabbath day?\u201d",
+              "text_b": "At that time, Jesus went on the Sabbath day through the grain fields. His disciples were hungry and began to pluck heads of grain and to eat.\nBut the Pharisees, when they saw it, said to him, \u201cBehold, your disciples do what is not lawful to do on the Sabbath.\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 26515,
+              "end_a": 26650,
+              "start_b": 28551,
+              "end_b": 28666,
+              "score": 0.9026978611946106,
+              "reference_a": "5:30",
+              "reference_b": "9:11",
+              "text_a": "Their scribes and the Pharisees murmured against his disciples, saying, \u201cWhy do you eat and drink with the tax collectors and sinners?\u201d",
+              "text_b": "When the Pharisees saw it, they said to his disciples, \u201cWhy does your teacher eat with tax collectors and sinners?\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 91432,
+              "end_a": 91594,
+              "start_b": 94933,
+              "end_b": 95085,
+              "score": 0.899355411529541,
+              "reference_a": "17:31",
+              "reference_b": "24:17\u201324:18",
+              "text_a": "In that day, he who will be on the housetop and his goods in the house, let him not go down to take them away. Let him who is in the field likewise not turn back.",
+              "text_b": "Let him who is on the housetop not go down to take out the things that are in his house.\nLet him who is in the field not return back to get his clothes.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 60790,
+              "end_a": 60908,
+              "start_b": 42316,
+              "end_b": 42516,
+              "score": 0.8968731760978699,
+              "reference_a": "11:18",
+              "reference_b": "12:26\u201312:27",
+              "text_a": "If Satan also is divided against himself, how will his kingdom stand? For you say that I cast out demons by Beelzebul.",
+              "text_b": "If Satan casts out Satan, he is divided against himself. How then will his kingdom stand?\nIf I by Beelzebul cast out demons, by whom do your children cast them out? Therefore they will be your judges.",
+              "covered_by_lexical": false
+            }
+          ]
+        },
+        {
+          "a": "mark",
+          "b": "matthew",
+          "total": 940,
+          "additional": 729,
+          "examples": [
+            {
+              "start_a": 32322,
+              "end_a": 32412,
+              "start_b": 59893,
+              "end_b": 59996,
+              "score": 0.9777565002441406,
+              "reference_a": "8:8",
+              "reference_b": "15:37",
+              "text_a": "They ate and were filled. They took up seven baskets of broken pieces that were left over.",
+              "text_b": "They all ate and were filled. They took up seven baskets full of the broken pieces that were left over.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 61683,
+              "end_a": 61855,
+              "start_b": 104791,
+              "end_b": 104944,
+              "score": 0.9747050404548645,
+              "reference_a": "14:9",
+              "reference_b": "26:13",
+              "text_a": "Most certainly I tell you, wherever this Good News may be preached throughout the whole world, that which this woman has done will also be spoken of for a memorial of her.\u201d",
+              "text_b": "Most certainly I tell you, wherever this Good News is preached in the whole world, what this woman has done will also be spoken of as a memorial of her.\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 36108,
+              "end_a": 36309,
+              "start_b": 63784,
+              "end_b": 64005,
+              "score": 0.9738538265228271,
+              "reference_a": "9:4\u20139:5",
+              "reference_b": "17:3\u201317:4",
+              "text_a": "Elijah and Moses appeared to them, and they were talking with Jesus.\nPeter answered Jesus, \u201cRabbi, it is good for us to be here. Let\u2019s make three tents: one for you, one for Moses, and one for Elijah.\u201d",
+              "text_b": "Behold, Moses and Elijah appeared to them talking with him.\nPeter answered and said to Jesus, \u201cLord, it is good for us to be here. If you want, let\u2019s make three tents here: one for you, one for Moses, and one for Elijah.\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 41680,
+              "end_a": 41775,
+              "start_b": 71280,
+              "end_b": 71387,
+              "score": 0.9706537127494812,
+              "reference_a": "10:2",
+              "reference_b": "19:3",
+              "text_a": "Pharisees came to him testing him, and asked him, \u201cIs it lawful for a man to divorce his wife?\u201d",
+              "text_b": "Pharisees came to him, testing him and saying, \u201cIs it lawful for a man to divorce his wife for any reason?\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 71097,
+              "end_a": 71177,
+              "start_b": 115872,
+              "end_b": 115962,
+              "score": 0.9663879871368408,
+              "reference_a": "15:27",
+              "reference_b": "27:38",
+              "text_a": "With him they crucified two robbers, one on his right hand, and one on his left.",
+              "text_b": "Then there were two robbers crucified with him, one on his right hand and one on the left.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 65473,
+              "end_a": 65774,
+              "start_b": 108551,
+              "end_b": 108821,
+              "score": 0.9630594849586487,
+              "reference_a": "14:43\u201314:44",
+              "reference_b": "26:47\u201326:48",
+              "text_a": "Immediately, while he was still speaking, Judas, one of the twelve, came\u2014and with him a multitude with swords and clubs, from the chief priests, the scribes, and the elders.\nNow he who betrayed him had given them a sign, saying, \u201cWhomever I will kiss, that is he. Seize him, and lead him away safely.\u201d",
+              "text_b": "While he was still speaking, behold, Judas, one of the twelve, came, and with him a great multitude with swords and clubs, from the chief priests and elders of the people.\nNow he who betrayed him had given them a sign, saying, \u201cWhoever I kiss, he is the one. Seize him.\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 60878,
+              "end_a": 60964,
+              "start_b": 104121,
+              "end_b": 104195,
+              "score": 0.9600366950035095,
+              "reference_a": "14:2",
+              "reference_b": "26:5",
+              "text_a": "For they said, \u201cNot during the feast, because there might be a riot among the people.\u201d",
+              "text_b": "But they said, \u201cNot during the feast, lest a riot occur among the people.\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 68450,
+              "end_a": 68728,
+              "start_b": 111665,
+              "end_b": 111921,
+              "score": 0.9557086229324341,
+              "reference_a": "14:71\u201314:72",
+              "reference_b": "26:74\u201326:75",
+              "text_a": "But he began to curse and to swear, \u201cI don\u2019t know this man of whom you speak!\u201d\nThe rooster crowed the second time. Peter remembered the words that Jesus said to him, \u201cBefore the rooster crows twice, you will deny me three times.\u201d When he thought about that, he wept. Mark < 14 >",
+              "text_b": "Then he began to curse and to swear, \u201cI don\u2019t know the man!\u201d Immediately the rooster crowed.\nPeter remembered the word which Jesus had said to him, \u201cBefore the rooster crows, you will deny me three times.\u201d Then he went out and wept bitterly. Matthew < 26 >",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 53394,
+              "end_a": 53659,
+              "start_b": 86803,
+              "end_b": 87063,
+              "score": 0.9340208768844604,
+              "reference_a": "12:19\u201312:20",
+              "reference_b": "22:24\u201322:25",
+              "text_a": "\u201cTeacher, Moses wrote to us, \u2018If a man\u2019s brother dies and leaves a wife behind him, and leaves no children, that his brother should take his wife and raise up offspring for his brother.\u2019\nThere were seven brothers. The first took a wife, and dying left no offspring.",
+              "text_b": "saying, \u201cTeacher, Moses said, \u2018If a man dies, having no children, his brother shall marry his wife and raise up offspring for his brother.\u2019\nNow there were with us seven brothers. The first married and died, and having no offspring left his wife to his brother.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 47469,
+              "end_a": 47771,
+              "start_b": 78712,
+              "end_b": 78981,
+              "score": 0.9331103563308716,
+              "reference_a": "11:1\u201311:2",
+              "reference_b": "21:1\u201321:2",
+              "text_a": "When they came near to Jerusalem, to Bethsphage and Bethany, at the Mount of Olives, he sent two of his disciples\nand said to them, \u201cGo your way into the village that is opposite you. Immediately as you enter into it, you will find a young donkey tied, on which no one has sat. Untie him and bring him.",
+              "text_b": "When they came near to Jerusalem and came to Bethsphage, to the Mount of Olives, then Jesus sent two disciples,\nsaying to them, \u201cGo into the village that is opposite you, and immediately you will find a donkey tied, and a colt with her. Untie them and bring them to me.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 64313,
+              "end_a": 64412,
+              "start_b": 107294,
+              "end_b": 107415,
+              "score": 0.9322522878646851,
+              "reference_a": "14:32",
+              "reference_b": "26:36",
+              "text_a": "They came to a place which was named Gethsemane. He said to his disciples, \u201cSit here while I pray.\u201d",
+              "text_b": "Then Jesus came with them to a place called Gethsemane, and said to his disciples, \u201cSit here, while I go there and pray.\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 529,
+              "end_a": 631,
+              "start_b": 6492,
+              "end_b": 6618,
+              "score": 0.9319741129875183,
+              "reference_a": "1:6",
+              "reference_b": "3:4",
+              "text_a": "John was clothed with camel\u2019s hair and a leather belt around his waist. He ate locusts and wild honey.",
+              "text_b": "Now John himself wore clothing made of camel\u2019s hair with a leather belt around his waist. His food was locusts and wild honey.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 52113,
+              "end_a": 52298,
+              "start_b": 83492,
+              "end_b": 83642,
+              "score": 0.9318246245384216,
+              "reference_a": "12:8\u201312:9",
+              "reference_b": "21:39\u201321:40",
+              "text_a": "They took him, killed him, and cast him out of the vineyard.\nWhat therefore will the lord of the vineyard do? He will come and destroy the farmers, and will give the vineyard to others.",
+              "text_b": "So they took him and threw him out of the vineyard, then killed him.\nWhen therefore the lord of the vineyard comes, what will he do to those farmers?\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 32322,
+              "end_a": 32412,
+              "start_b": 54396,
+              "end_b": 54515,
+              "score": 0.9287638664245605,
+              "reference_a": "8:8",
+              "reference_b": "14:20",
+              "text_a": "They ate and were filled. They took up seven baskets of broken pieces that were left over.",
+              "text_b": "They all ate and were filled. They took up twelve baskets full of that which remained left over from the broken pieces.",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 51889,
+              "end_a": 52112,
+              "start_b": 83286,
+              "end_b": 83491,
+              "score": 0.9278334975242615,
+              "reference_a": "12:6\u201312:7",
+              "reference_b": "21:37\u201321:38",
+              "text_a": "Therefore still having one, his beloved son, he sent him last to them, saying, \u2018They will respect my son.\u2019\nBut those farmers said among themselves, \u2018This is the heir. Come, let\u2019s kill him, and the inheritance will be ours.\u2019",
+              "text_b": "But afterward he sent to them his son, saying, \u2018They will respect my son.\u2019\nBut the farmers, when they saw the son, said among themselves, \u2018This is the heir. Come, let\u2019s kill him and seize his inheritance.\u2019",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 55898,
+              "end_a": 55972,
+              "start_b": 89306,
+              "end_b": 89378,
+              "score": 0.9276675581932068,
+              "reference_a": "12:39",
+              "reference_b": "23:6",
+              "text_a": "and to get the best seats in the synagogues and the best places at feasts,",
+              "text_b": "and love the place of honor at feasts, the best seats in the synagogues,",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 67180,
+              "end_a": 67424,
+              "start_b": 110360,
+              "end_b": 110617,
+              "score": 0.9254084229469299,
+              "reference_a": "14:60\u201314:61",
+              "reference_b": "26:62\u201326:63",
+              "text_a": "The high priest stood up in the middle, and asked Jesus, \u201cHave you no answer? What is it which these testify against you?\u201d\nBut he stayed quiet, and answered nothing. Again the high priest asked him, \u201cAre you the Christ, the Son of the Blessed?\u201d",
+              "text_b": "The high priest stood up and said to him, \u201cHave you no answer? What is this that these testify against you?\u201d\nBut Jesus stayed silent. The high priest answered him, \u201cI adjure you by the living God that you tell us whether you are the Christ, the Son of God.\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 28139,
+              "end_a": 28211,
+              "start_b": 56931,
+              "end_b": 57002,
+              "score": 0.9206405282020569,
+              "reference_a": "7:7",
+              "reference_b": "15:9",
+              "text_a": "They worship me in vain, teaching as doctrines the commandments of men.\u2019",
+              "text_b": "And they worship me in vain, teaching as doctrine rules made by men.\u2019 \u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 52608,
+              "end_a": 52915,
+              "start_b": 86015,
+              "end_b": 86300,
+              "score": 0.9168010950088501,
+              "reference_a": "12:13\u201312:14",
+              "reference_b": "22:16\u201322:17",
+              "text_a": "They sent some of the Pharisees and the Herodians to him, that they might trap him with words.\nWhen they had come, they asked him, \u201cTeacher, we know that you are honest, and don\u2019t defer to anyone; for you aren\u2019t partial to anyone, but truly teach the way of God. Is it lawful to pay taxes to Caesar, or not?",
+              "text_b": "They sent their disciples to him, along with the Herodians, saying, \u201cTeacher, we know that you are honest, and teach the way of God in truth, no matter whom you teach; for you aren\u2019t partial to anyone.\nTell us therefore, what do you think? Is it lawful to pay taxes to Caesar, or not?\u201d",
+              "covered_by_lexical": false
+            },
+            {
+              "start_a": 52174,
+              "end_a": 52298,
+              "start_b": 83561,
+              "end_b": 83798,
+              "score": 0.9160876870155334,
+              "reference_a": "12:9",
+              "reference_b": "21:40\u201321:41",
+              "text_a": "What therefore will the lord of the vineyard do? He will come and destroy the farmers, and will give the vineyard to others.",
+              "text_b": "When therefore the lord of the vineyard comes, what will he do to those farmers?\u201d\nThey told him, \u201cHe will miserably destroy those miserable men, and will lease out the vineyard to other farmers who will give him the fruit in its season.\u201d",
+              "covered_by_lexical": false
+            }
+          ]
+        }
+      ],
+      "gold": [
+        {
+          "name": "Voice in the wilderness",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "Baptism with water",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "Bread alone",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "Do not test",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "Two masters",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "Ask seek knock",
+          "detected": true,
+          "coverage": 0.5136612021857924
+        },
+        {
+          "name": "Good gifts",
+          "detected": true,
+          "coverage": 0.468013468013468
+        },
+        {
+          "name": "Cleansing a leper",
+          "detected": true,
+          "coverage": 0.5384615384615384
+        },
+        {
+          "name": "Authority to forgive",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "Cloth and wineskins",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "Divided kingdom",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "Nineveh",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "Queen of the south",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "The sower",
+          "detected": false,
+          "coverage": 0.35555555555555557
+        },
+        {
+          "name": "Gain the world",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "Camel and needle",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "Words will not pass",
+          "detected": true,
+          "coverage": 1.0
+        },
+        {
+          "name": "Bread and cup",
+          "detected": true,
+          "coverage": 0.6869009584664537
+        }
+      ],
+      "gold_detected": 17,
+      "duration_seconds": 12.62
+    }
+  ],
+  "corpus_hashes": {
+    "matthew": "55f23a77ef2c8c593aeccd8a316f32b47eefdba19ae3c0a41774b6affa75e96c",
+    "mark": "ffdff049ac3ad33d4909af2652dfc8b42cd486c51ebc3df8fb202ef0c50ee3eb",
+    "luke": "89c5649fbb23766ab8eadcacf317c2d85f3ae87414ad234838d161f880f164f4"
+  },
+  "caveats": [
+    "Author-written 8-pair calibration and 16-pair challenge are small development diagnostics, not an external benchmark.",
+    "Challenge labels were fixed before the first run; selecting a model after viewing them makes them development data for subsequent changes.",
+    "Contradictions and role reversals test same-event meaning, not whether wording itself constitutes a text parallel.",
+    "Known corpus passages were previously used for lexical tuning; corpus coverage is not independent recall.",
+    "Unannotated additional candidates require human review; candidate count is not precision.",
+    "Verse windows provide coarse boundaries, not an alignment of corresponding semantic phrases."
+  ]
+}

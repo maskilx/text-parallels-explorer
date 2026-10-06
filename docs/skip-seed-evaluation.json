@@ -1,0 +1,703 @@
+{
+  "algorithm": "lexical-1.1.0",
+  "variants": {
+    "contiguous_only": {
+      "config": {
+        "seed_words": 3,
+        "use_skip_seeds": false,
+        "min_exact_words": 12,
+        "min_near_words": 16,
+        "min_similarity": 0.62,
+        "max_seed_occurrences": 60,
+        "context_words": 32,
+        "max_candidate_words": 220,
+        "match_reward": 2.0,
+        "mismatch_penalty": -1.0,
+        "gap_open_penalty": -2.0,
+        "gap_extend_penalty": -0.6
+      },
+      "skip_challenge": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 35,
+        "tn": 12,
+        "precision": 1.0,
+        "recall": 0.027777777777777776,
+        "mean_boundary_iou": 0.025284900284900283,
+        "by_type": {
+          "insertion": {
+            "detected": 0,
+            "total": 12
+          },
+          "deletion": {
+            "detected": 1,
+            "total": 12
+          },
+          "substitution": {
+            "detected": 0,
+            "total": 12
+          }
+        },
+        "misses": [
+          "0-insertion",
+          "0-deletion",
+          "0-substitution",
+          "1-insertion",
+          "1-substitution",
+          "2-insertion",
+          "2-deletion",
+          "2-substitution",
+          "3-insertion",
+          "3-deletion",
+          "3-substitution",
+          "4-insertion",
+          "4-deletion",
+          "4-substitution",
+          "5-insertion",
+          "5-deletion",
+          "5-substitution",
+          "6-insertion",
+          "6-deletion",
+          "6-substitution",
+          "7-insertion",
+          "7-deletion",
+          "7-substitution",
+          "8-insertion",
+          "8-deletion",
+          "8-substitution",
+          "9-insertion",
+          "9-deletion",
+          "9-substitution",
+          "10-insertion",
+          "10-deletion",
+          "10-substitution",
+          "11-insertion",
+          "11-deletion",
+          "11-substitution"
+        ],
+        "duration_seconds": 0.006
+      },
+      "original_synthetic": {
+        "tp": 180,
+        "fp": 0,
+        "fn": 12,
+        "tn": 26,
+        "precision": 1.0,
+        "recall": 0.9375,
+        "mean_boundary_iou": 0.8494044751530238,
+        "by_type": {
+          "exact": {
+            "detected": 24,
+            "total": 24
+          },
+          "case-punctuation": {
+            "detected": 24,
+            "total": 24
+          },
+          "substitution": {
+            "detected": 24,
+            "total": 24
+          },
+          "insertion": {
+            "detected": 24,
+            "total": 24
+          },
+          "deletion": {
+            "detected": 24,
+            "total": 24
+          },
+          "mixed": {
+            "detected": 24,
+            "total": 24
+          },
+          "noise-10%": {
+            "detected": 12,
+            "total": 12
+          },
+          "noise-20%": {
+            "detected": 12,
+            "total": 12
+          },
+          "noise-30%": {
+            "detected": 12,
+            "total": 12
+          },
+          "noise-40%": {
+            "detected": 0,
+            "total": 12
+          }
+        },
+        "misses": [
+          "noise-0.4-0",
+          "noise-0.4-1",
+          "noise-0.4-2",
+          "noise-0.4-3",
+          "noise-0.4-4",
+          "noise-0.4-5",
+          "noise-0.4-6",
+          "noise-0.4-7",
+          "noise-0.4-8",
+          "noise-0.4-9",
+          "noise-0.4-10",
+          "noise-0.4-11"
+        ],
+        "duration_seconds": 0.048
+      },
+      "corpus": {
+        "total": 260,
+        "exact": 59,
+        "near": 201,
+        "duration_seconds": 2.216,
+        "pairs": [
+          {
+            "document_a": "luke",
+            "document_b": "mark",
+            "tokens_a": 24474,
+            "tokens_b": 14308,
+            "seeds": 16108,
+            "contiguous_seeds": 16108,
+            "skip_seeds": 0,
+            "skip_candidate_windows": 0,
+            "candidate_windows": 11925,
+            "skipped_frequent_seeds": 2,
+            "skipped_frequent_skip_seeds": 0,
+            "raw_matches": 100,
+            "matches": 65,
+            "duration_seconds": 0.624
+          },
+          {
+            "document_a": "luke",
+            "document_b": "matthew",
+            "tokens_a": 24474,
+            "tokens_b": 22894,
+            "seeds": 23887,
+            "contiguous_seeds": 23887,
+            "skip_seeds": 0,
+            "skip_candidate_windows": 0,
+            "candidate_windows": 17274,
+            "skipped_frequent_seeds": 2,
+            "skipped_frequent_skip_seeds": 0,
+            "raw_matches": 197,
+            "matches": 95,
+            "duration_seconds": 0.89
+          },
+          {
+            "document_a": "mark",
+            "document_b": "matthew",
+            "tokens_a": 14308,
+            "tokens_b": 22894,
+            "seeds": 20599,
+            "contiguous_seeds": 20599,
+            "skip_seeds": 0,
+            "skip_candidate_windows": 0,
+            "candidate_windows": 12681,
+            "skipped_frequent_seeds": 0,
+            "skipped_frequent_skip_seeds": 0,
+            "raw_matches": 213,
+            "matches": 100,
+            "duration_seconds": 0.691
+          }
+        ],
+        "gold": [
+          {
+            "name": "Voice in the wilderness",
+            "detected": true,
+            "coverage": 0.593939393939394
+          },
+          {
+            "name": "Baptism with water",
+            "detected": true,
+            "coverage": 0.8730964467005076
+          },
+          {
+            "name": "Bread alone",
+            "detected": true,
+            "coverage": 0.5528455284552846
+          },
+          {
+            "name": "Do not test",
+            "detected": true,
+            "coverage": 1.0
+          },
+          {
+            "name": "Two masters",
+            "detected": true,
+            "coverage": 0.9886363636363636
+          },
+          {
+            "name": "Ask seek knock",
+            "detected": true,
+            "coverage": 0.8807339449541285
+          },
+          {
+            "name": "Good gifts",
+            "detected": true,
+            "coverage": 0.6262626262626263
+          },
+          {
+            "name": "Cleansing a leper",
+            "detected": true,
+            "coverage": 0.719626168224299
+          },
+          {
+            "name": "Authority to forgive",
+            "detected": true,
+            "coverage": 1.0
+          },
+          {
+            "name": "Cloth and wineskins",
+            "detected": true,
+            "coverage": 0.9207317073170732
+          },
+          {
+            "name": "Divided kingdom",
+            "detected": true,
+            "coverage": 0.7819548872180451
+          },
+          {
+            "name": "Nineveh",
+            "detected": true,
+            "coverage": 0.9944444444444445
+          },
+          {
+            "name": "Queen of the south",
+            "detected": true,
+            "coverage": 0.9953271028037384
+          },
+          {
+            "name": "The sower",
+            "detected": true,
+            "coverage": 0.908273381294964
+          },
+          {
+            "name": "Gain the world",
+            "detected": true,
+            "coverage": 1.0
+          },
+          {
+            "name": "Camel and needle",
+            "detected": true,
+            "coverage": 0.8512396694214877
+          },
+          {
+            "name": "Words will not pass",
+            "detected": true,
+            "coverage": 0.9846153846153847
+          },
+          {
+            "name": "Bread and cup",
+            "detected": true,
+            "coverage": 1.0
+          }
+        ],
+        "gold_detected": 18,
+        "offsets_verified": true,
+        "duplicate_ranges": 0
+      }
+    },
+    "with_skip_seeds": {
+      "config": {
+        "seed_words": 3,
+        "use_skip_seeds": true,
+        "min_exact_words": 12,
+        "min_near_words": 16,
+        "min_similarity": 0.62,
+        "max_seed_occurrences": 60,
+        "context_words": 32,
+        "max_candidate_words": 220,
+        "match_reward": 2.0,
+        "mismatch_penalty": -1.0,
+        "gap_open_penalty": -2.0,
+        "gap_extend_penalty": -0.6
+      },
+      "skip_challenge": {
+        "tp": 36,
+        "fp": 0,
+        "fn": 0,
+        "tn": 12,
+        "precision": 1.0,
+        "recall": 1.0,
+        "mean_boundary_iou": 0.9812499056383674,
+        "by_type": {
+          "insertion": {
+            "detected": 12,
+            "total": 12
+          },
+          "deletion": {
+            "detected": 12,
+            "total": 12
+          },
+          "substitution": {
+            "detected": 12,
+            "total": 12
+          }
+        },
+        "misses": [],
+        "duration_seconds": 0.017
+      },
+      "original_synthetic": {
+        "tp": 180,
+        "fp": 0,
+        "fn": 12,
+        "tn": 26,
+        "precision": 1.0,
+        "recall": 0.9375,
+        "mean_boundary_iou": 0.8494044751530238,
+        "by_type": {
+          "exact": {
+            "detected": 24,
+            "total": 24
+          },
+          "case-punctuation": {
+            "detected": 24,
+            "total": 24
+          },
+          "substitution": {
+            "detected": 24,
+            "total": 24
+          },
+          "insertion": {
+            "detected": 24,
+            "total": 24
+          },
+          "deletion": {
+            "detected": 24,
+            "total": 24
+          },
+          "mixed": {
+            "detected": 24,
+            "total": 24
+          },
+          "noise-10%": {
+            "detected": 12,
+            "total": 12
+          },
+          "noise-20%": {
+            "detected": 12,
+            "total": 12
+          },
+          "noise-30%": {
+            "detected": 12,
+            "total": 12
+          },
+          "noise-40%": {
+            "detected": 0,
+            "total": 12
+          }
+        },
+        "misses": [
+          "noise-0.4-0",
+          "noise-0.4-1",
+          "noise-0.4-2",
+          "noise-0.4-3",
+          "noise-0.4-4",
+          "noise-0.4-5",
+          "noise-0.4-6",
+          "noise-0.4-7",
+          "noise-0.4-8",
+          "noise-0.4-9",
+          "noise-0.4-10",
+          "noise-0.4-11"
+        ],
+        "duration_seconds": 0.117
+      },
+      "corpus": {
+        "total": 267,
+        "exact": 59,
+        "near": 208,
+        "duration_seconds": 5.601,
+        "pairs": [
+          {
+            "document_a": "luke",
+            "document_b": "mark",
+            "tokens_a": 24474,
+            "tokens_b": 14308,
+            "seeds": 40463,
+            "contiguous_seeds": 16108,
+            "skip_seeds": 24355,
+            "skip_candidate_windows": 15174,
+            "candidate_windows": 27099,
+            "skipped_frequent_seeds": 2,
+            "skipped_frequent_skip_seeds": 5,
+            "raw_matches": 121,
+            "matches": 67,
+            "duration_seconds": 1.532
+          },
+          {
+            "document_a": "luke",
+            "document_b": "matthew",
+            "tokens_a": 24474,
+            "tokens_b": 22894,
+            "seeds": 61204,
+            "contiguous_seeds": 23887,
+            "skip_seeds": 37317,
+            "skip_candidate_windows": 22917,
+            "candidate_windows": 40191,
+            "skipped_frequent_seeds": 2,
+            "skipped_frequent_skip_seeds": 7,
+            "raw_matches": 247,
+            "matches": 95,
+            "duration_seconds": 2.382
+          },
+          {
+            "document_a": "mark",
+            "document_b": "matthew",
+            "tokens_a": 14308,
+            "tokens_b": 22894,
+            "seeds": 48345,
+            "contiguous_seeds": 20599,
+            "skip_seeds": 27746,
+            "skip_candidate_windows": 13658,
+            "candidate_windows": 26339,
+            "skipped_frequent_seeds": 0,
+            "skipped_frequent_skip_seeds": 2,
+            "raw_matches": 282,
+            "matches": 105,
+            "duration_seconds": 1.676
+          }
+        ],
+        "gold": [
+          {
+            "name": "Voice in the wilderness",
+            "detected": true,
+            "coverage": 0.593939393939394
+          },
+          {
+            "name": "Baptism with water",
+            "detected": true,
+            "coverage": 0.8730964467005076
+          },
+          {
+            "name": "Bread alone",
+            "detected": true,
+            "coverage": 0.5528455284552846
+          },
+          {
+            "name": "Do not test",
+            "detected": true,
+            "coverage": 1.0
+          },
+          {
+            "name": "Two masters",
+            "detected": true,
+            "coverage": 0.9886363636363636
+          },
+          {
+            "name": "Ask seek knock",
+            "detected": true,
+            "coverage": 0.8807339449541285
+          },
+          {
+            "name": "Good gifts",
+            "detected": true,
+            "coverage": 0.6262626262626263
+          },
+          {
+            "name": "Cleansing a leper",
+            "detected": true,
+            "coverage": 0.719626168224299
+          },
+          {
+            "name": "Authority to forgive",
+            "detected": true,
+            "coverage": 1.0
+          },
+          {
+            "name": "Cloth and wineskins",
+            "detected": true,
+            "coverage": 0.9207317073170732
+          },
+          {
+            "name": "Divided kingdom",
+            "detected": true,
+            "coverage": 0.7819548872180451
+          },
+          {
+            "name": "Nineveh",
+            "detected": true,
+            "coverage": 0.9944444444444445
+          },
+          {
+            "name": "Queen of the south",
+            "detected": true,
+            "coverage": 0.9953271028037384
+          },
+          {
+            "name": "The sower",
+            "detected": true,
+            "coverage": 0.908273381294964
+          },
+          {
+            "name": "Gain the world",
+            "detected": true,
+            "coverage": 1.0
+          },
+          {
+            "name": "Camel and needle",
+            "detected": true,
+            "coverage": 0.8512396694214877
+          },
+          {
+            "name": "Words will not pass",
+            "detected": true,
+            "coverage": 0.9846153846153847
+          },
+          {
+            "name": "Bread and cup",
+            "detected": true,
+            "coverage": 1.0
+          }
+        ],
+        "gold_detected": 18,
+        "offsets_verified": true,
+        "duplicate_ranges": 0
+      }
+    }
+  },
+  "exact_range_retention": {
+    "retained": 260,
+    "replaced_or_suppressed": 0
+  },
+  "contiguous_seedless_challenge_count": 35,
+  "additional_or_changed_results": [
+    {
+      "document_a": "luke",
+      "document_b": "mark",
+      "start_a": 29299,
+      "end_a": 29449,
+      "start_b": 9953,
+      "end_b": 10076,
+      "words_a": 25,
+      "words_b": 18,
+      "score": 0.64,
+      "edit_distance": 9,
+      "kind": "near",
+      "raw_exact": false,
+      "method": "skip-seed-local-alignment",
+      "alignment_score": 24.4,
+      "seed_words": 3,
+      "text_a": "Philip; Bartholomew;\nMatthew; Thomas; James the son of Alphaeus; Simon who was called the Zealot;\nJudas the son of James; and Judas Iscariot, who also",
+      "text_b": "Philip; Bartholomew; Matthew; Thomas; James, the son of Alphaeus; Thaddaeus; Simon the Zealot;\nand Judas Iscariot, who also"
+    },
+    {
+      "document_a": "luke",
+      "document_b": "mark",
+      "start_a": 49497,
+      "end_a": 49621,
+      "start_b": 35462,
+      "end_b": 35641,
+      "words_a": 28,
+      "words_b": 36,
+      "score": 0.666667,
+      "edit_distance": 12,
+      "kind": "near",
+      "raw_exact": false,
+      "method": "skip-seed-local-alignment",
+      "alignment_score": 33.6,
+      "seed_words": 3,
+      "text_a": "For whoever will be ashamed of me and of my words, of him will the Son of Man be ashamed when he comes in his glory, and the",
+      "text_b": "For whoever will be ashamed of me and of my words in this adulterous and sinful generation, the Son of Man also will be ashamed of him when he comes in his Father\u2019s glory with the"
+    },
+    {
+      "document_a": "mark",
+      "document_b": "matthew",
+      "start_a": 7763,
+      "end_a": 7894,
+      "start_b": 39953,
+      "end_b": 40066,
+      "words_a": 28,
+      "words_b": 23,
+      "score": 0.785714,
+      "edit_distance": 6,
+      "kind": "near",
+      "raw_exact": false,
+      "method": "skip-seed-local-alignment",
+      "alignment_score": 35.8,
+      "seed_words": 3,
+      "text_a": "He said to them, \u201cDid you never read what David did when he had need and was hungry\u2014he, and those who were with him?\nHow he entered",
+      "text_b": "he said to them, \u201cHaven\u2019t you read what David did when he was hungry, and those who were with him:\nhow he entered"
+    },
+    {
+      "document_a": "mark",
+      "document_b": "matthew",
+      "start_a": 48377,
+      "end_a": 48482,
+      "start_b": 79590,
+      "end_b": 79728,
+      "words_a": 21,
+      "words_b": 28,
+      "score": 0.678571,
+      "edit_distance": 9,
+      "kind": "near",
+      "raw_exact": false,
+      "method": "skip-seed-local-alignment",
+      "alignment_score": 29.0,
+      "seed_words": 3,
+      "text_a": "went in front and those who followed cried out, \u201cHosanna! Blessed is he who comes in the name of the Lord",
+      "text_b": "went in front of him, and those who followed, kept shouting, \u201cHosanna to the son of David! Blessed is he who comes in the name of the Lord"
+    },
+    {
+      "document_a": "mark",
+      "document_b": "matthew",
+      "start_a": 60830,
+      "end_a": 60914,
+      "start_b": 104075,
+      "end_b": 104157,
+      "words_a": 16,
+      "words_b": 16,
+      "score": 0.75,
+      "edit_distance": 4,
+      "kind": "near",
+      "raw_exact": false,
+      "method": "skip-seed-local-alignment",
+      "alignment_score": 20.0,
+      "seed_words": 3,
+      "text_a": "they might seize him by deception and kill him.\nFor they said, \u201cNot during the feast",
+      "text_b": "they might take Jesus by deceit and kill him.\nBut they said, \u201cNot during the feast"
+    },
+    {
+      "document_a": "mark",
+      "document_b": "matthew",
+      "start_a": 64067,
+      "end_a": 64300,
+      "start_b": 107065,
+      "end_b": 107263,
+      "words_a": 47,
+      "words_b": 40,
+      "score": 0.702128,
+      "edit_distance": 14,
+      "kind": "near",
+      "raw_exact": false,
+      "method": "skip-seed-local-alignment",
+      "alignment_score": 49.2,
+      "seed_words": 3,
+      "text_a": "Jesus said to him, \u201cMost certainly I tell you that you today, even this night, before the rooster crows twice, you will deny me three times.\u201d\nBut he spoke all the more, \u201cIf I must die with you, I will not deny you.\u201d They all said the",
+      "text_b": "Jesus said to him, \u201cMost certainly I tell you that tonight, before the rooster crows, you will deny me three times.\u201d\nPeter said to him, \u201cEven if I must die with you, I will not deny you.\u201d All of the"
+    },
+    {
+      "document_a": "mark",
+      "document_b": "matthew",
+      "start_a": 70651,
+      "end_a": 70813,
+      "start_b": 115428,
+      "end_b": 115574,
+      "words_a": 30,
+      "words_b": 30,
+      "score": 0.7,
+      "edit_distance": 9,
+      "kind": "near",
+      "raw_exact": false,
+      "method": "skip-seed-local-alignment",
+      "alignment_score": 33.0,
+      "seed_words": 3,
+      "text_a": "to go with them that he might bear his cross.\nThey brought him to the place called Golgotha, which is, being interpreted, \u201cThe place of a skull.\u201d\nThey offered him",
+      "text_b": "to go with them, that he might carry his cross.\nWhen they came to a place called \u201cGolgotha\u201d, that is to say, \u201cThe place of a skull,\u201d\nthey gave him"
+    }
+  ],
+  "caveats": [
+    "Deterministic artificial edits are development stress tests, not estimates of corpus precision.",
+    "Known passages were previously used for threshold tuning; coverage is not held-out recall.",
+    "Longer new matches may suppress older shorter ranges; range retention is not passage recall.",
+    "Skip anchors improve retrieval only. They do not bypass minimum lengths, lexical similarity, frequency guards, or local alignment limitations."
+  ]
+}

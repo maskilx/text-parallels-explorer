@@ -1,0 +1,662 @@
+[
+  {
+    "id": "0-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "into a pit a disciple is not above his teacher but everyone when he is fully trained will be like his teacher why do you see the speck of chaff that is in your brother's eye but don't consider the beam that is in your own eye or",
+    "b": "into a additional pit a additional disciple is additional not above additional his teacher additional but everyone additional when he additional is fully additional trained will additional be like additional his teacher additional why do additional you see additional the speck additional of chaff additional that is additional in your additional brother's eye additional but don't additional consider the additional beam that additional is in additional your own additional eye or",
+    "expected_a": [
+      0,
+      228
+    ],
+    "expected_b": [
+      0,
+      481
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "0-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "into a pit a disciple is not above his teacher but everyone when he is fully trained will be like his teacher why do you see the speck of chaff that is in your brother's eye but don't consider the beam that is in your own eye or",
+    "b": "into a a disciple not above teacher but when he fully trained be like teacher why you see speck of that is your brother's but don't the beam is in own eye",
+    "expected_a": [
+      0,
+      228
+    ],
+    "expected_b": [
+      0,
+      154
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "0-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "into a pit a disciple is not above his teacher but everyone when he is fully trained will be like his teacher why do you see the speck of chaff that is in your brother's eye but don't consider the beam that is in your own eye or",
+    "b": "into a changed2 a disciple changed5 not above changed8 teacher but changed11 when he changed14 fully trained changed17 be like changed20 teacher why changed23 you see changed26 speck of changed29 that is changed32 your brother's changed35 but don't changed38 the beam changed41 is in changed44 own eye changed47",
+    "expected_a": [
+      0,
+      228
+    ],
+    "expected_b": [
+      0,
+      311
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "1-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "also come into this place of torment but abraham said to him they have moses and the prophets let them listen to them he said no father abraham but if one goes to them from the dead they will repent he said to him if they don't listen",
+    "b": "also come additional into this additional place of additional torment but additional abraham said additional to him additional they have additional moses and additional the prophets additional let them additional listen to additional them he additional said no additional father abraham additional but if additional one goes additional to them additional from the additional dead they additional will repent additional he said additional to him additional if they additional don't listen",
+    "expected_a": [
+      0,
+      234
+    ],
+    "expected_b": [
+      0,
+      487
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "1-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "also come into this place of torment but abraham said to him they have moses and the prophets let them listen to them he said no father abraham but if one goes to them from the dead they will repent he said to him if they don't listen",
+    "b": "also come this place torment but said to they have and the let them to them said no abraham but one goes them from dead they repent he to him they don't",
+    "expected_a": [
+      0,
+      234
+    ],
+    "expected_b": [
+      0,
+      152
+    ],
+    "has_contiguous_seed": true
+  },
+  {
+    "id": "1-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "also come into this place of torment but abraham said to him they have moses and the prophets let them listen to them he said no father abraham but if one goes to them from the dead they will repent he said to him if they don't listen",
+    "b": "also come changed2 this place changed5 torment but changed8 said to changed11 they have changed14 and the changed17 let them changed20 to them changed23 said no changed26 abraham but changed29 one goes changed32 them from changed35 dead they changed38 repent he changed41 to him changed44 they don't changed47",
+    "expected_a": [
+      0,
+      234
+    ],
+    "expected_b": [
+      0,
+      309
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "2-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "them the children of this age marry and are given in marriage but those who are considered worthy to attain to that age and the resurrection from the dead neither marry nor are given in marriage for they can't die any more for they are like the angels",
+    "b": "them the additional children of additional this age additional marry and additional are given additional in marriage additional but those additional who are additional considered worthy additional to attain additional to that additional age and additional the resurrection additional from the additional dead neither additional marry nor additional are given additional in marriage additional for they additional can't die additional any more additional for they additional are like additional the angels",
+    "expected_a": [
+      0,
+      251
+    ],
+    "expected_b": [
+      0,
+      504
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "2-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "them the children of this age marry and are given in marriage but those who are considered worthy to attain to that age and the resurrection from the dead neither marry nor are given in marriage for they can't die any more for they are like the angels",
+    "b": "them the of this marry and given in but those are considered to attain that age the resurrection the dead marry nor given in for they die any for they like the",
+    "expected_a": [
+      0,
+      251
+    ],
+    "expected_b": [
+      0,
+      159
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "2-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "them the children of this age marry and are given in marriage but those who are considered worthy to attain to that age and the resurrection from the dead neither marry nor are given in marriage for they can't die any more for they are like the angels",
+    "b": "them the changed2 of this changed5 marry and changed8 given in changed11 but those changed14 are considered changed17 to attain changed20 that age changed23 the resurrection changed26 the dead changed29 marry nor changed32 given in changed35 for they changed38 die any changed41 for they changed44 like the changed47",
+    "expected_a": [
+      0,
+      251
+    ],
+    "expected_b": [
+      0,
+      316
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "3-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "saw a certain poor widow casting in two small brass coins he said truly i tell you this poor widow put in more than all of them for all these put in gifts for god from their abundance but she out of her poverty put in all that",
+    "b": "saw a additional certain poor additional widow casting additional in two additional small brass additional coins he additional said truly additional i tell additional you this additional poor widow additional put in additional more than additional all of additional them for additional all these additional put in additional gifts for additional god from additional their abundance additional but she additional out of additional her poverty additional put in additional all that",
+    "expected_a": [
+      0,
+      226
+    ],
+    "expected_b": [
+      0,
+      479
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "3-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "saw a certain poor widow casting in two small brass coins he said truly i tell you this poor widow put in more than all of them for all these put in gifts for god from their abundance but she out of her poverty put in all that",
+    "b": "saw a poor widow in two brass coins said truly tell you poor widow in more all of for all put in for god their abundance she out her poverty in all",
+    "expected_a": [
+      0,
+      226
+    ],
+    "expected_b": [
+      0,
+      147
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "3-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "saw a certain poor widow casting in two small brass coins he said truly i tell you this poor widow put in more than all of them for all these put in gifts for god from their abundance but she out of her poverty put in all that",
+    "b": "saw a changed2 poor widow changed5 in two changed8 brass coins changed11 said truly changed14 tell you changed17 poor widow changed20 in more changed23 all of changed26 for all changed29 put in changed32 for god changed35 their abundance changed38 she out changed41 her poverty changed44 in all changed47",
+    "expected_a": [
+      0,
+      226
+    ],
+    "expected_b": [
+      0,
+      304
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "4-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "you no prophet is acceptable in his hometown but truly i tell you there were many widows in israel in the days of elijah when the sky was shut up three years and six months when a great famine came over all the land elijah was sent to",
+    "b": "you no additional prophet is additional acceptable in additional his hometown additional but truly additional i tell additional you there additional were many additional widows in additional israel in additional the days additional of elijah additional when the additional sky was additional shut up additional three years additional and six additional months when additional a great additional famine came additional over all additional the land additional elijah was additional sent to",
+    "expected_a": [
+      0,
+      234
+    ],
+    "expected_b": [
+      0,
+      487
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "4-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "you no prophet is acceptable in his hometown but truly i tell you there were many widows in israel in the days of elijah when the sky was shut up three years and six months when a great famine came over all the land elijah was sent to",
+    "b": "you no is acceptable his hometown truly i you there many widows israel in days of when the was shut three years six months a great came over the land was sent",
+    "expected_a": [
+      0,
+      234
+    ],
+    "expected_b": [
+      0,
+      158
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "4-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "you no prophet is acceptable in his hometown but truly i tell you there were many widows in israel in the days of elijah when the sky was shut up three years and six months when a great famine came over all the land elijah was sent to",
+    "b": "you no changed2 is acceptable changed5 his hometown changed8 truly i changed11 you there changed14 many widows changed17 israel in changed20 days of changed23 when the changed26 was shut changed29 three years changed32 six months changed35 a great changed38 came over changed41 the land changed44 was sent changed47",
+    "expected_a": [
+      0,
+      234
+    ],
+    "expected_b": [
+      0,
+      315
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "5-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "a man in jerusalem whose name was simeon this man was righteous and devout looking for the consolation of israel and the holy spirit was on him it had been revealed to him by the holy spirit that he should not see death before he had seen the",
+    "b": "a man additional in jerusalem additional whose name additional was simeon additional this man additional was righteous additional and devout additional looking for additional the consolation additional of israel additional and the additional holy spirit additional was on additional him it additional had been additional revealed to additional him by additional the holy additional spirit that additional he should additional not see additional death before additional he had additional seen the",
+    "expected_a": [
+      0,
+      242
+    ],
+    "expected_b": [
+      0,
+      495
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "5-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "a man in jerusalem whose name was simeon this man was righteous and devout looking for the consolation of israel and the holy spirit was on him it had been revealed to him by the holy spirit that he should not see death before he had seen the",
+    "b": "a man jerusalem whose was simeon man was and devout for the of israel the holy was on it had revealed to by the spirit that should not death before had seen",
+    "expected_a": [
+      0,
+      242
+    ],
+    "expected_b": [
+      0,
+      156
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "5-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "a man in jerusalem whose name was simeon this man was righteous and devout looking for the consolation of israel and the holy spirit was on him it had been revealed to him by the holy spirit that he should not see death before he had seen the",
+    "b": "a man changed2 jerusalem whose changed5 was simeon changed8 man was changed11 and devout changed14 for the changed17 of israel changed20 the holy changed23 was on changed26 it had changed29 revealed to changed32 by the changed35 spirit that changed38 should not changed41 death before changed44 had seen changed47",
+    "expected_a": [
+      0,
+      242
+    ],
+    "expected_b": [
+      0,
+      313
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "6-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "you who are poor for god's kingdom is yours blessed are you who hunger now for you will be filled blessed are you who weep now for you will laugh blessed are you when men hate you and when they exclude and mock you and throw out your",
+    "b": "you who additional are poor additional for god's additional kingdom is additional yours blessed additional are you additional who hunger additional now for additional you will additional be filled additional blessed are additional you who additional weep now additional for you additional will laugh additional blessed are additional you when additional men hate additional you and additional when they additional exclude and additional mock you additional and throw additional out your",
+    "expected_a": [
+      0,
+      233
+    ],
+    "expected_b": [
+      0,
+      486
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "6-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "you who are poor for god's kingdom is yours blessed are you who hunger now for you will be filled blessed are you who weep now for you will laugh blessed are you when men hate you and when they exclude and mock you and throw out your",
+    "b": "you who poor for kingdom is blessed are who hunger for you be filled are you weep now you will blessed are when men you and they exclude mock you throw out",
+    "expected_a": [
+      0,
+      233
+    ],
+    "expected_b": [
+      0,
+      155
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "6-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "you who are poor for god's kingdom is yours blessed are you who hunger now for you will be filled blessed are you who weep now for you will laugh blessed are you when men hate you and when they exclude and mock you and throw out your",
+    "b": "you who changed2 poor for changed5 kingdom is changed8 blessed are changed11 who hunger changed14 for you changed17 be filled changed20 are you changed23 weep now changed26 you will changed29 blessed are changed32 when men changed35 you and changed38 they exclude changed41 mock you changed44 throw out changed47",
+    "expected_a": [
+      0,
+      233
+    ],
+    "expected_b": [
+      0,
+      312
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "7-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "whom he is betrayed they began to question among themselves which of them it was who would do this thing a dispute also arose among them which of them was considered to be greatest he said to them the kings of the nations lord it over them and",
+    "b": "whom he additional is betrayed additional they began additional to question additional among themselves additional which of additional them it additional was who additional would do additional this thing additional a dispute additional also arose additional among them additional which of additional them was additional considered to additional be greatest additional he said additional to them additional the kings additional of the additional nations lord additional it over additional them and",
+    "expected_a": [
+      0,
+      243
+    ],
+    "expected_b": [
+      0,
+      496
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "7-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "whom he is betrayed they began to question among themselves which of them it was who would do this thing a dispute also arose among them which of them was considered to be greatest he said to them the kings of the nations lord it over them and",
+    "b": "whom he betrayed they to question themselves which them it who would this thing dispute also among them of them considered to greatest he to them kings of nations lord over them",
+    "expected_a": [
+      0,
+      243
+    ],
+    "expected_b": [
+      0,
+      177
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "7-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "whom he is betrayed they began to question among themselves which of them it was who would do this thing a dispute also arose among them which of them was considered to be greatest he said to them the kings of the nations lord it over them and",
+    "b": "whom he changed2 betrayed they changed5 to question changed8 themselves which changed11 them it changed14 who would changed17 this thing changed20 dispute also changed23 among them changed26 of them changed29 considered to changed32 greatest he changed35 to them changed38 kings of changed41 nations lord changed44 over them changed47",
+    "expected_a": [
+      0,
+      243
+    ],
+    "expected_b": [
+      0,
+      334
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "8-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "herod being tetrarch of galilee and his brother philip tetrarch of the region of ituraea and trachonitis and lysanias tetrarch of abilene during the high priesthood of annas and caiaphas the word of god came to john the son of zacharias in the wilderness he came into all",
+    "b": "herod being additional tetrarch of additional galilee and additional his brother additional philip tetrarch additional of the additional region of additional ituraea and additional trachonitis and additional lysanias tetrarch additional of abilene additional during the additional high priesthood additional of annas additional and caiaphas additional the word additional of god additional came to additional john the additional son of additional zacharias in additional the wilderness additional he came additional into all",
+    "expected_a": [
+      0,
+      271
+    ],
+    "expected_b": [
+      0,
+      524
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "8-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "herod being tetrarch of galilee and his brother philip tetrarch of the region of ituraea and trachonitis and lysanias tetrarch of abilene during the high priesthood of annas and caiaphas the word of god came to john the son of zacharias in the wilderness he came into all",
+    "b": "herod being of galilee his brother tetrarch of region of and trachonitis lysanias tetrarch abilene during high priesthood annas and the word god came john the of zacharias the wilderness came into",
+    "expected_a": [
+      0,
+      271
+    ],
+    "expected_b": [
+      0,
+      196
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "8-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "herod being tetrarch of galilee and his brother philip tetrarch of the region of ituraea and trachonitis and lysanias tetrarch of abilene during the high priesthood of annas and caiaphas the word of god came to john the son of zacharias in the wilderness he came into all",
+    "b": "herod being changed2 of galilee changed5 his brother changed8 tetrarch of changed11 region of changed14 and trachonitis changed17 lysanias tetrarch changed20 abilene during changed23 high priesthood changed26 annas and changed29 the word changed32 god came changed35 john the changed38 of zacharias changed41 the wilderness changed44 came into changed47",
+    "expected_a": [
+      0,
+      271
+    ],
+    "expected_b": [
+      0,
+      353
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "9-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "out of the man and entered into the pigs and the herd rushed down the steep bank into the lake and were drowned when those who fed them saw what had happened they fled and told it in the city and in the country people went out to",
+    "b": "out of additional the man additional and entered additional into the additional pigs and additional the herd additional rushed down additional the steep additional bank into additional the lake additional and were additional drowned when additional those who additional fed them additional saw what additional had happened additional they fled additional and told additional it in additional the city additional and in additional the country additional people went additional out to",
+    "expected_a": [
+      0,
+      229
+    ],
+    "expected_b": [
+      0,
+      482
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "9-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "out of the man and entered into the pigs and the herd rushed down the steep bank into the lake and were drowned when those who fed them saw what had happened they fled and told it in the city and in the country people went out to",
+    "b": "out of man and into the and the rushed down steep bank the lake were drowned those who them saw had happened fled and it in city and the country went out",
+    "expected_a": [
+      0,
+      229
+    ],
+    "expected_b": [
+      0,
+      153
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "9-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "out of the man and entered into the pigs and the herd rushed down the steep bank into the lake and were drowned when those who fed them saw what had happened they fled and told it in the city and in the country people went out to",
+    "b": "out of changed2 man and changed5 into the changed8 and the changed11 rushed down changed14 steep bank changed17 the lake changed20 were drowned changed23 those who changed26 them saw changed29 had happened changed32 fled and changed35 it in changed38 city and changed41 the country changed44 went out changed47",
+    "expected_a": [
+      0,
+      229
+    ],
+    "expected_b": [
+      0,
+      310
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "10-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "of a broiled fish and some honeycomb he took them and ate in front of them he said to them this is what i told you while i was still with you that all things which are written in the law of moses the prophets and the psalms",
+    "b": "of a additional broiled fish additional and some additional honeycomb he additional took them additional and ate additional in front additional of them additional he said additional to them additional this is additional what i additional told you additional while i additional was still additional with you additional that all additional things which additional are written additional in the additional law of additional moses the additional prophets and additional the psalms",
+    "expected_a": [
+      0,
+      223
+    ],
+    "expected_b": [
+      0,
+      476
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "10-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "of a broiled fish and some honeycomb he took them and ate in front of them he said to them this is what i told you while i was still with you that all things which are written in the law of moses the prophets and the psalms",
+    "b": "of a fish and honeycomb he them and in front them he to them is what told you i was with you all things are written the law moses the and the",
+    "expected_a": [
+      0,
+      223
+    ],
+    "expected_b": [
+      0,
+      141
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "10-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "of a broiled fish and some honeycomb he took them and ate in front of them he said to them this is what i told you while i was still with you that all things which are written in the law of moses the prophets and the psalms",
+    "b": "of a changed2 fish and changed5 honeycomb he changed8 them and changed11 in front changed14 them he changed17 to them changed20 is what changed23 told you changed26 i was changed29 with you changed32 all things changed35 are written changed38 the law changed41 moses the changed44 and the changed47",
+    "expected_a": [
+      0,
+      223
+    ],
+    "expected_b": [
+      0,
+      298
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "11-insertion",
+    "kind": "insertion",
+    "label": true,
+    "a": "to bethlehem now and see this thing that has happened which the lord has made known to us they came with haste and found both mary and joseph and the baby was lying in the feeding trough when they saw it they publicized widely the saying which was",
+    "b": "to bethlehem additional now and additional see this additional thing that additional has happened additional which the additional lord has additional made known additional to us additional they came additional with haste additional and found additional both mary additional and joseph additional and the additional baby was additional lying in additional the feeding additional trough when additional they saw additional it they additional publicized widely additional the saying additional which was",
+    "expected_a": [
+      0,
+      247
+    ],
+    "expected_b": [
+      0,
+      500
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "11-deletion",
+    "kind": "deletion",
+    "label": true,
+    "a": "to bethlehem now and see this thing that has happened which the lord has made known to us they came with haste and found both mary and joseph and the baby was lying in the feeding trough when they saw it they publicized widely the saying which was",
+    "b": "to bethlehem and see thing that happened which lord has known to they came haste and both mary joseph and baby was in the trough when saw it publicized widely saying which",
+    "expected_a": [
+      0,
+      247
+    ],
+    "expected_b": [
+      0,
+      171
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "11-substitution",
+    "kind": "substitution",
+    "label": true,
+    "a": "to bethlehem now and see this thing that has happened which the lord has made known to us they came with haste and found both mary and joseph and the baby was lying in the feeding trough when they saw it they publicized widely the saying which was",
+    "b": "to bethlehem changed2 and see changed5 thing that changed8 happened which changed11 lord has changed14 known to changed17 they came changed20 haste and changed23 both mary changed26 joseph and changed29 baby was changed32 in the changed35 trough when changed38 saw it changed41 publicized widely changed44 saying which changed47",
+    "expected_a": [
+      0,
+      247
+    ],
+    "expected_b": [
+      0,
+      328
+    ],
+    "has_contiguous_seed": false
+  },
+  {
+    "id": "reversed-0",
+    "kind": "reversed-order",
+    "label": false,
+    "a": "word0number0 word0number1 word0number2 word0number3 word0number4 word0number5 word0number6 word0number7 word0number8 word0number9 word0number10 word0number11 word0number12 word0number13 word0number14 word0number15 word0number16 word0number17 word0number18 word0number19 word0number20 word0number21 word0number22 word0number23 word0number24 word0number25 word0number26 word0number27 word0number28 word0number29 word0number30 word0number31 word0number32 word0number33 word0number34 word0number35 word0number36 word0number37 word0number38 word0number39 word0number40 word0number41 word0number42 word0number43 word0number44 word0number45 word0number46 word0number47",
+    "b": "word0number47 word0number46 word0number45 word0number44 word0number43 word0number42 word0number41 word0number40 word0number39 word0number38 word0number37 word0number36 word0number35 word0number34 word0number33 word0number32 word0number31 word0number30 word0number29 word0number28 word0number27 word0number26 word0number25 word0number24 word0number23 word0number22 word0number21 word0number20 word0number19 word0number18 word0number17 word0number16 word0number15 word0number14 word0number13 word0number12 word0number11 word0number10 word0number9 word0number8 word0number7 word0number6 word0number5 word0number4 word0number3 word0number2 word0number1 word0number0"
+  },
+  {
+    "id": "reversed-1",
+    "kind": "reversed-order",
+    "label": false,
+    "a": "word1number0 word1number1 word1number2 word1number3 word1number4 word1number5 word1number6 word1number7 word1number8 word1number9 word1number10 word1number11 word1number12 word1number13 word1number14 word1number15 word1number16 word1number17 word1number18 word1number19 word1number20 word1number21 word1number22 word1number23 word1number24 word1number25 word1number26 word1number27 word1number28 word1number29 word1number30 word1number31 word1number32 word1number33 word1number34 word1number35 word1number36 word1number37 word1number38 word1number39 word1number40 word1number41 word1number42 word1number43 word1number44 word1number45 word1number46 word1number47",
+    "b": "word1number47 word1number46 word1number45 word1number44 word1number43 word1number42 word1number41 word1number40 word1number39 word1number38 word1number37 word1number36 word1number35 word1number34 word1number33 word1number32 word1number31 word1number30 word1number29 word1number28 word1number27 word1number26 word1number25 word1number24 word1number23 word1number22 word1number21 word1number20 word1number19 word1number18 word1number17 word1number16 word1number15 word1number14 word1number13 word1number12 word1number11 word1number10 word1number9 word1number8 word1number7 word1number6 word1number5 word1number4 word1number3 word1number2 word1number1 word1number0"
+  },
+  {
+    "id": "reversed-2",
+    "kind": "reversed-order",
+    "label": false,
+    "a": "word2number0 word2number1 word2number2 word2number3 word2number4 word2number5 word2number6 word2number7 word2number8 word2number9 word2number10 word2number11 word2number12 word2number13 word2number14 word2number15 word2number16 word2number17 word2number18 word2number19 word2number20 word2number21 word2number22 word2number23 word2number24 word2number25 word2number26 word2number27 word2number28 word2number29 word2number30 word2number31 word2number32 word2number33 word2number34 word2number35 word2number36 word2number37 word2number38 word2number39 word2number40 word2number41 word2number42 word2number43 word2number44 word2number45 word2number46 word2number47",
+    "b": "word2number47 word2number46 word2number45 word2number44 word2number43 word2number42 word2number41 word2number40 word2number39 word2number38 word2number37 word2number36 word2number35 word2number34 word2number33 word2number32 word2number31 word2number30 word2number29 word2number28 word2number27 word2number26 word2number25 word2number24 word2number23 word2number22 word2number21 word2number20 word2number19 word2number18 word2number17 word2number16 word2number15 word2number14 word2number13 word2number12 word2number11 word2number10 word2number9 word2number8 word2number7 word2number6 word2number5 word2number4 word2number3 word2number2 word2number1 word2number0"
+  },
+  {
+    "id": "reversed-3",
+    "kind": "reversed-order",
+    "label": false,
+    "a": "word3number0 word3number1 word3number2 word3number3 word3number4 word3number5 word3number6 word3number7 word3number8 word3number9 word3number10 word3number11 word3number12 word3number13 word3number14 word3number15 word3number16 word3number17 word3number18 word3number19 word3number20 word3number21 word3number22 word3number23 word3number24 word3number25 word3number26 word3number27 word3number28 word3number29 word3number30 word3number31 word3number32 word3number33 word3number34 word3number35 word3number36 word3number37 word3number38 word3number39 word3number40 word3number41 word3number42 word3number43 word3number44 word3number45 word3number46 word3number47",
+    "b": "word3number47 word3number46 word3number45 word3number44 word3number43 word3number42 word3number41 word3number40 word3number39 word3number38 word3number37 word3number36 word3number35 word3number34 word3number33 word3number32 word3number31 word3number30 word3number29 word3number28 word3number27 word3number26 word3number25 word3number24 word3number23 word3number22 word3number21 word3number20 word3number19 word3number18 word3number17 word3number16 word3number15 word3number14 word3number13 word3number12 word3number11 word3number10 word3number9 word3number8 word3number7 word3number6 word3number5 word3number4 word3number3 word3number2 word3number1 word3number0"
+  },
+  {
+    "id": "reversed-4",
+    "kind": "reversed-order",
+    "label": false,
+    "a": "word4number0 word4number1 word4number2 word4number3 word4number4 word4number5 word4number6 word4number7 word4number8 word4number9 word4number10 word4number11 word4number12 word4number13 word4number14 word4number15 word4number16 word4number17 word4number18 word4number19 word4number20 word4number21 word4number22 word4number23 word4number24 word4number25 word4number26 word4number27 word4number28 word4number29 word4number30 word4number31 word4number32 word4number33 word4number34 word4number35 word4number36 word4number37 word4number38 word4number39 word4number40 word4number41 word4number42 word4number43 word4number44 word4number45 word4number46 word4number47",
+    "b": "word4number47 word4number46 word4number45 word4number44 word4number43 word4number42 word4number41 word4number40 word4number39 word4number38 word4number37 word4number36 word4number35 word4number34 word4number33 word4number32 word4number31 word4number30 word4number29 word4number28 word4number27 word4number26 word4number25 word4number24 word4number23 word4number22 word4number21 word4number20 word4number19 word4number18 word4number17 word4number16 word4number15 word4number14 word4number13 word4number12 word4number11 word4number10 word4number9 word4number8 word4number7 word4number6 word4number5 word4number4 word4number3 word4number2 word4number1 word4number0"
+  },
+  {
+    "id": "reversed-5",
+    "kind": "reversed-order",
+    "label": false,
+    "a": "word5number0 word5number1 word5number2 word5number3 word5number4 word5number5 word5number6 word5number7 word5number8 word5number9 word5number10 word5number11 word5number12 word5number13 word5number14 word5number15 word5number16 word5number17 word5number18 word5number19 word5number20 word5number21 word5number22 word5number23 word5number24 word5number25 word5number26 word5number27 word5number28 word5number29 word5number30 word5number31 word5number32 word5number33 word5number34 word5number35 word5number36 word5number37 word5number38 word5number39 word5number40 word5number41 word5number42 word5number43 word5number44 word5number45 word5number46 word5number47",
+    "b": "word5number47 word5number46 word5number45 word5number44 word5number43 word5number42 word5number41 word5number40 word5number39 word5number38 word5number37 word5number36 word5number35 word5number34 word5number33 word5number32 word5number31 word5number30 word5number29 word5number28 word5number27 word5number26 word5number25 word5number24 word5number23 word5number22 word5number21 word5number20 word5number19 word5number18 word5number17 word5number16 word5number15 word5number14 word5number13 word5number12 word5number11 word5number10 word5number9 word5number8 word5number7 word5number6 word5number5 word5number4 word5number3 word5number2 word5number1 word5number0"
+  },
+  {
+    "id": "reversed-6",
+    "kind": "reversed-order",
+    "label": false,
+    "a": "word6number0 word6number1 word6number2 word6number3 word6number4 word6number5 word6number6 word6number7 word6number8 word6number9 word6number10 word6number11 word6number12 word6number13 word6number14 word6number15 word6number16 word6number17 word6number18 word6number19 word6number20 word6number21 word6number22 word6number23 word6number24 word6number25 word6number26 word6number27 word6number28 word6number29 word6number30 word6number31 word6number32 word6number33 word6number34 word6number35 word6number36 word6number37 word6number38 word6number39 word6number40 word6number41 word6number42 word6number43 word6number44 word6number45 word6number46 word6number47",
+    "b": "word6number47 word6number46 word6number45 word6number44 word6number43 word6number42 word6number41 word6number40 word6number39 word6number38 word6number37 word6number36 word6number35 word6number34 word6number33 word6number32 word6number31 word6number30 word6number29 word6number28 word6number27 word6number26 word6number25 word6number24 word6number23 word6number22 word6number21 word6number20 word6number19 word6number18 word6number17 word6number16 word6number15 word6number14 word6number13 word6number12 word6number11 word6number10 word6number9 word6number8 word6number7 word6number6 word6number5 word6number4 word6number3 word6number2 word6number1 word6number0"
+  },
+  {
+    "id": "reversed-7",
+    "kind": "reversed-order",
+    "label": false,
+    "a": "word7number0 word7number1 word7number2 word7number3 word7number4 word7number5 word7number6 word7number7 word7number8 word7number9 word7number10 word7number11 word7number12 word7number13 word7number14 word7number15 word7number16 word7number17 word7number18 word7number19 word7number20 word7number21 word7number22 word7number23 word7number24 word7number25 word7number26 word7number27 word7number28 word7number29 word7number30 word7number31 word7number32 word7number33 word7number34 word7number35 word7number36 word7number37 word7number38 word7number39 word7number40 word7number41 word7number42 word7number43 word7number44 word7number45 word7number46 word7number47",
+    "b": "word7number47 word7number46 word7number45 word7number44 word7number43 word7number42 word7number41 word7number40 word7number39 word7number38 word7number37 word7number36 word7number35 word7number34 word7number33 word7number32 word7number31 word7number30 word7number29 word7number28 word7number27 word7number26 word7number25 word7number24 word7number23 word7number22 word7number21 word7number20 word7number19 word7number18 word7number17 word7number16 word7number15 word7number14 word7number13 word7number12 word7number11 word7number10 word7number9 word7number8 word7number7 word7number6 word7number5 word7number4 word7number3 word7number2 word7number1 word7number0"
+  },
+  {
+    "id": "reversed-8",
+    "kind": "reversed-order",
+    "label": false,
+    "a": "word8number0 word8number1 word8number2 word8number3 word8number4 word8number5 word8number6 word8number7 word8number8 word8number9 word8number10 word8number11 word8number12 word8number13 word8number14 word8number15 word8number16 word8number17 word8number18 word8number19 word8number20 word8number21 word8number22 word8number23 word8number24 word8number25 word8number26 word8number27 word8number28 word8number29 word8number30 word8number31 word8number32 word8number33 word8number34 word8number35 word8number36 word8number37 word8number38 word8number39 word8number40 word8number41 word8number42 word8number43 word8number44 word8number45 word8number46 word8number47",
+    "b": "word8number47 word8number46 word8number45 word8number44 word8number43 word8number42 word8number41 word8number40 word8number39 word8number38 word8number37 word8number36 word8number35 word8number34 word8number33 word8number32 word8number31 word8number30 word8number29 word8number28 word8number27 word8number26 word8number25 word8number24 word8number23 word8number22 word8number21 word8number20 word8number19 word8number18 word8number17 word8number16 word8number15 word8number14 word8number13 word8number12 word8number11 word8number10 word8number9 word8number8 word8number7 word8number6 word8number5 word8number4 word8number3 word8number2 word8number1 word8number0"
+  },
+  {
+    "id": "reversed-9",
+    "kind": "reversed-order",
+    "label": false,
+    "a": "word9number0 word9number1 word9number2 word9number3 word9number4 word9number5 word9number6 word9number7 word9number8 word9number9 word9number10 word9number11 word9number12 word9number13 word9number14 word9number15 word9number16 word9number17 word9number18 word9number19 word9number20 word9number21 word9number22 word9number23 word9number24 word9number25 word9number26 word9number27 word9number28 word9number29 word9number30 word9number31 word9number32 word9number33 word9number34 word9number35 word9number36 word9number37 word9number38 word9number39 word9number40 word9number41 word9number42 word9number43 word9number44 word9number45 word9number46 word9number47",
+    "b": "word9number47 word9number46 word9number45 word9number44 word9number43 word9number42 word9number41 word9number40 word9number39 word9number38 word9number37 word9number36 word9number35 word9number34 word9number33 word9number32 word9number31 word9number30 word9number29 word9number28 word9number27 word9number26 word9number25 word9number24 word9number23 word9number22 word9number21 word9number20 word9number19 word9number18 word9number17 word9number16 word9number15 word9number14 word9number13 word9number12 word9number11 word9number10 word9number9 word9number8 word9number7 word9number6 word9number5 word9number4 word9number3 word9number2 word9number1 word9number0"
+  },
+  {
+    "id": "reversed-10",
+    "kind": "reversed-order",
+    "label": false,
+    "a": "word10number0 word10number1 word10number2 word10number3 word10number4 word10number5 word10number6 word10number7 word10number8 word10number9 word10number10 word10number11 word10number12 word10number13 word10number14 word10number15 word10number16 word10number17 word10number18 word10number19 word10number20 word10number21 word10number22 word10number23 word10number24 word10number25 word10number26 word10number27 word10number28 word10number29 word10number30 word10number31 word10number32 word10number33 word10number34 word10number35 word10number36 word10number37 word10number38 word10number39 word10number40 word10number41 word10number42 word10number43 word10number44 word10number45 word10number46 word10number47",
+    "b": "word10number47 word10number46 word10number45 word10number44 word10number43 word10number42 word10number41 word10number40 word10number39 word10number38 word10number37 word10number36 word10number35 word10number34 word10number33 word10number32 word10number31 word10number30 word10number29 word10number28 word10number27 word10number26 word10number25 word10number24 word10number23 word10number22 word10number21 word10number20 word10number19 word10number18 word10number17 word10number16 word10number15 word10number14 word10number13 word10number12 word10number11 word10number10 word10number9 word10number8 word10number7 word10number6 word10number5 word10number4 word10number3 word10number2 word10number1 word10number0"
+  },
+  {
+    "id": "reversed-11",
+    "kind": "reversed-order",
+    "label": false,
+    "a": "word11number0 word11number1 word11number2 word11number3 word11number4 word11number5 word11number6 word11number7 word11number8 word11number9 word11number10 word11number11 word11number12 word11number13 word11number14 word11number15 word11number16 word11number17 word11number18 word11number19 word11number20 word11number21 word11number22 word11number23 word11number24 word11number25 word11number26 word11number27 word11number28 word11number29 word11number30 word11number31 word11number32 word11number33 word11number34 word11number35 word11number36 word11number37 word11number38 word11number39 word11number40 word11number41 word11number42 word11number43 word11number44 word11number45 word11number46 word11number47",
+    "b": "word11number47 word11number46 word11number45 word11number44 word11number43 word11number42 word11number41 word11number40 word11number39 word11number38 word11number37 word11number36 word11number35 word11number34 word11number33 word11number32 word11number31 word11number30 word11number29 word11number28 word11number27 word11number26 word11number25 word11number24 word11number23 word11number22 word11number21 word11number20 word11number19 word11number18 word11number17 word11number16 word11number15 word11number14 word11number13 word11number12 word11number11 word11number10 word11number9 word11number8 word11number7 word11number6 word11number5 word11number4 word11number3 word11number2 word11number1 word11number0"
+  }
+]

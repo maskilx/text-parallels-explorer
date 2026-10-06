@@ -1,0 +1,179 @@
+{
+  "seed": 981,
+  "selection": "Three deterministic random examples in each of three score bands, without replacement within a band.",
+  "reviewer": "AI-assisted author inspection; not blinded or expert adjudication.",
+  "items": [
+    {
+      "id": "1d15cf74f20c820cc3bc67745a5dd9e437adb0e0ac11b922ec9015e633eec8bc",
+      "document_a": "luke",
+      "document_b": "mark",
+      "start_a": 42857,
+      "end_a": 43019,
+      "start_b": 16133,
+      "end_b": 16310,
+      "score": 0.6641165018081665,
+      "reference_a": "8:27",
+      "reference_b": "5:2\u20135:3",
+      "text_a": "When Jesus stepped ashore, a certain man out of the city who had demons for a long time met him. He wore no clothes, and didn\u2019t live in a house, but in the tombs.",
+      "text_b": "When he had come out of the boat, immediately a man with an unclean spirit met him out of the tombs.\nHe lived in the tombs. Nobody could bind him any more, not even with chains,",
+      "score_band": [
+        0.65,
+        0.75
+      ],
+      "assessment": "plausible-shared-passage"
+    },
+    {
+      "id": "f64a57db114590698658d7d6fba1b3631577991a0b103aec8ee9cd3d7ff7581a",
+      "document_a": "luke",
+      "document_b": "mark",
+      "start_a": 61397,
+      "end_a": 61571,
+      "start_b": 16800,
+      "end_b": 16862,
+      "score": 0.7286084890365601,
+      "reference_a": "11:24",
+      "reference_b": "5:8",
+      "text_a": "The unclean spirit, when he has gone out of the man, passes through dry places, seeking rest; and finding none, he says, \u2018I will turn back to my house from which I came out.\u2019",
+      "text_b": "For he said to him, \u201cCome out of the man, you unclean spirit!\u201d",
+      "score_band": [
+        0.65,
+        0.75
+      ],
+      "assessment": "topic-only-unconvincing"
+    },
+    {
+      "id": "dabde41007bb26c80cb93a9ad77c1f757f297ea0ac5ca93ee5969d30f85272ad",
+      "document_a": "luke",
+      "document_b": "mark",
+      "start_a": 12332,
+      "end_a": 12567,
+      "start_b": 50521,
+      "end_b": 50647,
+      "score": 0.6996141672134399,
+      "reference_a": "2:42\u20132:43",
+      "reference_b": "11:27",
+      "text_a": "When he was twelve years old, they went up to Jerusalem according to the custom of the feast;\nand when they had fulfilled the days, as they were returning, the boy Jesus stayed behind in Jerusalem. Joseph and his mother didn\u2019t know it,",
+      "text_b": "They came again to Jerusalem, and as he was walking in the temple, the chief priests, the scribes, and the elders came to him,",
+      "score_band": [
+        0.65,
+        0.75
+      ],
+      "assessment": "topic-only-unconvincing"
+    },
+    {
+      "id": "62e1d7f81509082fcd88ea4eaf688d26f0b3e0ca78d927f396fc26f4fbf2d1e7",
+      "document_a": "luke",
+      "document_b": "matthew",
+      "start_a": 75507,
+      "end_a": 75752,
+      "start_b": 24840,
+      "end_b": 25095,
+      "score": 0.8295563459396362,
+      "reference_a": "13:28\u201313:29",
+      "reference_b": "8:11\u20138:12",
+      "text_a": "There will be weeping and gnashing of teeth when you see Abraham, Isaac, Jacob, and all the prophets in God\u2019s Kingdom, and yourselves being thrown outside.\nThey will come from the east, west, north, and south, and will sit down in God\u2019s Kingdom.",
+      "text_b": "I tell you that many will come from the east and the west, and will sit down with Abraham, Isaac, and Jacob in the Kingdom of Heaven,\nbut the children of the Kingdom will be thrown out into the outer darkness. There will be weeping and gnashing of teeth.\u201d",
+      "score_band": [
+        0.75,
+        0.85
+      ],
+      "assessment": "plausible-shared-passage"
+    },
+    {
+      "id": "bca39c2ca72cd8769de64e464a54a813b3e06b5dd6758f172d73f4c8fb76ba7d",
+      "document_a": "luke",
+      "document_b": "mark",
+      "start_a": 28400,
+      "end_a": 28668,
+      "start_b": 8298,
+      "end_b": 8445,
+      "score": 0.8146390914916992,
+      "reference_a": "6:7\u20136:8",
+      "reference_b": "3:2\u20133:3",
+      "text_a": "The scribes and the Pharisees watched him, to see whether he would heal on the Sabbath, that they might find an accusation against him.\nBut he knew their thoughts; and he said to the man who had the withered hand, \u201cRise up and stand in the middle.\u201d He arose and stood.",
+      "text_b": "They watched him, whether he would heal him on the Sabbath day, that they might accuse him.\nHe said to the man whose hand was withered, \u201cStand up.\u201d",
+      "score_band": [
+        0.75,
+        0.85
+      ],
+      "assessment": "plausible-shared-passage"
+    },
+    {
+      "id": "d35ecc5232062ae98b9dc5d7c318d0a5e6e50dc7f5e70781d0f20467b7f28751",
+      "document_a": "luke",
+      "document_b": "mark",
+      "start_a": 116020,
+      "end_a": 116261,
+      "start_b": 68202,
+      "end_b": 68449,
+      "score": 0.778032660484314,
+      "reference_a": "22:58\u201322:59",
+      "reference_b": "14:69\u201314:70",
+      "text_a": "After a little while someone else saw him and said, \u201cYou also are one of them!\u201d But Peter answered, \u201cMan, I am not!\u201d\nAfter about one hour passed, another confidently affirmed, saying, \u201cTruly this man also was with him, for he is a Galilean!\u201d",
+      "text_b": "The maid saw him and began again to tell those who stood by, \u201cThis is one of them.\u201d\nBut he again denied it. After a little while again those who stood by said to Peter, \u201cYou truly are one of them, for you are a Galilean, and your speech shows it.\u201d",
+      "score_band": [
+        0.75,
+        0.85
+      ],
+      "assessment": "plausible-shared-passage"
+    },
+    {
+      "id": "2c0b343cfc097c942a836103a6e4bdb578ef30fa44cc743462cce22307a350fd",
+      "document_a": "luke",
+      "document_b": "matthew",
+      "start_a": 27655,
+      "end_a": 27922,
+      "start_b": 39688,
+      "end_b": 39948,
+      "score": 0.9044449925422668,
+      "reference_a": "6:1\u20136:2",
+      "reference_b": "12:1\u201312:2",
+      "text_a": "Now on the second Sabbath after the first, he was going through the grain fields. His disciples plucked the heads of grain and ate, rubbing them in their hands.\nBut some of the Pharisees said to them, \u201cWhy do you do that which is not lawful to do on the Sabbath day?\u201d",
+      "text_b": "At that time, Jesus went on the Sabbath day through the grain fields. His disciples were hungry and began to pluck heads of grain and to eat.\nBut the Pharisees, when they saw it, said to him, \u201cBehold, your disciples do what is not lawful to do on the Sabbath.\u201d",
+      "score_band": [
+        0.85,
+        1.01
+      ],
+      "assessment": "plausible-shared-passage"
+    },
+    {
+      "id": "da4c3ff9d13002286324bb8779b76efd8c5fe71eddc50bafb541ffe75222252c",
+      "document_a": "luke",
+      "document_b": "mark",
+      "start_a": 111302,
+      "end_a": 111375,
+      "start_b": 62544,
+      "end_b": 62633,
+      "score": 0.9058644771575928,
+      "reference_a": "22:12",
+      "reference_b": "14:15",
+      "text_a": "He will show you a large, furnished upper room. Make preparations there.\u201d",
+      "text_b": "He will himself show you a large upper room furnished and ready. Get ready for us there.\u201d",
+      "score_band": [
+        0.85,
+        1.01
+      ],
+      "assessment": "plausible-shared-passage"
+    },
+    {
+      "id": "79ded1c5313a574b50f7c068e43da0094f3a9a3469881f096c3ed1e484a8fde5",
+      "document_a": "luke",
+      "document_b": "mark",
+      "start_a": 28261,
+      "end_a": 28535,
+      "start_b": 8210,
+      "end_b": 8389,
+      "score": 0.865644097328186,
+      "reference_a": "6:6\u20136:7",
+      "reference_b": "3:1\u20133:2",
+      "text_a": "It also happened on another Sabbath that he entered into the synagogue and taught. There was a man there, and his right hand was withered.\nThe scribes and the Pharisees watched him, to see whether he would heal on the Sabbath, that they might find an accusation against him.",
+      "text_b": "He entered again into the synagogue, and there was a man there whose hand was withered.\nThey watched him, whether he would heal him on the Sabbath day, that they might accuse him.",
+      "score_band": [
+        0.85,
+        1.01
+      ],
+      "assessment": "plausible-shared-passage"
+    }
+  ],
+  "caveat": "Seven plausible shared passages and two topic-only suggestions in nine samples do not estimate corpus precision."
+}
